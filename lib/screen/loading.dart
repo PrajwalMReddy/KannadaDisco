@@ -12,7 +12,7 @@ class _LoadingState extends State<Loading> {
   void initState() {
     super.initState();
     Future.delayed(Duration.zero, () {
-      Navigator.pushReplacementNamed(context, '/');
+      Navigator.pushReplacementNamed(context, '/home');
     });
   }
 
@@ -40,13 +40,13 @@ class LoadingScreen extends StatelessWidget {
               image: AssetImage(""), // TODO No Image For Now
             ),
             SizedBox(
-              height: 60.0,
+              height: 50.0,
             ),
             Text(
-              "Loading KannadaDisco",
+              "KannadaDisco",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 25.0,
+                fontSize: 50.0,
               ),
             ),
           ],
