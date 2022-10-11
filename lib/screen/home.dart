@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:kannada_disco/element/side_bar.dart';
+import 'package:kannada_disco/const/color.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -25,10 +26,15 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("KannadaDisco",),
-        backgroundColor: Colors.blue[900],
+        title: const Text("KannadaDisco"),
+        centerTitle: true,
+        backgroundColor: kannadaRed,
       ),
       drawer: const SideBar(),
+      body: Column(
+        children: [
+        ],
+      ),
     );
   }
 }

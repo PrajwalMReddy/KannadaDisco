@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:kannada_disco/const/color.dart';
+
 class Loading extends StatefulWidget {
   const Loading({Key? key}) : super(key: key);
 
@@ -30,7 +32,7 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[900],
+      backgroundColor: kannadaRed,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
