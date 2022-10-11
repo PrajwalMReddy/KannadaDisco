@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:kannada_disco/const/color.dart';
+
 class About extends StatelessWidget {
   const About({Key? key}) : super(key: key);
 
@@ -8,7 +10,8 @@ class About extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("About KannadaDisco"),
-        backgroundColor: Colors.blue[900],
+        centerTitle: true,
+        backgroundColor: kannadaRed,
       ),
     );
   }
