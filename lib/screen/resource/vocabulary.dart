@@ -39,14 +39,19 @@ class Vocabulary extends StatelessWidget {
                 );
               } else {
                 String jsonData = snapshot.data ?? "";
+                final Map<String, dynamic> mapData = jsonDecode(jsonData);
+                List<Widget> wordsData = [];
 
-                return Column(
-                  children: const [
-                    WordEntry(english: "I", kannada: "ನಾನು", transliteration: "naanu",),
-                    WordEntry(english: "You (Singular)", kannada: "ನೀನು", transliteration: "neenu",),
-                    WordEntry(english: "He", kannada: "ಅವನು", transliteration: "avanu",),
-                    WordEntry(english: "She", kannada: "ಅವಳು", transliteration: "avaLu",),
-                  ],
+                for (var entry in mapData.values) {
+                  wordsData.add(
+                      WordEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"])
+                  );
+                }
+
+                return SingleChildScrollView(
+                  child: Column(
+                    children: wordsData,
+                  ),
                 );
               }
           }
