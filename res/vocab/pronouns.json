@@ -1,0 +1,37 @@
+{
+  "0": {
+    "english": "I",
+    "kannada": "ನಾನು",
+    "transliteration": "nānu"
+  },
+  "1": {
+    "english": "You (Singular)",
+    "kannada": "ನೀನು",
+    "transliteration": "nīnu"
+  },
+  "2": {
+    "english": "He",
+    "kannada": "ಅವನು",
+    "transliteration": "avanu"
+  },
+  "3": {
+    "english": "She",
+    "kannada": "ಅವಳು",
+    "transliteration": "avaḷu"
+  },
+  "4": {
+    "english": "We",
+    "kannada": "ನಾವು",
+    "transliteration": "nāvu"
+  },
+  "5": {
+    "english": "You (Plural)",
+    "kannada": "ನೀವು",
+    "transliteration": "nīvu"
+  },
+  "6": {
+    "english": "They",
+    "kannada": "ಅವರು",
+    "transliteration": "avaru"
+  }
+}

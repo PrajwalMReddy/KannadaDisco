@@ -86,6 +86,36 @@ class HomeBody extends StatelessWidget {
   }
 }
 
+// TODO Finish The Word Of The Day Card
+class WordOfTheDay extends StatelessWidget {
+  const WordOfTheDay({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
+      child: Column(
+        children: const [
+          Padding(
+            padding: EdgeInsets.fromLTRB(15.0, 15.0, 0.0, 0.0),
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                "Word Of The Day",
+                style: TextStyle(
+                  fontSize: 15.0,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class Resources extends StatelessWidget {
   const Resources({
     Key? key,
@@ -124,27 +154,9 @@ class VocabularyResources extends StatelessWidget {
           ),
         ),
         Row(
-          children: [
-            GestureDetector(
-              onTap: () => {
-                Navigator.pushNamed(context, "/resources/pronouns")
-              },
-              child: Card(
-                margin: const EdgeInsets.fromLTRB(0.0, 20.0, 10.0, 20.0),
-                color: kannadaYellow,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(25.0, 10.0, 25.0, 10.0),
-                  child: Center(
-                      child: Row(
-                        children: const [
-                          Icon(Icons.person),
-                          Text("Pronouns"),
-                        ],
-                      ),
-                  ),
-                ),
-              ),
-            ),
+          children: const [
+            VocabularyResourceCard(topic: "pronouns"),
+            VocabularyResourceCard(topic: "yo"),
           ],
         ),
       ],
@@ -152,31 +164,37 @@ class VocabularyResources extends StatelessWidget {
   }
 }
 
-// TODO Finish The Word Of The Day Card
-class WordOfTheDay extends StatelessWidget {
-  const WordOfTheDay({
-    Key? key,
-  }) : super(key: key);
+class VocabularyResourceCard extends StatelessWidget {
+  final String topic;
+
+  const VocabularyResourceCard({Key? key, required this.topic}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-      child: Column(
-        children: const [
-          Padding(
-            padding: EdgeInsets.fromLTRB(15.0, 15.0, 0.0, 0.0),
-            child: Align(
-              alignment: Alignment.topLeft,
-              child: Text(
-                "Word Of The Day",
-                style: TextStyle(
-                  fontSize: 15.0,
-                ),
-              ),
+    return GestureDetector(
+      onTap: () => {
+        Navigator.pushNamed(context, "/res/vocabulary", arguments: {
+          "topic": topic,
+        })
+      },
+      child: SizedBox(
+        height: 100.0,
+        width: 150.0,
+        child: Card(
+          margin: const EdgeInsets.fromLTRB(0.0, 20.0, 10.0, 20.0),
+          color: kannadaYellow,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(
+                child: Text(
+                  "${topic[0].toUpperCase()}${topic.substring(1).toLowerCase()}",
+                  style: const TextStyle(
+                    fontSize: 15.0,
+                  ),
+                )
             ),
           ),
-        ],
+        ),
       ),
     );
   }
