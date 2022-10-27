@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:kannada_disco/screen//home.dart';
 import 'package:kannada_disco/screen/loading.dart';
 import 'package:kannada_disco/screen/about.dart';
-import 'package:kannada_disco/screen/resource/grammar.dart';
-import 'package:kannada_disco/screen/resource/vocabulary.dart';
+import 'package:kannada_disco/resource/grammar.dart';
+import 'package:kannada_disco/resource/vocabulary.dart';
 
 void main() => runApp(
   MaterialApp(

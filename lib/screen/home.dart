@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/element/resource_card.dart';
+import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/const/resource_topic.dart';
 
@@ -37,23 +38,7 @@ class HomeScreen extends StatelessWidget {
       ),
       drawer: const SideBar(),
       body: HomeBody(size: size),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: kannadaRed,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.book),
-            label: "Resources",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.quiz),
-            label: "Quizzes",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: "Courses",
-          ),
-        ],
-      ),
+      bottomNavigationBar: const BottomNavigation(),
     );
   }
 }
@@ -131,8 +116,8 @@ class Resources extends StatelessWidget {
         alignment: Alignment.topLeft,
         child: Column(
           children: const [
-            ResourceGrid(type: "Vocabulary", vocabCards: vocabCards),
-            ResourceGrid(type: "Grammar", vocabCards: gramCards),
+            ResourceGrid(type: "Vocabulary", cards: vocabCards),
+            ResourceGrid(type: "Grammar", cards: gramCards),
           ],
         ),
       ),
@@ -144,11 +129,11 @@ class ResourceGrid extends StatelessWidget {
   const ResourceGrid({
     Key? key,
     required this.type,
-    required this.vocabCards,
+    required this.cards,
   }) : super(key: key);
 
   final String type;
-  final List<ResourceCard> vocabCards;
+  final List<ResourceCard> cards;
 
   @override
   Widget build(BuildContext context) {
@@ -161,8 +146,11 @@ class ResourceGrid extends StatelessWidget {
             decoration: TextDecoration.underline,
           ),
         ),
-        Row(
-          children: vocabCards,
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: cards,
+          ),
         ),
       ],
     );
