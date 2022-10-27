@@ -6,13 +6,13 @@ import 'package:flutter/services.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/word_entry.dart';
 
-class Vocabulary extends StatelessWidget {
+class Grammar extends StatelessWidget {
   Map<String, dynamic> topicData = {};
 
-  Vocabulary({Key? key}) : super(key: key);
+  Grammar({Key? key}) : super(key: key);
 
   Future<String> loadJson(String topic) async {
-    final jsonData = await rootBundle.loadString("res/vocab/$topic.json");
+    final jsonData = await rootBundle.loadString("res/gram/$topic.json");
     return jsonData;
   }
 
@@ -36,7 +36,7 @@ class Vocabulary extends StatelessWidget {
             default:
               if (snapshot.hasError) {
                 return Center(
-                    child: Text("Error: ${snapshot.error}"),
+                  child: Text("Error: ${snapshot.error}"),
                 );
               } else {
                 String jsonData = snapshot.data ?? "";

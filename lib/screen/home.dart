@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:kannada_disco/element/side_bar.dart';
+import 'package:kannada_disco/element/resource_card.dart';
 import 'package:kannada_disco/const/color.dart';
+import 'package:kannada_disco/const/resource_topic.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -129,7 +131,8 @@ class Resources extends StatelessWidget {
         alignment: Alignment.topLeft,
         child: Column(
           children: const [
-            VocabularyResources(),
+            ResourceGrid(type: "Vocabulary", vocabCards: vocabCards),
+            ResourceGrid(type: "Grammar", vocabCards: gramCards),
           ],
         ),
       ),
@@ -137,65 +140,31 @@ class Resources extends StatelessWidget {
   }
 }
 
-class VocabularyResources extends StatelessWidget {
-  const VocabularyResources({
+class ResourceGrid extends StatelessWidget {
+  const ResourceGrid({
     Key? key,
+    required this.type,
+    required this.vocabCards,
   }) : super(key: key);
+
+  final String type;
+  final List<ResourceCard> vocabCards;
 
   @override
   Widget build(BuildContext context) {
     return Wrap(
       children: [
-        const Text(
-          "Vocabulary",
-          style: TextStyle(
+        Text(
+          type,
+          style: const TextStyle(
             fontSize: 20.0,
             decoration: TextDecoration.underline,
           ),
         ),
         Row(
-          children: const [
-            VocabularyResourceCard(topic: "pronouns"),
-            VocabularyResourceCard(topic: "yo"),
-          ],
+          children: vocabCards,
         ),
       ],
-    );
-  }
-}
-
-class VocabularyResourceCard extends StatelessWidget {
-  final String topic;
-
-  const VocabularyResourceCard({Key? key, required this.topic}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => {
-        Navigator.pushNamed(context, "/res/vocabulary", arguments: {
-          "topic": topic,
-        })
-      },
-      child: SizedBox(
-        height: 100.0,
-        width: 150.0,
-        child: Card(
-          margin: const EdgeInsets.fromLTRB(0.0, 20.0, 10.0, 20.0),
-          color: kannadaYellow,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-                child: Text(
-                  "${topic[0].toUpperCase()}${topic.substring(1).toLowerCase()}",
-                  style: const TextStyle(
-                    fontSize: 15.0,
-                  ),
-                )
-            ),
-          ),
-        ),
-      ),
     );
   }
 }
