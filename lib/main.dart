@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:kannada_disco/screen//home.dart';
 import 'package:kannada_disco/screen/loading.dart';
 import 'package:kannada_disco/screen/about.dart';
+import 'package:kannada_disco/screen/resource/grammar.dart';
 import 'package:kannada_disco/screen/resource/vocabulary.dart';
 
 void main() => runApp(
@@ -15,6 +16,7 @@ void main() => runApp(
 
       // Resources
       '/res/vocabulary': (context) => Vocabulary(),
+      '/res/grammar': (context) => Grammar(),
     },
   ),
 );

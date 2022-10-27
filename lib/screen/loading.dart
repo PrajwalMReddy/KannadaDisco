@@ -51,6 +51,16 @@ class LoadingScreen extends StatelessWidget {
                 fontSize: 50.0,
               ),
             ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Text(
+              "ಕನ್ನಡ ಡಿಸ್ಕೋ",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 50.0,
+              ),
+            ),
           ],
         ),
       ),
