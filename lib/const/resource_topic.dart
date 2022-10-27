@@ -8,7 +8,7 @@ const List<ResourceCard> vocabCards = [
 ];
 
 const List<ResourceCard> gramCards = [
-  ResourceCard(topic: "past tense", resourceType: "grammar"),
-  ResourceCard(topic: "present tense", resourceType: "grammar"),
-  ResourceCard(topic: "future tense", resourceType: "grammar"),
+  ResourceCard(topic: "past_tense", resourceType: "grammar"),
+  ResourceCard(topic: "present_tense", resourceType: "grammar"),
+  ResourceCard(topic: "future_tense", resourceType: "grammar"),
 ];

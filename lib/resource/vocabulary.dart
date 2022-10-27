@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/word_entry.dart';
+import 'package:kannada_disco/util/util.dart';
 
 class Vocabulary extends StatelessWidget {
   Map<String, dynamic> topicData = {};
@@ -23,7 +24,7 @@ class Vocabulary extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("${topic[0].toUpperCase()}${topic.substring(1).toLowerCase()}"),
+        title: Text(prettifyTopic(topic)),
         centerTitle: true,
         backgroundColor: kannadaRed,
       ),

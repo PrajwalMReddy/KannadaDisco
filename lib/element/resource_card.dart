@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:kannada_disco/const/color.dart';
+import 'package:kannada_disco/util/util.dart';
 
 class ResourceCard extends StatelessWidget {
   final String topic;
@@ -26,7 +27,7 @@ class ResourceCard extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Center(
                 child: Text(
-                  "${topic[0].toUpperCase()}${topic.substring(1).toLowerCase()}",
+                  prettifyTopic(topic),
                   style: const TextStyle(
                     fontSize: 15.0,
                   ),
