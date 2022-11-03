@@ -12,18 +12,9 @@ class SideBar extends StatelessWidget {
             const Image(
               image: AssetImage(""), // TODO No Image For Now
             ),
-            ListTile(
-              leading: const Icon(Icons.info),
-              title: const Text(
-                "About",
-                style: TextStyle(
-                  fontSize: 25.0,
-                ),
-              ),
-              onTap: () => {
-                Navigator.pushNamed(context, '/about')
-              },
-            ),
+            SideBarElement(page: "Usage", icon: Icons.smartphone),
+            SideBarElement(page: "About", icon: Icons.info),
+            SideBarElement(page: "Settings", icon: Icons.settings),
             const Divider(),
             const Center(
               child: Text(
@@ -36,6 +27,33 @@ class SideBar extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class SideBarElement extends StatelessWidget {
+  String page;
+  IconData icon;
+
+  SideBarElement({
+    Key? key,
+    required this.page,
+    required this.icon,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(icon),
+      title: Text(
+        page,
+        style: const TextStyle(
+          fontSize: 25.0,
+        ),
+      ),
+      onTap: () => {
+        Navigator.pushNamed(context, '/${page.toLowerCase()}')
+      },
     );
   }
 }
