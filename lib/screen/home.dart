@@ -84,16 +84,20 @@ class WordOfTheDay extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
       child: Column(
-        children: const [
+        children: [
           Padding(
-            padding: EdgeInsets.fromLTRB(15.0, 15.0, 0.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(15.0, 15.0, 0.0, 0.0),
             child: Align(
               alignment: Alignment.topLeft,
-              child: Text(
-                "Word Of The Day",
-                style: TextStyle(
-                  fontSize: 15.0,
-                ),
+              child: Column(
+                children: const [
+                  Text(
+                    "Word Of The Day",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
