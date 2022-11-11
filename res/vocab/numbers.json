@@ -1,0 +1,57 @@
+{
+  "0": {
+    "english": "Zero",
+    "kannada": "೦ - ಸೊನ್ನೆ",
+    "transliteration": "sonnē"
+  },
+  "1": {
+    "english": "One",
+    "kannada": "೧ - ಒಂದು",
+    "transliteration": "ondu"
+  },
+  "2": {
+    "english": "Two",
+    "kannada": "೨ - ಎರಡು",
+    "transliteration": "ēraḍu"
+  },
+  "3": {
+    "english": "Three",
+    "kannada": "೩ - ಮೂರು",
+    "transliteration": "mūru"
+  },
+  "4": {
+    "english": "Four",
+    "kannada": "೪ - ನಾಲ್ಕು",
+    "transliteration": "nālku"
+  },
+  "5": {
+    "english": "Five",
+    "kannada": "೫ - ಐದು",
+    "transliteration": "aidu"
+  },
+  "6": {
+    "english": "Six",
+    "kannada": "೬ - ಆರು",
+    "transliteration": "āru"
+  },
+  "7": {
+    "english": "Seven",
+    "kannada": "೭ - ಏಳು",
+    "transliteration": "ēḷu"
+  },
+  "8": {
+    "english": "Eight",
+    "kannada": "೮ - ಎಂಟು",
+    "transliteration": "ēṇṭu"
+  },
+  "9": {
+    "english": "Nine",
+    "kannada": "೯ - ಒಂಬತ್ತು",
+    "transliteration": "ombattu"
+  },
+  "10": {
+    "english": "Ten",
+    "kannada": "೧೦ - ಹತ್ತು",
+    "transliteration": "hattu"
+  }
+}

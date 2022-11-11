@@ -1,0 +1,42 @@
+{
+  "0": {
+    "english": "I Will -",
+    "kannada": "-ತೀನಿ",
+    "transliteration": "-tīni"
+  },
+  "1": {
+    "english": "You (Singular) Will -",
+    "kannada": "-ತಿಯ",
+    "transliteration": "-tīya"
+  },
+  "2": {
+    "english": "He Will -",
+    "kannada": "-ತಾನೆ",
+    "transliteration": "-tāne"
+  },
+  "3": {
+    "english": "She Will -",
+    "kannada": "-ತಾಳೆ",
+    "transliteration": "-tāḷe"
+  },
+  "4": {
+    "english": "It Will -",
+    "kannada": "-ಆತೆ",
+    "transliteration": "-ate"
+  },
+  "5": {
+    "english": "We Will -",
+    "kannada": "-ತೀವಿ",
+    "transliteration": "-tīvi"
+  },
+  "6": {
+    "english": "You (Plural) Will -",
+    "kannada": "-ತೀರಿ",
+    "transliteration": "-tīri"
+  },
+  "7": {
+    "english": "They Will -",
+    "kannada": "-ತಾರೆ",
+    "transliteration": "-tāre"
+  }
+}

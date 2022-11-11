@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:kannada_disco/const/color.dart';
-import 'package:kannada_disco/element/word_entry.dart';
+import 'package:kannada_disco/element/resource_entry.dart';
 import 'package:kannada_disco/util/util.dart';
 
 class Grammar extends StatelessWidget {
@@ -46,7 +46,7 @@ class Grammar extends StatelessWidget {
 
                 for (var entry in mapData.values) {
                   wordsData.add(
-                      WordEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"])
+                      GrammarEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"])
                   );
                 }
 
