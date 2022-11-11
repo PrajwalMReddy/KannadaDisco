@@ -5,6 +5,7 @@ import 'package:kannada_disco/element/resource_card.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/const/resource_topic.dart';
+import 'package:kannada_disco/element/word_of_the_day.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -69,40 +70,6 @@ class HomeBody extends StatelessWidget {
         ),
         const Resources()
       ],
-    );
-  }
-}
-
-// TODO Finish The Word Of The Day Card
-class WordOfTheDay extends StatelessWidget {
-  const WordOfTheDay({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(15.0, 15.0, 0.0, 0.0),
-            child: Align(
-              alignment: Alignment.topLeft,
-              child: Column(
-                children: const [
-                  Text(
-                    "Word Of The Day",
-                    style: TextStyle(
-                      fontSize: 15.0,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
     );
   }
 }
