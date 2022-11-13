@@ -19,7 +19,7 @@ class ResourceCard extends StatelessWidget {
       },
       child: SizedBox(
         height: 100.0,
-        width: 150.0,
+        width: 160.0,
         child: Card(
           margin: const EdgeInsets.fromLTRB(0.0, 20.0, 10.0, 20.0),
           color: kannadaYellow,

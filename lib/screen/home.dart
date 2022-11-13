@@ -87,8 +87,9 @@ class Resources extends StatelessWidget {
         alignment: Alignment.topLeft,
         child: Column(
           children: const [
+            ResourceGrid(type: "Reading & Pronunciation", cards: readingCards),
             ResourceGrid(type: "Vocabulary", cards: vocabCards),
-            ResourceGrid(type: "Grammar", cards: gramCards),
+            ResourceGrid(type: "Tenses", cards: tenseCards),
           ],
         ),
       ),
@@ -108,19 +109,25 @@ class ResourceGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
+    return Column(
       children: [
-        Text(
-          type,
-          style: const TextStyle(
-            fontSize: 20.0,
-            decoration: TextDecoration.underline,
+        Align(
+          alignment: Alignment.topLeft,
+          child: Text(
+            type,
+            style: const TextStyle(
+              fontSize: 20.0,
+              decoration: TextDecoration.underline,
+            ),
           ),
         ),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: cards,
+        Align(
+          alignment: Alignment.topLeft,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: cards,
+            ),
           ),
         ),
       ],

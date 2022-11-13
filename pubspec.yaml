@@ -54,6 +54,7 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
+    - res/reading/
     - res/vocab/
     - res/gram/
 
