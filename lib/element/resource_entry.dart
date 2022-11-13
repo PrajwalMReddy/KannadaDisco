@@ -55,7 +55,7 @@ class GrammarEntry extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: Card(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(20.0, 10.0, 0.0, 10.0),
+          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
           child: Align(
             alignment: Alignment.topLeft,
             child: Row(
