@@ -10,10 +10,10 @@ const List<ResourceCard> vocabCards = [
 ];
 
 const List<ResourceCard> tenseCards = [
-  ResourceCard(topic: "past_perfect", resourceType: "grammar"),
-  ResourceCard(topic: "past_simple", resourceType: "grammar"),
-  ResourceCard(topic: "past_continuous", resourceType: "grammar"),
   ResourceCard(topic: "present_simple", resourceType: "grammar"),
   ResourceCard(topic: "present_continuous", resourceType: "grammar"),
+  ResourceCard(topic: "past_simple", resourceType: "grammar"),
+  ResourceCard(topic: "past_perfect", resourceType: "grammar"),
+  ResourceCard(topic: "past_continuous", resourceType: "grammar"),
   ResourceCard(topic: "future_simple", resourceType: "grammar"),
 ];

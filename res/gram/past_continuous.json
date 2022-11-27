@@ -1,0 +1,42 @@
+{
+  "0": {
+    "english": "I Was -",
+    "kannada": "-ತ ಇದೆ",
+    "transliteration": "-tha ide"
+  },
+  "1": {
+    "english": "You (Singular) Were -",
+    "kannada": "-ತ ಇದೆ",
+    "transliteration": "-tha ide"
+  },
+  "2": {
+    "english": "He Was -",
+    "kannada": "-ತ ಇದ",
+    "transliteration": "-tha ida"
+  },
+  "3": {
+    "english": "She Was -",
+    "kannada": "-ತ ಇದ್ಳು",
+    "transliteration": "-tha idḷu"
+  },
+  "4": {
+    "english": "It Was -",
+    "kannada": "-ತ ಇತ್ತು",
+    "transliteration": "-tha ittu"
+  },
+  "5": {
+    "english": "We Were -",
+    "kannada": "-ತ ಇದ್ವಿ",
+    "transliteration": "-tha idvi"
+  },
+  "6": {
+    "english": "You (Plural) Were -",
+    "kannada": "-ತ ಇದ್ರಿ",
+    "transliteration": "-tha idri"
+  },
+  "7": {
+    "english": "They Were -",
+    "kannada": "-ತ ಇದ್ರು",
+    "transliteration": "-tha idru"
+  }
+}
