@@ -4,16 +4,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:kannada_disco/const/color.dart';
-import 'package:kannada_disco/element/resource_entry.dart';
+import 'package:kannada_disco/resource/reading_entry.dart';
+import 'package:kannada_disco/resource/vocabulary_entry.dart';
+import 'package:kannada_disco/resource/tense_entry.dart';
 import 'package:kannada_disco/util/util.dart';
 
-class Vocabulary extends StatelessWidget {
+class Reference extends StatelessWidget {
+  String type;
   Map<String, dynamic> topicData = {};
 
-  Vocabulary({Key? key}) : super(key: key);
+  Reference({Key? key, required this.type}) : super(key: key);
 
   Future<String> loadJson(String topic) async {
-    final jsonData = await rootBundle.loadString("res/vocab/$topic.json");
+    final jsonData = await rootBundle.loadString("res/$type/$topic.json");
     return jsonData;
   }
 
@@ -37,7 +40,7 @@ class Vocabulary extends StatelessWidget {
             default:
               if (snapshot.hasError) {
                 return Center(
-                    child: Text("Error: ${snapshot.error}"),
+                  child: Text("Error: ${snapshot.error}"),
                 );
               } else {
                 String jsonData = snapshot.data ?? "";
@@ -45,9 +48,20 @@ class Vocabulary extends StatelessWidget {
                 List<Widget> wordsData = [];
 
                 for (var entry in mapData.values) {
-                  wordsData.add(
-                      VocabularyEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"])
-                  );
+                  Widget entry_item;
+
+                  switch (type) {
+                    case "reading":
+                      entry_item = ReadingEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"]); break;
+                    case "vocab":
+                      entry_item = VocabularyEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"]); break;
+                    case "tense":
+                      entry_item = TenseEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"]); break;
+                    default:
+                      entry_item = const Text("Invalid Entry Type");
+                  }
+
+                  wordsData.add(entry_item);
                 }
 
                 return SingleChildScrollView(
