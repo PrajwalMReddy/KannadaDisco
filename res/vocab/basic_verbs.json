@@ -1,45 +1,50 @@
 {
   "0": {
+    "english": "Be/Stay",
+    "kannada": "ಇರು",
+    "transliteration": "iru"
+  },
+  "1": {
     "english": "Come",
     "kannada": "ಬನ್ನಿ",
     "transliteration": "banni"
   },
-  "1": {
+  "2": {
     "english": "Go",
     "kannada": "ಹೋಗು",
     "transliteration": "hōgu"
   },
-  "2": {
+  "3": {
     "english": "Do",
     "kannada": "ಮಾಡು",
     "transliteration": "māḍu"
   },
-  "3": {
+  "4": {
     "english": "Look",
     "kannada": "ನೋಡು",
     "transliteration": "nōḍu"
   },
-  "4": {
+  "5": {
     "english": "Listen",
     "kannada": "ಕೇಳು",
     "transliteration": "kēḷu"
   },
-  "5": {
+  "6": {
     "english": "Tell",
     "kannada": "ಹೇಳು",
     "transliteration": "hēḷu"
   },
-  "6": {
+  "7": {
     "english": "Give",
     "kannada": "ಕೊಡು",
     "transliteration": "koḍu"
   },
-  "7": {
+  "8": {
     "english": "Call",
     "kannada": "ಕರಿ",
     "transliteration": "kari"
   },
-  "8": {
+  "9": {
     "english": "Put",
     "kannada": "ಹಾಕು",
     "transliteration": "hāku"

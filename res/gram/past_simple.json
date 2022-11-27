@@ -1,0 +1,42 @@
+{
+  "0": {
+    "english": "I -",
+    "kannada": "-ದೆ",
+    "transliteration": "-de"
+  },
+  "1": {
+    "english": "You (Singular) -",
+    "kannada": "-ದೆ",
+    "transliteration": "-de"
+  },
+  "2": {
+    "english": "He -",
+    "kannada": "-ದ",
+    "transliteration": "-da"
+  },
+  "3": {
+    "english": "She -",
+    "kannada": "-ದ್ಳು",
+    "transliteration": "-dḷu"
+  },
+  "4": {
+    "english": "It -",
+    "kannada": "-ತ್ತು",
+    "transliteration": "-ttu"
+  },
+  "5": {
+    "english": "We -",
+    "kannada": "-ದ್ವಿ",
+    "transliteration": "-dvi"
+  },
+  "6": {
+    "english": "You (Plural) -",
+    "kannada": "-ದ್ರಿ",
+    "transliteration": "-dri"
+  },
+  "7": {
+    "english": "They -",
+    "kannada": "-ದ್ರು",
+    "transliteration": "-dru"
+  }
+}
