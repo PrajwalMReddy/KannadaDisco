@@ -1,7 +1,7 @@
 import 'package:kannada_disco/element/resource_card.dart';
 
 const List<ResourceCard> readingCards = [
-  ResourceCard(topic: "transliteration", resourceType: "reading"),
+  ResourceCard(topic: "vowels", resourceType: "reading"),
 ];
 
 const List<ResourceCard> vocabCards = [
