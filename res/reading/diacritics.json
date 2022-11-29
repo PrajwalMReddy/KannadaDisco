@@ -1,0 +1,67 @@
+{
+  "0": {
+    "english": "a",
+    "kannada": "◌",
+    "transliteration": "[a]"
+  },
+  "1": {
+    "english": "ā",
+    "kannada": "ಾ",
+    "transliteration": "[aː]"
+  },
+  "2": {
+    "english": "i",
+    "kannada": "ಿ",
+    "transliteration": "[i]"
+  },
+  "3": {
+    "english": "ī",
+    "kannada": "ೀ",
+    "transliteration": "[iː]"
+  },
+  "4": {
+    "english": "u",
+    "kannada": "ು",
+    "transliteration": "[u]"
+  },
+  "5": {
+    "english": "ū",
+    "kannada": "ೂ",
+    "transliteration": "[uː]"
+  },
+  "6": {
+    "english": "rū",
+    "kannada": "ೃ",
+    "transliteration": "[rɨ]"
+  },
+  "8": {
+    "english": "e",
+    "kannada": "ೆ",
+    "transliteration": "[e]"
+  },
+  "9": {
+    "english": "ē",
+    "kannada": "ೇ",
+    "transliteration": "[eː]"
+  },
+  "10": {
+    "english": "ai",
+    "kannada": "ೈ",
+    "transliteration": "[eʲ]"
+  },
+  "11": {
+    "english": "o",
+    "kannada": "ೊ",
+    "transliteration": "[o]"
+  },
+  "12": {
+    "english": "ō",
+    "kannada": "ೋ",
+    "transliteration": "[oː]"
+  },
+  "13": {
+    "english": "au",
+    "kannada": "ೌ",
+    "transliteration": "[oʷ]"
+  }
+}
