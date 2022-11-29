@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TenseEntry extends StatelessWidget {
+class ReferenceEntry extends StatelessWidget {
   final String english;
   final String kannada;
   final String transliteration;
 
-  const TenseEntry({Key? key, required this.english, required this.kannada, required this.transliteration}) : super(key: key);
+  const ReferenceEntry({Key? key, required this.english, required this.kannada, required this.transliteration}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +14,11 @@ class TenseEntry extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: Card(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+          padding: const EdgeInsets.fromLTRB(25.0, 20.0, 25.0, 10.0),
           child: Align(
             alignment: Alignment.topLeft,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   english,
@@ -25,7 +26,6 @@ class TenseEntry extends StatelessWidget {
                     fontSize: 20.0,
                   ),
                 ),
-                const Spacer(),
                 Column(
                   children: [
                     Text(

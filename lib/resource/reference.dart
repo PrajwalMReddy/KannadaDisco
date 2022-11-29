@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:kannada_disco/const/color.dart';
-import 'package:kannada_disco/resource/reading_entry.dart';
-import 'package:kannada_disco/resource/vocabulary_entry.dart';
-import 'package:kannada_disco/resource/tense_entry.dart';
+import 'package:kannada_disco/resource/reference_entry.dart';
 import 'package:kannada_disco/util/util.dart';
 
 class Reference extends StatelessWidget {
@@ -48,20 +46,7 @@ class Reference extends StatelessWidget {
                 List<Widget> wordsData = [];
 
                 for (var entry in mapData.values) {
-                  Widget entry_item;
-
-                  switch (type) {
-                    case "reading":
-                      entry_item = ReadingEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"]); break;
-                    case "vocab":
-                      entry_item = VocabularyEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"]); break;
-                    case "tense":
-                      entry_item = TenseEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"]); break;
-                    default:
-                      entry_item = const Text("Invalid Entry Type");
-                  }
-
-                  wordsData.add(entry_item);
+                  wordsData.add(ReferenceEntry(english: entry["english"], kannada: entry["kannada"], transliteration: entry["transliteration"]));
                 }
 
                 return SingleChildScrollView(
