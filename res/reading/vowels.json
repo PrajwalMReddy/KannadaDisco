@@ -8,5 +8,60 @@
     "english": "ā",
     "kannada": "ಆ",
     "transliteration": "[aː]"
+  },
+  "2": {
+    "english": "i",
+    "kannada": "ಇ",
+    "transliteration": "[i]"
+  },
+  "3": {
+    "english": "ī",
+    "kannada": "ಈ",
+    "transliteration": "[iː]"
+  },
+  "4": {
+    "english": "u",
+    "kannada": "ಉ",
+    "transliteration": "[u]"
+  },
+  "5": {
+    "english": "ū",
+    "kannada": "ಊ",
+    "transliteration": "[uː]"
+  },
+  "6": {
+    "english": "rū",
+    "kannada": "ಋ",
+    "transliteration": "[rɨ]"
+  },
+  "8": {
+    "english": "e",
+    "kannada": "ಎ",
+    "transliteration": "[e]"
+  },
+  "9": {
+    "english": "ē",
+    "kannada": "ಏ",
+    "transliteration": "[eː]"
+  },
+  "10": {
+    "english": "ai",
+    "kannada": "ಐ",
+    "transliteration": "[eʲ]"
+  },
+  "11": {
+    "english": "o",
+    "kannada": "ಒ",
+    "transliteration": "[o]"
+  },
+  "12": {
+    "english": "ō",
+    "kannada": "ಓ",
+    "transliteration": "[oː]"
+  },
+  "13": {
+    "english": "au",
+    "kannada": "ಔ",
+    "transliteration": "[oʷ]"
   }
 }
