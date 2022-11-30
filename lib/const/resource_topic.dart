@@ -18,6 +18,8 @@ const List<ResourceCard> vocabCards = [
   ResourceCard(topic: "pronouns", resourceType: "vocabulary"),
   ResourceCard(topic: "basic_verbs", resourceType: "vocabulary"),
   ResourceCard(topic: "numbers", resourceType: "vocabulary"),
+  ResourceCard(topic: "family", resourceType: "vocabulary"),
+  ResourceCard(topic: "time_phrases", resourceType: "vocabulary"),
 ];
 
 const List<ResourceCard> tenseCards = [
@@ -30,4 +32,7 @@ const List<ResourceCard> tenseCards = [
 ];
 
 const List<ResourceCard> grammarCards = [
+  ResourceCard(topic: "negating_verbs", resourceType: "grammar"),
+  ResourceCard(topic: "verb_suffixes", resourceType: "grammar"),
+  ResourceCard(topic: "other_verb_suffixes", resourceType: "grammar"),
 ];
