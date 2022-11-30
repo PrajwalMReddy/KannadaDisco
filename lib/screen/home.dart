@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("KannadaDisco"),
+        title: const Text("KannadaDisco Home"),
         centerTitle: true,
         backgroundColor: kannadaRed,
         elevation: 0.0,
