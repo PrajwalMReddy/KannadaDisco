@@ -21,8 +21,40 @@ class _CoursePageState extends State<CoursePage> {
         backgroundColor: kannadaRed,
         elevation: 0.0,
       ),
+      body: const CourseBody(),
       drawer: const SideBar(),
       bottomNavigationBar: const BottomNavigation(),
+    );
+  }
+}
+
+class CourseBody extends StatelessWidget {
+  const CourseBody({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        const Padding(
+          padding: EdgeInsets.all(35.0),
+          child: Align(
+            alignment: Alignment.topLeft,
+            child: Text(
+              "Full Kannada Course",
+              style: TextStyle(
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+        ),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: const [
+            ],
+          ),
+        )
+      ],
     );
   }
 }

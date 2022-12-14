@@ -25,6 +25,9 @@ void main() => runApp(
       '/res/vocabulary': (context) => Reference(type: "vocab"),
       '/res/tense': (context) => Reference(type: "tense"),
       '/res/grammar': (context) => Reference(type: "gram"),
+
+      // Courses
+      '/course/': (context) => const CoursePage(),
     },
   ),
 );

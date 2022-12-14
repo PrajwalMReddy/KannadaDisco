@@ -12,8 +12,8 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> {
   final List pages = const [
     "/home",
-    "",
     "/course",
+    "",
   ];
 
   @override
@@ -32,12 +32,12 @@ class _BottomNavigationState extends State<BottomNavigation> {
           label: "Home",
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.quiz),
-          label: "Quizzes",
-        ),
-        BottomNavigationBarItem(
           icon: Icon(Icons.school),
           label: "Courses",
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.quiz),
+          label: "Quizzes",
         ),
       ],
     );
