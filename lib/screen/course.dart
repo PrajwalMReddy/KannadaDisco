@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-
 import 'package:kannada_disco/element/bottom_navigation.dart';
+
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/side_bar.dart';
+import 'package:kannada_disco/const/course_units.dart';
 
 class CoursePage extends StatefulWidget {
   const CoursePage({Key? key}) : super(key: key);
@@ -33,28 +34,28 @@ class CourseBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const Padding(
-          padding: EdgeInsets.all(35.0),
-          child: Align(
-            alignment: Alignment.topLeft,
-            child: Text(
-              "Full Kannada Course",
-              style: TextStyle(
-                fontSize: 20.0,
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: Column(
+        children: [
+          const Padding(
+            padding: EdgeInsets.fromLTRB(35.0, 35.0, 35.0, 20.0),
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                "Full Kannada Course",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  decoration: TextDecoration.underline,
+                ),
               ),
             ),
           ),
-        ),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: const [
-            ],
-          ),
-        )
-      ],
+          Column(
+            children: allCourseCards,
+          )
+        ],
+      ),
     );
   }
 }
