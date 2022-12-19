@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kannada_disco/element/resource_card.dart';
+import 'package:kannada_disco/resource/resource_card.dart';
 
 class ResourceGrid extends StatelessWidget {
   const ResourceGrid({

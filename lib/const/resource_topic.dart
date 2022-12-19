@@ -1,5 +1,5 @@
-import 'package:kannada_disco/element/resource_card.dart';
-import 'package:kannada_disco/element/resource_grid.dart';
+import 'package:kannada_disco/resource/resource_card.dart';
+import 'package:kannada_disco/resource/resource_grid.dart';
 
 const List<ResourceGrid> allCards = [
   ResourceGrid(type: "Reading & Pronunciation", cards: readingCards),
@@ -16,10 +16,12 @@ const List<ResourceCard> readingCards = [
 
 const List<ResourceCard> vocabCards = [
   ResourceCard(topic: "pronouns", resourceType: "vocabulary"),
+  ResourceCard(topic: "question_words", resourceType: "vocabulary"),
   ResourceCard(topic: "basic_verbs", resourceType: "vocabulary"),
   ResourceCard(topic: "numbers", resourceType: "vocabulary"),
   ResourceCard(topic: "family", resourceType: "vocabulary"),
   ResourceCard(topic: "time", resourceType: "vocabulary"),
+  ResourceCard(topic: "formal_swadesh_list", resourceType: "vocabulary"),
 ];
 
 const List<ResourceCard> tenseCards = [

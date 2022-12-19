@@ -26,8 +26,8 @@
   },
   "5": {
     "english": "5 - Five",
-    "kannada": "೫ - ಐದು",
-    "transliteration": "aidu"
+    "kannada": "೫ - ಅಯ್ದು",
+    "transliteration": "aydu"
   },
   "6": {
     "english": "6 - Six",
@@ -53,5 +53,205 @@
     "english": "10 - Ten",
     "kannada": "೧೦ - ಹತ್ತು",
     "transliteration": "hattu"
+  },
+  "11": {
+    "english": "11 - Eleven",
+    "kannada": "೧೧ - ಹನ್ನೊಂದು",
+    "transliteration": "hannondu"
+  },
+  "12": {
+    "english": "12 - Twelve",
+    "kannada": "೧೨ - ಹನ್ನೆರಡು",
+    "transliteration": "hannēraḍu"
+  },
+  "13": {
+    "english": "13 - Thirteen",
+    "kannada": "೧೩ - ಹದಿಮೂರು",
+    "transliteration": "hadimūru"
+  },
+  "14": {
+    "english": "14 - Fourteen",
+    "kannada": "೧೪ - ಹದಿನಾಲ್ಕು",
+    "transliteration": "hadinālku"
+  },
+  "15": {
+    "english": "15 - Fifteen",
+    "kannada": "೧೫ - ಹದಿನೈದು",
+    "transliteration": "hadinaidu"
+  },
+  "16": {
+    "english": "16 - Sixteen",
+    "kannada": "೧೬ - ಹದಿನಾರು",
+    "transliteration": "hadināaru"
+  },
+  "17": {
+    "english": "17 - Seventeen",
+    "kannada": "೧೭ - ಹದಿನೇಳು",
+    "transliteration": "hadinēḷu"
+  },
+  "18": {
+    "english": "18 - Eighteen",
+    "kannada": "೧೮ - ಹದಿನೆಂಟು",
+    "transliteration": "hadinēṇṭu"
+  },
+  "19": {
+    "english": "19 - Nineteen",
+    "kannada": "೧೯ - ಹತ್ತೊಂಬತ್ತು",
+    "transliteration": "hattombattu"
+  },
+  "20": {
+    "english": "20 - Twenty",
+    "kannada": "೨೦ - ಇಪ್ಪತ್ತು",
+    "transliteration": "ippattu"
+  },
+  "21": {
+    "english": "21 - Twenty One",
+    "kannada": "೨೧ - ಇಪ್ಪತ್ತ್’ಒಂದು",
+    "transliteration": "ippattondu"
+  },
+  "22": {
+    "english": "22 - Twenty Two",
+    "kannada": "೨೨ - ಇಪ್ಪತ್ತ್’ಎರಡು",
+    "transliteration": "ippattēraḍu"
+  },
+  "23": {
+    "english": "23 - Twenty Three",
+    "kannada": "೨೩ - ಇಪ್ಪತ್ತ್’ಮೂರು",
+    "transliteration": "ippatmūru"
+  },
+  "24": {
+    "english": "24 - Twenty Four",
+    "kannada": "೨೪ - ಇಪ್ಪತ್ತ್’ನಾಲ್ಕು",
+    "transliteration": "ippatnālku"
+  },
+  "25": {
+    "english": "25 - Twenty Five",
+    "kannada": "೨೫ - ಇಪ್ಪತ್ತ್’ಐದು",
+    "transliteration": "ippattaidu"
+  },
+  "26": {
+    "english": "26 - Twenty Six",
+    "kannada": "೨೬ - ಇಪ್ಪತ್ತ್’ಆರು",
+    "transliteration": "ippattāru"
+  },
+  "27": {
+    "english": "27 - Twenty Seven",
+    "kannada": "೨೭ - ಇಪ್ಪತ್ತ್’ಏಳು",
+    "transliteration": "ippattēḷu"
+  },
+  "28": {
+    "english": "28 - Twenty Eight",
+    "kannada": "೨೮ - ಇಪ್ಪತ್ತ್’ಎಂಟು",
+    "transliteration": "ippattēṇṭu"
+  },
+  "29": {
+    "english": "29 - Twenty Nine",
+    "kannada": "೨೯ - ಇಪ್ಪತ್ತ್’ಒಂಬತ್ತು",
+    "transliteration": "ippattombattu"
+  },
+  "30": {
+    "english": "30 - Thirty",
+    "kannada": "೩೦ - ಮೂವತ್ತು",
+    "transliteration": "mūvattu"
+  },
+  "31": {
+    "english": "31 - Thirty One",
+    "kannada": "೩೧ - ಮುವತ್ತ್’ಒಂದು",
+    "transliteration": "muvattondu"
+  },
+  "32": {
+    "english": "32 - Thirty Two",
+    "kannada": "೩೨ - ಮುವತ್ತ್’ಎರಡು",
+    "transliteration": "muvattēraḍu"
+  },
+  "33": {
+    "english": "33 - Thirty Three",
+    "kannada": "೩೩ - ಮುವತ್ತ್’ಮೂರು",
+    "transliteration": "muvatmūru"
+  },
+  "34": {
+    "english": "34 - Thirty Four",
+    "kannada": "೩೪ - ಮೂವತ್ತ್’ನಾಲ್ಕು",
+    "transliteration": "mūvatnālku"
+  },
+  "35": {
+    "english": "35 - Thirty Five",
+    "kannada": "೩೫ - ಮೂವತ್ತ್’ಐದು",
+    "transliteration": "mūvattaidu"
+  },
+  "36": {
+    "english": "36 - Thirty Six",
+    "kannada": "೩೬ - ಮೂವತ್ತ್’ಆರು",
+    "transliteration": "mūvattāaru"
+  },
+  "37": {
+    "english": "37 - Thirty Seven",
+    "kannada": "೩೭ - ಮೂವತ್ತ್’ಏಳು",
+    "transliteration": "mūvattēḷu"
+  },
+  "38": {
+    "english": "38 - Thirty Eight",
+    "kannada": "೩೮ - ಮೂವತ್ತ್’ಎಂಟು",
+    "transliteration": "mūvattēṇṭu"
+  },
+  "39": {
+    "english": "39 - Thirty Nine",
+    "kannada": "೩೯ - ಮೂವತ್ತ್’ಒಂಬತ್ತು",
+    "transliteration": "mūvattombattu"
+  },
+  "40": {
+    "english": "40 - Fourty",
+    "kannada": "೪೦ - ನಲವತ್ತು",
+    "transliteration": "nalavattu"
+  },
+  "41": {
+    "english": "50 - Fifty",
+    "kannada": "೫೦ - ಐವತ್ತು",
+    "transliteration": "aivattu"
+  },
+  "42": {
+    "english": "60 - Sixty",
+    "kannada": "೬೦ - ಅರುವತ್ತು",
+    "transliteration": "aruvattu"
+  },
+  "43": {
+    "english": "70 - Seventy",
+    "kannada": "೭೦ - ಎಪ್ಪತ್ತು",
+    "transliteration": "ēppattu"
+  },
+  "44": {
+    "english": "80 - Eighty",
+    "kannada": "೮೦ - ಎಂಬತ್ತು",
+    "transliteration": "ēmbattu"
+  },
+  "45": {
+    "english": "90 - Ninety",
+    "kannada": "೯೦ - ತೊಂಬತ್ತು",
+    "transliteration": "tombattu"
+  },
+  "46": {
+    "english": "100 - Hundred",
+    "kannada": "೧೦೦ - ನೂರು",
+    "transliteration": "nūru"
+  },
+  "47": {
+    "english": "1,000 - Thousand",
+    "kannada": "೧,೦೦೦ - ಸಾವಿರ",
+    "transliteration": "sāvira"
+  },
+  "48": {
+    "english": "100,000",
+    "kannada": "೧,೦೦,೦೦೦  - ಒಂದು ಲಕ್ಷ",
+    "transliteration": "ondu lakṣa"
+  },
+  "49": {
+    "english": "1,000,000",
+    "kannada": "೧೦,೦೦,೦೦೦  - ಹತ್ತು ಲಕ್ಷ",
+    "transliteration": "hattu lakṣa"
+  },
+  "50": {
+    "english": "10,000,000",
+    "kannada": "೧,೦೦,೦೦,೦೦೦ - ಕೋಟಿ",
+    "transliteration": "kōṭi"
   }
 }
