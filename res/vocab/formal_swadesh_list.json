@@ -1,0 +1,1037 @@
+{
+  "0": {
+    "english": "I (Singular)",
+    "kannada": "ನಾನು",
+    "transliteration": "nānu"
+  },
+  "1": {
+    "english": "You (Singular)",
+    "kannada": "ನೀನು",
+    "transliteration": "nīnu"
+  },
+  "2": {
+    "english": "He/She/It (Singular)",
+    "kannada": "ಅವನು",
+    "transliteration": "avanu"
+  },
+  "3": {
+    "english": "We (Plural)",
+    "kannada": "ನಾವು",
+    "transliteration": "nāvu"
+  },
+  "4": {
+    "english": "You (Plural)",
+    "kannada": "ನೀವು",
+    "transliteration": "nīvu"
+  },
+  "5": {
+    "english": "They (Plural)",
+    "kannada": "ಅವರು",
+    "transliteration": "avaru"
+  },
+  "6": {
+    "english": "This",
+    "kannada": "ಇದು",
+    "transliteration": "idu"
+  },
+  "7": {
+    "english": "That",
+    "kannada": "ಅದು",
+    "transliteration": "adu"
+  },
+  "8": {
+    "english": "Here",
+    "kannada": "ಇಲ್ಲಿ",
+    "transliteration": "illi"
+  },
+  "9": {
+    "english": "There",
+    "kannada": "ಅಲ್ಲಿ",
+    "transliteration": "alli"
+  },
+  "10": {
+    "english": "Who",
+    "kannada": "ಯಾರು",
+    "transliteration": "yāru"
+  },
+  "11": {
+    "english": "What",
+    "kannada": "ಏನು",
+    "transliteration": "ēnu"
+  },
+  "12": {
+    "english": "Where",
+    "kannada": "ಎಲ್ಲಿ",
+    "transliteration": "elli"
+  },
+  "13": {
+    "english": "When",
+    "kannada": "ಯಾವಾಗ",
+    "transliteration": "yāvāga"
+  },
+  "14": {
+    "english": "How",
+    "kannada": "ಹೇಗೆ",
+    "transliteration": "hēge"
+  },
+  "15": {
+    "english": "Not",
+    "kannada": "ಅಲ್ಲ",
+    "transliteration": "alla"
+  },
+  "16": {
+    "english": "All",
+    "kannada": "ಎಲ್ಲ",
+    "transliteration": "ella"
+  },
+  "17": {
+    "english": "Many",
+    "kannada": "ಹಲ",
+    "transliteration": "hala"
+  },
+  "18": {
+    "english": "Some",
+    "kannada": "ಕೆಲ",
+    "transliteration": "kela"
+  },
+  "19": {
+    "english": "Few",
+    "kannada": "ಸ್ವಲ್ಪ/ಕೊಂಚ",
+    "transliteration": "svalpa/koñca"
+  },
+  "20": {
+    "english": "Other",
+    "kannada": "ಬೇರೆ",
+    "transliteration": "bēre"
+  },
+  "21": {
+    "english": "One",
+    "kannada": "ಒಂದು",
+    "transliteration": "ondu"
+  },
+  "22": {
+    "english": "Two",
+    "kannada": "ಎರಡು",
+    "transliteration": "eraḍu"
+  },
+  "23": {
+    "english": "Three",
+    "kannada": "ಮೂರು",
+    "transliteration": "mūru"
+  },
+  "24": {
+    "english": "Four",
+    "kannada": "ನಾಲ್ಕು",
+    "transliteration": "nālku"
+  },
+  "25": {
+    "english": "Five",
+    "kannada": "ಐದು",
+    "transliteration": "aidu"
+  },
+  "26": {
+    "english": "Big",
+    "kannada": "ದೊಡ್ಡ",
+    "transliteration": "doḍḍa"
+  },
+  "27": {
+    "english": "Long",
+    "kannada": "ನಿಡು",
+    "transliteration": "niḍu"
+  },
+  "28": {
+    "english": "Wide",
+    "kannada": "ಅಗಲ",
+    "transliteration": "agala"
+  },
+  "29": {
+    "english": "Thick",
+    "kannada": "ದಪ್ಪ",
+    "transliteration": "dappa"
+  },
+  "30": {
+    "english": "Heavy",
+    "kannada": "ತೂಕ",
+    "transliteration": "tūka"
+  },
+  "31": {
+    "english": "Small",
+    "kannada": "ಸಣ್ಣ/ಚಿಕ್ಕ",
+    "transliteration": "saṇṇa/cikka"
+  },
+  "32": {
+    "english": "Short",
+    "kannada": "ಗಿಡ್ಡ/ಕುಳ್ಳ",
+    "transliteration": "giḍḍa/kuḷḷa"
+  },
+  "33": {
+    "english": "Narrow",
+    "kannada": "ಸಪುರ",
+    "transliteration": "sapura"
+  },
+  "34": {
+    "english": "Thin",
+    "kannada": "ತೆಳು",
+    "transliteration": "teḷu"
+  },
+  "35": {
+    "english": "Woman",
+    "kannada": "ಹೆಂಗಸು/ಹೆಣ್ಣು",
+    "transliteration": "heṅgasu/heṇṇu"
+  },
+  "36": {
+    "english": "Man (Adult Male)",
+    "kannada": "ಗಂಡಸು/ಪುರುಷ",
+    "transliteration": "gaṇḍasu/puruṣa"
+  },
+  "37": {
+    "english": "Man (Human Being)",
+    "kannada": "ಮನುಷ್ಯ/ಮಂದಿ",
+    "transliteration": "manuṣya/mandi"
+  },
+  "38": {
+    "english": "Child",
+    "kannada": "ಮಗು/ಕೂಸು",
+    "transliteration": "magu/kūsu"
+  },
+  "39": {
+    "english": "Wife",
+    "kannada": "ಹೆಂಡತಿ/ಮಡದಿ",
+    "transliteration": "heṇḍati/maḍadi"
+  },
+  "40": {
+    "english": "Husband",
+    "kannada": "ಗಂಡ",
+    "transliteration": "gaṇḍa"
+  },
+  "41": {
+    "english": "Mother",
+    "kannada": "ಅಮ್ಮ/ತಾಯಿ",
+    "transliteration": "amma/tāyi"
+  },
+  "42": {
+    "english": "Father",
+    "kannada": "ಅಪ್ಪ/ತಂದೆ",
+    "transliteration": "appa/tande"
+  },
+  "43": {
+    "english": "Animal",
+    "kannada": "ಪ್ರಾಣಿ",
+    "transliteration": "prāṇi"
+  },
+  "44": {
+    "english": "Fish",
+    "kannada": "ಮೀನು",
+    "transliteration": "mīnu"
+  },
+  "45": {
+    "english": "Bird",
+    "kannada": "ಹಕ್ಕಿ",
+    "transliteration": "hakki"
+  },
+  "46": {
+    "english": "Dog",
+    "kannada": "ನಾಯಿ",
+    "transliteration": "nāyi"
+  },
+  "47": {
+    "english": "Louse",
+    "kannada": "ಹೇನು",
+    "transliteration": "hēnu"
+  },
+  "48": {
+    "english": "Snake",
+    "kannada": "ಹಾವು",
+    "transliteration": "hāvu"
+  },
+  "49": {
+    "english": "Worm",
+    "kannada": "ಹುಳ",
+    "transliteration": "huḷa"
+  },
+  "50": {
+    "english": "Tree",
+    "kannada": "ಮರ",
+    "transliteration": "mara"
+  },
+  "51": {
+    "english": "Forest",
+    "kannada": "ಕಾಡು",
+    "transliteration": "kāḍu"
+  },
+  "52": {
+    "english": "Stick",
+    "kannada": "ಕೋಲು/ಕಡ್ಡಿ/ಬಡಿ",
+    "transliteration": "kōlu/kaḍḍi/baḍi"
+  },
+  "53": {
+    "english": "Fruit",
+    "kannada": "ಹಣ್ಣು",
+    "transliteration": "haṇṇu"
+  },
+  "54": {
+    "english": "Seed",
+    "kannada": "ಬೀಜ/ಬಿತ್ತು",
+    "transliteration": "bīja/bittu"
+  },
+  "55": {
+    "english": "Leaf",
+    "kannada": "ಎಲೆ",
+    "transliteration": "ele"
+  },
+  "56": {
+    "english": "Root",
+    "kannada": "ಬೇರು",
+    "transliteration": "bēru"
+  },
+  "57": {
+    "english": "Tree Bark",
+    "kannada": "ತೊಗಟೆ",
+    "transliteration": "togaṭe"
+  },
+  "58": {
+    "english": "Flower",
+    "kannada": "ಹೂವು",
+    "transliteration": "hūvu"
+  },
+  "59": {
+    "english": "Grass",
+    "kannada": "ಹುಲ್ಲು",
+    "transliteration": "hullu"
+  },
+  "60": {
+    "english": "Rope",
+    "kannada": "ನೇಣು",
+    "transliteration": "nēṇu"
+  },
+  "61": {
+    "english": "Skin",
+    "kannada": "ಚರ್ಮ/ತೊಗಲು",
+    "transliteration": "carma/togalu"
+  },
+  "62": {
+    "english": "Meat",
+    "kannada": "ಮಾಂಸ/ಬಾಡು",
+    "transliteration": "māṃsa/bāḍu"
+  },
+  "63": {
+    "english": "Blood",
+    "kannada": "ರಕ್ತ/ನೆತ್ತರು",
+    "transliteration": "rakta/nettaru"
+  },
+  "64": {
+    "english": "Bone",
+    "kannada": "ಎಲುಬು",
+    "transliteration": "elubu"
+  },
+  "65": {
+    "english": "Body Fat",
+    "kannada": "ಕೊಬ್ಬು",
+    "transliteration": "kobbu"
+  },
+  "66": {
+    "english": "Egg",
+    "kannada": "ಮೊಟ್ಟೆ",
+    "transliteration": "moṭṭe"
+  },
+  "67": {
+    "english": "Horn",
+    "kannada": "ಕೊಂಬು",
+    "transliteration": "kombu"
+  },
+  "68": {
+    "english": "Tail",
+    "kannada": "ಬಾಲ/ತೋಕೆ",
+    "transliteration": "bāla/tōke"
+  },
+  "69": {
+    "english": "Feather",
+    "kannada": "ಗರಿ",
+    "transliteration": "gari"
+  },
+  "70": {
+    "english": "Hair",
+    "kannada": "ಕೂದಲು",
+    "transliteration": "kūdalu"
+  },
+  "71": {
+    "english": "Head",
+    "kannada": "ತಲೆ",
+    "transliteration": "tale"
+  },
+  "72": {
+    "english": "Ear",
+    "kannada": "ಕಿವಿ",
+    "transliteration": "kivi"
+  },
+  "73": {
+    "english": "Eye",
+    "kannada": "ಕಣ್ಣು",
+    "transliteration": "kaṇṇu"
+  },
+  "74": {
+    "english": "Nose",
+    "kannada": "ಮೂಗು",
+    "transliteration": "mūgu"
+  },
+  "75": {
+    "english": "Mouth",
+    "kannada": "ಬಾಯಿ",
+    "transliteration": "bāyi"
+  },
+  "76": {
+    "english": "Tooth",
+    "kannada": "ಹಲ್ಲು",
+    "transliteration": "hallu"
+  },
+  "77": {
+    "english": "Tongue",
+    "kannada": "ನಾಲಗೆ",
+    "transliteration": "nālage"
+  },
+  "78": {
+    "english": "Fingernail",
+    "kannada": "ಉಗುರು",
+    "transliteration": "uguru"
+  },
+  "79": {
+    "english": "Foot",
+    "kannada": "ಅಡಿ",
+    "transliteration": "aḍi"
+  },
+  "80": {
+    "english": "Leg",
+    "kannada": "ಕಾಲು",
+    "transliteration": "kālu"
+  },
+  "81": {
+    "english": "Knee",
+    "kannada": "ಮಂಡಿ",
+    "transliteration": "maṇḍi"
+  },
+  "82": {
+    "english": "Hand",
+    "kannada": "ಕೈ",
+    "transliteration": "kai"
+  },
+  "83": {
+    "english": "Wing",
+    "kannada": "ರೆಕ್ಕೆ",
+    "transliteration": "rekke"
+  },
+  "84": {
+    "english": "Belly",
+    "kannada": "ಹೊಟ್ಟೆ",
+    "transliteration": "hoṭṭe"
+  },
+  "85": {
+    "english": "Guts",
+    "kannada": "ಕೆಚ್ಚು",
+    "transliteration": "keccu"
+  },
+  "86": {
+    "english": "Neck",
+    "kannada": "ಕತ್ತು",
+    "transliteration": "kattu"
+  },
+  "87": {
+    "english": "Back",
+    "kannada": "ಬೆನ್ನು",
+    "transliteration": "bennu"
+  },
+  "88": {
+    "english": "Breast",
+    "kannada": "ಮೊಲೆ",
+    "transliteration": "mole"
+  },
+  "89": {
+    "english": "Heart",
+    "kannada": "ಹೃದಯ/ಗುಂಡಿಗೆ",
+    "transliteration": "hṛdaya/guṇḍige"
+  },
+  "90": {
+    "english": "Liver",
+    "kannada": "ಈಲಿ",
+    "transliteration": "īli"
+  },
+  "91": {
+    "english": "Drink",
+    "kannada": "ಕುಡಿ",
+    "transliteration": "kuḍi"
+  },
+  "92": {
+    "english": "Eat",
+    "kannada": "ತಿನ್ನು/ಉಣ್ಣು",
+    "transliteration": "tinnu/uṇṇu"
+  },
+  "93": {
+    "english": "Bite",
+    "kannada": "ಕಡಿ/ಕಚ್ಚು",
+    "transliteration": "kaḍi/kaccu"
+  },
+  "94": {
+    "english": "Suck",
+    "kannada": "ಚೀಪು",
+    "transliteration": "cīpu"
+  },
+  "95": {
+    "english": "Spit",
+    "kannada": "ಉಗುಳು",
+    "transliteration": "uguḷu"
+  },
+  "96": {
+    "english": "Vomit",
+    "kannada": "ಕಾರು",
+    "transliteration": "kāru"
+  },
+  "97": {
+    "english": "Blow",
+    "kannada": "ಊದು",
+    "transliteration": "ūdu"
+  },
+  "98": {
+    "english": "Breathe",
+    "kannada": "ಉಸಿರು",
+    "transliteration": "usiru āḍu"
+  },
+  "99": {
+    "english": "Laugh",
+    "kannada": "ನಗು",
+    "transliteration": "nagu"
+  },
+  "100": {
+    "english": "See",
+    "kannada": "ನೋಡು",
+    "transliteration": "nōḍu"
+  },
+  "101": {
+    "english": "Hear",
+    "kannada": "ಕೇಳು",
+    "transliteration": "kēḷu"
+  },
+  "102": {
+    "english": "Know",
+    "kannada": "ತಿಳಿ",
+    "transliteration": "tiḷi"
+  },
+  "103": {
+    "english": "Think",
+    "kannada": "ಯೋಚಿಸು",
+    "transliteration": "yōcisu"
+  },
+  "104": {
+    "english": "Smell",
+    "kannada": "ಮೂಸು",
+    "transliteration": "mūsu"
+  },
+  "105": {
+    "english": "Fear",
+    "kannada": "ಹೆದರು",
+    "transliteration": "hedaru"
+  },
+  "106": {
+    "english": "Sleep",
+    "kannada": "ಮಲಗು",
+    "transliteration": "malagu"
+  },
+  "107": {
+    "english": "Live",
+    "kannada": "ಬಾಳು",
+    "transliteration": "bāḷu"
+  },
+  "108": {
+    "english": "Die",
+    "kannada": "ಸಾಯಿ",
+    "transliteration": "sāyi"
+  },
+  "109": {
+    "english": "Kill",
+    "kannada": "ಕೊಲ್ಲು",
+    "transliteration": "kollu"
+  },
+  "110": {
+    "english": "Fight",
+    "kannada": "ಹೋರಾಡು",
+    "transliteration": "hōrāḍu"
+  },
+  "111": {
+    "english": "Hunt",
+    "kannada": "ಬೇಟೆಯಾಡು",
+    "transliteration": "bēṭeyāḍu"
+  },
+  "112": {
+    "english": "Hit",
+    "kannada": "ಹೊಡೆ",
+    "transliteration": "hoḍe"
+  },
+  "113": {
+    "english": "Cut",
+    "kannada": "ಕತ್ತರಿಸು",
+    "transliteration": "kattarisu"
+  },
+  "114": {
+    "english": "Split",
+    "kannada": "ಸೀಳು",
+    "transliteration": "sīḷu"
+  },
+  "115": {
+    "english": "Stab",
+    "kannada": "ಇರಿ",
+    "transliteration": "iri"
+  },
+  "116": {
+    "english": "Scratch",
+    "kannada": "ಕೆರೆ",
+    "transliteration": "kere"
+  },
+  "117": {
+    "english": "Dig",
+    "kannada": "ತೋಡು",
+    "transliteration": "tōḍu"
+  },
+  "118": {
+    "english": "Swim",
+    "kannada": "ಈಜು",
+    "transliteration": "īju"
+  },
+  "119": {
+    "english": "Fly",
+    "kannada": "ಹಾರು",
+    "transliteration": "hāru"
+  },
+  "120": {
+    "english": "Walk",
+    "kannada": "ನಡೆ",
+    "transliteration": "naḍe"
+  },
+  "121": {
+    "english": "Come",
+    "kannada": "ಬಾ",
+    "transliteration": "bā"
+  },
+  "122": {
+    "english": "Lie In Bed",
+    "kannada": "ಪಡು",
+    "transliteration": "paḍu"
+  },
+  "123": {
+    "english": "Sit",
+    "kannada": "ಕೂರು",
+    "transliteration": "kūru"
+  },
+  "124": {
+    "english": "Stand",
+    "kannada": "ನಿಲ್ಲು",
+    "transliteration": "nillu"
+  },
+  "125": {
+    "english": "Turn",
+    "kannada": "ತಿರುಗು",
+    "transliteration": "tirugu"
+  },
+  "126": {
+    "english": "Fall",
+    "kannada": "ಬೀಳು",
+    "transliteration": "bīḷu"
+  },
+  "127": {
+    "english": "Give",
+    "kannada": "ಕೊಡು",
+    "transliteration": "koḍu"
+  },
+  "128": {
+    "english": "Hold",
+    "kannada": "ಹಿಡಿ",
+    "transliteration": "hiḍi"
+  },
+  "129": {
+    "english": "Squeeze",
+    "kannada": "ಹಿಚುಕು",
+    "transliteration": "hicuku"
+  },
+  "130": {
+    "english": "Rub",
+    "kannada": "ಉಜ್ಜು",
+    "transliteration": "ujju"
+  },
+  "131": {
+    "english": "Wash",
+    "kannada": "ತೊಳೆ/ಒಗೆ/ಕುಸುಬು",
+    "transliteration": "toḷe/oge/kusubu"
+  },
+  "132": {
+    "english": "Wipe",
+    "kannada": "ಒರೆಸು",
+    "transliteration": "oresu"
+  },
+  "133": {
+    "english": "Pull",
+    "kannada": "ಎಳಿ",
+    "transliteration": "eḷi"
+  },
+  "134": {
+    "english": "Push",
+    "kannada": "ನೂಕು",
+    "transliteration": "nūku"
+  },
+  "135": {
+    "english": "Throw",
+    "kannada": "ಎಸಿ",
+    "transliteration": "esi"
+  },
+  "136": {
+    "english": "Tie",
+    "kannada": "ಕಟ್ಟು",
+    "transliteration": "kaṭṭu"
+  },
+  "137": {
+    "english": "Sew",
+    "kannada": "ಹೊಲಿ",
+    "transliteration": "holi"
+  },
+  "138": {
+    "english": "Count",
+    "kannada": "ಎಣಿಸು",
+    "transliteration": "eṇisu"
+  },
+  "139": {
+    "english": "Say",
+    "kannada": "ಹೇಳು",
+    "transliteration": "hēḷu"
+  },
+  "140": {
+    "english": "Sing",
+    "kannada": "ಹಾಡು",
+    "transliteration": "hāḍu"
+  },
+  "141": {
+    "english": "Play",
+    "kannada": "ಆಡು",
+    "transliteration": "āḍu"
+  },
+  "142": {
+    "english": "Float",
+    "kannada": "ತೇಲು",
+    "transliteration": "tēlu"
+  },
+  "143": {
+    "english": "Flow",
+    "kannada": "ಹರಿ",
+    "transliteration": "hari"
+  },
+  "144": {
+    "english": "Freeze",
+    "kannada": "ಹೆಪ್ಪುಗಟ್ಟು",
+    "transliteration": "heppugaṭṭu"
+  },
+  "145": {
+    "english": "Swell",
+    "kannada": "ಊದು",
+    "transliteration": "ūdu"
+  },
+  "146": {
+    "english": "Sun",
+    "kannada": "ಸೂರ್ಯ/ಹೊತ್ತು",
+    "transliteration": "sūrya/hottu"
+  },
+  "147": {
+    "english": "Moon",
+    "kannada": "ಚಂದ್ರ/ತಿಂಗಳು",
+    "transliteration": "candra/tiṅgaḷu"
+  },
+  "148": {
+    "english": "Star",
+    "kannada": "ನಕ್ಷತ್ರ/ಅರಿಲು/ಚುಕ್ಕೆ",
+    "transliteration": "nakṣatra/arilu/cukke"
+  },
+  "149": {
+    "english": "Water",
+    "kannada": "ನೀರು",
+    "transliteration": "nīru"
+  },
+  "150": {
+    "english": "Rain",
+    "kannada": "ಮಳೆಸುರಿ",
+    "transliteration": "maḷesuri"
+  },
+  "151": {
+    "english": "River",
+    "kannada": "ನದಿ/ಹೊಳೆ",
+    "transliteration": "nadi/hoḷe"
+  },
+  "152": {
+    "english": "Lake",
+    "kannada": "ಕೆರೆ",
+    "transliteration": "kere"
+  },
+  "153": {
+    "english": "Sea",
+    "kannada": "ಸಮುದ್ರ/ಕಡಲು",
+    "transliteration": "samudra/kaḍalu"
+  },
+  "154": {
+    "english": "Salt",
+    "kannada": "ಉಪ್ಪು",
+    "transliteration": "uppu"
+  },
+  "155": {
+    "english": "Stone",
+    "kannada": "ಕಲ್ಲು",
+    "transliteration": "kallu"
+  },
+  "156": {
+    "english": "Sand",
+    "kannada": "ಮರಳು/ಉಸುಕು",
+    "transliteration": "maraḷu/usuku"
+  },
+  "157": {
+    "english": "Dust",
+    "kannada": "ದುಂಬು",
+    "transliteration": "dumbu"
+  },
+  "158": {
+    "english": "Earth",
+    "kannada": "ನೆಲ/ಭೂಮಿ",
+    "transliteration": "nela/bhūmi"
+  },
+  "159": {
+    "english": "Cloud",
+    "kannada": "ಮೋಡ",
+    "transliteration": "mōḍa"
+  },
+  "160": {
+    "english": "Fog",
+    "kannada": "ಮಂಜು",
+    "transliteration": "mañju"
+  },
+  "161": {
+    "english": "Sky",
+    "kannada": "ಆಕಾಶ/ಮುಗಿಲು",
+    "transliteration": "ākāśa/mugilu"
+  },
+  "162": {
+    "english": "Wind",
+    "kannada": "ಗಾಳಿ",
+    "transliteration": "gāḷi"
+  },
+  "163": {
+    "english": "Snow",
+    "kannada": "ಹಿಮ",
+    "transliteration": "hima"
+  },
+  "164": {
+    "english": "Ice",
+    "kannada": "ಮಂಜುಗಡ್ಡೆ",
+    "transliteration": "mañjugaḍḍe"
+  },
+  "165": {
+    "english": "Smoke",
+    "kannada": "ಹೊಗೆ",
+    "transliteration": "hoge"
+  },
+  "166": {
+    "english": "Fire",
+    "kannada": "ಬೆಂಕಿ",
+    "transliteration": "beṅki"
+  },
+  "167": {
+    "english": "Ash",
+    "kannada": "ಬೂದಿ",
+    "transliteration": "būdi"
+  },
+  "168": {
+    "english": "Burn",
+    "kannada": "ಸುಡು",
+    "transliteration": "suḍu"
+  },
+  "169": {
+    "english": "Road",
+    "kannada": "ಹಾದಿ",
+    "transliteration": "hādi"
+  },
+  "170": {
+    "english": "Mountain",
+    "kannada": "ಪರ್ವತ",
+    "transliteration": "parvata"
+  },
+  "171": {
+    "english": "Red",
+    "kannada": "ಕೆಂಪು",
+    "transliteration": "kempu"
+  },
+  "172": {
+    "english": "Green",
+    "kannada": "ಹಸಿರು",
+    "transliteration": "hasiru"
+  },
+  "173": {
+    "english": "Yellow",
+    "kannada": "ಹಳದಿ",
+    "transliteration": "haḷadi"
+  },
+  "174": {
+    "english": "White",
+    "kannada": "ಬಿಳಿ",
+    "transliteration": "biḷi"
+  },
+  "175": {
+    "english": "Black",
+    "kannada": "ಕರಿ",
+    "transliteration": "kari"
+  },
+  "176": {
+    "english": "Night",
+    "kannada": "ರಾತ್ರಿ/ಇರುಳು",
+    "transliteration": "rātri/iruḷu"
+  },
+  "177": {
+    "english": "Day",
+    "kannada": "ಹಗಲು",
+    "transliteration": "hagalu"
+  },
+  "178": {
+    "english": "Year",
+    "kannada": "ಏಡು",
+    "transliteration": "ēḍu"
+  },
+  "179": {
+    "english": "Warm",
+    "kannada": "ಬೆಚ್ಚ",
+    "transliteration": "becca"
+  },
+  "180": {
+    "english": "Cold",
+    "kannada": "ಕುಳಿರು",
+    "transliteration": "kuḷiru"
+  },
+  "181": {
+    "english": "Full",
+    "kannada": "ತುಂಬು",
+    "transliteration": "tumbu"
+  },
+  "182": {
+    "english": "New",
+    "kannada": "ಹೊಸ",
+    "transliteration": "hosa"
+  },
+  "183": {
+    "english": "Old",
+    "kannada": "ಹಳೆ",
+    "transliteration": "haḷe"
+  },
+  "184": {
+    "english": "Good",
+    "kannada": "ಒಳ್ಳೆ/ನಲ್",
+    "transliteration": "oḷḷe/nal"
+  },
+  "185": {
+    "english": "Bad",
+    "kannada": "ಕೆಟ್ಟ",
+    "transliteration": "keṭṭa"
+  },
+  "186": {
+    "english": "Rotten",
+    "kannada": "ಕೊಳೆತ",
+    "transliteration": "koḷeta"
+  },
+  "187": {
+    "english": "Dirty",
+    "kannada": "ಕೊಳಕು",
+    "transliteration": "koḷaku"
+  },
+  "188": {
+    "english": "Straight",
+    "kannada": "ನೇರ",
+    "transliteration": "nēra"
+  },
+  "189": {
+    "english": "Round",
+    "kannada": "ಗುಂಡು",
+    "transliteration": "guṇḍu"
+  },
+  "190": {
+    "english": "Sharp",
+    "kannada": "ಹರಿತ",
+    "transliteration": "harita"
+  },
+  "191": {
+    "english": "Dull",
+    "kannada": "ಮೊಂಡ",
+    "transliteration": "moṇḍa"
+  },
+  "192": {
+    "english": "Smooth",
+    "kannada": "ನುಣ್ಣಗೆ",
+    "transliteration": "nuṇṇage"
+  },
+  "193": {
+    "english": "Wet",
+    "kannada": "ಒದ್ದೆ",
+    "transliteration": "odde"
+  },
+  "194": {
+    "english": "Dry",
+    "kannada": "ಒಣ",
+    "transliteration": "oṇa"
+  },
+  "195": {
+    "english": "Correct",
+    "kannada": "ಸರಿ",
+    "transliteration": "sari"
+  },
+  "196": {
+    "english": "Near",
+    "kannada": "ಹತ್ತಿರ",
+    "transliteration": "hattira"
+  },
+  "197": {
+    "english": "Far",
+    "kannada": "ದೂರ/ಗೆಂಟು",
+    "transliteration": "dūra/geṇṭu"
+  },
+  "198": {
+    "english": "Right",
+    "kannada": "ಬಲ",
+    "transliteration": "bala"
+  },
+  "199": {
+    "english": "Left",
+    "kannada": "ಎಡ",
+    "transliteration": "eḍa"
+  },
+  "200": {
+    "english": "At",
+    "kannada": "-ಅಲ್ಲಿ",
+    "transliteration": "-alli"
+  },
+  "201": {
+    "english": "In",
+    "kannada": "ಒಳಗೆ",
+    "transliteration": "oḷage"
+  },
+  "202": {
+    "english": "With",
+    "kannada": "ಜೊತೆ",
+    "transliteration": "jote"
+  },
+  "203": {
+    "english": "And",
+    "kannada": "ಮತ್ತು",
+    "transliteration": "mattu"
+  },
+  "204": {
+    "english": "If",
+    "kannada": "ಒಂದು",
+    "transliteration": "ondu vēḷe"
+  },
+  "205": {
+    "english": "Because",
+    "kannada": "ಯಾಕೆಂದರೆ",
+    "transliteration": "yākendare"
+  },
+  "206": {
+    "english": "Name",
+    "kannada": "ಹೆಸರು",
+    "transliteration": "hesaru"
+  }
+}

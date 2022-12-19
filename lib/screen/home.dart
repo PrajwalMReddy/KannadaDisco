@@ -4,7 +4,7 @@ import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/word_of_the_day.dart';
-import 'package:kannada_disco/element/resources.dart';
+import 'package:kannada_disco/resource//resources.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
