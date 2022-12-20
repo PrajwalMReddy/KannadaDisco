@@ -3,23 +3,29 @@ import 'package:flutter/material.dart';
 import 'package:kannada_disco/const/color.dart';
 
 class BottomNavigation extends StatefulWidget {
-  const BottomNavigation({Key? key}) : super(key: key);
+  int currentPage;
+  BottomNavigation({Key? key, required this.currentPage}) : super(key: key);
 
   @override
-  State<BottomNavigation> createState() => _BottomNavigationState();
+  State<BottomNavigation> createState() => _BottomNavigationState(this.currentPage);
 }
 
 class _BottomNavigationState extends State<BottomNavigation> {
+  int currentIndex = 0;
   final List pages = const [
     "/home",
     "/course",
     "",
   ];
 
+  _BottomNavigationState(int currentPage) {
+    currentIndex = currentPage;
+  }
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      currentIndex: 0,
+      currentIndex: currentIndex,
       selectedItemColor: kannadaRed,
 
       onTap: (index) {

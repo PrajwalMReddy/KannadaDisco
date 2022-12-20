@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
       ),
       drawer: const SideBar(),
       body: HomeBody(size: size),
-      bottomNavigationBar: const BottomNavigation(),
+      bottomNavigationBar: BottomNavigation(currentPage: 0),
     );
   }
 }
