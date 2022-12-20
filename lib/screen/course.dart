@@ -24,7 +24,7 @@ class _CoursePageState extends State<CoursePage> {
       ),
       body: const CourseBody(),
       drawer: const SideBar(),
-      bottomNavigationBar: const BottomNavigation(),
+      bottomNavigationBar: BottomNavigation(currentPage: 1),
     );
   }
 }
