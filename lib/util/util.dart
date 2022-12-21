@@ -1,4 +1,4 @@
-String prettifyTopic(String topic) {
+String prettifyText(String topic) {
   String temp = topic.replaceAll("_", " ");
   final List<String> words = temp.split(' ');
 

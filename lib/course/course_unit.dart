@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:kannada_disco/const/color.dart';
+import 'package:kannada_disco/util/util.dart';
 
 class CourseUnit extends StatelessWidget {
   final String heading;
@@ -13,7 +14,11 @@ class CourseUnit extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return GestureDetector(
-        onTap: () => {},
+        onTap: () => {
+          Navigator.pushNamed(context, "/course/content", arguments: {
+            "heading": heading,
+          })
+        },
         child: SizedBox(
           height: size.height * 0.2,
           width: size.width * 0.8,
@@ -26,7 +31,7 @@ class CourseUnit extends StatelessWidget {
                 child: Column(
                     children: [
                       Text(
-                        heading,
+                        prettifyText(heading),
                         style: const TextStyle(
                           fontSize: 20.0,
                         ),

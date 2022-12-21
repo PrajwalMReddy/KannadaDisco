@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-
 import 'package:kannada_disco/screen//home.dart';
+
 import 'package:kannada_disco/screen/course.dart';
 import 'package:kannada_disco/screen/loading.dart';
 import 'package:kannada_disco/screen/about.dart';
 import 'package:kannada_disco/resource/reference.dart';
 import 'package:kannada_disco/screen/settings.dart';
 import 'package:kannada_disco/screen/usage.dart';
+import 'package:kannada_disco/course/course_content.dart';
 
 void main() => runApp(
   MaterialApp(
@@ -28,6 +29,7 @@ void main() => runApp(
 
       // Courses
       '/course/': (context) => const CoursePage(),
+      '/course/content': (context) => CourseContent(),
     },
   ),
 );
