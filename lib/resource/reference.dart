@@ -25,7 +25,7 @@ class Reference extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(prettifyTopic(topic)),
+        title: Text(prettifyText(topic)),
         centerTitle: true,
         backgroundColor: kannadaRed,
       ),

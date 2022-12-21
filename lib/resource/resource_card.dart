@@ -27,7 +27,7 @@ class ResourceCard extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Center(
                 child: Text(
-                  prettifyTopic(topic),
+                  prettifyText(topic),
                   style: const TextStyle(
                     fontSize: 15.0,
                   ),

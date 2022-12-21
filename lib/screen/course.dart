@@ -39,7 +39,7 @@ class CourseBody extends StatelessWidget {
       child: Column(
         children: [
           const Padding(
-            padding: EdgeInsets.fromLTRB(35.0, 35.0, 35.0, 20.0),
+            padding: EdgeInsets.fromLTRB(35.0, 35.0, 35.0, 30.0),
             child: Align(
               alignment: Alignment.topLeft,
               child: Text(
