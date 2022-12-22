@@ -24,8 +24,8 @@ void main() => runApp(
       // Resources
       '/res/reading': (context) => Reference(type: "reading"),
       '/res/vocabulary': (context) => Reference(type: "vocab"),
-      '/res/tense': (context) => Reference(type: "tense"),
       '/res/grammar': (context) => Reference(type: "gram"),
+      '/res/conversation': (context) => Reference(type: "conv"),
 
       // Courses
       '/course/': (context) => const CoursePage(),

@@ -42,8 +42,11 @@ class CourseContent extends StatelessWidget {
               } else {
                 String markdownData = snapshot.data ?? "";
 
-                return Markdown(
-                  data: markdownData,
+                return Container(
+                  margin: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 0.0),
+                  child: Markdown(
+                    data: markdownData,
+                  ),
                 );
               }
           }
