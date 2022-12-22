@@ -15,7 +15,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   final List pages = const [
     "/home",
     "/course",
-    "",
+    "/quiz",
   ];
 
   _BottomNavigationState(int currentPage) {

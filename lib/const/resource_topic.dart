@@ -21,16 +21,16 @@ const List<ResourceCard> vocabCards = [
   ResourceCard(topic: "numbers", resourceType: "vocabulary"),
   ResourceCard(topic: "family", resourceType: "vocabulary"),
   ResourceCard(topic: "time", resourceType: "vocabulary"),
-  ResourceCard(topic: "formal_swadesh_list", resourceType: "vocabulary"),
+  ResourceCard(topic: "swadesh_list", resourceType: "vocabulary"),
 ];
 
 const List<ResourceCard> grammarCards = [
-  ResourceCard(topic: "present_simple", resourceType: "tense"),
-  ResourceCard(topic: "present_continuous", resourceType: "tense"),
-  ResourceCard(topic: "past_simple", resourceType: "tense"),
-  ResourceCard(topic: "past_perfect", resourceType: "tense"),
-  ResourceCard(topic: "past_continuous", resourceType: "tense"),
-  ResourceCard(topic: "future_simple", resourceType: "tense"),
+  ResourceCard(topic: "present_simple", resourceType: "grammar"),
+  ResourceCard(topic: "present_continuous", resourceType: "grammar"),
+  ResourceCard(topic: "past_simple", resourceType: "grammar"),
+  ResourceCard(topic: "past_perfect", resourceType: "grammar"),
+  ResourceCard(topic: "past_continuous", resourceType: "grammar"),
+  ResourceCard(topic: "future_simple", resourceType: "grammar"),
   ResourceCard(topic: "negating_verbs", resourceType: "grammar"),
   ResourceCard(topic: "modality_suffixes", resourceType: "grammar"),
   ResourceCard(topic: "verb_suffixes", resourceType: "grammar"),
