@@ -1,6 +1,6 @@
 {
   "0": {
-    "english": "I (Singular)",
+    "english": "I",
     "kannada": "ನಾನು",
     "transliteration": "nānu"
   },
@@ -10,12 +10,12 @@
     "transliteration": "nīnu"
   },
   "2": {
-    "english": "He/She/It (Singular)",
+    "english": "He/She/It",
     "kannada": "ಅವನು",
     "transliteration": "avanu"
   },
   "3": {
-    "english": "We (Plural)",
+    "english": "We",
     "kannada": "ನಾವು",
     "transliteration": "nāvu"
   },
@@ -25,7 +25,7 @@
     "transliteration": "nīvu"
   },
   "5": {
-    "english": "They (Plural)",
+    "english": "They",
     "kannada": "ಅವರು",
     "transliteration": "avaru"
   },
