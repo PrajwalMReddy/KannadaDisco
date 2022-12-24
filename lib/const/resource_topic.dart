@@ -12,6 +12,7 @@ const List<ResourceCard> readingCards = [
   ResourceCard(topic: "vowels", resourceType: "reading"),
   ResourceCard(topic: "consonants", resourceType: "reading"),
   ResourceCard(topic: "diacritics", resourceType: "reading"),
+  ResourceCard(topic: "digits", resourceType: "reading"),
 ];
 
 const List<ResourceCard> vocabCards = [
@@ -37,4 +38,7 @@ const List<ResourceCard> grammarCards = [
 ];
 
 const List<ResourceCard> conversationCards = [
+  ResourceCard(topic: "self_introductions", resourceType: "conversation"),
+  ResourceCard(topic: "in_the_market", resourceType: "conversation"),
+  ResourceCard(topic: "using_a_cab", resourceType: "conversation"),
 ];
