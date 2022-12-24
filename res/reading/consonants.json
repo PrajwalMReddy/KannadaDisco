@@ -135,38 +135,48 @@
     "transliteration": "[ra]"
   },
   "28": {
+    "english": "ṟa",
+    "kannada": "ಱ",
+    "transliteration": "[ra]"
+  },
+  "29": {
     "english": "la",
     "kannada": "ಲ",
     "transliteration": "[l̪a]"
   },
-  "29": {
+  "30": {
     "english": "va",
     "kannada": "ವ",
     "transliteration": "[ʋa]"
   },
-  "30": {
+  "31": {
     "english": "śa",
     "kannada": "ಶ",
-    "transliteration": "[ça]"
+    "transliteration": "[ʃa]"
   },
-  "31": {
+  "32": {
     "english": "ṣa",
     "kannada": "ಷ",
     "transliteration": "[ʂa]"
   },
-  "32": {
+  "33": {
     "english": "sa",
     "kannada": "ಸ",
     "transliteration": "[sa]"
   },
-  "33": {
+  "34": {
     "english": "ha",
     "kannada": "ಹ",
     "transliteration": "[ħa]"
   },
-  "34": {
+  "35": {
     "english": "ḷa",
     "kannada": "ಳ",
+    "transliteration": "[ɭa]"
+  },
+  "36": {
+    "english": "ḻ",
+    "kannada": "ೞ",
     "transliteration": "[ɭa]"
   }
 }

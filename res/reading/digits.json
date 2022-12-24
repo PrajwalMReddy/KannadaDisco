@@ -1,0 +1,257 @@
+{
+  "0": {
+    "english": "Zero",
+    "kannada": "೦",
+    "transliteration": "0"
+  },
+  "1": {
+    "english": "One",
+    "kannada": "೧",
+    "transliteration": "1"
+  },
+  "2": {
+    "english": "Two",
+    "kannada": "೨",
+    "transliteration": "2"
+  },
+  "3": {
+    "english": "Three",
+    "kannada": "೩",
+    "transliteration": "3"
+  },
+  "4": {
+    "english": "Four",
+    "kannada": "೪",
+    "transliteration": "4"
+  },
+  "5": {
+    "english": "Five",
+    "kannada": "೫",
+    "transliteration": "5"
+  },
+  "6": {
+    "english": "Six",
+    "kannada": "೬",
+    "transliteration": "6"
+  },
+  "7": {
+    "english": "Seven",
+    "kannada": "೭",
+    "transliteration": "7"
+  },
+  "8": {
+    "english": "Eight",
+    "kannada": "೮",
+    "transliteration": "8"
+  },
+  "9": {
+    "english": "Nine",
+    "kannada": "೯",
+    "transliteration": "9"
+  },
+  "10": {
+    "english": "Ten",
+    "kannada": "೧೦",
+    "transliteration": "10"
+  },
+  "11": {
+    "english": "Eleven",
+    "kannada": "೧೧",
+    "transliteration": "11"
+  },
+  "12": {
+    "english": "Twelve",
+    "kannada": "೧೨",
+    "transliteration": "12"
+  },
+  "13": {
+    "english": "Thirteen",
+    "kannada": "೧೩",
+    "transliteration": "13"
+  },
+  "14": {
+    "english": "Fourteen",
+    "kannada": "೧೪",
+    "transliteration": "14"
+  },
+  "15": {
+    "english": "Fifteen",
+    "kannada": "೧೫",
+    "transliteration": "15"
+  },
+  "16": {
+    "english": "Sixteen",
+    "kannada": "೧೬",
+    "transliteration": "16"
+  },
+  "17": {
+    "english": "Seventeen",
+    "kannada": "೧೭",
+    "transliteration": "17"
+  },
+  "18": {
+    "english": "Eighteen",
+    "kannada": "೧೮",
+    "transliteration": "18"
+  },
+  "19": {
+    "english": "Nineteen",
+    "kannada": "೧೯",
+    "transliteration": "19"
+  },
+  "20": {
+    "english": "Twenty",
+    "kannada": "೨೦",
+    "transliteration": "20"
+  },
+  "21": {
+    "english": "Twenty One",
+    "kannada": "೨೧",
+    "transliteration": "21"
+  },
+  "22": {
+    "english": "Twenty Two",
+    "kannada": "೨೨",
+    "transliteration": "22"
+  },
+  "23": {
+    "english": "Twenty Three",
+    "kannada": "೨೩",
+    "transliteration": "23"
+  },
+  "24": {
+    "english": "Twenty Four",
+    "kannada": "೨೪",
+    "transliteration": "24"
+  },
+  "25": {
+    "english": "Twenty Five",
+    "kannada": "೨೫",
+    "transliteration": "25"
+  },
+  "26": {
+    "english": "Twenty Six",
+    "kannada": "೨೬",
+    "transliteration": "26"
+  },
+  "27": {
+    "english": "Twenty Seven",
+    "kannada": "೨೭",
+    "transliteration": "27"
+  },
+  "28": {
+    "english": "Twenty Eight",
+    "kannada": "೨೮",
+    "transliteration": "28"
+  },
+  "29": {
+    "english": "Twenty Nine",
+    "kannada": "೨೯",
+    "transliteration": "29"
+  },
+  "30": {
+    "english": "Thirty",
+    "kannada": "೩೦",
+    "transliteration": "30"
+  },
+  "31": {
+    "english": "Thirty One",
+    "kannada": "೩೧",
+    "transliteration": "31"
+  },
+  "32": {
+    "english": "Thirty Two",
+    "kannada": "೩೨",
+    "transliteration": "32"
+  },
+  "33": {
+    "english": "Thirty Three",
+    "kannada": "೩೩",
+    "transliteration": "33"
+  },
+  "34": {
+    "english": "Thirty Four",
+    "kannada": "೩೪",
+    "transliteration": "34"
+  },
+  "35": {
+    "english": "Thirty Five",
+    "kannada": "೩೫",
+    "transliteration": "35"
+  },
+  "36": {
+    "english": "Thirty Six",
+    "kannada": "೩೬",
+    "transliteration": "36"
+  },
+  "37": {
+    "english": "Thirty Seven",
+    "kannada": "೩೭",
+    "transliteration": "37"
+  },
+  "38": {
+    "english": "Thirty Eight",
+    "kannada": "೩೮",
+    "transliteration": "38"
+  },
+  "39": {
+    "english": "Thirty Nine",
+    "kannada": "೩೯",
+    "transliteration": "39"
+  },
+  "40": {
+    "english": "Forty",
+    "kannada": "೪೦",
+    "transliteration": "40"
+  },
+  "41": {
+    "english": "Fifty",
+    "kannada": "೫೦",
+    "transliteration": "50"
+  },
+  "42": {
+    "english": "Sixty",
+    "kannada": "೬೦",
+    "transliteration": "60"
+  },
+  "43": {
+    "english": "Seventy",
+    "kannada": "೭೦",
+    "transliteration": "70"
+  },
+  "44": {
+    "english": "Eighty",
+    "kannada": "೮೦",
+    "transliteration": "80"
+  },
+  "45": {
+    "english": "Ninety",
+    "kannada": "೯೦",
+    "transliteration": "90"
+  },
+  "46": {
+    "english": "Hundred",
+    "kannada": "೧೦೦",
+    "transliteration": "100"
+  },
+  "47": {
+    "english": "Thousand",
+    "kannada": "೧,೦೦೦",
+    "transliteration": "1,000"
+  },
+  "48": {
+    "english": "Hundred Thousand",
+    "kannada": "೧,೦೦,೦೦೦ ",
+    "transliteration": "100,000"
+  },
+  "49": {
+    "english": "Million",
+    "kannada": "೧೦,೦೦,೦೦೦ ",
+    "transliteration": "1,000,000"
+  },
+  "50": {
+    "english": "Ten Million",
+    "kannada": "೧,೦೦,೦೦,೦೦೦",
+    "transliteration": "10,000,000"
+  }
+}
