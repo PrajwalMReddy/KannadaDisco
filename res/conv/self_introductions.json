@@ -1,0 +1,32 @@
+{
+  "0": {
+    "english": "Hello",
+    "kannada": "ನಮಸ್ಕಾರ",
+    "transliteration": "namaskāra"
+  },
+  "1": {
+    "english": "How are you?",
+    "kannada": "ನೀವು ಹೇಗಿದ್ದೀರಿ",
+    "transliteration": "nīvu hēgiddīri"
+  },
+  "3": {
+    "english": "I am fine.",
+    "kannada": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೀನಿ",
+    "transliteration": "nānu cennāgiddīni"
+  },
+  "4": {
+    "english": "My name is ___.",
+    "kannada": "ನನ್ನ ಹೆಸರು ___",
+    "transliteration": "nanna hesaru ___"
+  },
+  "5": {
+    "english": "What is your name?",
+    "kannada": "ನಿನ್ನ ಹೆಸರೇನು",
+    "transliteration": "ninna hesarēnu"
+  },
+  "6": {
+    "english": "What's up?",
+    "kannada": "ಏನು ಸಮಾಚಾರ",
+    "transliteration": "ēnu samācāra"
+  }
+}

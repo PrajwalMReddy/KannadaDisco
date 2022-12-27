@@ -7,7 +7,9 @@ class ResourceCard extends StatelessWidget {
   final String topic;
   final String resourceType;
 
-  const ResourceCard({Key? key, required this.topic, required this.resourceType}) : super(key: key);
+  const ResourceCard(
+      {Key? key, required this.topic, required this.resourceType})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,21 +19,18 @@ class ResourceCard extends StatelessWidget {
           "topic": topic,
         })
       },
-      child: SizedBox(
-        height: 100.0,
-        width: 160.0,
-        child: Card(
-          margin: const EdgeInsets.fromLTRB(0.0, 20.0, 10.0, 20.0),
-          color: kannadaYellow,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-                child: Text(
-                  prettifyText(topic),
-                  style: const TextStyle(
-                    fontSize: 15.0,
-                  ),
-                )
+      child: Card(
+        margin: const EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 5.0),
+        color: kannadaYellow,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Text(
+              prettifyText(topic),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 15.0,
+              ),
             ),
           ),
         ),
