@@ -27,12 +27,11 @@ class ResourceGrid extends StatelessWidget {
         ),
         Align(
           alignment: Alignment.topLeft,
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: cards,
-            ),
-          ),
+          child: GridView.count(
+            crossAxisCount: 3,
+            shrinkWrap: true,
+            children: cards,
+          )
         ),
       ],
     );
