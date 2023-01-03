@@ -1,0 +1,37 @@
+{
+  "0": {
+    "english": "Animal",
+    "kannada": "ಪ್ರಾಣಿ",
+    "transliteration": "prāṇi"
+  },
+  "1": {
+    "english": "Fish",
+    "kannada": "ಮೀನು",
+    "transliteration": "mīnu"
+  },
+  "2": {
+    "english": "Bird",
+    "kannada": "ಹಕ್ಕಿ",
+    "transliteration": "hakki"
+  },
+  "3": {
+    "english": "Dog",
+    "kannada": "ನಾಯಿ",
+    "transliteration": "nāyi"
+  },
+  "4": {
+    "english": "Louse",
+    "kannada": "ಹೇನು",
+    "transliteration": "hēnu"
+  },
+  "5": {
+    "english": "Snake",
+    "kannada": "ಹಾವು",
+    "transliteration": "hāvu"
+  },
+  "6": {
+    "english": "Worm",
+    "kannada": "ಹುಳ",
+    "transliteration": "huḷa"
+  }
+}

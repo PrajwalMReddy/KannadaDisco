@@ -30,9 +30,9 @@
     "transliteration": "nōḍu"
   },
   "6": {
-    "english": "Listen",
-    "kannada": "ಕೇಳು",
-    "transliteration": "kēḷu"
+    "english": "Speak",
+    "kannada": "ಮಾತಾಡು",
+    "transliteration": "mātādu"
   },
   "7": {
     "english": "Tell",
@@ -40,21 +40,31 @@
     "transliteration": "hēḷu"
   },
   "8": {
+    "english": "Listen/Ask",
+    "kannada": "ಕೇಳು",
+    "transliteration": "kēḷu"
+  },
+  "9": {
     "english": "Give",
     "kannada": "ಕೊಡು",
     "transliteration": "koḍu"
   },
-  "9": {
+  "10": {
+    "english": "Take",
+    "kannada": "ತಗೊಳಿ",
+    "transliteration": "tagōḷi"
+  },
+  "11": {
     "english": "Call",
     "kannada": "ಕರಿ",
     "transliteration": "kari"
   },
-  "10": {
+  "12": {
     "english": "Put",
     "kannada": "ಹಾಕು",
     "transliteration": "hāku"
   },
-  "11": {
+  "13": {
     "english": "Eat",
     "kannada": "ತಿನ್ನು",
     "transliteration": "tinnu"

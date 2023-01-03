@@ -1,0 +1,67 @@
+{
+  "0": {
+    "english": "Time",
+    "kannada": "ಸಮಯ",
+    "transliteration": "samaya"
+  },
+  "1": {
+    "english": "Today",
+    "kannada": "ಇವತ್ತು",
+    "transliteration": "ivattu"
+  },
+  "2": {
+    "english": "Tomorrow",
+    "kannada": "ನಾಳೆ",
+    "transliteration": "nāḷe"
+  },
+  "3": {
+    "english": "Yesterday",
+    "kannada": "ನಿನ್ನೆ",
+    "transliteration": "ninne"
+  },
+  "4": {
+    "english": "Day After Tomorrow",
+    "kannada": "ನಾಡಿದ್ದು",
+    "transliteration": "nāḍiddu"
+  },
+  "5": {
+    "english": "Day Before Yesterday",
+    "kannada": "ಮೊನ್ನೆ",
+    "transliteration": "monne"
+  },
+  "6": {
+    "english": "Sunday",
+    "kannada": "ಭಾನುವಾರ",
+    "transliteration": "bhānuvāra"
+  },
+  "7": {
+    "english": "Monday",
+    "kannada": "ಸೋಮವಾರ",
+    "transliteration": "sōmavāra"
+  },
+  "8": {
+    "english": "Tuesday",
+    "kannada": "ಮಂಗಳವಾರ",
+    "transliteration": "maṅgaḷavāra"
+  },
+  "9": {
+    "english": "Wednesday",
+    "kannada": "ಬುಧವಾರ",
+    "transliteration": "budhavāra"
+  },
+  "10": {
+    "english": "Thursday",
+    "kannada": "ಗುರುವಾರ",
+    "transliteration": "guruvāra"
+  },
+  "11": {
+    "english": "Friday",
+    "kannada": "ಶುಕ್ರವಾರ",
+    "transliteration": "śukravāra"
+  },
+  "12": {
+    "english": "Saturday",
+    "kannada": "ಶನಿವಾರ",
+    "transliteration": "śanivāra"
+  }
+}

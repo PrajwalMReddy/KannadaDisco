@@ -1,0 +1,62 @@
+{
+  "0": {
+    "english": "Up",
+    "kannada": "ಮೇಲೆ",
+    "transliteration": "mēle"
+  },
+  "1": {
+    "english": "Down",
+    "kannada": "ಕೆಳಗೆ",
+    "transliteration": "keḷage"
+  },
+  "2": {
+    "english": "Inside",
+    "kannada": "ಒಳಗೆ",
+    "transliteration": "oḷage"
+  },
+  "3": {
+    "english": "Outside",
+    "kannada": "ಹೊರಗೆ",
+    "transliteration": "horage"
+  },
+  "4": {
+    "english": "Left",
+    "kannada": "ಎಡಗಡೆ",
+    "transliteration": "eḍagaḍe"
+  },
+  "5": {
+    "english": "Right",
+    "kannada": "ಬಲಗಡೆ",
+    "transliteration": "balagaḍe"
+  },
+  "6": {
+    "english": "Here",
+    "kannada": "ಇಲ್ಲಿ",
+    "transliteration": "illi"
+  },
+  "7": {
+    "english": "There",
+    "kannada": "ಅಲ್ಲಿ",
+    "transliteration": "alli"
+  },
+  "8": {
+    "english": "North",
+    "kannada": "ಉತ್ತರ",
+    "transliteration": "uttara"
+  },
+  "9": {
+    "english": "South",
+    "kannada": "ದಕ್ಷಿಣ",
+    "transliteration": "dakṣiṇa"
+  },
+  "10": {
+    "english": "East",
+    "kannada": "ಪೂರ್ವ",
+    "transliteration": "pūrva"
+  },
+  "11": {
+    "english": "West",
+    "kannada": "ಪಶ್ಚಿಮ",
+    "transliteration": "paścima"
+  }
+}

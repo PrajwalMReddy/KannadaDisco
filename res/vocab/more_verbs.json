@@ -1,0 +1,47 @@
+{
+  "0": {
+    "english": "Show",
+    "kannada": "ತೋರಿಸು",
+    "transliteration": "tōrisu"
+  },
+  "1": {
+    "english": "Walk",
+    "kannada": "ನಡಿ",
+    "transliteration": "naḍi"
+  },
+  "2": {
+    "english": "Run",
+    "kannada": "ಓಡು",
+    "transliteration": "о̄ḍu"
+  },
+  "3": {
+    "english": "Read/Study",
+    "kannada": "ಓದು",
+    "transliteration": "о̄du"
+  },
+  "4": {
+    "english": "Laugh",
+    "kannada": "ನಗು",
+    "transliteration": "nagu"
+  },
+  "5": {
+    "english": "Play",
+    "kannada": "ಆಡು",
+    "transliteration": "āḍu"
+  },
+  "6": {
+    "english": "Sing",
+    "kannada": "ಹಾಡು",
+    "transliteration": "hāḍu"
+  },
+  "7": {
+    "english": "Dance",
+    "kannada": "ಕುಣಿ",
+    "transliteration": "kuṇi"
+  },
+  "8": {
+    "english": "Turn",
+    "kannada": "ತಿರುಗು",
+    "transliteration": "tirugu"
+  }
+}

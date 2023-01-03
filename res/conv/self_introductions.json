@@ -15,18 +15,28 @@
     "transliteration": "nānu cennāgiddīni"
   },
   "4": {
+    "english": "What is your name?",
+    "kannada": "ನಿಮ್ಮ ಹೆಸರೇನು",
+    "transliteration": "ನಿಮ್ಮ hesarēnu"
+  },
+  "5": {
     "english": "My name is ___.",
     "kannada": "ನನ್ನ ಹೆಸರು ___",
     "transliteration": "nanna hesaru ___"
-  },
-  "5": {
-    "english": "What is your name?",
-    "kannada": "ನಿನ್ನ ಹೆಸರೇನು",
-    "transliteration": "ninna hesarēnu"
   },
   "6": {
     "english": "What's up?",
     "kannada": "ಏನು ಸಮಾಚಾರ",
     "transliteration": "ēnu samācāra"
+  },
+  "7": {
+    "english": "Where do you live?",
+    "kannada": "ನಿಮ್ಮ ಮನೆ ಎಲ್ಲಿದೆ",
+    "transliteration": "nimma mane ellide"
+  },
+  "8": {
+    "english": "I live in ___.",
+    "kannada": "ನನ್ನ ಮನೆ ___ನಲ್ಲಿದೆ",
+    "transliteration": "nanna mane ___nallide"
   }
 }

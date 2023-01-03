@@ -1,9 +1,11 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:kannada_disco/const/resource_topic.dart';
+import 'package:kannada_disco/util/util.dart';
 
 class WordOfTheDay extends StatelessWidget {
   const WordOfTheDay({
@@ -58,15 +60,16 @@ class WordOfTheDay extends StatelessWidget {
                             String english = word["english"];
                             String kannada = word["kannada"];
                             String transliteration = word["transliteration"];
+                            final info = "$kannada - $transliteration - $english";
 
                             return Column(
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
                                   child: Text(
-                                    "$kannada - $transliteration - $english",
-                                    style: const TextStyle(
-                                      fontSize: 20.0,
+                                    info,
+                                    style: TextStyle(
+                                      fontSize: wordOfDaySize(info),
                                     ),
                                   ),
                                 ),

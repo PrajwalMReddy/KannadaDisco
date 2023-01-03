@@ -17,11 +17,14 @@ class ResourceGrid extends StatelessWidget {
       children: [
         Align(
           alignment: Alignment.topLeft,
-          child: Text(
-            type,
-            style: const TextStyle(
-              fontSize: 20.0,
-              decoration: TextDecoration.underline,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+            child: Text(
+              type,
+              style: const TextStyle(
+                fontSize: 20.0,
+                decoration: TextDecoration.underline,
+              ),
             ),
           ),
         ),

@@ -1,72 +1,82 @@
 {
   "0": {
-    "english": "a",
-    "kannada": "◌",
-    "transliteration": "[a]"
+    "english": "ka",
+    "kannada": "ಕ",
+    "transliteration": "[ka]"
   },
   "1": {
-    "english": "ā",
-    "kannada": "ಾ",
-    "transliteration": "[aː]"
+    "english": "kā",
+    "kannada": "ಕಾ",
+    "transliteration": "[kaː]"
   },
   "2": {
-    "english": "i",
-    "kannada": "ಿ",
-    "transliteration": "[i]"
+    "english": "ki",
+    "kannada": "ಕಿ",
+    "transliteration": "[ki]"
   },
   "3": {
-    "english": "ī",
-    "kannada": "ೀ",
-    "transliteration": "[iː]"
+    "english": "kī",
+    "kannada": "ಕೀ",
+    "transliteration": "[kiː]"
   },
   "4": {
-    "english": "u",
-    "kannada": "ು",
-    "transliteration": "[u]"
+    "english": "ku",
+    "kannada": "ಕು",
+    "transliteration": "[ku]"
   },
   "5": {
-    "english": "ū",
-    "kannada": "ೂ",
-    "transliteration": "[uː]"
+    "english": "kū",
+    "kannada": "ಕೂ",
+    "transliteration": "[kuː]"
   },
   "6": {
-    "english": "r̥",
-    "kannada": "ೃ",
-    "transliteration": "[ɾu]"
+    "english": "kr̥",
+    "kannada": "ಕೃ",
+    "transliteration": "[kɾu]"
   },
   "7": {
-    "english": "r̥̄",
-    "kannada": "ೄ",
-    "transliteration": "[ɾuː]"
+    "english": "kr̥̄",
+    "kannada": "ಕೄ",
+    "transliteration": "[kɾuː]"
   },
   "8": {
-    "english": "e",
-    "kannada": "ೆ",
-    "transliteration": "[e]"
+    "english": "ke",
+    "kannada": "ಕೆ",
+    "transliteration": "[ke]"
   },
   "9": {
-    "english": "ē",
-    "kannada": "ೇ",
-    "transliteration": "[eː]"
+    "english": "kē",
+    "kannada": "ಕೇ",
+    "transliteration": "[keː]"
   },
   "10": {
-    "english": "ai",
-    "kannada": "ೈ",
-    "transliteration": "[aj]"
+    "english": "kai",
+    "kannada": "ಕೈ",
+    "transliteration": "[kaj]"
   },
   "11": {
-    "english": "o",
-    "kannada": "ೊ",
-    "transliteration": "[o]"
+    "english": "ko",
+    "kannada": "ಕೊ",
+    "transliteration": "[ko]"
   },
   "12": {
-    "english": "ō",
-    "kannada": "ೋ",
-    "transliteration": "[oː]"
+    "english": "kō",
+    "kannada": "ಕೊ",
+    "transliteration": "[koː]"
   },
   "13": {
-    "english": "au",
-    "kannada": "ೌ",
-    "transliteration": "[aw]"
+    "english": "kau",
+    "kannada": "ಕೌ",
+    "transliteration": "[kaw]"
+  },
+  "14": {
+    "english": "kaṁ",
+    "kannada": "ಕಂ ",
+    "transliteration": "[kam]"
+  },
+  "15": {
+    "english": "kaḥ",
+    "kannada": "ಕಃ",
+    "transliteration": "[kah]"
   }
 }
