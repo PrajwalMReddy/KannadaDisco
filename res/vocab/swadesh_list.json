@@ -9,10 +9,15 @@
     "kannada": "ನೀನು",
     "transliteration": "nīnu"
   },
-  "2": {
-    "english": "He/She/It",
+  "2a": {
+    "english": "He",
     "kannada": "ಅವನು",
     "transliteration": "avanu"
+  },
+  "2b": {
+    "english": "She",
+    "kannada": "ಅವಳು",
+    "transliteration": "avaḷu"
   },
   "3": {
     "english": "We",
@@ -86,18 +91,18 @@
   },
   "17": {
     "english": "Many",
-    "kannada": "ಹಲ",
-    "transliteration": "hala"
+    "kannada": "ಹಲವು",
+    "transliteration": "halavu"
   },
   "18": {
     "english": "Some",
-    "kannada": "ಕೆಲ",
-    "transliteration": "kela"
+    "kannada": "ಕೆಲವು",
+    "transliteration": "kelavu"
   },
   "19": {
     "english": "Few",
-    "kannada": "ಸ್ವಲ್ಪ/ಕೊಂಚ",
-    "transliteration": "svalpa/koñca"
+    "kannada": "ಸ್ವಲ್ಪ",
+    "transliteration": "svalpa"
   },
   "20": {
     "english": "Other",
@@ -136,8 +141,8 @@
   },
   "27": {
     "english": "Long",
-    "kannada": "ನಿಡು",
-    "transliteration": "niḍu"
+    "kannada": "ಉದ್ದ",
+    "transliteration": "udda"
   },
   "28": {
     "english": "Wide",
@@ -161,8 +166,8 @@
   },
   "32": {
     "english": "Short",
-    "kannada": "ಗಿಡ್ಡ/ಕುಳ್ಳ",
-    "transliteration": "giḍḍa/kuḷḷa"
+    "kannada": "ಕುಳ್ಳ/ಗಿಡ್ಡ",
+    "transliteration": "kuḷḷa/giḍḍa"
   },
   "33": {
     "english": "Narrow",
@@ -261,8 +266,8 @@
   },
   "52": {
     "english": "Stick",
-    "kannada": "ಕೋಲು/ಕಡ್ಡಿ/ಬಡಿ",
-    "transliteration": "kōlu/kaḍḍi/baḍi"
+    "kannada": "ಕೋಲು/ಕಡ್ಡಿ",
+    "transliteration": "kōlu/kaḍḍi"
   },
   "53": {
     "english": "Fruit",
@@ -271,8 +276,8 @@
   },
   "54": {
     "english": "Seed",
-    "kannada": "ಬೀಜ/ಬಿತ್ತು",
-    "transliteration": "bīja/bittu"
+    "kannada": "ಬೀಜ",
+    "transliteration": "bīja"
   },
   "55": {
     "english": "Leaf",
@@ -301,23 +306,23 @@
   },
   "60": {
     "english": "Rope",
-    "kannada": "ನೇಣು",
-    "transliteration": "nēṇu"
+    "kannada": "ಹಗ್ಗ",
+    "transliteration": "hagga"
   },
   "61": {
     "english": "Skin",
-    "kannada": "ಚರ್ಮ/ತೊಗಲು",
-    "transliteration": "carma/togalu"
+    "kannada": "ಚರ್ಮ",
+    "transliteration": "carma"
   },
   "62": {
     "english": "Meat",
-    "kannada": "ಮಾಂಸ/ಬಾಡು",
-    "transliteration": "māṃsa/bāḍu"
+    "kannada": "ಮಾಂಸ",
+    "transliteration": "māṃsa"
   },
   "63": {
     "english": "Blood",
-    "kannada": "ರಕ್ತ/ನೆತ್ತರು",
-    "transliteration": "rakta/nettaru"
+    "kannada": "ರಕ್ತ",
+    "transliteration": "rakta"
   },
   "64": {
     "english": "Bone",
@@ -341,8 +346,8 @@
   },
   "68": {
     "english": "Tail",
-    "kannada": "ಬಾಲ/ತೋಕೆ",
-    "transliteration": "bāla/tōke"
+    "kannada": "ಬಾಲ",
+    "transliteration": "bāla"
   },
   "69": {
     "english": "Feather",
@@ -386,8 +391,8 @@
   },
   "77": {
     "english": "Tongue",
-    "kannada": "ನಾಲಗೆ",
-    "transliteration": "nālage"
+    "kannada": "ನಾಲಿಗೆ",
+    "transliteration": "nālige"
   },
   "78": {
     "english": "Fingernail",
@@ -481,8 +486,8 @@
   },
   "96": {
     "english": "Vomit",
-    "kannada": "ಕಾರು",
-    "transliteration": "kāru"
+    "kannada": "ವಾಂತಿ",
+    "transliteration": "vānti"
   },
   "97": {
     "english": "Blow",
@@ -526,8 +531,8 @@
   },
   "105": {
     "english": "Fear",
-    "kannada": "ಹೆದರು",
-    "transliteration": "hedaru"
+    "kannada": "ಹೆದರು/ಭಯ",
+    "transliteration": "hedaru/bhaya"
   },
   "106": {
     "english": "Sleep",
@@ -546,8 +551,8 @@
   },
   "109": {
     "english": "Kill",
-    "kannada": "ಕೊಲ್ಲು",
-    "transliteration": "kollu"
+    "kannada": "ಕೊಲ್ಲು/ಸಾಯಿಸು",
+    "transliteration": "kollu/sāyisu"
   },
   "110": {
     "english": "Fight",
@@ -611,8 +616,8 @@
   },
   "122": {
     "english": "Lie In Bed",
-    "kannada": "ಪಡು",
-    "transliteration": "paḍu"
+    "kannada": "ಮಲಗು",
+    "transliteration": "malagu"
   },
   "123": {
     "english": "Sit",
@@ -654,10 +659,15 @@
     "kannada": "ಉಜ್ಜು",
     "transliteration": "ujju"
   },
-  "131": {
+  "131s": {
     "english": "Wash",
-    "kannada": "ತೊಳೆ/ಒಗೆ/ಕುಸುಬು",
-    "transliteration": "toḷe/oge/kusubu"
+    "kannada": "ತೊಳೆ",
+    "transliteration": "toḷe"
+  },
+  "131b": {
+    "english": "Wash Clothes",
+    "kannada": "ಒಗೆ",
+    "transliteration": "oge"
   },
   "132": {
     "english": "Wipe",
@@ -731,18 +741,18 @@
   },
   "146": {
     "english": "Sun",
-    "kannada": "ಸೂರ್ಯ/ಹೊತ್ತು",
-    "transliteration": "sūrya/hottu"
+    "kannada": "ಸೂರ್ಯ",
+    "transliteration": "sūrya"
   },
   "147": {
     "english": "Moon",
-    "kannada": "ಚಂದ್ರ/ತಿಂಗಳು",
-    "transliteration": "candra/tiṅgaḷu"
+    "kannada": "ಚಂದ್ರ",
+    "transliteration": "candra"
   },
   "148": {
     "english": "Star",
-    "kannada": "ನಕ್ಷತ್ರ/ಅರಿಲು/ಚುಕ್ಕೆ",
-    "transliteration": "nakṣatra/arilu/cukke"
+    "kannada": "ನಕ್ಷತ್ರ",
+    "transliteration": "nakṣatra"
   },
   "149": {
     "english": "Water",
@@ -751,8 +761,8 @@
   },
   "150": {
     "english": "Rain",
-    "kannada": "ಮಳೆಸುರಿ",
-    "transliteration": "maḷesuri"
+    "kannada": "ಮಳೆ",
+    "transliteration": "maḷe"
   },
   "151": {
     "english": "River",
@@ -786,8 +796,8 @@
   },
   "157": {
     "english": "Dust",
-    "kannada": "ದುಂಬು",
-    "transliteration": "dumbu"
+    "kannada": "ದೂಳು",
+    "transliteration": "dūḷu"
   },
   "158": {
     "english": "Earth",
@@ -846,8 +856,8 @@
   },
   "169": {
     "english": "Road",
-    "kannada": "ಹಾದಿ",
-    "transliteration": "hādi"
+    "kannada": "ರಸ್ತೆ",
+    "transliteration": "raste"
   },
   "170": {
     "english": "Mountain",
@@ -891,18 +901,18 @@
   },
   "178": {
     "english": "Year",
-    "kannada": "ಏಡು",
-    "transliteration": "ēḍu"
+    "kannada": "ವರ್ಷ",
+    "transliteration": "varṣa"
   },
   "179": {
     "english": "Warm",
-    "kannada": "ಬೆಚ್ಚ",
-    "transliteration": "becca"
+    "kannada": "ಬೆಚ್ಚಗೆ",
+    "transliteration": "beccage"
   },
   "180": {
     "english": "Cold",
-    "kannada": "ಕುಳಿರು",
-    "transliteration": "kuḷiru"
+    "kannada": "ಚಳಿ",
+    "transliteration": "caḷi"
   },
   "181": {
     "english": "Full",
@@ -921,8 +931,8 @@
   },
   "184": {
     "english": "Good",
-    "kannada": "ಒಳ್ಳೆ/ನಲ್",
-    "transliteration": "oḷḷe/nal"
+    "kannada": "ಒಳ್ಳೆ",
+    "transliteration": "oḷḷe"
   },
   "185": {
     "english": "Bad",
@@ -986,8 +996,8 @@
   },
   "197": {
     "english": "Far",
-    "kannada": "ದೂರ/ಗೆಂಟು",
-    "transliteration": "dūra/geṇṭu"
+    "kannada": "ದೂರ",
+    "transliteration": "dūra"
   },
   "198": {
     "english": "Right",
@@ -1021,7 +1031,7 @@
   },
   "204": {
     "english": "If",
-    "kannada": "ಒಂದು",
+    "kannada": "ಒಂದು ವೇಳೆ",
     "transliteration": "ondu vēḷe"
   },
   "205": {

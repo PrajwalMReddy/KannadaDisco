@@ -1,0 +1,47 @@
+{
+  "0": {
+    "english": "Who",
+    "kannada": "ಯಾರು",
+    "transliteration": "yāru"
+  },
+  "1": {
+    "english": "What",
+    "kannada": "ಏನು",
+    "transliteration": "ēnu"
+  },
+  "2": {
+    "english": "When",
+    "kannada": "ಯಾವಾಗ",
+    "transliteration": "yāvāga"
+  },
+  "3": {
+    "english": "Where",
+    "kannada": "ಎಲ್ಲಿ",
+    "transliteration": "elli"
+  },
+  "4": {
+    "english": "Why",
+    "kannada": "ಯಾಕೆ",
+    "transliteration": "yāke"
+  },
+  "5": {
+    "english": "How",
+    "kannada": "ಹೇಗೆ",
+    "transliteration": "hēge"
+  },
+  "6": {
+    "english": "How Much",
+    "kannada": "ಎಷ್ಟು",
+    "transliteration": "eṣṭu"
+  },
+  "7": {
+    "english": "Which",
+    "kannada": "ಯಾವ",
+    "transliteration": "yāva"
+  },
+  "8": {
+    "english": "Which One",
+    "kannada": "ಯಾವುದು",
+    "transliteration": "yāvudu"
+  }
+}

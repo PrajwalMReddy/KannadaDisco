@@ -13,5 +13,13 @@ String prettifyText(String topic) {
     return '';
   });
 
-  return capitalizedWords.join(' ');
+  return capitalizedWords.join(' ').replaceAll("And", "&");
+}
+
+double wordOfDaySize(String info) {
+  if (info.length <= 35) {
+    return 20.0;
+  } else {
+    return (-0.5 * info.length + 38).toDouble();
+  }
 }

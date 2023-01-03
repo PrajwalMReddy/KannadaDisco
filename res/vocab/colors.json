@@ -1,0 +1,32 @@
+{
+  "0": {
+    "english": "Color",
+    "kannada": "ಬಣ್ಣ/ವರ್ಣ",
+    "transliteration": "baṇṇa/varṇa"
+  },
+  "1": {
+    "english": "Red",
+    "kannada": "ಕೆಂಪು",
+    "transliteration": "kempu"
+  },
+  "2": {
+    "english": "Green",
+    "kannada": "ಹಸಿರು",
+    "transliteration": "hasiru"
+  },
+  "3": {
+    "english": "Yellow",
+    "kannada": "ಹಳದಿ",
+    "transliteration": "haḷadi"
+  },
+  "4": {
+    "english": "White",
+    "kannada": "ಬಿಳಿ",
+    "transliteration": "biḷi"
+  },
+  "5": {
+    "english": "Black",
+    "kannada": "ಕರಿ",
+    "transliteration": "kari"
+  }
+}

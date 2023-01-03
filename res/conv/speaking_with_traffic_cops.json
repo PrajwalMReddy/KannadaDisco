@@ -1,0 +1,57 @@
+{
+  "0": {
+    "english": "Cop: Move to the side.",
+    "kannada": "ಸೈಡ್-ಗೆ ಹಕ್ಕಿ",
+    "transliteration": "side-ge hakki"
+  },
+  "1": {
+    "english": "Tell me, sir.",
+    "kannada": "ಹೇಳಿ ಸಾರ್",
+    "transliteration": "heḷi sir"
+  },
+  "3": {
+    "english": "Cop: Show me your license.",
+    "kannada": "ನಿಮ್ಮ ಲೈಸೆನ್ಸ್ ತೋರಿಸಿ",
+    "transliteration": "nimma license thōrisi"
+  },
+  "4": {
+    "english": "Here sir.",
+    "kannada": "ತಗೊಳಿ ಸಾರ್",
+    "transliteration": "tagōḷi sir"
+  },
+  "5": {
+    "english": "Cop: You have to pay a fine.",
+    "kannada": "ನೀವು ಫೈನ್ ಕಟ್ಟಬೇಕು",
+    "transliteration": "nīvu fine kattabēku"
+  },
+  "6": {
+    "english": "Why? What did I do?",
+    "kannada": "ಯಾಕೆ ನಾನು ಯೇನು ಮಾಡ್ಡೆ",
+    "transliteration": "yāke nānu yēnu mādḍe"
+  },
+  "7": {
+    "english": "Cop: There is no U-turn here.",
+    "kannada": "ಇಲ್ಲಿ ಯೂಟರ್ನ್ ಇಲ್ಲ",
+    "transliteration": "illi U-turn illa"
+  },
+  "8": {
+    "english": "Cop: This is a one way road.",
+    "kannada": "ಈ ರಸ್ತೆ ಒನ್ ವಿ",
+    "transliteration": "ī raste one way"
+  },
+  "9": {
+    "english": "Sorry, I didn't know.",
+    "kannada": "ಸಾರೀ ನನಗೆ ಗೋತೀರಲಿಲ್ಲ",
+    "transliteration": "sorry nanage gōtīralilla"
+  },
+  "10": {
+    "english": "I'll pay the fine.",
+    "kannada": "ನಾನು ಫೈನ್ ಕಾಡುತೀನಿ",
+    "transliteration": "nānu fine kādutīni"
+  },
+  "11": {
+    "english": "Cop: It's done. You may go.",
+    "kannada": "ಆಯಿತು ನೀವು ಹೋಗಬಹುದು",
+    "transliteration": "ayitu nivu hogabahudu"
+  }
+}
