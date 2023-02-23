@@ -13,7 +13,7 @@ class _LoadingState extends State<Loading> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration.zero, () {
+    Future.delayed(Duration(seconds: 5), () {
       Navigator.pushReplacementNamed(context, '/home');
     });
   }
@@ -39,7 +39,7 @@ class LoadingScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
             Image(
-              image: AssetImage(""), // TODO No Image For Now
+              image: AssetImage("assets/splash_screen.png"), // TODO No Image For Now
             ),
             SizedBox(
               height: 50.0,

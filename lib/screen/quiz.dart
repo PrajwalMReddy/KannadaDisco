@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:kannada_disco/const/color.dart';
+import 'package:kannada_disco/course/course_unit.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/element/side_bar.dart';
 
@@ -21,14 +22,8 @@ class _QuizPageState extends State<QuizPage> {
         backgroundColor: kannadaRed,
         elevation: 0.0,
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(20.0),
-        child: Text(
-          "Coming Soon...",
-          style: TextStyle(
-            fontSize: 25.0,
-          ),
-        ),
+      body: Center(
+        child: CourseUnit(heading: 'Quizzes', subheading: 'Coming Soon...'),
       ),
       drawer: const SideBar(),
       bottomNavigationBar: BottomNavigation(currentPage: 2),

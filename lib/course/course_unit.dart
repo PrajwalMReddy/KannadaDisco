@@ -7,7 +7,11 @@ class CourseUnit extends StatelessWidget {
   final String heading;
   final String subheading;
 
-  const CourseUnit({Key? key, required this.heading, required this.subheading,}) : super(key: key);
+  const CourseUnit({
+    Key? key,
+    required this.heading,
+    required this.subheading,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,41 +19,59 @@ class CourseUnit extends StatelessWidget {
 
     return GestureDetector(
         onTap: () => {
-          Navigator.pushNamed(context, "/course/content", arguments: {
-            "heading": heading,
-          })
-        },
+              Navigator.pushNamed(context, "/course/content", arguments: {
+                "heading": heading,
+              })
+            },
         child: SizedBox(
           height: size.height * 0.2,
           width: size.width * 0.8,
-          child: Card(
-            margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
-            color: kannadaYellow,
-            child: Padding(
-              padding: const EdgeInsets.all(30.0),
-              child: Center(
-                child: Column(
-                    children: [
-                      Text(
-                        prettifyText(heading),
-                        style: const TextStyle(
-                          fontSize: 20.0,
-                        ),
+          child: Container(
+            
+            decoration: BoxDecoration(
+              // shape: ,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.red,
+                  blurRadius: 100.0, // soften the shadow
+                  spreadRadius: 0.0, //extend the shadow
+                  offset: Offset(
+                    3.0, // Move to right 10  horizontally
+                    3.0, // Move to bottom 10 Vertically
+                  ),
+                )
+              ],
+            ),
+            child: Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(100)),
+              margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
+              color: kannadaYellow,
+              child: Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: Center(
+                  child: Column(children: [
+                    Text(
+                      prettifyText(heading),
+                      style: const TextStyle(
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w700
                       ),
-                      const Spacer(),
-                      Text(
-                        subheading,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          fontSize: 15.0,
-                        ),
+                    ),
+                    const Spacer(),
+                    Text(
+                      subheading,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.w500
                       ),
-                    ]
+                    ),
+                  ]),
                 ),
               ),
             ),
           ),
-        )
-    );
+        ));
   }
 }

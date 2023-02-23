@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kannada_disco/const/color.dart';
 
 class SideBar extends StatelessWidget {
   const SideBar({Key? key}) : super(key: key);
@@ -6,11 +7,16 @@ class SideBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: kannadaYellow,
       child: SafeArea(
         child: ListView(
           children: [
-            const Image(
-              image: AssetImage(""), // TODO No Image For Now
+            Container(
+              height: 200,
+              width: 600,
+              child: const Image(
+                image: AssetImage("assets/splash_screen2.jpeg"), // TODO No Image For Now
+              ),
             ),
             SideBarElement(page: "Usage", icon: Icons.smartphone),
             SideBarElement(page: "About", icon: Icons.info),
@@ -18,9 +24,10 @@ class SideBar extends StatelessWidget {
             const Divider(),
             const Center(
               child: Text(
-                "Version: 0.2.0",
+                "Version: 0.1.0",
                 style: TextStyle(
-                  fontSize: 20.0,
+                  fontSize: 15.0,
+                  color: kannadaRed,
                 ),
               ),
             ),
@@ -44,11 +51,13 @@ class SideBarElement extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(icon),
+      leading: Icon(icon, color: Colors.red,),
       title: Text(
         page,
         style: const TextStyle(
-          fontSize: 25.0,
+          color: Colors.red,
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
         ),
       ),
       onTap: () => {

@@ -19,17 +19,39 @@ class ResourceCard extends StatelessWidget {
           "topic": topic,
         })
       },
-      child: Card(
-        margin: const EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 5.0),
-        color: kannadaYellow,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Center(
-            child: Text(
-              prettifyText(topic),
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 15.0,
+      child: Container(
+        
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          boxShadow:  [
+      BoxShadow(
+        color: Colors.red,
+        blurRadius: 10.0, // soften the shadow
+        spreadRadius: 0.0, //extend the shadow
+        offset: Offset(
+          3.0, // Move to right 10  horizontally
+          3.0, // Move to bottom 10 Vertically
+        ),
+      )
+    ],
+        ),
+        child: Card(
+          shadowColor: Colors.red,
+          shape: RoundedRectangleBorder(
+           borderRadius: BorderRadius.circular(100),
+          ),
+          margin: const EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 5.0),
+          color: kannadaYellow,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(
+              child: Text(
+                prettifyText(topic),
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.w700
+                ),
               ),
             ),
           ),

@@ -41,12 +41,13 @@ class CourseBody extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.fromLTRB(35.0, 35.0, 35.0, 30.0),
             child: Align(
-              alignment: Alignment.topLeft,
+              alignment: Alignment.center,
               child: Text(
                 "Full Kannada Course",
                 style: TextStyle(
                   fontSize: 20.0,
-                  decoration: TextDecoration.underline,
+                  fontWeight: FontWeight.bold,
+                  // decoration: TextDecoration.underline,
                 ),
               ),
             ),

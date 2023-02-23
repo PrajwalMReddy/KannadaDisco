@@ -12,6 +12,7 @@ import 'package:kannada_disco/screen/quiz.dart';
 
 void main() => runApp(
   MaterialApp(
+    debugShowCheckedModeBanner: false,
     initialRoute: '/loading',
     routes: {
       '/loading': (context) => const Loading(),
