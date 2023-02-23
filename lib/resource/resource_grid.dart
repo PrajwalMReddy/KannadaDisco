@@ -16,14 +16,15 @@ class ResourceGrid extends StatelessWidget {
     return Column(
       children: [
         Align(
-          alignment: Alignment.topLeft,
+          alignment: Alignment.center,
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 6.0),
             child: Text(
               type,
               style: const TextStyle(
                 fontSize: 20.0,
-                decoration: TextDecoration.underline,
+                fontWeight: FontWeight.bold,
+                // decoration: TextDecoration.underline,
               ),
             ),
           ),
@@ -31,6 +32,7 @@ class ResourceGrid extends StatelessWidget {
         Align(
           alignment: Alignment.topLeft,
           child: GridView.count(
+            physics: NeverScrollableScrollPhysics(),
             crossAxisCount: 3,
             shrinkWrap: true,
             children: cards,

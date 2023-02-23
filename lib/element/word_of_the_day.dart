@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:kannada_disco/const/color.dart';
 
 import 'package:kannada_disco/const/resource_topic.dart';
 import 'package:kannada_disco/util/util.dart';
@@ -21,6 +22,8 @@ class WordOfTheDay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+      color: kannadaYellow,
       margin: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
       child: Column(
         children: [
@@ -34,6 +37,7 @@ class WordOfTheDay extends StatelessWidget {
                     "Word Of The Day",
                     style: TextStyle(
                       fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   FutureBuilder<String>(

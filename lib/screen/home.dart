@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("KannadaDisco Home"),
+        title: const Text("KannadaDisco", style: TextStyle(fontWeight: FontWeight.bold),),
         centerTitle: true,
         backgroundColor: kannadaRed,
         elevation: 0.0,
@@ -68,7 +68,7 @@ class HomeBody extends StatelessWidget {
             ),
             child: const WordOfTheDay(),
           ),
-          const Resources(),
+          Resources(),
         ],
       ),
     );

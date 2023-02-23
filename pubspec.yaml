@@ -57,7 +57,7 @@ dev_dependencies:
 flutter:
   assets:
     - course/
-
+    - assets/
     - res/reading/
     - res/vocab/
     - res/gram/
