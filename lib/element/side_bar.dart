@@ -7,15 +7,50 @@ class SideBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: kannadaYellow,
       child: SafeArea(
         child: ListView(
           children: [
             Container(
+              // color: kannadaRed,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Color.fromARGB(255, 11, 31, 48),
+                  //  Color.fromARGB(255, 55, 110, 155),
+                  //  Color.fromARGB(255, 80, 150, 207),
+                  Color.fromARGB(255, 109, 161, 204),
+                ]),
+              ),
               height: 200,
-              width: 600,
-              child: const Image(
-                image: AssetImage("assets/splash_screen2.jpeg"), // TODO No Image For Now
+              width: double.infinity,
+              // child: const Image(
+              //   image: AssetImage("assets/splash_screen2.jpeg"), // TODO No Image For Now
+              // ),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+              "KannadaDisco",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20.0,
+              ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              "ಕನ್ನಡ ಡಿಸ್ಕೋ",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20.0,
+              ),
+            ),
+                  ],
+                ),
               ),
             ),
             SideBarElement(page: "Usage", icon: Icons.smartphone),
@@ -27,7 +62,7 @@ class SideBar extends StatelessWidget {
                 "Version: 0.1.0",
                 style: TextStyle(
                   fontSize: 15.0,
-                  color: kannadaRed,
+                  // color: kannadaRed,
                 ),
               ),
             ),
@@ -51,11 +86,11 @@ class SideBarElement extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(icon, color: Colors.red,),
+      leading: Icon(icon, color: kannadaRed,),
       title: Text(
         page,
         style: const TextStyle(
-          color: Colors.red,
+          color: Colors.blue,
           fontSize: 20.0,
           fontWeight: FontWeight.bold,
         ),
