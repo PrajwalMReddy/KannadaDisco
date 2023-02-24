@@ -30,23 +30,24 @@ class CourseUnit extends StatelessWidget {
             
             decoration: BoxDecoration(
               // shape: ,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.red,
-                  blurRadius: 100.0, // soften the shadow
-                  spreadRadius: 0.0, //extend the shadow
-                  offset: Offset(
-                    3.0, // Move to right 10  horizontally
-                    3.0, // Move to bottom 10 Vertically
-                  ),
-                )
-              ],
+              // boxShadow: [
+              //   // BoxShadow(
+              //   //   color: Colors.red,
+              //   //   blurRadius: 100.0, // soften the shadow
+              //   //   spreadRadius: 0.0, //extend the shadow
+              //   //   offset: Offset(
+              //   //     3.0, // Move to right 10  horizontally
+              //   //     3.0, // Move to bottom 10 Vertically
+              //   //   ),
+              //   // )
+              // ],
             ),
             child: Card(
+              elevation: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100)),
               margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
-              color: kannadaYellow,
+              // color: kannadaYellow,
               child: Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Center(

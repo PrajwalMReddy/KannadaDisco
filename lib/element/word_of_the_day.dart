@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:kannada_disco/const/color.dart';
 
 import 'package:kannada_disco/const/resource_topic.dart';
+import 'package:kannada_disco/util/screen_size.dart';
 import 'package:kannada_disco/util/util.dart';
 
 class WordOfTheDay extends StatelessWidget {
@@ -15,31 +16,37 @@ class WordOfTheDay extends StatelessWidget {
 
   Future<String> randomWord() async {
     final word = (vocabCards.toList()..shuffle()).first;
-    final jsonData = await rootBundle.loadString("res/vocab/${word.topic}.json");
+    final jsonData =
+        await rootBundle.loadString("res/vocab/${word.topic}.json");
     return jsonData;
   }
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-      color: kannadaYellow,
-      margin: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
-            child: Align(
+    return Container(
+      height: ScreenSize.height! * 0.08,
+      width: ScreenSize.width! * 0.95,
+      child: Card(
+        elevation: 5.0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              topRight: Radius.circular(40.0),
+              bottomLeft: Radius.circular(40.0)),
+        ),
+        color:  Color.fromARGB(255, 39, 101, 151),
+        child: Column(
+          children: [
+            Align(
               alignment: Alignment.center,
               child: Column(
                 children: [
-                  const Text(
-                    "Word Of The Day",
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  // const Text(
+                  //   "Word Of The Day",
+                  //   style: TextStyle(
+                  //     fontSize: 20.0,
+                  //     fontWeight: FontWeight.bold,
+                  //   ),
+                  // ),
                   FutureBuilder<String>(
                     future: randomWord(),
                     builder: (context, snapshot) {
@@ -53,7 +60,8 @@ class WordOfTheDay extends StatelessWidget {
                             );
                           } else {
                             String jsonData = snapshot.data ?? "";
-                            final Map<String, dynamic> mapData = jsonDecode(jsonData);
+                            final Map<String, dynamic> mapData =
+                                jsonDecode(jsonData);
                             List wordsData = [];
 
                             for (var entry in mapData.values) {
@@ -64,16 +72,19 @@ class WordOfTheDay extends StatelessWidget {
                             String english = word["english"];
                             String kannada = word["kannada"];
                             String transliteration = word["transliteration"];
-                            final info = "$kannada - $transliteration - $english";
+                            final info =
+                                "$kannada - $transliteration - $english";
 
                             return Column(
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+                                  padding: const EdgeInsets.fromLTRB(
+                                      0.0, 20.0, 0.0, 0.0),
                                   child: Text(
                                     info,
                                     style: TextStyle(
                                       fontSize: wordOfDaySize(info),
+                                      color: Colors.white,
                                     ),
                                   ),
                                 ),
@@ -86,8 +97,8 @@ class WordOfTheDay extends StatelessWidget {
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

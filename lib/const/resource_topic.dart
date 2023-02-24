@@ -1,15 +1,26 @@
 import 'package:flutter/widgets.dart';
-import 'package:kannada_disco/resource/resource_card.dart';
+import 'package:kannada_disco/resource/resource_card.dart';    
 import 'package:kannada_disco/resource/resource_grid.dart';
+import 'package:kannada_disco/resource/resource_list.dart';
+
+// const List<Widget> allCards = [
+//   ResourceGrid(type: "Reading & Pronunciation", cards: readingCards),
+//   SizedBox(height: 20,),
+//   ResourceGrid(type: "Vocabulary", cards: vocabCards),
+//   SizedBox(height: 20,),
+//   ResourceGrid(type: "Grammar", cards: grammarCards),
+//   SizedBox(height: 20,),
+//   ResourceGrid(type: "Conversation Phrasebook", cards: conversationCards),
+// ];
 
 const List<Widget> allCards = [
-  ResourceGrid(type: "Reading & Pronunciation", cards: readingCards),
+  ResourceList(type: "Reading & Pronunciation", cards: readingCards),
   SizedBox(height: 20,),
-  ResourceGrid(type: "Vocabulary", cards: vocabCards),
+  ResourceList(type: "Vocabulary", cards: vocabCards),
   SizedBox(height: 20,),
-  ResourceGrid(type: "Grammar", cards: grammarCards),
+  ResourceList(type: "Grammar", cards: grammarCards),
   SizedBox(height: 20,),
-  ResourceGrid(type: "Conversation Phrasebook", cards: conversationCards),
+  ResourceList(type: "Conversation Phrasebook", cards: conversationCards),
 ];
 
 const List<ResourceCard> readingCards = [
