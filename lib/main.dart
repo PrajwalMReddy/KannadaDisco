@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:kannada_disco/screen/home.dart';
 import 'package:kannada_disco/screen/course.dart';
 import 'package:kannada_disco/screen/loading.dart';
@@ -20,7 +19,7 @@ void main() => runApp(
 
       '/usage': (context) => const Usage(),
       '/about': (context) => const About(),
-      '/settings': (context) => const Settings(),
+      '/settings': (context) => const Settings(), 
 
       // Resources
       '/res/reading': (context) => Reference(type: "reading"),

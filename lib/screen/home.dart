@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/const/color.dart';
@@ -59,32 +58,12 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //   return  SingleChildScrollView(
-    //   child: Column(
-    //     children: [
-    //       Container(
-    //         height: size.height * 0.2,
-    //         width: size.width,
-    //         decoration: const BoxDecoration(
-    //           color: kannadaRed,
-    //           borderRadius: BorderRadius.only(
-    //             bottomLeft: Radius.circular(30.0),
-    //             bottomRight: Radius.circular(30.0),
-    //           ),
-    //         ),
-    // child: const WordOfTheDay(),
-    //       ),
-    //       Resources(),
-    //     ],
-    //   ),
-    // );
-
     return Stack(
       children: [
         Container(
           width: double.infinity,
           // color: kannadaRed,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -95,7 +74,7 @@ class HomeBody extends StatelessWidget {
                   Color.fromARGB(255, 109, 161, 204),
                 ]),
           ),
-          child: Column(
+          child: const Column(
             children: [
               SizedBox(
                 height: 20,
@@ -114,21 +93,6 @@ class HomeBody extends StatelessWidget {
                 height: 10,
               ),
               WordOfTheDay(),
-              // Container(
-              //   height: ScreenSize.height! * 0.08,
-              //   width: ScreenSize.width!* 0.9,
-              //   child: Card(
-              //     color: Colors.blue.withOpacity(0.7),
-              //     child: Center(child: Text('Amma', style: TextStyle(color: Colors.white, fontSize: 20),)),
-              //     elevation: 5.0,
-              //     shape: RoundedRectangleBorder(
-              //       borderRadius: BorderRadius.only(
-              //         topRight: Radius.circular(40.0),
-              //         bottomLeft: Radius.circular(40.0)
-              //       ),
-              //     ),
-              //   ),
-              // ),
             ],
           ),
         ),
@@ -136,7 +100,7 @@ class HomeBody extends StatelessWidget {
           padding: EdgeInsets.only(top: ScreenSize.height! * 0.2),
           child: Container(
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(70.0),
@@ -145,71 +109,11 @@ class HomeBody extends StatelessWidget {
                 bottomRight: Radius.circular(70.0),
               ),
             ),
-            child: Padding(
-              padding: const EdgeInsets.only(top: 20, bottom: 20),
+            child: const Padding(
+              padding: EdgeInsets.only(top: 20, bottom: 20),
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    // SizedBox(
-                    //   height: 20,
-                    // ),
-                    // Text(
-                    //   'Reading & Pronounciation',
-                    //   style: TextStyle(fontSize: 20),
-                    // ),
-                    // SizedBox(
-                    //   height: 20,
-                    // ),
-                    // Container(
-                    //   height: ScreenSize.height! * 0.07,
-                    //   width: ScreenSize.width! * 0.8,
-                    //   child: Card(
-                    //     child: Center(child: Text('Vowels')),
-                    //     elevation: 5.0,
-                    //     shape: RoundedRectangleBorder(
-                    //         borderRadius: BorderRadius.all(Radius.circular(30))),
-                    //   ),
-                    // ),
-                    // Container(
-                    //   height: ScreenSize.height! * 0.07,
-                    //   width: ScreenSize.width! * 0.8,
-                    //   child: Card(
-                    //     child: Center(child: Text('Consonants')),
-                    //     elevation: 5.0,
-                    //     shape: RoundedRectangleBorder(
-                    //         borderRadius: BorderRadius.all(Radius.circular(30))),
-                    //   ),
-                    // ),
-                    // Container(
-                    //   height: ScreenSize.height! * 0.07,
-                    //   width: ScreenSize.width!! * 0.8,
-                    //   child: Card(
-                    //     child: Center(child: Text('conjuncts')),
-                    //     elevation: 5.0,
-                    //     shape: RoundedRectangleBorder(
-                    //         borderRadius: BorderRadius.all(Radius.circular(30))),
-                    //   ),
-                    // ),
-                    // Container(
-                    //   height: ScreenSize.height! * 0.07,
-                    //   width: ScreenSize.width! * 0.8,
-                    //   child: Card(
-                    //     child: Center(child: Text('digits')),
-                    //     elevation: 5.0,
-                    //     shape: RoundedRectangleBorder(
-                    //         borderRadius: BorderRadius.all(Radius.circular(30))),
-                    //   ),
-                    // ),
-                    // Container(
-                    //   height: ScreenSize.height! * 0.07,
-                    //   width: ScreenSize.width! * 0.8,
-                    //   child: Card(
-                    //     child: Center(child: Text('Diacritics')),
-                    //     elevation: 5.0,
-                    //     shape: RoundedRectangleBorder(
-                    //         borderRadius: BorderRadius.all(Radius.circular(30))),
-                    //   ),
-                    // )
                     Resources(),
                   ],
                 ),

@@ -1,26 +1,15 @@
 import 'package:flutter/widgets.dart';
 import 'package:kannada_disco/resource/resource_card.dart';    
 import 'package:kannada_disco/resource/resource_grid.dart';
-import 'package:kannada_disco/resource/resource_list.dart';
-
-// const List<Widget> allCards = [
-//   ResourceGrid(type: "Reading & Pronunciation", cards: readingCards),
-//   SizedBox(height: 20,),
-//   ResourceGrid(type: "Vocabulary", cards: vocabCards),
-//   SizedBox(height: 20,),
-//   ResourceGrid(type: "Grammar", cards: grammarCards),
-//   SizedBox(height: 20,),
-//   ResourceGrid(type: "Conversation Phrasebook", cards: conversationCards),
-// ];
 
 const List<Widget> allCards = [
-  ResourceList(type: "Reading & Pronunciation", cards: readingCards),
+  ResourceGrid(type: "Reading & Pronunciation", cards: readingCards),
   SizedBox(height: 20,),
-  ResourceList(type: "Vocabulary", cards: vocabCards),
+  ResourceGrid(type: "Vocabulary", cards: vocabCards), 
   SizedBox(height: 20,),
-  ResourceList(type: "Grammar", cards: grammarCards),
+  ResourceGrid(type: "Grammar", cards: grammarCards),
   SizedBox(height: 20,),
-  ResourceList(type: "Conversation Phrasebook", cards: conversationCards),
+  ResourceGrid(type: "Conversation Phrasebook", cards: conversationCards),
 ];
 
 const List<ResourceCard> readingCards = [
@@ -60,7 +49,7 @@ const List<ResourceCard> grammarCards = [
 
 const List<ResourceCard> conversationCards = [
   // ResourceCard(topic: "self_introductions", resourceType: "conversation"),
-  ResourceCard(topic: "self_introduction", resourceType: "conversation"),
+  ResourceCard(topic: "self_introductions", resourceType: "conversation"),
   ResourceCard(topic: "using_a_cab", resourceType: "conversation"),
   ResourceCard(topic: "in_the_market", resourceType: "conversation"),
   ResourceCard(topic: "health_and_medicine", resourceType: "conversation"),

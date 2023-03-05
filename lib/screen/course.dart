@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
-
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/const/course_units.dart';
@@ -34,11 +33,11 @@ class CourseBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       scrollDirection: Axis.vertical,
       child: Column(
         children: [
-          const Padding(
+          Padding(
             padding: EdgeInsets.fromLTRB(35.0, 35.0, 35.0, 30.0),
             child: Align(
               alignment: Alignment.center,
@@ -47,6 +46,7 @@ class CourseBody extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
+                  color: Colors.blue,
                   // decoration: TextDecoration.underline,
                 ),
               ),

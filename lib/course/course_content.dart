@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'package:flutter_markdown/flutter_markdown.dart';
-
 import 'package:kannada_disco/util/util.dart';
 import 'package:kannada_disco/const/color.dart';
 
@@ -55,3 +53,4 @@ class CourseContent extends StatelessWidget {
     );
   }
 }
+
