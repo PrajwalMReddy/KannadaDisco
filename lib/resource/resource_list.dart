@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/resource/resource_card.dart';
 
 class ResourceList extends StatelessWidget {
@@ -26,17 +25,14 @@ class ResourceList extends StatelessWidget {
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.blue
-                // decoration: TextDecoration.underline,
               ),
             ),
           ),
         ),
-        Container(
+        SizedBox(
           height: 100,
           child: ListView(
             scrollDirection: Axis.horizontal,
-            // physics: NeverScrollableScrollPhysics(),
-            // shrinkWrap: true,
             children: cards,
           ),
         ),

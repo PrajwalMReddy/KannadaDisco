@@ -12,13 +12,19 @@ class SideBar extends StatelessWidget {
           children: [
             Container(
               // color: kannadaRed,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.only(
+                topLeft: Radius.zero,
+                topRight: Radius.circular(60.0),
+                bottomLeft: Radius.circular(60.0),
+                // bottomRight: Radius.circular(30.0),
+              ),
                 gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
                   Color.fromARGB(255, 11, 31, 48),
-                  //  Color.fromARGB(255, 55, 110, 155),
+                   Color.fromARGB(255, 29, 66, 97),
                   //  Color.fromARGB(255, 80, 150, 207),
                   Color.fromARGB(255, 109, 161, 204),
                 ]),
@@ -28,7 +34,7 @@ class SideBar extends StatelessWidget {
               // child: const Image(
               //   image: AssetImage("assets/splash_screen2.jpeg"), // TODO No Image For Now
               // ),
-              child: Center(
+              child: const Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -53,15 +59,17 @@ class SideBar extends StatelessWidget {
                 ),
               ),
             ),
-            SideBarElement(page: "Usage", icon: Icons.smartphone),
+            const SizedBox(height: 20,),
             SideBarElement(page: "About", icon: Icons.info),
-            SideBarElement(page: "Settings", icon: Icons.settings),
+            SideBarElement(page: "Usage", icon: Icons.smartphone),
+            // SideBarElement(page: "Settings", icon: Icons.settings),
             const Divider(),
             const Center(
               child: Text(
-                "Version: 0.1.0",
+                "Version: 1.0.0",
                 style: TextStyle(
                   fontSize: 15.0,
+                  color: kannadaRed,
                   // color: kannadaRed,
                 ),
               ),

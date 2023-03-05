@@ -1,8 +1,6 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/resource/reference_entry.dart';
 import 'package:kannada_disco/util/util.dart';
@@ -46,20 +44,39 @@ class Reference extends StatelessWidget {
                 List<Widget> wordsData = [];
 
                 for (var entry in mapData.values) {
-                  wordsData.add(
-                      ReferenceEntry(
-                          english: entry["english"],
-                          kannada: entry["kannada"],
-                          transliteration: entry["transliteration"]
-                      )
-                  );
+                  wordsData.add(ReferenceEntry(
+                      english: entry["english"],
+                      kannada: entry["kannada"],
+                      transliteration: entry["transliteration"]));
                 }
 
-                return SingleChildScrollView(
-                  child: Column(
-                    children: wordsData,
-                  ),
-                );
+                return (wordsData.isEmpty)
+                    ? Center(
+                        child: SizedBox(
+                          height: 150,
+                          width: 300,
+                          child: Card(
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(100)),
+                            // margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
+                            // color: kannadaYellow,
+                            child: const Center(
+                              child: Text(
+                                'Added to be...',
+                                style: TextStyle(
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                          ),
+                        ),
+                      )
+                    : SingleChildScrollView(
+                        child: Column(
+                          children: wordsData,
+                        ),
+                      );
               }
           }
         },

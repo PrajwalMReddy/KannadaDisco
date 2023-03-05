@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/util/util.dart';
 
 class CourseUnit extends StatelessWidget {
@@ -26,23 +24,7 @@ class CourseUnit extends StatelessWidget {
         child: SizedBox(
           height: size.height * 0.2,
           width: size.width * 0.8,
-          child: Container(
-            
-            decoration: BoxDecoration(
-              // shape: ,
-              // boxShadow: [
-              //   // BoxShadow(
-              //   //   color: Colors.red,
-              //   //   blurRadius: 100.0, // soften the shadow
-              //   //   spreadRadius: 0.0, //extend the shadow
-              //   //   offset: Offset(
-              //   //     3.0, // Move to right 10  horizontally
-              //   //     3.0, // Move to bottom 10 Vertically
-              //   //   ),
-              //   // )
-              // ],
-            ),
-            child: Card(
+          child: Card(
               elevation: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100)),
@@ -72,7 +54,6 @@ class CourseUnit extends StatelessWidget {
                 ),
               ),
             ),
-          ),
         ));
   }
 }

@@ -10,23 +10,25 @@ class ReferenceEntry extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100.0,
+      // height: 100.0,
       width: MediaQuery.of(context).size.width,
       child: Card(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(25.0, 20.0, 25.0, 10.0),
-          child: Align(
-            alignment: Alignment.topLeft,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
+          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Flexible(
+                child: Text(
                   english,
                   style: const TextStyle(
                     fontSize: 20.0,
                   ),
                 ),
-                Column(
+              ),
+              Flexible(
+                child: Column(
+                  // crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Text(
                       kannada,
@@ -37,13 +39,13 @@ class ReferenceEntry extends StatelessWidget {
                     Text(
                       transliteration,
                       style: const TextStyle(
-                        fontSize: 20.0,
+                        fontSize: 20,
                       ),
                     ),
                   ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
