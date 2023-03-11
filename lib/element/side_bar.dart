@@ -11,7 +11,7 @@ class SideBar extends StatelessWidget {
         child: ListView(
           children: [
             Container(
-              // color: kannadaRed,
+              // color: kannadaBlue,
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                 topLeft: Radius.zero,
@@ -66,11 +66,11 @@ class SideBar extends StatelessWidget {
             const Divider(),
             const Center(
               child: Text(
-                "Version: 1.0.0",
+                "Version: 0.3.0",
                 style: TextStyle(
                   fontSize: 15.0,
-                  color: kannadaRed,
-                  // color: kannadaRed,
+                  color: kannadaBlue,
+                  // color: kannadaBlue,
                 ),
               ),
             ),
@@ -94,7 +94,7 @@ class SideBarElement extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(icon, color: kannadaRed,),
+      leading: Icon(icon, color: kannadaBlue,),
       title: Text(
         page,
         style: const TextStyle(

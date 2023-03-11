@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:kannada_disco/screen/home.dart';
 import 'package:kannada_disco/screen/course.dart';
 import 'package:kannada_disco/screen/loading.dart';
@@ -9,7 +10,23 @@ import 'package:kannada_disco/screen/usage.dart';
 import 'package:kannada_disco/course/course_content.dart';
 import 'package:kannada_disco/screen/quiz.dart';
 
-void main() => runApp(
+void main() async {
+   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize the local notification plugin
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
+  var initializationSettingsAndroid =
+      AndroidInitializationSettings('logo');
+  var initializationSettingsIOS = IOSInitializationSettings(
+    requestAlertPermission: true,
+    requestBadgePermission: true,
+    requestSoundPermission: true,
+  );
+  var initializationSettings = InitializationSettings(
+      android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
+  await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+  runApp(
   MaterialApp(
     debugShowCheckedModeBanner: false,
     initialRoute: '/loading',
@@ -36,3 +53,4 @@ void main() => runApp(
     },
   ),
 );
+}

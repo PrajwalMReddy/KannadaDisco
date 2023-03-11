@@ -31,7 +31,7 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kannadaRed,
+      backgroundColor: kannadaBlue,
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -52,26 +52,26 @@ class LoadingScreen extends StatelessWidget {
               // Image(
               //   image: AssetImage(""), // TODO No Image For Now
               // ),
-              Text(
-                "Welcome",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 50.0,
-                ),
-              ),
-              SizedBox(
-                height: 20.0,
-              ),
-              Text(
-                "To",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 50.0,
-                ),
-              ),
-              SizedBox(
-                height: 50.0,
-              ),
+              // Text(
+              //   "Welcome",
+              //   style: TextStyle(
+              //     color: Colors.white,
+              //     fontSize: 50.0,
+              //   ),
+              // ),
+              // SizedBox(
+              //   height: 20.0,
+              // ),
+              // Text(
+              //   "To",
+              //   style: TextStyle(
+              //     color: Colors.white,
+              //     fontSize: 50.0,
+              //   ),
+              // ),
+              // SizedBox(
+              //   height: 50.0,
+              // ),
               Text(
                 "KannadaDisco",
                 style: TextStyle(

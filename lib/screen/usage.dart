@@ -10,7 +10,7 @@ class Usage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Using KannadaDisco"),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(25.0, 0.0, 25.0, 0.0),

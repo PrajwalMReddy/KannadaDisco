@@ -1,4 +1,4 @@
-package com.example.kannada_disco
+package com.prajwalmreddy.kannada_disco
 
 import io.flutter.embedding.android.FlutterActivity
 

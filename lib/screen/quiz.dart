@@ -19,7 +19,7 @@ class _QuizPageState extends State<QuizPage> {
       appBar: AppBar(
         title: const Text("KannadaDisco Practice"),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
         elevation: 0.0,
       ),
       body: Center(
@@ -46,7 +46,7 @@ class _QuizPageState extends State<QuizPage> {
                     ),
                     const Spacer(),
                     const Text(
-                      'Added to be...',
+                      'Coming soon...',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 15.0, fontWeight: FontWeight.w500),
