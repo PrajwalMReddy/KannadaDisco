@@ -25,7 +25,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: currentIndex,
-      selectedItemColor: kannadaRed,
+      selectedItemColor: kannadaBlue,
 
       onTap: (index) {
         Navigator.pushReplacementNamed(context, pages[index]);

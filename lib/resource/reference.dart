@@ -25,7 +25,7 @@ class Reference extends StatelessWidget {
       appBar: AppBar(
         title: Text(prettifyText(topic)),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
       ),
       body: FutureBuilder<String>(
         future: loadJson(topic),
@@ -63,7 +63,7 @@ class Reference extends StatelessWidget {
                             // color: kannadaYellow,
                             child: const Center(
                               child: Text(
-                                'Added to be...',
+                                'To be added...',
                                 style: TextStyle(
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.w700),

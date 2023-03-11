@@ -22,8 +22,12 @@ class ResourceCard extends StatelessWidget {
         child: Card(
           elevation: 15.0,
           shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(30),
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(15),
+              topRight: Radius.circular(15),
+              bottomRight: Radius.circular(15),
+              topLeft: Radius.circular(15)
+              // Radius.circular(20),
             ),
           ),
           child: Center(

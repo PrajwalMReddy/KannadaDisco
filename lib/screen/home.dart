@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/word_of_the_day.dart';
 import 'package:kannada_disco/resource//resources.dart';
 import 'package:kannada_disco/util/screen_size.dart';
+import 'package:notification_permissions/notification_permissions.dart';
+import 'package:timezone/timezone.dart' as tz;
+import 'package:timezone/tzdata.dart' as tz;
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -14,6 +18,67 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+   // Initialize the local notification plugin
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
+
+  Future<void> _scheduleDailyNotification() async {
+  var androidPlatformChannelSpecifics = AndroidNotificationDetails(
+    'channel_id',
+    'channel_name',
+    'channel_description',
+    importance: Importance.max, 
+    priority: Priority.max,
+    ticker: 'ticker',
+    playSound: true,
+  );
+  var iOSPlatformChannelSpecifics = IOSNotificationDetails();
+  var platformChannelSpecifics = NotificationDetails(
+      android: androidPlatformChannelSpecifics,
+      iOS: iOSPlatformChannelSpecifics);
+    await flutterLocalNotificationsPlugin.showDailyAtTime(
+      0, 
+      'Good Morining', 
+      'Word of the day is ready for you, Please click on it', 
+      Time(18, 43, 0), 
+      platformChannelSpecifics
+      );
+
+
+}
+
+  Future<bool> getCheckNotificationPermStatus() {
+    return NotificationPermissions.getNotificationPermissionStatus()
+        .then((status) {
+      switch (status) {
+        case PermissionStatus.denied:
+          return false;
+        case PermissionStatus.granted:
+          return true;
+        case PermissionStatus.unknown:
+          return false;
+        default:
+          return false;
+      }
+    });
+  }
+
+    void requestPermission() {
+    NotificationPermissions.requestNotificationPermissions();
+  }
+
+  @override
+  void initState() {
+    requestPermission();
+    getCheckNotificationPermStatus().then((status) {
+      if(status) {
+        _scheduleDailyNotification();
+      }
+    });
+    
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return const HomeScreen();
@@ -38,7 +103,7 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
         elevation: 0.0,
       ),
       drawer: const SideBar(),
@@ -62,7 +127,7 @@ class HomeBody extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          // color: kannadaRed,
+          // color: kannadaBlue,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topCenter,
@@ -74,26 +139,29 @@ class HomeBody extends StatelessWidget {
                   Color.fromARGB(255, 109, 161, 204),
                 ]),
           ),
-          child: const Column(
-            children: [
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                'Word',
-                style: TextStyle(color: Colors.white, fontSize: 30),
-              ),
-              Text(
-                'of the day',
-                style: TextStyle(
-                  color: Colors.white,
+          child: Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: const Column(
+              children: [
+                SizedBox(
+                  height: 20,
                 ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              WordOfTheDay(),
-            ],
+                // Text(
+                //   'Word of the day',
+                //   style: TextStyle(color: Colors.white, fontSize: 20),
+                // ),
+                // Text(
+                //   'of the day',
+                //   style: TextStyle(
+                //     color: Colors.white,
+                //   ),
+                // ),
+                // SizedBox(
+                //   height: 10,
+                // ),
+                WordOfTheDay(),
+              ],
+            ),
           ),
         ),
         Padding(

@@ -34,9 +34,9 @@ class ResourceGrid extends StatelessWidget {
           alignment: Alignment.topLeft,
           child: GridView.count(
             physics: const NeverScrollableScrollPhysics(),
-            crossAxisSpacing: 15,
-            mainAxisSpacing: 20,
-            childAspectRatio: 1.0,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            childAspectRatio: 1.3,
             crossAxisCount: 3,
             shrinkWrap: true,
             children: cards,

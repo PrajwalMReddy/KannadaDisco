@@ -18,7 +18,7 @@ class _CoursePageState extends State<CoursePage> {
       appBar: AppBar(
         title: const Text("KannadaDisco Courses"),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
         elevation: 0.0,
       ),
       body: const CourseBody(),

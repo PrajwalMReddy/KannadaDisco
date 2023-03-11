@@ -24,7 +24,7 @@ class CourseContent extends StatelessWidget {
       appBar: AppBar(
         title: Text(prettifyText(heading)),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
       ),
       body: FutureBuilder<String>(
         future: loadMarkdown(heading),

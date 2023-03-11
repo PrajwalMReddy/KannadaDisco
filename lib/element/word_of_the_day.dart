@@ -78,7 +78,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
   Widget build(BuildContext context) {
     // _setDateState();
     return SizedBox(
-      height: ScreenSize.height! * 0.08,
+      height: ScreenSize.height! * 0.13,
       width: ScreenSize.width! * 0.95,
       child: Card(
         elevation: 5.0,
@@ -89,12 +89,28 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
         ),
         color: const Color.fromARGB(255, 39, 101, 151),
         child: Center(
-          child: Text(
-            info,
-            style: TextStyle(
-              fontSize: wordOfDaySize(info),
-              color: Colors.white,
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                  'Word of the day',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+                SizedBox(height: 10),
+              SizedBox(
+                width: ScreenSize.width! * 0.82,
+                child: Center(
+                  child: Text(
+                  info,
+                    style: TextStyle( 
+                      fontSize: wordOfDaySize(info),
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),

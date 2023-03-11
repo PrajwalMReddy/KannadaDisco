@@ -25,9 +25,15 @@ class CourseUnit extends StatelessWidget {
           height: size.height * 0.2,
           width: size.width * 0.8,
           child: Card(
-              elevation: 10,
+              elevation: 15,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(100)),
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(100),
+                    topRight: Radius.circular(100),
+                    topLeft: Radius.circular(100),
+                    bottomRight: Radius.circular(100),
+                  )
+                  ),
               margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
               // color: kannadaYellow,
               child: Padding(
