@@ -19,7 +19,7 @@ class About extends StatelessWidget {
           children: const [
             SizedBox(height: 30,),
             Text(
-                "About Kannada and Karnataka:",
+                "About Kannada and Karnataka",
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class About extends StatelessWidget {
             ),
             SizedBox(height: 30,),
             Text(
-                "About KannadaDisco:",
+                "About KannadaDisco",
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
