@@ -18,7 +18,7 @@ class Usage extends StatelessWidget {
           children: const [
             SizedBox(height: 30,),
             Text(
-                "Using KannadaDisco:",
+                "Using KannadaDisco",
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,

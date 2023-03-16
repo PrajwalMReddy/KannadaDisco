@@ -31,27 +31,27 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kannadaBlue,
+      // backgroundColor: kannadaBlue,
       body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Color.fromARGB(255, 11, 31, 48),
-                   Color.fromARGB(255, 29, 66, 97),
-                  //  Color.fromARGB(255, 80, 150, 207),
-                  Color.fromARGB(255, 109, 161, 204),
-                ]),
-        ),
+        // decoration: const BoxDecoration(
+        //   gradient: LinearGradient(
+        //         begin: Alignment.topCenter,
+        //         end: Alignment.bottomCenter,
+        //         colors: [
+        //           Color.fromARGB(255, 11, 31, 48),
+        //            Color.fromARGB(255, 29, 66, 97),
+        //           //  Color.fromARGB(255, 80, 150, 207),
+        //           Color.fromARGB(255, 109, 161, 204),
+        //         ]),
+        // ),
         child: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Image(
-              //   image: AssetImage(""), // TODO No Image For Now
-              // ),
+              Image(
+                image: AssetImage("assets/logo.png"), // TODO No Image For Now
+              ),
               // Text(
               //   "Welcome",
               //   style: TextStyle(
@@ -72,23 +72,23 @@ class LoadingScreen extends StatelessWidget {
               // SizedBox(
               //   height: 50.0,
               // ),
-              Text(
-                "KannadaDisco",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 50.0,
-                ),
-              ),
-              SizedBox(
-                height: 20.0,
-              ),
-              Text(
-                "ಕನ್ನಡ ಡಿಸ್ಕೋ",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 50.0,
-                ),
-              ),
+              // Text(
+              //   "KannadaDisco",
+              //   style: TextStyle(
+              //     color: Colors.white,
+              //     fontSize: 50.0,
+              //   ),
+              // ),
+              // SizedBox(
+              //   height: 20.0,
+              // ),
+              // Text(
+              //   "ಕನ್ನಡ ಡಿಸ್ಕೋ",
+              //   style: TextStyle(
+              //     color: Colors.white,
+              //     fontSize: 50.0,
+              //   ),
+              // ),
             ],
           ),
         ),

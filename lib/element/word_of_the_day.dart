@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
@@ -30,7 +31,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
   Future<void> _initPrefs() async {
     _prefs = await SharedPreferences.getInstance();
     String lastDateString = _prefs!.getString('lastDate') ?? '';
-    info = _prefs!.getString('info') ?? "";
+    info = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
     setState(() {});
     if (lastDateString.isNotEmpty) {
       _lastDate = DateFormat('yyyy-MM-dd').parse(lastDateString);
@@ -41,8 +42,15 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
   }
 
   Future<void> _setDateState() async {
+    var time = _prefs!.getString('notificationTime') ?? "07:00:00";
+    var splittedList = time.split(':');
+    double hour = double.parse(splittedList[0]);
+    double minute = double.parse(splittedList[1]);
+    double notificationTime = hour + (minute / 60);
     DateTime now = DateTime.now();
-    if (_lastDate!.day != now.day) {
+    double nowTime = now.hour + (now.minute / 60);
+    
+    if ((_lastDate!.day != now.day) && (nowTime >= notificationTime)) {
       String jsonData = await randomWord();
       final Map<String, dynamic> mapData = jsonDecode(jsonData);
       List wordsData = [];
@@ -93,19 +101,23 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                  'Word of the day',
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                'Word of the day',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold,
                 ),
-                SizedBox(height: 10),
+              ),
+              SizedBox(height: 10),
               SizedBox(
                 width: ScreenSize.width! * 0.82,
                 child: Center(
                   child: Text(
-                  info,
-                    style: TextStyle( 
+                    info,
+                    style: TextStyle(
                       fontSize: wordOfDaySize(info),
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                      // fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),

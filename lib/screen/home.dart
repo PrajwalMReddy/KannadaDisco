@@ -5,6 +5,7 @@ import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/word_of_the_day.dart';
 import 'package:kannada_disco/resource//resources.dart';
+import 'package:kannada_disco/service/local_notification_service.dart';
 import 'package:kannada_disco/util/screen_size.dart';
 import 'package:notification_permissions/notification_permissions.dart';
 import 'package:timezone/timezone.dart' as tz;
@@ -19,34 +20,36 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
+  LocalNotificationService localNotificationService = LocalNotificationService();
+
    // Initialize the local notification plugin
-  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-      FlutterLocalNotificationsPlugin();
+  // FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+  //     FlutterLocalNotificationsPlugin();
 
-  Future<void> _scheduleDailyNotification() async {
-  var androidPlatformChannelSpecifics = AndroidNotificationDetails(
-    'channel_id',
-    'channel_name',
-    'channel_description',
-    importance: Importance.max, 
-    priority: Priority.max,
-    ticker: 'ticker',
-    playSound: true,
-  );
-  var iOSPlatformChannelSpecifics = IOSNotificationDetails();
-  var platformChannelSpecifics = NotificationDetails(
-      android: androidPlatformChannelSpecifics,
-      iOS: iOSPlatformChannelSpecifics);
-    await flutterLocalNotificationsPlugin.showDailyAtTime(
-      0, 
-      'Good Morining', 
-      'Word of the day is ready for you, Please click on it', 
-      Time(18, 43, 0), 
-      platformChannelSpecifics
-      );
+//   Future<void> _scheduleDailyNotification() async {
+//   var androidPlatformChannelSpecifics = AndroidNotificationDetails(
+//     '0',
+//     'KannadaDisco',
+//     'Show notification every day morining',
+//     importance: Importance.max, 
+//     priority: Priority.max,
+//     ticker: 'ticker',
+//     playSound: true,
+//   );
+//   var iOSPlatformChannelSpecifics = IOSNotificationDetails();
+//   var platformChannelSpecifics = NotificationDetails(
+//       android: androidPlatformChannelSpecifics,
+//       iOS: iOSPlatformChannelSpecifics);
+//     await flutterLocalNotificationsPlugin.showDailyAtTime(
+//       0, 
+//       'Good Morining!', 
+//       'Word of the day is ready for you, Please click here.', 
+//       Time(7, 0, 0), 
+//       platformChannelSpecifics
+//       );
 
 
-}
+// }
 
   Future<bool> getCheckNotificationPermStatus() {
     return NotificationPermissions.getNotificationPermissionStatus()
@@ -73,7 +76,7 @@ class _HomeState extends State<Home> {
     requestPermission();
     getCheckNotificationPermStatus().then((status) {
       if(status) {
-        _scheduleDailyNotification();
+        localNotificationService.scheduleDailyNotification();
       }
     });
     
