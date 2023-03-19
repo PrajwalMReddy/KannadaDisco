@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'package:flutter_markdown/flutter_markdown.dart';
-
 import 'package:kannada_disco/util/util.dart';
 import 'package:kannada_disco/const/color.dart';
 
@@ -26,7 +24,7 @@ class CourseContent extends StatelessWidget {
       appBar: AppBar(
         title: Text(prettifyText(heading)),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
       ),
       body: FutureBuilder<String>(
         future: loadMarkdown(heading),
@@ -55,3 +53,4 @@ class CourseContent extends StatelessWidget {
     );
   }
 }
+

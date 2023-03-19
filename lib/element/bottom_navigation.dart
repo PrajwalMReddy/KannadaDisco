@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:kannada_disco/const/color.dart';
 
 class BottomNavigation extends StatefulWidget {
@@ -26,7 +25,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: currentIndex,
-      selectedItemColor: kannadaRed,
+      selectedItemColor: kannadaBlue,
 
       onTap: (index) {
         Navigator.pushReplacementNamed(context, pages[index]);
@@ -43,7 +42,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.quiz),
-          label: "Quizzes",
+          label: "Practice",
         ),
       ],
     );
