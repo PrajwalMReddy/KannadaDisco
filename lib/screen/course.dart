@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
-
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/const/course_units.dart';
@@ -19,7 +18,7 @@ class _CoursePageState extends State<CoursePage> {
       appBar: AppBar(
         title: const Text("KannadaDisco Courses"),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
         elevation: 0.0,
       ),
       body: const CourseBody(),
@@ -41,12 +40,14 @@ class CourseBody extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.fromLTRB(35.0, 35.0, 35.0, 30.0),
             child: Align(
-              alignment: Alignment.topLeft,
+              alignment: Alignment.center,
               child: Text(
                 "Full Kannada Course",
                 style: TextStyle(
                   fontSize: 20.0,
-                  decoration: TextDecoration.underline,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                  // decoration: TextDecoration.underline,
                 ),
               ),
             ),

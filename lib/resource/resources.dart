@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:kannada_disco/const/resource_topic.dart';
 
 class Resources extends StatelessWidget {
@@ -10,11 +9,11 @@ class Resources extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(15.0),
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
       child: Align(
         alignment: Alignment.topLeft,
         child: Column(
-          children: allCards,
+          children: allCards,  
         ),
       ),
     );

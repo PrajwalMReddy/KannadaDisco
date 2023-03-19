@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:kannada_disco/const/color.dart';
 
 class Settings extends StatelessWidget {
@@ -11,7 +10,7 @@ class Settings extends StatelessWidget {
       appBar: AppBar(
         title: const Text("KannadaDisco Settings"),
         centerTitle: true,
-        backgroundColor: kannadaRed,
+        backgroundColor: kannadaBlue,
       ),
     );
   }
