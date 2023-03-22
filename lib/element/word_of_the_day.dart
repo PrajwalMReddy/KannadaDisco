@@ -33,28 +33,31 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     String lastDateString = _prefs!.getString('lastDate') ?? '';
     info = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
     setState(() {});
+
     if (lastDateString.isNotEmpty) {
       _lastDate = DateFormat('yyyy-MM-dd').parse(lastDateString);
     } else {
-      _lastDate = DateTime.now().subtract(Duration(days: 1));
+      _lastDate = DateTime.now().subtract(const Duration(days: 1));
     }
+
     _setDateState();
   }
 
   Future<void> _setDateState() async {
     var time = _prefs!.getString('notificationTime') ?? "07:00:00";
     var splittedList = time.split(':');
+
     double hour = double.parse(splittedList[0]);
     double minute = double.parse(splittedList[1]);
     double notificationTime = hour + (minute / 60);
     DateTime now = DateTime.now();
     double nowTime = now.hour + (now.minute / 60);
-    
+
     if ((_lastDate!.day != now.day) && (nowTime >= notificationTime)) {
       String jsonData = await randomWord();
       final Map<String, dynamic> mapData = jsonDecode(jsonData);
-      List wordsData = [];
 
+      List wordsData = [];
       for (var entry in mapData.values) {
         wordsData.add(entry);
       }
@@ -64,10 +67,12 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
       String kannada = word["kannada"];
       String transliteration = word["transliteration"];
       final newWord = "$kannada - $transliteration - $english";
+
       _prefs!.setString('info', newWord);
       setState(() {
         // set your state here
       });
+
       info = _prefs!.getString('info') ?? "";
       setState(() {});
       _prefs!.setString('lastDate', DateFormat('yyyy-MM-dd').format(now));
@@ -77,8 +82,8 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
 
   Future<String> randomWord() async {
     final word = (vocabCards.toList()..shuffle()).first;
-    final jsonData =
-        await rootBundle.loadString("res/vocab/${word.topic}.json");
+    final jsonData = await rootBundle.loadString("res/vocab/${word.topic}.json");
+
     return jsonData;
   }
 
@@ -100,7 +105,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-             const Text(
+              const Text(
                 'Word of the day',
                 style: TextStyle(
                   color: Colors.white,
@@ -108,7 +113,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               SizedBox(
                 width: ScreenSize.width! * 0.82,
                 child: Center(

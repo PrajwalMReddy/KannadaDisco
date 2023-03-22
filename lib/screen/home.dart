@@ -19,10 +19,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   LocalNotificationService localNotificationService = LocalNotificationService();
 
-   // Initialize the local notification plugin
+  // Initialize the local notification plugin
   // FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
   //     FlutterLocalNotificationsPlugin();
 
@@ -31,7 +30,7 @@ class _HomeState extends State<Home> {
 //     '0',
 //     'KannadaDisco',
 //     'Show notification every day morining',
-//     importance: Importance.max, 
+//     importance: Importance.max,
 //     priority: Priority.max,
 //     ticker: 'ticker',
 //     playSound: true,
@@ -41,13 +40,12 @@ class _HomeState extends State<Home> {
 //       android: androidPlatformChannelSpecifics,
 //       iOS: iOSPlatformChannelSpecifics);
 //     await flutterLocalNotificationsPlugin.showDailyAtTime(
-//       0, 
-//       'Good Morining!', 
-//       'Word of the day is ready for you, Please click here.', 
-//       Time(7, 0, 0), 
+//       0,
+//       'Good Morining!',
+//       'Word of the day is ready for you, Please click here.',
+//       Time(7, 0, 0),
 //       platformChannelSpecifics
 //       );
-
 
 // }
 
@@ -67,7 +65,7 @@ class _HomeState extends State<Home> {
     });
   }
 
-    void requestPermission() {
+  void requestPermission() {
     NotificationPermissions.requestNotificationPermissions();
   }
 
@@ -75,13 +73,14 @@ class _HomeState extends State<Home> {
   void initState() {
     requestPermission();
     getCheckNotificationPermStatus().then((status) {
-      if(status) {
+      if (status) {
         localNotificationService.scheduleDailyNotification();
       }
     });
-    
+
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return const HomeScreen();
@@ -137,8 +136,8 @@ class HomeBody extends StatelessWidget {
                 end: Alignment.bottomCenter,
                 colors: [
                   Color.fromARGB(255, 11, 31, 48),
-                   Color.fromARGB(255, 55, 110, 155),
-                   Color.fromARGB(255, 80, 150, 207),
+                  Color.fromARGB(255, 55, 110, 155),
+                  Color.fromARGB(255, 80, 150, 207),
                   Color.fromARGB(255, 109, 161, 204),
                 ]),
           ),
@@ -184,8 +183,8 @@ class HomeBody extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20, bottom: 20),
               child: SingleChildScrollView(
                 child: Column(
-                  children: [
-                    const Resources(),
+                  children: const [
+                    Resources(),
                   ],
                 ),
               ),

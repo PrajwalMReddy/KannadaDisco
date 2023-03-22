@@ -12,54 +12,59 @@ import 'package:kannada_disco/course/course_content.dart';
 import 'package:kannada_disco/screen/quiz.dart';
 
 const _timePickerTheme = TimePickerThemeData(
-  helpTextStyle:
-      TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: kannadaBlue),
+  helpTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: kannadaBlue),
 );
 
 void main() async {
-   WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize the local notification plugin
-  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-      FlutterLocalNotificationsPlugin();
-  var initializationSettingsAndroid =
-      const AndroidInitializationSettings('logo');
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+  var initializationSettingsAndroid = const AndroidInitializationSettings('logo');
+
   var initializationSettingsIOS = const IOSInitializationSettings(
     requestAlertPermission: true,
     requestBadgePermission: true,
     requestSoundPermission: true,
   );
+
   var initializationSettings = InitializationSettings(
-      android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
+      android: initializationSettingsAndroid,
+      iOS: initializationSettingsIOS
+  );
+
   await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+
   runApp(
-  MaterialApp(
-    theme: ThemeData(
-      timePickerTheme: _timePickerTheme,
+    MaterialApp(
+      theme: ThemeData(
+        timePickerTheme: _timePickerTheme,
+      ),
+
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/loading',
+
+      routes: {
+        '/loading': (context) => const Loading(),
+        '/home': (context) => const Home(),
+
+        '/usage': (context) => const Usage(),
+        '/about': (context) => const About(),
+        '/settings': (context) => const Settings(),
+
+        // Resources
+        '/res/reading': (context) => Reference(type: "reading"),
+        '/res/vocabulary': (context) => Reference(type: "vocab"),
+        '/res/grammar': (context) => Reference(type: "gram"),
+        '/res/conversation': (context) => Reference(type: "conv"),
+
+        // Courses
+        '/course': (context) => const CoursePage(),
+        '/course/content': (context) => CourseContent(),
+
+        // Quizzes
+        '/quiz': (context) => const QuizPage(),
+      },
     ),
-    debugShowCheckedModeBanner: false,
-    initialRoute: '/loading',
-    routes: {
-      '/loading': (context) => const Loading(),
-      '/home': (context) => const Home(),
-
-      '/usage': (context) => const Usage(),
-      '/about': (context) => const About(),
-      '/settings': (context) => const Settings(), 
-
-      // Resources
-      '/res/reading': (context) => Reference(type: "reading"),
-      '/res/vocabulary': (context) => Reference(type: "vocab"),
-      '/res/grammar': (context) => Reference(type: "gram"),
-      '/res/conversation': (context) => Reference(type: "conv"),
-
-      // Courses
-      '/course': (context) => const CoursePage(),
-      '/course/content': (context) => CourseContent(),
-
-      // Quizzes
-      '/quiz': (context) => const QuizPage(),
-    },
-  ),
-);
+  );
 }

@@ -8,12 +8,18 @@ class Resources extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> allCardsDisplay = [];
+    for (var value in allCards) {
+      allCardsDisplay.add(value);
+      allCardsDisplay.add(const SizedBox(height: 20));
+    }
+
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
       child: Align(
         alignment: Alignment.topLeft,
         child: Column(
-          children: allCards,  
+            children: allCardsDisplay
         ),
       ),
     );

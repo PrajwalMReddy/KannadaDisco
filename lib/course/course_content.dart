@@ -32,6 +32,7 @@ class CourseContent extends StatelessWidget {
           switch (snapshot.connectionState) {
             case ConnectionState.waiting:
               return const Text("Loading...");
+
             default:
               if (snapshot.hasError) {
                 return Center(
@@ -53,4 +54,3 @@ class CourseContent extends StatelessWidget {
     );
   }
 }
-

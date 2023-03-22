@@ -2,12 +2,14 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
+
 class LocalNotificationService {
-  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-      FlutterLocalNotificationsPlugin();
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
   SharedPreferences? _prefs;
+
   Future<void> scheduleDailyNotification() async {
     _prefs = await SharedPreferences.getInstance();
+
     var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
       '0',
       'KannadaDisco',
@@ -17,15 +19,20 @@ class LocalNotificationService {
       ticker: 'ticker',
       playSound: true,
     );
+
     var iOSPlatformChannelSpecifics = const IOSNotificationDetails();
     var platformChannelSpecifics = NotificationDetails(
         android: androidPlatformChannelSpecifics,
-        iOS: iOSPlatformChannelSpecifics);
-   var time = _prefs!.getString('notificationTime') ?? "07:00:00";
-   var splisttedList = time.split(':');
-   int hour = int.parse(splisttedList[0]);
-   int minute = int.parse(splisttedList[1]);
-   int second = int.parse(splisttedList[2]);
+        iOS: iOSPlatformChannelSpecifics
+    );
+
+    var time = _prefs!.getString('notificationTime') ?? "07:00:00";
+    var splisttedList = time.split(':');
+
+    int hour = int.parse(splisttedList[0]);
+    int minute = int.parse(splisttedList[1]);
+    int second = int.parse(splisttedList[2]);
+
     await flutterLocalNotificationsPlugin.showDailyAtTime(
         0,
         'Good Morining!',
@@ -76,7 +83,5 @@ class LocalNotificationService {
 //     payload: 'payload',
 //     matchDateTimeComponents: DateTimeComponents.time,
 //   );
-
-
   }
 }
