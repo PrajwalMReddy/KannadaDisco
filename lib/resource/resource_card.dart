@@ -23,19 +23,18 @@ class ResourceCard extends StatelessWidget {
           elevation: 15.0,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(15),
-              topRight: Radius.circular(15),
-              bottomRight: Radius.circular(15),
-              topLeft: Radius.circular(15)
-              // Radius.circular(20),
-            ),
+                bottomLeft: Radius.circular(15),
+                topRight: Radius.circular(15),
+                bottomRight: Radius.circular(15),
+                topLeft: Radius.circular(15)
+                // Radius.circular(20),
+                ),
           ),
           child: Center(
             child: Text(
               prettifyText(topic),
               textAlign: TextAlign.center,
-              style:
-                  const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700),
+              style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700),
             ),
           ),
         ),

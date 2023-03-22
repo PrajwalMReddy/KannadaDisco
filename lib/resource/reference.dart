@@ -44,10 +44,13 @@ class Reference extends StatelessWidget {
                 List<Widget> wordsData = [];
 
                 for (var entry in mapData.values) {
-                  wordsData.add(ReferenceEntry(
-                      english: entry["english"],
-                      kannada: entry["kannada"],
-                      transliteration: entry["transliteration"]));
+                  wordsData.add(
+                      ReferenceEntry(
+                          english: entry["english"],
+                          kannada: entry["kannada"],
+                          transliteration: entry["transliteration"]
+                      )
+                  );
                 }
 
                 return (wordsData.isEmpty)

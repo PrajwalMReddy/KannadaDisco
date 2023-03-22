@@ -22,9 +22,9 @@ class ResourceList extends StatelessWidget {
             child: Text(
               type,
               style: const TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.blue
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue
               ),
             ),
           ),

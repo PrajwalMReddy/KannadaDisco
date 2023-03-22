@@ -26,11 +26,9 @@ class _BottomNavigationState extends State<BottomNavigation> {
     return BottomNavigationBar(
       currentIndex: currentIndex,
       selectedItemColor: kannadaBlue,
-
       onTap: (index) {
         Navigator.pushReplacementNamed(context, pages[index]);
       },
-
       items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
