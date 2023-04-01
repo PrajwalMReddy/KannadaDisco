@@ -17,8 +17,6 @@ class ResourceCard extends StatelessWidget {
         "topic": topic,
       }),
       child: SizedBox(
-        // height: ScreenSize.height! * 0.07,
-        // width: ScreenSize.width! * 0.4,
         child: Card(
           elevation: 15.0,
           shape: const RoundedRectangleBorder(
@@ -27,7 +25,6 @@ class ResourceCard extends StatelessWidget {
               topRight: Radius.circular(15),
               bottomRight: Radius.circular(15),
               topLeft: Radius.circular(15)
-              // Radius.circular(20),
             ),
           ),
           child: Center(

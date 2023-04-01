@@ -21,36 +21,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   LocalNotificationService localNotificationService = LocalNotificationService();
-
-   // Initialize the local notification plugin
-  // FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-  //     FlutterLocalNotificationsPlugin();
-
-//   Future<void> _scheduleDailyNotification() async {
-//   var androidPlatformChannelSpecifics = AndroidNotificationDetails(
-//     '0',
-//     'KannadaDisco',
-//     'Show notification every day morining',
-//     importance: Importance.max, 
-//     priority: Priority.max,
-//     ticker: 'ticker',
-//     playSound: true,
-//   );
-//   var iOSPlatformChannelSpecifics = IOSNotificationDetails();
-//   var platformChannelSpecifics = NotificationDetails(
-//       android: androidPlatformChannelSpecifics,
-//       iOS: iOSPlatformChannelSpecifics);
-//     await flutterLocalNotificationsPlugin.showDailyAtTime(
-//       0, 
-//       'Good Morining!', 
-//       'Word of the day is ready for you, Please click here.', 
-//       Time(7, 0, 0), 
-//       platformChannelSpecifics
-//       );
-
-
-// }
-
   Future<bool> getCheckNotificationPermStatus() {
     return NotificationPermissions.getNotificationPermissionStatus()
         .then((status) {
@@ -67,19 +37,18 @@ class _HomeState extends State<Home> {
     });
   }
 
-    void requestPermission() {
-    NotificationPermissions.requestNotificationPermissions();
-  }
-
-  @override
-  void initState() {
-    requestPermission();
+    requestPermission() async {
+    await NotificationPermissions.requestNotificationPermissions();
     getCheckNotificationPermStatus().then((status) {
       if(status) {
         localNotificationService.scheduleDailyNotification();
       }
     });
-    
+  }
+
+  @override
+  void initState() {
+    requestPermission();
     super.initState();
   }
   @override
@@ -130,7 +99,6 @@ class HomeBody extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          // color: kannadaBlue,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topCenter,
@@ -142,26 +110,13 @@ class HomeBody extends StatelessWidget {
                   Color.fromARGB(255, 109, 161, 204),
                 ]),
           ),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 10),
-            child: const Column(
+          child: const Padding(
+            padding: EdgeInsets.only(top: 10),
+            child: Column(
               children: [
                 SizedBox(
                   height: 20,
                 ),
-                // Text(
-                //   'Word of the day',
-                //   style: TextStyle(color: Colors.white, fontSize: 20),
-                // ),
-                // Text(
-                //   'of the day',
-                //   style: TextStyle(
-                //     color: Colors.white,
-                //   ),
-                // ),
-                // SizedBox(
-                //   height: 10,
-                // ),
                 WordOfTheDay(),
               ],
             ),

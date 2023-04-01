@@ -28,7 +28,6 @@ class ReferenceEntry extends StatelessWidget {
               ),
               Flexible(
                 child: Column(
-                  // crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Text(
                       kannada,
