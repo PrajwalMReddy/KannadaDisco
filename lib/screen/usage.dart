@@ -23,7 +23,6 @@ class Usage extends StatelessWidget {
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.blue,
-                  // decoration: TextDecoration.underline,
                 ),
               ),
               SizedBox(height: 20,),

@@ -36,7 +36,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     if (lastDateString.isNotEmpty) {
       _lastDate = DateFormat('yyyy-MM-dd').parse(lastDateString);
     } else {
-      _lastDate = DateTime.now().subtract(Duration(days: 1));
+      _lastDate = DateTime.now().subtract(const Duration(days: 1));
     }
     _setDateState();
   }
@@ -75,7 +75,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     }
   }
 
-  Future<String> randomWord() async {
+  Future<String> randomWord() async {  
     final word = (vocabCards.toList()..shuffle()).first;
     final jsonData =
         await rootBundle.loadString("res/vocab/${word.topic}.json");
@@ -84,7 +84,6 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
 
   @override
   Widget build(BuildContext context) {
-    // _setDateState();
     return SizedBox(
       height: ScreenSize.height! * 0.13,
       width: ScreenSize.width! * 0.95,
@@ -100,7 +99,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+             const Text(
                 'Word of the day',
                 style: TextStyle(
                   color: Colors.white,
@@ -108,7 +107,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               SizedBox(
                 width: ScreenSize.width! * 0.82,
                 child: Center(

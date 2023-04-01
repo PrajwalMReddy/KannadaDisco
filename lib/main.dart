@@ -11,10 +11,11 @@ import 'package:kannada_disco/screen/usage.dart';
 import 'package:kannada_disco/course/course_content.dart';
 import 'package:kannada_disco/screen/quiz.dart';
 
-final _timePickerTheme = TimePickerThemeData(
+const _timePickerTheme = TimePickerThemeData(
   helpTextStyle:
-      const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: kannadaBlue),
+      TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: kannadaBlue),
 );
+
 
 void main() async {
    WidgetsFlutterBinding.ensureInitialized();
@@ -23,8 +24,8 @@ void main() async {
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
   var initializationSettingsAndroid =
-      AndroidInitializationSettings('logo');
-  var initializationSettingsIOS = IOSInitializationSettings(
+      const AndroidInitializationSettings('logo'); 
+  var initializationSettingsIOS = const DarwinInitializationSettings(
     requestAlertPermission: true,
     requestBadgePermission: true,
     requestSoundPermission: true,
@@ -32,6 +33,7 @@ void main() async {
   var initializationSettings = InitializationSettings(
       android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
   await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+
   runApp(
   MaterialApp(
     theme: ThemeData(
