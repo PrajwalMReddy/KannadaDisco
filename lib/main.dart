@@ -20,14 +20,13 @@ void main() async {
 
   // Initialize the local notification plugin
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
-  var initializationSettingsAndroid = const AndroidInitializationSettings('logo');
 
-  var initializationSettingsIOS = const IOSInitializationSettings(
+  var initializationSettingsAndroid = const AndroidInitializationSettings('logo');
+  var initializationSettingsIOS = const DarwinInitializationSettings(
     requestAlertPermission: true,
     requestBadgePermission: true,
     requestSoundPermission: true,
   );
-
   var initializationSettings = InitializationSettings(
       android: initializationSettingsAndroid,
       iOS: initializationSettingsIOS
@@ -40,10 +39,8 @@ void main() async {
       theme: ThemeData(
         timePickerTheme: _timePickerTheme,
       ),
-
       debugShowCheckedModeBanner: false,
       initialRoute: '/loading',
-
       routes: {
         '/loading': (context) => const Loading(),
         '/home': (context) => const Home(),

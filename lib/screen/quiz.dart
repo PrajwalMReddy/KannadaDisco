@@ -23,7 +23,6 @@ class _QuizPageState extends State<QuizPage> {
         elevation: 0.0,
       ),
       body: Center(
-        // child: CourseUnit(heading: 'Quizzes', subheading: 'Coming Soon...'),
         child: GestureDetector(
           onTap: () => {},
           child: SizedBox(
@@ -34,7 +33,6 @@ class _QuizPageState extends State<QuizPage> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100)),
               margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
-              // color: kannadaYellow,
               child: Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Center(

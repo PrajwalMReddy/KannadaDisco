@@ -12,7 +12,6 @@ class _LoadingState extends State<Loading> {
   @override
   void initState() {
     super.initState();
-
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacementNamed(context, '/home');
     });
@@ -32,53 +31,17 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: kannadaBlue,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            Image(
-              image: AssetImage("assets/logo.png"),
-            ),
-            // Text(
-            //   "Welcome",
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontSize: 50.0,
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 20.0,
-            // ),
-            // Text(
-            //   "To",
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontSize: 50.0,
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 50.0,
-            // ),
-            // Text(
-            //   "KannadaDisco",
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontSize: 50.0,
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 20.0,
-            // ),
-            // Text(
-            //   "ಕನ್ನಡ ಡಿಸ್ಕೋ",
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontSize: 50.0,
-            //   ),
-            // ),
-          ],
+      body: Container(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: const [
+              Image(
+                image: AssetImage("assets/logo.png"), 
+              ),
+            ],
+          ),
         ),
       ),
     );

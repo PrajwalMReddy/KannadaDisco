@@ -32,6 +32,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     _prefs = await SharedPreferences.getInstance();
     String lastDateString = _prefs!.getString('lastDate') ?? '';
     info = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
+
     setState(() {});
 
     if (lastDateString.isNotEmpty) {
@@ -52,12 +53,12 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     double notificationTime = hour + (minute / 60);
     DateTime now = DateTime.now();
     double nowTime = now.hour + (now.minute / 60);
-
+    
     if ((_lastDate!.day != now.day) && (nowTime >= notificationTime)) {
       String jsonData = await randomWord();
       final Map<String, dynamic> mapData = jsonDecode(jsonData);
-
       List wordsData = [];
+
       for (var entry in mapData.values) {
         wordsData.add(entry);
       }
@@ -67,12 +68,10 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
       String kannada = word["kannada"];
       String transliteration = word["transliteration"];
       final newWord = "$kannada - $transliteration - $english";
-
       _prefs!.setString('info', newWord);
       setState(() {
         // set your state here
       });
-
       info = _prefs!.getString('info') ?? "";
       setState(() {});
       _prefs!.setString('lastDate', DateFormat('yyyy-MM-dd').format(now));
@@ -80,16 +79,14 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     }
   }
 
-  Future<String> randomWord() async {
+  Future<String> randomWord() async {  
     final word = (vocabCards.toList()..shuffle()).first;
     final jsonData = await rootBundle.loadString("res/vocab/${word.topic}.json");
-
     return jsonData;
   }
 
   @override
   Widget build(BuildContext context) {
-    // _setDateState();
     return SizedBox(
       height: ScreenSize.height! * 0.13,
       width: ScreenSize.width! * 0.95,

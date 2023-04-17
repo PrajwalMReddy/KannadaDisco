@@ -2,9 +2,13 @@
     package="com.prajwalmreddy.kannada_disco">
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
    <application
         android:label="KannadaDisco"
-        android:name="${applicationName}"
+        android:name="${applicationName}"   
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
