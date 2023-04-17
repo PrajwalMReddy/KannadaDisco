@@ -21,6 +21,7 @@ const List<ResourceCard> vocabCards = [
   ResourceCard(topic: "pronouns", resourceType: "vocabulary"),
   ResourceCard(topic: "question_words", resourceType: "vocabulary"),
   ResourceCard(topic: "basic_verbs", resourceType: "vocabulary"),
+  ResourceCard(topic: "modality_verbs", resourceType: "vocabulary"),
   ResourceCard(topic: "more_verbs", resourceType: "vocabulary"),
   ResourceCard(topic: "directions", resourceType: "vocabulary"),
   ResourceCard(topic: "family", resourceType: "vocabulary"),
@@ -34,6 +35,7 @@ const List<ResourceCard> vocabCards = [
 ];
 
 const List<ResourceCard> grammarCards = [
+  ResourceCard(topic: "case_endings", resourceType: "grammar"),
   ResourceCard(topic: "present_and_future", resourceType: "grammar"),
   ResourceCard(topic: "present_perfect", resourceType: "grammar"),
   ResourceCard(topic: "present_continuous", resourceType: "grammar"),
