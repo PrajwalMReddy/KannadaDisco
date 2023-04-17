@@ -62,8 +62,6 @@ class Reference extends StatelessWidget {
                             elevation: 10,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(100)),
-                            // margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
-                            // color: kannadaYellow,
                             child: const Center(
                               child: Text(
                                 'To be added...',

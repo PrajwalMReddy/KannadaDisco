@@ -5,12 +5,7 @@ class ReferenceEntry extends StatelessWidget {
   final String kannada;
   final String transliteration;
 
-  const ReferenceEntry(
-      {Key? key,
-      required this.english,
-      required this.kannada,
-      required this.transliteration})
-      : super(key: key);
+  const ReferenceEntry({Key? key, required this.english, required this.kannada, required this.transliteration}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +28,6 @@ class ReferenceEntry extends StatelessWidget {
               ),
               Flexible(
                 child: Column(
-                  // crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Text(
                       kannada,
