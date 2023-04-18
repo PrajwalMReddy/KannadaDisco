@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:intl/intl.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/service/local_notification_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -128,10 +127,13 @@ class SideBarElement extends StatelessWidget {
 
   Future<void> _displayTextInputDialog(BuildContext context) async {
     _prefs = await SharedPreferences.getInstance();
+
     var time = _prefs!.getString('notificationTime') ?? "07:00:00";
-    var splittedTime = time.split(':');
-    hourController.text = splittedTime[0];
-    minuteController.text = splittedTime[1];
+    var splitTime = time.split(':');
+
+    hourController.text = splitTime[0];
+    minuteController.text = splitTime[1];
+
     return showDialog(
       context: ctx!,
       builder: (context) {
@@ -155,7 +157,6 @@ class SideBarElement extends StatelessWidget {
               Flexible(
                 child: SizedBox(
                   width: 55,
-                  // height: 30,
                   child: TextField(
                     keyboardType: TextInputType.number,
                     decoration: const InputDecoration(
@@ -206,17 +207,15 @@ class SideBarElement extends StatelessWidget {
               child: const Text('OK'),
               onPressed: () {
                 try {
-                  String time =
-                      "${hourController.text}:${minuteController.text}:00";
-                  print(time);
+                  String time = "${hourController.text}:${minuteController.text}:00";
+                  // print(time);
                   _prefs!.setString('notificationTime', time);
                   localNotificationService
                       .scheduleDailyNotification()
                       .then((value) {
                     if (value) {
                       Fluttertoast.showToast(
-                        msg:
-                            "Notification time has been set to ${hourController.text}:${minuteController.text} successfully!",
+                        msg: "Notification time has been set to ${hourController.text}:${minuteController.text} successfully!",
                         toastLength: Toast.LENGTH_LONG,
                         backgroundColor: Colors.black,
                         textColor: Colors.white,
@@ -226,7 +225,7 @@ class SideBarElement extends StatelessWidget {
                   });
                   Navigator.pop(context);
                 } catch (e) {
-                  print("Invalid Time Format");
+                  // print("Invalid Time Format");
                 }
               },
             ),

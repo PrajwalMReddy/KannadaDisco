@@ -18,9 +18,7 @@ class Resources extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
       child: Align(
         alignment: Alignment.topLeft,
-        child: Column(
-            children: allCardsDisplay
-        ),
+        child: Column(children: allCardsDisplay),
       ),
     );
   }

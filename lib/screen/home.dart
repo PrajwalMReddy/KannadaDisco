@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/word_of_the_day.dart';
-import 'package:kannada_disco/resource//resources.dart';
+import 'package:kannada_disco/resource/resources.dart';
 import 'package:kannada_disco/service/local_notification_service.dart';
 import 'package:kannada_disco/util/screen_size.dart';
 import 'package:notification_permissions/notification_permissions.dart';
-import 'package:timezone/timezone.dart' as tz;
-import 'package:timezone/tzdata.dart' as tz;
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -21,8 +18,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   LocalNotificationService localNotificationService = LocalNotificationService();
   Future<bool> getCheckNotificationPermStatus() {
-    return NotificationPermissions.getNotificationPermissionStatus()
-        .then((status) {
+    return NotificationPermissions.getNotificationPermissionStatus().then((status) {
       switch (status) {
         case PermissionStatus.denied:
           return false;
@@ -36,10 +32,10 @@ class _HomeState extends State<Home> {
     });
   }
 
-    requestPermission() async {
+  requestPermission() async {
     await NotificationPermissions.requestNotificationPermissions();
     getCheckNotificationPermStatus().then((status) {
-      if(status) {
+      if (status) {
         localNotificationService.scheduleDailyNotification();
       }
     });
@@ -50,6 +46,7 @@ class _HomeState extends State<Home> {
     requestPermission();
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return const HomeScreen();

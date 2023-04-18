@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
@@ -46,19 +45,19 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
 
   Future<void> _setDateState() async {
     var time = _prefs!.getString('notificationTime') ?? "07:00:00";
-    var splittedList = time.split(':');
+    var splitList = time.split(':');
 
-    double hour = double.parse(splittedList[0]);
-    double minute = double.parse(splittedList[1]);
+    double hour = double.parse(splitList[0]);
+    double minute = double.parse(splitList[1]);
     double notificationTime = hour + (minute / 60);
     DateTime now = DateTime.now();
     double nowTime = now.hour + (now.minute / 60);
-    
+
     if ((_lastDate!.day != now.day) && (nowTime >= notificationTime)) {
       String jsonData = await randomWord();
       final Map<String, dynamic> mapData = jsonDecode(jsonData);
-      List wordsData = [];
 
+      List wordsData = [];
       for (var entry in mapData.values) {
         wordsData.add(entry);
       }
@@ -68,9 +67,10 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
       String kannada = word["kannada"];
       String transliteration = word["transliteration"];
       final newWord = "$kannada - $transliteration - $english";
+
       _prefs!.setString('info', newWord);
       setState(() {
-        // set your state here
+        // Set State Here
       });
       info = _prefs!.getString('info') ?? "";
       setState(() {});
@@ -79,7 +79,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     }
   }
 
-  Future<String> randomWord() async {  
+  Future<String> randomWord() async {
     final word = (vocabCards.toList()..shuffle()).first;
     final jsonData = await rootBundle.loadString("res/vocab/${word.topic}.json");
     return jsonData;
@@ -119,7 +119,6 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
                     style: TextStyle(
                       fontSize: wordOfDaySize(info),
                       color: Colors.white,
-                      // fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
