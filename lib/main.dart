@@ -18,7 +18,7 @@ const _timePickerTheme = TimePickerThemeData(
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize the local notification plugin
+  // Initialize Local Notification Plugin
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
   var initializationSettingsAndroid = const AndroidInitializationSettings('logo');
@@ -40,6 +40,7 @@ void main() async {
         timePickerTheme: _timePickerTheme,
       ),
       debugShowCheckedModeBanner: false,
+
       initialRoute: '/loading',
       routes: {
         '/loading': (context) => const Loading(),

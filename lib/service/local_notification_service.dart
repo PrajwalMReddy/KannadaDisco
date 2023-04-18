@@ -1,11 +1,7 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:timezone/data/latest.dart' as tz;
-import 'package:timezone/timezone.dart' as tz;
 
 class LocalNotificationService {
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
@@ -15,8 +11,7 @@ class LocalNotificationService {
     try {
       _prefs = await SharedPreferences.getInstance();
       var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
-          '0',
-          'KannadaDisco',
+          '0', 'KannadaDisco',
           channelDescription: 'Show notification every day morining',
           importance: Importance.max,
           priority: Priority.max,
@@ -32,11 +27,11 @@ class LocalNotificationService {
       );
 
       var time = _prefs!.getString('notificationTime') ?? "07:00:00";
-      var splisttedList = time.split(':');
+      var splitList = time.split(':');
 
-      int hour = int.parse(splisttedList[0]);
-      int minute = int.parse(splisttedList[1]);
-      int second = int.parse(splisttedList[2]);
+      int hour = int.parse(splitList[0]);
+      int minute = int.parse(splitList[1]);
+      int second = int.parse(splitList[2]);
 
       await flutterLocalNotificationsPlugin.showDailyAtTime(
           0,
@@ -54,7 +49,7 @@ class LocalNotificationService {
         fontSize: 16.0,
       );
 
-      print("Something went wrong");
+      // print("Something Went Wrong");
       return false;
     }
   }
