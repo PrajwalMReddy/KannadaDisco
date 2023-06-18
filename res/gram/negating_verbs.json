@@ -1,32 +1,27 @@
 {
   "0": {
-    "english": "Present Simple/Perfect",
+    "english": "Present/Future",
+    "kannada": "-ಅಲ್ಲ",
+    "transliteration": "-alla"
+  },
+  "1": {
+    "english": "Present Perfect",
     "kannada": "-ಇಲ್ಲ",
     "transliteration": "-illa"
   },
-  "1": {
+  "2": {
     "english": "Present Continuous",
     "kannada": "-ತ ಇಲ್ಲ",
     "transliteration": "-ta illa"
   },
-  "2": {
+  "3": {
     "english": "Past Simple",
     "kannada": "-ಲಿಲ್ಲ",
     "transliteration": "-lilla"
-  },
-  "3": {
-    "english": "Past Perfect",
-    "kannada": "-ಇರಲಿಲ್ಲ",
-    "transliteration": "-iralilla"
   },
   "4": {
     "english": "Past Continuous",
     "kannada": "-ತ ಇರಲಿಲ್ಲ",
     "transliteration": "-ta iralilla"
-  },
-  "5": {
-    "english": "Future Simple",
-    "kannada": "-ಅಲ್ಲ",
-    "transliteration": "-alla"
   }
 }

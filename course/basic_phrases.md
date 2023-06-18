@@ -1,6 +1,6 @@
 # Basic Phrases
 
-### Before systematically learning Kannada, it helps to know a few basic words and phrases.
+### Before systematically learning Kannada, it helps to know a few basic words and phrases to get familiar with the language as well as to have some commonly used, helpful vocabulary on hand.
 
 |         English         |       Kannada       |   Transcription   |
 |:-----------------------:|:-------------------:|:-----------------:|
