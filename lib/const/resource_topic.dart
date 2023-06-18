@@ -23,19 +23,20 @@ const List<ResourceCard> vocabCards = [
   ResourceCard(topic: "basic_verbs", resourceType: "vocabulary"),
   ResourceCard(topic: "modality_verbs", resourceType: "vocabulary"),
   ResourceCard(topic: "more_verbs", resourceType: "vocabulary"),
-  ResourceCard(topic: "directions", resourceType: "vocabulary"),
   ResourceCard(topic: "family", resourceType: "vocabulary"),
   ResourceCard(topic: "household_objects", resourceType: "vocabulary"),
   ResourceCard(topic: "fruits_and_vegetables", resourceType: "vocabulary"),
+  ResourceCard(topic: "body_parts", resourceType: "vocabulary"),
   ResourceCard(topic: "colors", resourceType: "vocabulary"),
   ResourceCard(topic: "animals", resourceType: "vocabulary"),
+  ResourceCard(topic: "directions", resourceType: "vocabulary"),
   ResourceCard(topic: "numbers", resourceType: "vocabulary"),
   ResourceCard(topic: "time_and_dates", resourceType: "vocabulary"),
   ResourceCard(topic: "swadesh_list", resourceType: "vocabulary"),
 ];
 
 const List<ResourceCard> grammarCards = [
-  ResourceCard(topic: "case_endings", resourceType: "grammar"),
+  // ResourceCard(topic: "case_endings", resourceType: "grammar"),
   ResourceCard(topic: "present_and_future", resourceType: "grammar"),
   ResourceCard(topic: "present_perfect", resourceType: "grammar"),
   ResourceCard(topic: "present_continuous", resourceType: "grammar"),
@@ -54,4 +55,6 @@ const List<ResourceCard> conversationCards = [
   ResourceCard(topic: "in_a_restaurant", resourceType: "conversation"),
   ResourceCard(topic: "speaking_with_traffic_cops", resourceType: "conversation"),
   ResourceCard(topic: "in_government_offices", resourceType: "conversation"),
+  ResourceCard(topic: "colloquial_language", resourceType: "conversation"),
+  ResourceCard(topic: "insults_and_curses", resourceType: "conversation"),
 ];
