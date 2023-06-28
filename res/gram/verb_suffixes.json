@@ -1,2 +1,62 @@
 {
+  "0": {
+    "english": "Let us -",
+    "kannada": "-ಓಣ",
+    "transliteration": "-ōṇa"
+  },
+  "1": {
+    "english": "To -",
+    "kannada": "-ಅಕ್ಕೆ",
+    "transliteration": "-akke"
+  },
+  "2": {
+    "english": "-ing",
+    "kannada": "-ವುದು",
+    "transliteration": "-vudu"
+  },
+  "3": {
+    "english": "While -",
+    "kannada": "-ವಾಗ",
+    "transliteration": "-vāga"
+  },
+  "4": {
+    "english": "When -",
+    "kannada": "-ದಾಗ",
+    "transliteration": "-dāga"
+  },
+  "5": {
+    "english": "After -",
+    "kannada": "-ಮೇಲೆ",
+    "transliteration": "-mēle"
+  },
+  "6": {
+    "english": "If -",
+    "kannada": "-ಇದರೆ",
+    "transliteration": "-idare"
+  },
+  "7": {
+    "english": "Even if -",
+    "kannada": "-ಇದರೂ",
+    "transliteration": "-idarū"
+  },
+  "8": {
+    "english": "Just do it (quickly) -",
+    "kannada": "-ಬಿಡು",
+    "transliteration": "-biḍu"
+  },
+  "9": {
+    "english": "Just do it (quickly) (plural/polite) -",
+    "kannada": "-ಬಿಡಿ",
+    "transliteration": "-biḍi"
+  },
+  "10": {
+    "english": "Reflexive marker -",
+    "kannada": "-ಕೋ",
+    "transliteration": "-kō"
+  },
+  "11": {
+    "english": "Reflexive marker (plural/polite) -",
+    "kannada": "-ಕೊಳ್ಳಿ",
+    "transliteration": "-koḷḷi"
+  }
 }

@@ -1,2 +1,52 @@
 {
+  "0": {
+    "english": "Should -",
+    "kannada": "-ಬೇಕು",
+    "transliteration": "-bēku"
+  },
+  "1": {
+    "english": "Must -",
+    "kannada": "-ಲೇಬೇಕು",
+    "transliteration": "-lēbēku"
+  },
+  "2": {
+    "english": "Should not -",
+    "kannada": "-ಬಾರದು",
+    "transliteration": "-bāradu"
+  },
+  "3": {
+    "english": "Must not -",
+    "kannada": "-ಲೇಬಾರದು",
+    "transliteration": "-lēbāradu"
+  },
+  "4": {
+    "english": "Do not -",
+    "kannada": "-ಬೇಡ",
+    "transliteration": "-bēḍa"
+  },
+  "5": {
+    "english": "Do not (plural/polite) -",
+    "kannada": "-ಬೇಡಿ",
+    "transliteration": "-bēḍi"
+  },
+  "6": {
+    "english": "Can (indicates ability or possibility) -",
+    "kannada": "-ಬಹುದು",
+    "transliteration": "-bahudu"
+  },
+  "7": {
+    "english": "Can not -",
+    "kannada": "-ಅಕ್ಕೆ ಆಗಲ್ಲ",
+    "transliteration": "-akke āgalla"
+  },
+  "8": {
+    "english": "Should have -",
+    "kannada": "-ಬಹುದಿತ್ತು",
+    "transliteration": "-bahudittu"
+  },
+  "9": {
+    "english": "Could have -",
+    "kannada": "-ಬೇಕಿತ್ತು",
+    "transliteration": "-bēkittu"
+  }
 }
