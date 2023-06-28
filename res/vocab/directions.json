@@ -20,41 +20,51 @@
     "transliteration": "horage"
   },
   "4": {
+    "english": "Ahead",
+    "kannada": "ಮುಂದೆ",
+    "transliteration": "munde"
+  },
+  "5": {
+    "english": "Behind",
+    "kannada": "ಹಿಂದೆ",
+    "transliteration": "hinde"
+  },
+  "6": {
     "english": "Left",
     "kannada": "ಎಡಗಡೆ",
     "transliteration": "eḍagaḍe"
   },
-  "5": {
+  "7": {
     "english": "Right",
     "kannada": "ಬಲಗಡೆ",
     "transliteration": "balagaḍe"
   },
-  "6": {
+  "8": {
     "english": "Here",
     "kannada": "ಇಲ್ಲಿ",
     "transliteration": "illi"
   },
-  "7": {
+  "9": {
     "english": "There",
     "kannada": "ಅಲ್ಲಿ",
     "transliteration": "alli"
   },
-  "8": {
+  "10": {
     "english": "North",
     "kannada": "ಉತ್ತರ",
     "transliteration": "uttara"
   },
-  "9": {
+  "11": {
     "english": "South",
     "kannada": "ದಕ್ಷಿಣ",
     "transliteration": "dakṣiṇa"
   },
-  "10": {
+  "12": {
     "english": "East",
     "kannada": "ಪೂರ್ವ",
     "transliteration": "pūrva"
   },
-  "11": {
+  "13": {
     "english": "West",
     "kannada": "ಪಶ್ಚಿಮ",
     "transliteration": "paścima"
