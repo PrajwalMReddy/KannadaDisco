@@ -5,33 +5,193 @@
     "transliteration": "prāṇi"
   },
   "1": {
+    "english": "Domestic Animal",
+    "kannada": "ಸಾಕು ಪ್ರಾಣಿ",
+    "transliteration": "sāku prāṇi"
+  },
+  "2": {
+    "english": "Wild Animal",
+    "kannada": "ಕಾಡು ಪ್ರಾಣಿ",
+    "transliteration": "kāḍu prāṇi"
+  },
+  "3": {
     "english": "Fish",
     "kannada": "ಮೀನು",
     "transliteration": "mīnu"
   },
-  "2": {
+  "4": {
     "english": "Bird",
-    "kannada": "ಹಕ್ಕಿ",
-    "transliteration": "hakki"
+    "kannada": "ಹಕ್ಕಿ/ಪಕ್ಷಿ",
+    "transliteration": "hakki/pakṣi"
   },
-  "3": {
+  "5": {
     "english": "Dog",
     "kannada": "ನಾಯಿ",
     "transliteration": "nāyi"
   },
-  "4": {
+  "6": {
     "english": "Louse",
     "kannada": "ಹೇನು",
     "transliteration": "hēnu"
   },
-  "5": {
+  "7": {
     "english": "Snake",
     "kannada": "ಹಾವು",
     "transliteration": "hāvu"
   },
-  "6": {
+  "8": {
     "english": "Worm",
     "kannada": "ಹುಳ",
     "transliteration": "huḷa"
+  },
+  "9": {
+    "english": "Elephant",
+    "kannada": "ಆನೆ",
+    "transliteration": "āne"
+  },
+  "10": {
+    "english": "Rat",
+    "kannada": "ಹೆಗ್ಗಣ/ ಇಲಿ",
+    "transliteration": "heggaṇa/ ili"
+  },
+  "11": {
+    "english": "Bullock",
+    "kannada": "ಎತ್ತು",
+    "transliteration": "ettu"
+  },
+  "12": {
+    "english": "Female Buffalo",
+    "kannada": "ಎಮ್ಮೆ",
+    "transliteration": "emme"
+  },
+  "13": {
+    "english": "Camel",
+    "kannada": "ಒಂಟೆ",
+    "transliteration": "oṇṭe"
+  },
+  "14": {
+    "english": "Donkey",
+    "kannada": "ಕತ್ತೆ",
+    "transliteration": "katte"
+  },
+  "15": {
+    "english": "Frog",
+    "kannada": "ಕಪ್ಪೆ",
+    "transliteration": "kappe"
+  },
+  "16": {
+    "english": "Bear",
+    "kannada": "ಕರಡಿ",
+    "transliteration": "karaḍi"
+  },
+  "17": {
+    "english": "Horse",
+    "kannada": "ಕುದುರೆ",
+    "transliteration": "kudure"
+  },
+  "18": {
+    "english": "Sheep",
+    "kannada": "ಕುರಿ",
+    "transliteration": "kuri"
+  },
+  "19": {
+    "english": "Ox",
+    "kannada": "ಎತ್ತು",
+    "transliteration": "ettu"
+  },
+  "20": {
+    "english": "Male buffalo",
+    "kannada": "ಕೊಣ",
+    "transliteration": "koṇa"
+  },
+  "21": {
+    "english": "Monkey",
+    "kannada": "ಕೋತಿ, ಕಪಿ",
+    "transliteration": "kōti, kapi"
+  },
+  "22": {
+    "english": "Rhinoceros",
+    "kannada": "ಗೇಂಡಾಮೃಗ",
+    "transliteration": "gēṇḍāmṛga"
+  },
+  "23": {
+    "english": "Leopard",
+    "kannada": "ಚಿರತೆ",
+    "transliteration": "chirate"
+  },
+  "24": {
+    "english": "Deer",
+    "kannada": "ಜಿಂಕೆ",
+    "transliteration": "jinke"
+  },
+  "25": {
+    "english": "Wolf",
+    "kannada": "ತೋಳ",
+    "transliteration": "tōḷa"
+  },
+  "26": {
+    "english": "Fox",
+    "kannada": "ನರಿ",
+    "transliteration": "nari"
+  },
+  "27": {
+    "english": "Hippopotamus",
+    "kannada": "ನೀರಾನೆ",
+    "transliteration": "nīrāne"
+  },
+  "28": {
+    "english": "Cat",
+    "kannada": "ಬೆಕ್ಕು",
+    "transliteration": "bekku"
+  },
+  "29": {
+    "english": "Goat",
+    "kannada": "ಮೇಕೆ",
+    "transliteration": "meke"
+  },
+  "30": {
+    "english": "Rabbit",
+    "kannada": "ಮೊಲ",
+    "transliteration": "mola"
+  },
+  "31": {
+    "english": "Lion",
+    "kannada": "ಸಿಂಹ",
+    "transliteration": "siṁha"
+  },
+  "32": {
+    "english": "Pig",
+    "kannada": "ಹಂದಿ",
+    "transliteration": "handi"
+  },
+  "33": {
+    "english": "Cow",
+    "kannada": "ಹಸು",
+    "transliteration": "hasu"
+  },
+  "34": {
+    "english": "Tiger",
+    "kannada": "ಹುಲಿ",
+    "transliteration": "huli"
+  },
+  "35": {
+    "english": "Zebra",
+    "kannada": "ಹೇಸರಗತ್ತೆ",
+    "transliteration": "hēsaragatte"
+  },
+  "36": {
+    "english": "Boar",
+    "kannada": "ಕಾಡು ಹಂದಿ",
+    "transliteration": "kāḍu handi"
+  },
+  "37": {
+    "english": "Monkey",
+    "kannada": "ಕೋತಿ",
+    "transliteration": "kōti"
+  },
+  "38": {
+    "english": "Crocodile",
+    "kannada": "ಮೊಸಳೆ",
+    "transliteration": "mosale"
   }
 }

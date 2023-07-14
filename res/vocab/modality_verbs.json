@@ -1,2 +1,42 @@
 {
+  "0": {
+    "english": "Want",
+    "kannada": "ಬೇಕು",
+    "transliteration": "bēku"
+  },
+  "1": {
+    "english": "Don’t want",
+    "kannada": "ಬೇಡ",
+    "transliteration": "bēḍa"
+  },
+  "2": {
+    "english": "Like",
+    "kannada": "ಇಷ್ಟ",
+    "transliteration": "iṣṭa"
+  },
+  "3": {
+    "english": "Don’t like",
+    "kannada": "ಇಷ್ಟ ಇಲ್ಲ",
+    "transliteration": "iṣṭa illa"
+  },
+  "4": {
+    "english": "Enough",
+    "kannada": "ಸಾಕು",
+    "transliteration": "sāku"
+  },
+  "5": {
+    "english": "Not enough",
+    "kannada": "ಸಾಲಲ್ಲ",
+    "transliteration": "sālalla"
+  },
+  "6": {
+    "english": "Know",
+    "kannada": "ಗೊತ್ತು",
+    "transliteration": "gottu"
+  },
+  "7": {
+    "english": "Don’t know",
+    "kannada": "ಗೊತ್ತಿಲ್ಲ",
+    "transliteration": "gottilla"
+  }
 }
