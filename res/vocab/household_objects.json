@@ -3,5 +3,155 @@
     "english": "House",
     "kannada": "ಮನೆ",
     "transliteration": "mane"
+  },
+  "1": {
+    "english": "Bag",
+    "kannada": "ಚೀಲ",
+    "transliteration": "cīla"
+  },
+  "2": {
+    "english": "Basement",
+    "kannada": "ನೆಲಮಾಳಿಗೆ",
+    "transliteration": "nelamāḷige"
+  },
+  "3": {
+    "english": "Basket",
+    "kannada": "ಬುಟ್ಟಿ",
+    "transliteration": "buṭṭi"
+  },
+  "4": {
+    "english": "Bathroom",
+    "kannada": "ಸ್ನಾನಗೃಹ",
+    "transliteration": "snānagṛha"
+  },
+  "5": {
+    "english": "Bed Sheet",
+    "kannada": "ಚಾದರ",
+    "transliteration": "cādara"
+  },
+  "6": {
+    "english": "Bed",
+    "kannada": "ಹಾಸಿಗೆ",
+    "transliteration": "hāsige"
+  },
+  "7": {
+    "english": "Bedroom",
+    "kannada": "ಮಲಗುವ ಕೋಣೆ",
+    "transliteration": "malaguva kōṇe"
+  },
+  "8": {
+    "english": "Blanket",
+    "kannada": "ಕಂಬಳಿ",
+    "transliteration": "kambaḷi"
+  },
+  "9": {
+    "english": "Book",
+    "kannada": "ಪುಸ್ತಕ",
+    "transliteration": "pustaka"
+  },
+  "10": {
+    "english": "Bottle",
+    "kannada": "ಸೀಸೆ",
+    "transliteration": "sīse"
+  },
+  "11": {
+    "english": "Box",
+    "kannada": "ಪೆಟ್ಟಿಗೆ",
+    "transliteration": "peṭṭige"
+  },
+  "12": {
+    "english": "Chair",
+    "kannada": "ಕುರ್ಚಿ",
+    "transliteration": "kurci"
+  },
+  "13": {
+    "english": "Clothes",
+    "kannada": "ಬಟ್ಟೆ",
+    "transliteration": "baṭṭe"
+  },
+  "14": {
+    "english": "Garbage",
+    "kannada": "ಕಸ",
+    "transliteration": "kasa"
+  },
+  "15": {
+    "english": "Glass",
+    "kannada": "ಗಾಜು",
+    "transliteration": "gāju"
+  },
+  "16": {
+    "english": "Iron",
+    "kannada": "ಕಬ್ಬಿಣ",
+    "transliteration": "kabbina"
+  },
+  "17": {
+    "english": "Jewelry",
+    "kannada": "ಆಭರಣ",
+    "transliteration": "ābharaṇa"
+  },
+  "18": {
+    "english": "Kitchen",
+    "kannada": "ಅಡಿಗೆ",
+    "transliteration": "aḍige"
+  },
+  "19": {
+    "english": "Knife",
+    "kannada": "ಚಾಕು",
+    "transliteration": "cāku"
+  },
+  "20": {
+    "english": "Lamp",
+    "kannada": "ದೀಪ",
+    "transliteration": "dīpa"
+  },
+  "21": {
+    "english": "Light",
+    "kannada": "ಬೆಳಕು",
+    "transliteration": "beḷaku"
+  },
+  "22": {
+    "english": "Medicine",
+    "kannada": "ಔಷಧಿ",
+    "transliteration": "auṣadhi"
+  },
+  "23": {
+    "english": "Perfume",
+    "kannada": "ಸುಗಂಧ ದ್ರವ್ಯ",
+    "transliteration": "sugandha dravya"
+  },
+  "24": {
+    "english": "Pressure Cooker",
+    "kannada": "ಹಬೆ ಪಾತ್ರೆ",
+    "transliteration": "habe pātre"
+  },
+  "25": {
+    "english": "Printer",
+    "kannada": "ಮುದ್ರಕ",
+    "transliteration": "mudraka"
+  },
+  "26": {
+    "english": "Spoon",
+    "kannada": "ಚಮಚ",
+    "transliteration": "camaca"
+  },
+  "27": {
+    "english": "Telephone",
+    "kannada": "ದೂರವಾಣಿ",
+    "transliteration": "dūravāṇi"
+  },
+  "28": {
+    "english": "Towel",
+    "kannada": "ಟವೆಲ್",
+    "transliteration": "ṭavel"
+  },
+  "29": {
+    "english": "Umbrella",
+    "kannada": "ಛತ್ರಿ",
+    "transliteration": "chatri"
+  },
+  "30": {
+    "english": "Utensils",
+    "kannada": "ಪಾತ್ರೆಗಳು",
+    "transliteration": "pātregaḷu"
   }
 }

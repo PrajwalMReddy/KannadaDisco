@@ -28,5 +28,35 @@
     "english": "Black",
     "kannada": "ಕರಿ",
     "transliteration": "kari"
+  },
+  "6": {
+    "english": "Blue",
+    "kannada": "ನೀಲಿ",
+    "transliteration": "nīli"
+  },
+  "7": {
+    "english": "Brown",
+    "kannada": "ಕಂದು",
+    "transliteration": "kandu"
+  },
+  "8": {
+    "english": "Grey",
+    "kannada": "ಬೂದು",
+    "transliteration": "Būdu"
+  },
+  "9": {
+    "english": "Orange",
+    "kannada": "ಕಿತ್ತಳೆ",
+    "transliteration": "kittaḷe"
+  },
+  "10": {
+    "english": "Pink",
+    "kannada": "ಗುಲಾಬಿ",
+    "transliteration": "gulābi"
+  },
+  "11": {
+    "english": "Purple",
+    "kannada": "ನೇರಳೆ",
+    "transliteration": "nēraḷe"
   }
 }
