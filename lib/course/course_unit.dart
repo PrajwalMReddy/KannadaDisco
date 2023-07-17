@@ -40,6 +40,7 @@ class CourseUnit extends StatelessWidget {
               child: Column(children: [
                 Text(
                   prettifyText(heading),
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
                       fontSize: 20.0, fontWeight: FontWeight.w700),
                 ),

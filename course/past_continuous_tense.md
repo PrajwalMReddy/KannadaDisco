@@ -6,18 +6,18 @@
 
 ## Singular Pronouns
 
-|        English        | Kannada  | Transcription |
-|:---------------------:|:--------:|:-------------:|
-|        I Was -        |  -ತ ಇದೆ  |   -tha ide    |
-| You (Singular) Were - |  -ತ ಇದೆ  |   -tha ide    |
-|       He Was -        |  -ತ ಇದ   |   -tha ida    |
-|       She Was -       | -ತ ಇದ್ಳು |   -tha idḷu   |
-|       It Was -        | -ತ ಇತ್ತು |   -tha ittu   |
+|        English        | Kannada  | Transliteration |
+|:---------------------:|:--------:|:---------------:|
+|        I Was -        |  -ತ ಇದೆ  |    -tha ide     |
+| You (Singular) Were - |  -ತ ಇದೆ  |    -tha ide     |
+|       He Was -        |  -ತ ಇದ   |    -tha ida     |
+|       She Was -       | -ತ ಇದ್ಳು |    -tha idḷu    |
+|       It Was -        | -ತ ಇತ್ತು |    -tha ittu    |
 
 ## Plural / Honorific Pronouns
 
-|       English       | Kannada  | Transcription |
-|:-------------------:|:--------:|:-------------:|
-|      We Were -      | -ತ ಇದ್ವಿ |   -tha idvi   |
-| You (Plural) Were - | -ತ ಇದ್ರಿ |   -tha idri   |
-|     They Were -     | -ತ ಇದ್ರು |   -tha idru   |
+|       English       | Kannada  | Transliteration |
+|:-------------------:|:--------:|:---------------:|
+|      We Were -      | -ತ ಇದ್ವಿ |    -tha idvi    |
+| You (Plural) Were - | -ತ ಇದ್ರಿ |    -tha idri    |
+|     They Were -     | -ತ ಇದ್ರು |    -tha idru    |

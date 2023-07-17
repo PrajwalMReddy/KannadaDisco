@@ -6,19 +6,19 @@
 
 ## Here is a list of basic, everyday verbs that you should know:
 
-|    English    | Kannada | Transcription |
-|:-------------:|:-------:|:-------------:|
-|      Do       |  ಮಾಡು   |     māḍu      |
-| Happen/Become |   ಆಗು   |      āgu      |
-|    Be/Stay    |   ಇರು   |      iru      |
-|      Go       |  ಹೋಗು   |     hōgu      |
-|     Come      |   ಬಾ    |      bā       |
-|     Look      |  ನೋಡು   |     nōḍu      |
-|     Speak     | ಮಾತಾಡು  |    mātādu     |
-|     Tell      |  ಹೇಳು   |     hēḷu      |
-|  Listen/Ask   |  ಕೇಳು   |     kēḷu      |
-|     Give      |  ಕೊಡು   |     koḍu      |
-|     Take      |  ತಗೊಳಿ  |    tagōḷi     |
-|     Call      |   ಕರಿ   |     kari      |
-|      Put      |  ಹಾಕು   |     hāku      |
-|      Eat      | ತಿನ್ನು  |     tinnu     |
+|    English    | Kannada | Transliteration |
+|:-------------:|:-------:|:---------------:|
+|      Do       |  ಮಾಡು   |      māḍu       |
+| Happen/Become |   ಆಗು   |       āgu       |
+|    Be/Stay    |   ಇರು   |       iru       |
+|      Go       |  ಹೋಗು   |      hōgu       |
+|     Come      |   ಬಾ    |       bā        |
+|     Look      |  ನೋಡು   |      nōḍu       |
+|     Speak     | ಮಾತಾಡು  |     mātādu      |
+|     Tell      |  ಹೇಳು   |      hēḷu       |
+|  Listen/Ask   |  ಕೇಳು   |      kēḷu       |
+|     Give      |  ಕೊಡು   |      koḍu       |
+|     Take      |  ತಗೊಳಿ  |     tagōḷi      |
+|     Call      |   ಕರಿ   |      kari       |
+|      Put      |  ಹಾಕು   |      hāku       |
+|      Eat      | ತಿನ್ನು  |      tinnu      |

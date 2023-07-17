@@ -57,5 +57,4 @@ const List<ResourceCard> conversationCards = [
   ResourceCard(topic: "speaking_with_traffic_cops", resourceType: "conversation"),
   ResourceCard(topic: "in_government_offices", resourceType: "conversation"),
   ResourceCard(topic: "colloquial_language", resourceType: "conversation"),
-  ResourceCard(topic: "insults_and_curses", resourceType: "conversation"),
 ];

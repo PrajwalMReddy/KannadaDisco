@@ -1,2 +1,37 @@
 {
+  "0": {
+    "english": "Where is the ___?",
+    "kannada": "___ ಎಲ್ಲಿದೆ",
+    "transliteration": "___ ellide"
+  },
+  "1": {
+    "english": "What time does ___ open?",
+    "kannada": "___ ಯೆಸ್ಟು ಹೊತ್ತಿಗೆ ತೆಗಿತಾರೆ",
+    "transliteration": "___ yesṭu hottige tegitāre"
+  },
+  "2": {
+    "english": "What time does ___ close?",
+    "kannada": "___ ಯೆಸ್ಟು ಹೊತ್ತಿಗೆ ಮುಚ್ತಾರೆ",
+    "transliteration": "___ yesṭu hottige muctāre"
+  },
+  "3": {
+    "english": "How far is the ___?",
+    "kannada": "___ ಯೆಸ್ಟು ದೂರ ಇದೆ",
+    "transliteration": "___ yesṭu dūra ide"
+  },
+  "4": {
+    "english": "Which places should I visit?",
+    "kannada": "ಯಾವಯಾವ ಜಾಗ ನೋಡಬೇಕು",
+    "transliteration": "yāvayāva jāga nōḍabēku"
+  },
+  "5": {
+    "english": "What is the history of this place?",
+    "kannada": "ಈ ಜಾಗದ ಇತಿಹಾಸ ಯೇನು",
+    "transliteration": "ī jāgada itihāsa yēnu"
+  },
+  "6": {
+    "english": "Where can I find a guide?",
+    "kannada": "ಗೈಡ್ ಎಲ್ಲಿ ಸಿಗ್ತಾರೆ",
+    "transliteration": "gaiḍ elli sigtāre"
+  }
 }

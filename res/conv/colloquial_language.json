@@ -1,2 +1,27 @@
 {
+  "0": {
+    "english": "What's up?",
+    "kannada": "ಏನು ಸಮಾಚಾರ",
+    "transliteration": "ēnu samācāra"
+  },
+  "1": {
+    "english": "How are you dude?",
+    "kannada": "ಹೇಗಿದ್ದೀಯಾ ಗುರು/ಮಗ",
+    "transliteration": "hēgiddīyā guru/maga"
+  },
+  "2": {
+    "english": "___ is very good.",
+    "kannada": "___ ಸಕ್ಕತ್/ಬೊಂಬಾಟ್ ಆಗಿದೆ",
+    "transliteration": "___ sakkat/bombāṭ āgide"
+  },
+  "3": {
+    "english": "This time the cup is ours.",
+    "kannada": "ಈ ಸಲ ಕಪ್ ನಮ್ಮದೇ",
+    "transliteration": "ī sala kap nam'madē"
+  },
+  "4": {
+    "english": "A sly/cunning person",
+    "kannada": "ಕಳ್ ನನ್ ಮಗ",
+    "transliteration": "kaḷ nan maga"
+  }
 }

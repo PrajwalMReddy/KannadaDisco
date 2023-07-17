@@ -38,5 +38,10 @@
     "english": "I live in ___.",
     "kannada": "ನನ್ನ ಮನೆ ___ನಲ್ಲಿದೆ",
     "transliteration": "nanna mane ___nallide"
+  },
+  "9": {
+    "english": "Where are you from?",
+    "kannada": "ನಿಮ್ಮ ಊರು ಯಾವುದು",
+    "transliteration": "nimma ūru yāvudu"
   }
 }

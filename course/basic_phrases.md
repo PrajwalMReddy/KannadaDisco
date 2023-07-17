@@ -2,7 +2,7 @@
 
 ### Before systematically learning Kannada, it helps to know a few basic words and phrases to get familiar with the language as well as to have some commonly used, helpful vocabulary on hand.
 
-|         English         |       Kannada       |   Transcription   |
+|         English         |       Kannada       |  Transliteration  |
 |:-----------------------:|:-------------------:|:-----------------:|
 |          Hello          |       ನಮಸ್ಕಾರ       |     namaskāra     |
 |           Yes           |        ಹೌದು         |       haudu       |

@@ -8,18 +8,18 @@
 
 ## Singular Pronouns
 
-|  English   | Kannada | Transcription |
-|:----------:|:-------:|:-------------:|
-|  I Will -  |  -ತೀನಿ  |     -tīni     |
-| You Will - |  -ತಿಯ   |     -tīya     |
-| He Will -  |  -ತಾನೆ  |     -tāne     |
-| She Will - |  -ತಾಳೆ  |     -tāḷe     |
-| It Will -  |  -ಆತೆ   |     -ate      |
+|  English   | Kannada | Transliteration |
+|:----------:|:-------:|:---------------:|
+|  I Will -  |  -ತೀನಿ  |      -tīni      |
+| You Will - |  -ತಿಯ   |      -tīya      |
+| He Will -  |  -ತಾನೆ  |      -tāne      |
+| She Will - |  -ತಾಳೆ  |      -tāḷe      |
+| It Will -  |  -ಆತೆ   |      -ate       |
 
 ## Plural / Honorific Pronouns
 
-|   English   | Kannada | Transcription |
-|:-----------:|:-------:|:-------------:|
-|  We Will -  |  -ತೀವಿ  |     -tīvi     |
-| You Will -  |  -ತೀರಿ  |     -tīri     |
-| They Will - |  -ತಾರೆ  |     -tāre     |
+|   English   | Kannada | Transliteration |
+|:-----------:|:-------:|:---------------:|
+|  We Will -  |  -ತೀವಿ  |      -tīvi      |
+| You Will -  |  -ತೀರಿ  |      -tīri      |
+| They Will - |  -ತಾರೆ  |      -tāre      |

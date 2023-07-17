@@ -4,18 +4,18 @@
 
 ## Singular Pronouns
 
-| English | Kannada | Transcription |
-|:-------:|:-------:|:-------------:|
-|    I    |  ನಾನು   |     nānu      |
-|   You   |  ನೀನು   |     nīnu      |
-|   He    |  ಅವನು   |     avanu     |
-|   She   |  ಅವಳು   |     avaḷu     |
-|   It    |   ಅದು   |      adu      |
+| English | Kannada | Transliteration |
+|:-------:|:-------:|:---------------:|
+|    I    |  ನಾನು   |      nānu       |
+|   You   |  ನೀನು   |      nīnu       |
+|   He    |  ಅವನು   |      avanu      |
+|   She   |  ಅವಳು   |      avaḷu      |
+|   It    |   ಅದು   |       adu       |
 
 ## Plural / Honorific Pronouns
 
-| English | Kannada | Transcription |
-|:-------:|:-------:|:-------------:|
-|   We    |  ನಾವು   |     nāvu      |
-|   You   |  ನೀವು   |     nīvu      |
-|  They   |  ಅವರು   |     avaru     |
+| English | Kannada | Transliteration |
+|:-------:|:-------:|:---------------:|
+|   We    |  ನಾವು   |      nāvu       |
+|   You   |  ನೀವು   |      nīvu       |
+|  They   |  ಅವರು   |      avaru      |

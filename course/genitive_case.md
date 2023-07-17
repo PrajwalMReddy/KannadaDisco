@@ -6,18 +6,18 @@
 
 ## Singular Pronouns
 
-| English | Kannada | Transcription |
-|:-------:|:-------:|:-------------:|
-|   My    |  ನನ್ನ   |     nanna     |
-|  Your   |  ನಿನ್ನ  |     ninna     |
-|   His   |   ಅವನ   |     avana     |
-|   Her   |   ಅವಳ   |     avaḷa     |
-|   Its   |   ಅದರ   |     adara     |
+| English | Kannada | Transliteration |
+|:-------:|:-------:|:---------------:|
+|   My    |  ನನ್ನ   |      nanna      |
+|  Your   |  ನಿನ್ನ  |      ninna      |
+|   His   |   ಅವನ   |      avana      |
+|   Her   |   ಅವಳ   |      avaḷa      |
+|   Its   |   ಅದರ   |      adara      |
 
 ## Plural / Honorific Pronouns
 
-| English | Kannada | Transcription |
-|:-------:|:-------:|:-------------:|
-|   Our   |  ನಮ್ಮ   |     namma     |
-|  Your   |  ನಿಮ್ಮ  |     nimma     |
-|  Their  |   ಅವರ   |     avara     |
+| English | Kannada | Transliteration |
+|:-------:|:-------:|:---------------:|
+|   Our   |  ನಮ್ಮ   |      namma      |
+|  Your   |  ನಿಮ್ಮ  |      nimma      |
+|  Their  |   ಅವರ   |      avara      |

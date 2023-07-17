@@ -1,2 +1,42 @@
 {
+  "0": {
+    "english": "Where can I find ___?",
+    "kannada": "___ ಎಲ್ಲಿ ಸಿಗುತ್ತೆ",
+    "transliteration": "___ elli sigutte"
+  },
+  "1": {
+    "english": "What is this?",
+    "kannada": "ಇದು ಯೇನು",
+    "transliteration": "idu yēnu"
+  },
+  "2": {
+    "english": "How much is it?",
+    "kannada": "ಇದು ಯೆಸ್ಟು",
+    "transliteration": "idu yesṭu"
+  },
+  "3": {
+    "english": "What is the price for ___ kilos?",
+    "kannada": "___ ಕಿಲೊಸ್ಗೆ ಯೆಸ್ಟು ಆಗುತ್ತೆ",
+    "transliteration": "___ kilosge yesṭu āgutte"
+  },
+  "4": {
+    "english": "Can you reduce the price a little?",
+    "kannada": "ಸ್ವಲ್ಪ ಕಡಿಮೆ ಮಾಡ್ಕೊಳ್ಳಿ",
+    "transliteration": "svalpa kaḍime māḍkoḷḷi"
+  },
+  "5": {
+    "english": "Can I try this?",
+    "kannada": "ಸ್ವಲ್ಪ ಟ್ರೈ ಮಾಡ್ತೀನಿ",
+    "transliteration": "svalpa ṭrai māḍtīni"
+  },
+  "6": {
+    "english": "I want to buy this.",
+    "kannada": "ಇದು ಕೊಡಿ",
+    "transliteration": "idu koḍi"
+  },
+  "7": {
+    "english": "Do you accept ___?",
+    "kannada": "___ ತಗೊಳ್ತೀರ",
+    "transliteration": "___ tagoḷtīra"
+  }
 }

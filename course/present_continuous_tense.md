@@ -4,18 +4,18 @@
 
 ## Singular Pronouns
 
-|  English  |  Kannada   | Transcription |
-|:---------:|:----------:|:-------------:|
-|  I Am -   | -ತ ಇದ್ದೀನಿ |  -ta iddīni   |
-| You Are - | -ತ ಇದ್ದೀಯ  |  -ta iddīya   |
-|  He Is -  | -ತ ಇದ್ದಾನೆ |  -ta iddāne   |
-| She Is -  | -ತ ಇದ್ದಾಳೆ |  -ta iddāḷe   |
-|  It Is -  |   -ತ ಇದೆ   |    -ta ide    |
+|  English  |  Kannada   | Transliteration |
+|:---------:|:----------:|:---------------:|
+|  I Am -   | -ತ ಇದ್ದೀನಿ |   -ta iddīni    |
+| You Are - | -ತ ಇದ್ದೀಯ  |   -ta iddīya    |
+|  He Is -  | -ತ ಇದ್ದಾನೆ |   -ta iddāne    |
+| She Is -  | -ತ ಇದ್ದಾಳೆ |   -ta iddāḷe    |
+|  It Is -  |   -ತ ಇದೆ   |     -ta ide     |
 
 ## Plural / Honorific Pronouns
 
-|  English   |  Kannada   | Transcription |
-|:----------:|:----------:|:-------------:|
-|  We Are -  | -ತ ಇದ್ದೀವಿ |  -ta iddīvi   |
-| You Are -  | -ತ ಇದ್ದೀರಿ |  -ta iddīri   |
-| They Are - | -ತ ಇದ್ದಾರೆ |  -ta iddāre   |
+|  English   |  Kannada   | Transliteration |
+|:----------:|:----------:|:---------------:|
+|  We Are -  | -ತ ಇದ್ದೀವಿ |   -ta iddīvi    |
+| You Are -  | -ತ ಇದ್ದೀರಿ |   -ta iddīri    |
+| They Are - | -ತ ಇದ್ದಾರೆ |   -ta iddāre    |
