@@ -1,2 +1,42 @@
 {
+  "0": {
+    "english": "Where are we now?",
+    "kannada": "ನಾವು ಈಗ ಯೆಲ್ಲಿದ್ದೀವಿ",
+    "transliteration": "nāvu Īga yelliddīvi"
+  },
+  "1": {
+    "english": "Will you go to ___?",
+    "kannada": "___ಗೆ ಹೋಗ್ತೀರ",
+    "transliteration": "___ge hōgtīra"
+  },
+  "2": {
+    "english": "How much will it cost?",
+    "kannada": "ಯೆಸ್ಟು ಆಗುತ್ತೆ",
+    "transliteration": "yesṭu āgutte"
+  },
+  "3": {
+    "english": "That is too much.",
+    "kannada": "ತುಂಬಾ ಜಾಸ್ತಿ ಹೇಳ್ತಾ ಇದೀರ",
+    "transliteration": "tumbā jāsti hēḷtā idīra"
+  },
+  "4": {
+    "english": "I will pay ___ rupees.",
+    "kannada": "ನಾನು ___ ರೂಪಾಯಿ ಕೊಡ್ತೀನಿ",
+    "transliteration": "nānu ___ rūpāyi koḍtīni"
+  },
+  "5": {
+    "english": "Please go a little slow.",
+    "kannada": "ಸ್ವಲ್ಪ ನಿಧಾನವಾಗಿ ಹೋಗಿ",
+    "transliteration": "svalpa nidhānavāgi hōgi"
+  },
+  "6": {
+    "english": "Please stop here.",
+    "kannada": "ಇಲ್ಲೆ ನಿಲ್ಲಿಸಿ",
+    "transliteration": "ille nillisi"
+  },
+  "7": {
+    "english": "Where is the nearest ___ station?",
+    "kannada": "ಹತ್ತಿರದ ___ ನಿಲ್ದಾಣ ಯೆಲ್ಲಿದೆ",
+    "transliteration": "hattirada ___ nildāṇa yellide"
+  }
 }

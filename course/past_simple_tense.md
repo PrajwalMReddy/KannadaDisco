@@ -4,18 +4,18 @@
 
 ## Singular Pronouns
 
-| English | Kannada | Transcription |
-|:-------:|:-------:|:-------------:|
-|   I -   |   -ದೆ   |      -de      |
-|  You -  |   -ದೆ   |      -de      |
-|  He -   |   -ದ    |      -da      |
-|  She -  |  -ದ್ಳು  |     -dḷu      |
-|  It -   |  -ತ್ತು  |     -ttu      |
+| English | Kannada | Transliteration |
+|:-------:|:-------:|:---------------:|
+|   I -   |   -ದೆ   |       -de       |
+|  You -  |   -ದೆ   |       -de       |
+|  He -   |   -ದ    |       -da       |
+|  She -  |  -ದ್ಳು  |      -dḷu       |
+|  It -   |  -ತ್ತು  |      -ttu       |
 
 ## Plural / Honorific Pronouns
 
-| English | Kannada | Transcription |
-|:-------:|:-------:|:-------------:|
-|  We -   |  -ದ್ವಿ  |     -dvi      |
-|  You -  |  -ದ್ರಿ  |     -dri      |
-| They -  |  -ದ್ರು  |     -dru      |
+| English | Kannada | Transliteration |
+|:-------:|:-------:|:---------------:|
+|  We -   |  -ದ್ವಿ  |      -dvi       |
+|  You -  |  -ದ್ರಿ  |      -dri       |
+| They -  |  -ದ್ರು  |      -dru       |

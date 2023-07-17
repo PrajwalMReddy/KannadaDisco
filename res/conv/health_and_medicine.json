@@ -1,2 +1,42 @@
 {
+  "0": {
+    "english": "Can I book an appointment at ___?",
+    "kannada": "ನನಗೆ ___ ಗಂಟೆಗೆ ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಕಿದೆ",
+    "transliteration": "nanage ___ gaṇṭege apāyiṇṭmeṇṭ bēkide"
+  },
+  "1": {
+    "english": "I need an appointment with ___.",
+    "kannada": "ನನಗೆ ___ ಹತ್ತಿರ ಒಂದು ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಕು",
+    "transliteration": "nanage ___ hattira ondu apāyiṇṭmeṇṭ bēku"
+  },
+  "2": {
+    "english": "Which doctor do I need to see for ___?",
+    "kannada": "ಯಾವ ವೈದ್ಯರನ್ನು ನೋಡಬೇಕು",
+    "transliteration": "yāva vaidyarannu nōḍabēku"
+  },
+  "3": {
+    "english": "Can you please explain ___?",
+    "kannada": "___ ಬಗ್ಗೆ ಸ್ವಲ್ಪ ಹೇಳಿ",
+    "transliteration": "___ bagge svalpa hēḷi"
+  },
+  "4": {
+    "english": "I need this medicine: ___.",
+    "kannada": "ನನಗೆ ___ ಔಷದಿ ಬೇಕು",
+    "transliteration": "nanage ___ auṣadi bēku"
+  },
+  "5": {
+    "english": "My ___ hurts.",
+    "kannada": "ನನಗೆ ___ ನೋವಿದೆ",
+    "transliteration": "nanage ___ nōvide"
+  },
+  "6": {
+    "english": "I have issues with ___.",
+    "kannada": "ನನಗೆ ___ ತೊಂದರೆ ಇದೆ",
+    "transliteration": "nanage ___ tondare ide"
+  },
+  "7": {
+    "english": "I have insurance coverage.",
+    "kannada": "ನನ್ನ ಬಳಿ ಇನ್ಸೂರೆನ್ಸ್ ಇದೆ",
+    "transliteration": "Nanna baḷi insūrens ide"
+  }
 }

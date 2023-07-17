@@ -4,18 +4,18 @@
 
 ## Singular Pronouns
 
-|  English   | Kannada  | Transcription |
-|:----------:|:--------:|:-------------:|
-|  I have -  | -ಇದ್ದೀನಿ |    -iddīni    |
-| You have - | -ಇದ್ದೀಯ  |    -iddīya    |
-|  He has -  | -ಇದ್ದಾನೆ |    -iddāne    |
-| She has -  | -ಇದ್ದಾಳೆ |    -iddāḷe    |
-|  It has -  |   -ಇದೆ   |     -ide      |
+|  English   | Kannada  | Transliteration |
+|:----------:|:--------:|:---------------:|
+|  I have -  | -ಇದ್ದೀನಿ |     -iddīni     |
+| You have - | -ಇದ್ದೀಯ  |     -iddīya     |
+|  He has -  | -ಇದ್ದಾನೆ |     -iddāne     |
+| She has -  | -ಇದ್ದಾಳೆ |     -iddāḷe     |
+|  It has -  |   -ಇದೆ   |      -ide       |
 
 ## Plural / Honorific Pronouns
 
-|   English   | Kannada  | Transcription |
-|:-----------:|:--------:|:-------------:|
-|  We have -  | -ಇದ್ದೀವಿ |    -iddīvi    |
-| You have -  | -ಇದ್ದೀರಿ |    -iddīri    |
-| They have - | -ಇದ್ದಾರೆ |    -iddāre    |
+|   English   | Kannada  | Transliteration |
+|:-----------:|:--------:|:---------------:|
+|  We have -  | -ಇದ್ದೀವಿ |     -iddīvi     |
+| You have -  | -ಇದ್ದೀರಿ |     -iddīri     |
+| They have - | -ಇದ್ದಾರೆ |     -iddāre     |

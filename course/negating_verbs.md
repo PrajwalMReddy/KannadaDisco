@@ -4,10 +4,10 @@
 
 ### The following table gives the suffixes for each tense:
 
-|      English       |  Kannada   | Transcription |
-|:------------------:|:----------:|:-------------:|
-|   Present/Future   |   -ಅಲ್ಲ    |     -alla     |
-|  Present Perfect   |   -ಇಲ್ಲ    |     -illa     |
-| Present Continuous |  -ತ ಇಲ್ಲ   |   -ta illa    |
-|    Past Simple     |   -ಲಿಲ್ಲ   |    -lilla     |
-|  Past Continuous   | -ತ ಇರಲಿಲ್ಲ | -ta iralilla  |
+|      English       |  Kannada   | Transliteration |
+|:------------------:|:----------:|:---------------:|
+|   Present/Future   |   -ಅಲ್ಲ    |      -alla      |
+|  Present Perfect   |   -ಇಲ್ಲ    |      -illa      |
+| Present Continuous |  -ತ ಇಲ್ಲ   |    -ta illa     |
+|    Past Simple     |   -ಲಿಲ್ಲ   |     -lilla      |
+|  Past Continuous   | -ತ ಇರಲಿಲ್ಲ |  -ta iralilla   |

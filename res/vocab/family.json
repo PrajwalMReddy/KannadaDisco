@@ -75,66 +75,36 @@
     "transliteration": "māva"
   },
   "15": {
-    "english": "Maternal Uncle/Paternal Aunt's Husband",
-    "kannada": "ಮಾವ",
-    "transliteration": "māvi"
-  },
-  "16": {
     "english": "Mother In Law",
     "kannada": "ಅತ್ತೆ",
     "transliteration": "atte"
   },
-  "17": {
-    "english": "Paternal Aunt/Maternal Uncle's Wife",
-    "kannada": "ಅತ್ತೆ",
-    "transliteration": "atti"
-  },
-  "18": {
+  "16": {
     "english": "Son In Law",
     "kannada": "ಅಳಿಯ",
     "transliteration": "aḷiya"
   },
-  "19": {
+  "17": {
     "english": "Daughter In Law",
     "kannada": "ಸೊಸೆ",
     "transliteration": "sose"
   },
-  "20": {
-    "english": "Father’s Younger Brother/Mother’s Younger Sister’s Husband",
-    "kannada": "ಚಿಕ್ಕಪ್ಪ",
-    "transliteration": "chikkapappa"
-  },
-  "21": {
-    "english": "Mother’s Younger Sister/Father’s Younger Brother’s Wife",
-    "kannada": "ಚಿಕ್ಕಮ್ಮ",
-    "transliteration": "chikkamamma"
-  },
-  "22": {
-    "english": "Father’s Elder Brother/Mother’s Elder Sister’s Husband",
-    "kannada": "ದೊಡ್ಡಪ್ಪ",
-    "transliteration": "doḍdapappa"
-  },
-  "23": {
-    "english": "Mother’s Elder Sister/Father’s Elder Brother’s Wife",
-    "kannada": "ದೊಡ್ಡಮ್ಮ",
-    "transliteration": "doḍdamamma"
-  },
-  "24": {
+  "18": {
     "english": "Children",
     "kannada": "ಮಕ್ಕಳು",
     "transliteration": "makkalu"
   },
-  "25": {
+  "19": {
     "english": "Male Friend",
     "kannada": "ಗೆಳೆಯ/ಸ್ನೇಹಿತ",
     "transliteration": "geḷeya/snehita"
   },
-  "26": {
+  "20": {
     "english": "Female Friend",
     "kannada": "ಗೆಳತಿ/ಸ್ನೇಹಿತೆ",
     "transliteration": "geḷati/snehithe"
   },
-  "27": {
+  "21": {
     "english": "Friendship",
     "kannada": "ಗೆಳೆತನ",
     "transliteration": "geḷetana"

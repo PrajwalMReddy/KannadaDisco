@@ -6,18 +6,18 @@
 
 ## Singular Pronouns
 
-| English | Kannada | Transcription |
-|:-------:|:-------:|:-------------:|
-|  To me  |  ನನಗೆ   |    nanage     |
-| To you  |  ನಿನಗೆ  |    ninage     |
-| To him  | ಅವನಿಗೆ  |    avanige    |
-| To her  | ಅವಳಿಗೆ  |    avaḷige    |
-|  To it  | ಅದಕ್ಕೆ  |    adakke     |
+| English | Kannada | Transliteration |
+|:-------:|:-------:|:---------------:|
+|  To me  |  ನನಗೆ   |     nanage      |
+| To you  |  ನಿನಗೆ  |     ninage      |
+| To him  | ಅವನಿಗೆ  |     avanige     |
+| To her  | ಅವಳಿಗೆ  |     avaḷige     |
+|  To it  | ಅದಕ್ಕೆ  |     adakke      |
 
 ## Plural / Honorific Pronouns
 
-| English | Kannada | Transcription |
-|:-------:|:-------:|:-------------:|
-|  To us  |  ನಮಗೆ   |    namage     |
-| To you  |  ನಿಮಗೆ  |    nimage     |
-| To them | ಅವರಿಗೆ  |    avarige    |
+| English | Kannada | Transliteration |
+|:-------:|:-------:|:---------------:|
+|  To us  |  ನಮಗೆ   |     namage      |
+| To you  |  ನಿಮಗೆ  |     nimage      |
+| To them | ಅವರಿಗೆ  |     avarige     |

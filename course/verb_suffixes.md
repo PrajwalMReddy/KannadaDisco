@@ -4,20 +4,20 @@
 
 ### The following table gives several suffixes that verbs can take:
 
-|                English                 | Kannada | Transcription |
-|:--------------------------------------:|:-------:|:-------------:|
-|                Let us -                |   -ಓಣ   |     -ōṇa      |
-|                  To -                  | -ಅಕ್ಕೆ  |     -akke     |
-|                  -ing                  |  -ವುದು  |     -vudu     |
-|                While -                 |  -ವಾಗ   |     -vāga     |
-|                 When -                 |  -ದಾಗ   |     -dāga     |
-|                After -                 |  -ಮೇಲೆ  |     -mēle     |
-|                  If -                  |  -ಇದರೆ  |    -idare     |
-|               Even if -                |  -ಇದರೂ  |    -idarū     |
-|         Just do it (quickly) -         |  -ಬಿಡು  |     -biḍu     |
-| Just do it (quickly) (plural/polite) - |  -ಬಿಡಿ  |     -biḍi     |
-|           Reflexive marker -           |   -ಕೋ   |      -kō      |
-|   Reflexive marker (plural/polite) -   | -ಕೊಳ್ಳಿ |    -koḷḷi     |
+|                English                 | Kannada | Transliteration |
+|:--------------------------------------:|:-------:|:---------------:|
+|                Let us -                |   -ಓಣ   |      -ōṇa       |
+|                  To -                  | -ಅಕ್ಕೆ  |      -akke      |
+|                  -ing                  |  -ವುದು  |      -vudu      |
+|                While -                 |  -ವಾಗ   |      -vāga      |
+|                 When -                 |  -ದಾಗ   |      -dāga      |
+|                After -                 |  -ಮೇಲೆ  |      -mēle      |
+|                  If -                  |  -ಇದರೆ  |     -idare      |
+|               Even if -                |  -ಇದರೂ  |     -idarū      |
+|         Just do it (quickly) -         |  -ಬಿಡು  |      -biḍu      |
+| Just do it (quickly) (plural/polite) - |  -ಬಿಡಿ  |      -biḍi      |
+|           Reflexive marker -           |   -ಕೋ   |       -kō       |
+|   Reflexive marker (plural/polite) -   | -ಕೊಳ್ಳಿ |     -koḷḷi      |
 
 ### The last 4 columns are slightly complicated verb forms that convey subtle nuances in meaning. The translation has been given as best as we could, but the only way to understand the suffixes for sure is to listen to other speakers to gain an intuitive understanding of those suffixes.
 
