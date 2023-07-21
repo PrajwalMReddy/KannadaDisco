@@ -75,31 +75,26 @@
     "transliteration": "hoṭṭe"
   },
   "15": {
-    "english": "Guts",
-    "kannada": "ಕೆಚ್ಚು",
-    "transliteration": "keccu"
-  },
-  "16": {
     "english": "Neck",
     "kannada": "ಕತ್ತು",
     "transliteration": "kattu"
   },
-  "17": {
+  "16": {
     "english": "Back",
     "kannada": "ಬೆನ್ನು",
     "transliteration": "bennu"
   },
-  "18": {
+  "17": {
     "english": "Breast",
     "kannada": "ಮೊಲೆ",
     "transliteration": "mole"
   },
-  "19": {
+  "18": {
     "english": "Heart",
     "kannada": "ಹೃದಯ/ಗುಂಡಿಗೆ",
     "transliteration": "hṛdaya/guṇḍige"
   },
-  "20": {
+  "19": {
     "english": "Liver",
     "kannada": "ಈಲಿ",
     "transliteration": "īli"

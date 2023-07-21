@@ -21,8 +21,8 @@
   },
   "4": {
     "english": "Capsicum",
-    "kannada": "ದೊಣ್ಣೆ ಮೆಣಸಿನಕಾಯಿ/ದಪ್ಪ ಮೆಣಸಿನಕಾಯಿ",
-    "transliteration": "dōṇṇe mēṇasinakāyi/dappa mēṇasinakāyi"
+    "kannada": "ದೊಣ್ಣೆ ಮೆಣಸಿನಕಾಯಿ",
+    "transliteration": "dōṇṇe mēṇasinakāyi"
   },
   "5": {
     "english": "Carrot",
@@ -111,8 +111,8 @@
   },
   "22": {
     "english": "Tomato",
-    "kannada": "ಟಮಟೆಕಾಯಿ",
-    "transliteration": "ṭamaṭekāyi"
+    "kannada": "ಟೊಮೆಟೊ",
+    "transliteration": "ṭomeṭo"
   },
   "23": {
     "english": "Coconut",
@@ -121,8 +121,8 @@
   },
   "24": {
     "english": "Beetroot",
-    "kannada": "ಕಂದು ಬೇರು(ಕೆಂಪು ಮೂಲಂಗಿ)",
-    "transliteration": "kandu bēru (kempu mūlaṅgi)"
+    "kannada": "ಕಂದು ಬೇರು/ಕೆಂಪು ಮೂಲಂಗಿ",
+    "transliteration": "kandu bēru/kempu mūlaṅgi"
   },
   "25": {
     "english": "Mint Leaves",

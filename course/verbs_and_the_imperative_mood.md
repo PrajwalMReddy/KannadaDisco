@@ -4,7 +4,7 @@
 
 ### Just like for pronouns, the ending of the verb changes when referring to more than one person or when you want to be more respectful. Here, the ending of the verb changes to ಇ such as ಮಾಡಿ (mа̄di) which could mean ‘please do’. If the verb already ended with a ಎ or ಇ sound, add ರಿ (ri) to the end of the verb. For example, ಕುಡಿ (kuḍi) means drink while ಕುಡಿರಿ (kuḍiri) could mean ‘please drink’.
 
-## Here is a list of basic, everyday verbs that you should know:
+### Here is a list of basic, everyday verbs that you should know:
 
 |    English    | Kannada | Transliteration |
 |:-------------:|:-------:|:---------------:|
