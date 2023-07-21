@@ -51,11 +51,11 @@
   },
   "10": {
     "english": "Rat",
-    "kannada": "ಹೆಗ್ಗಣ/ ಇಲಿ",
-    "transliteration": "heggaṇa/ ili"
+    "kannada": "ಇಲಿ",
+    "transliteration": "ili"
   },
   "11": {
-    "english": "Bullock",
+    "english": "Bull",
     "kannada": "ಎತ್ತು",
     "transliteration": "ettu"
   },
@@ -100,14 +100,14 @@
     "transliteration": "ettu"
   },
   "20": {
-    "english": "Male buffalo",
+    "english": "Male Buffalo",
     "kannada": "ಕೊಣ",
     "transliteration": "koṇa"
   },
   "21": {
     "english": "Monkey",
-    "kannada": "ಕೋತಿ, ಕಪಿ",
-    "transliteration": "kōti, kapi"
+    "kannada": "ಕೋತಿ/ಕಪಿ",
+    "transliteration": "kōti/kapi"
   },
   "22": {
     "english": "Rhinoceros",
@@ -185,11 +185,6 @@
     "transliteration": "kāḍu handi"
   },
   "37": {
-    "english": "Monkey",
-    "kannada": "ಕೋತಿ",
-    "transliteration": "kōti"
-  },
-  "38": {
     "english": "Crocodile",
     "kannada": "ಮೊಸಳೆ",
     "transliteration": "mosale"

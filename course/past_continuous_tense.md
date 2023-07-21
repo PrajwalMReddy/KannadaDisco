@@ -8,9 +8,9 @@
 
 |        English        | Kannada  | Transliteration |
 |:---------------------:|:--------:|:---------------:|
-|        I Was -        |  -ತ ಇದೆ  |    -tha ide     |
-| You (Singular) Were - |  -ತ ಇದೆ  |    -tha ide     |
-|       He Was -        |  -ತ ಇದ   |    -tha ida     |
+|        I Was -        | -ತ ಇದ್ದೆ |    -tha idde    |
+| You (Singular) Were - | -ತ ಇದ್ದೆ |    -tha idde    |
+|       He Was -        | -ತ ಇದ್ದ  |    -tha idda    |
 |       She Was -       | -ತ ಇದ್ಳು |    -tha idḷu    |
 |       It Was -        | -ತ ಇತ್ತು |    -tha ittu    |
 

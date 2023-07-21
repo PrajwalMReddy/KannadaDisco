@@ -2,7 +2,7 @@
   "0": {
     "english": "Where are we now?",
     "kannada": "ನಾವು ಈಗ ಯೆಲ್ಲಿದ್ದೀವಿ",
-    "transliteration": "nāvu Īga yelliddīvi"
+    "transliteration": "nāvu īga yelliddīvi"
   },
   "1": {
     "english": "Will you go to ___?",
@@ -16,8 +16,8 @@
   },
   "3": {
     "english": "That is too much.",
-    "kannada": "ತುಂಬಾ ಜಾಸ್ತಿ ಹೇಳ್ತಾ ಇದೀರ",
-    "transliteration": "tumbā jāsti hēḷtā idīra"
+    "kannada": "ತುಂಬಾ ಜಾಸ್ತಿ ಹೇಳ್ತಾ ಇದ್ದೀರಿ",
+    "transliteration": "tumbā jāsti hēḷtā iddīri"
   },
   "4": {
     "english": "I will pay ___ rupees.",

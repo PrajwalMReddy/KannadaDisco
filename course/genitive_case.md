@@ -1,4 +1,4 @@
-# Dative Case
+# Genitive Case
 
 ### Kannada has a concept called cases, which are basically inflections in a word that show its role in a sentence. In Kannada, these cases are added on to the end of the word and can basically be treated as a suffix.
 

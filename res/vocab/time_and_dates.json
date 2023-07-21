@@ -5,61 +5,66 @@
     "transliteration": "samaya"
   },
   "1": {
+    "english": "Hour",
+    "kannada": "ಗಂಟೆ",
+    "transliteration": "gaṇṭe"
+  },
+  "2": {
     "english": "Today",
     "kannada": "ಇವತ್ತು",
     "transliteration": "ivattu"
   },
-  "2": {
+  "3": {
     "english": "Tomorrow",
     "kannada": "ನಾಳೆ",
     "transliteration": "nāḷe"
   },
-  "3": {
+  "4": {
     "english": "Yesterday",
     "kannada": "ನಿನ್ನೆ",
     "transliteration": "ninne"
   },
-  "4": {
+  "5": {
     "english": "Day After Tomorrow",
     "kannada": "ನಾಡಿದ್ದು",
     "transliteration": "nāḍiddu"
   },
-  "5": {
+  "6": {
     "english": "Day Before Yesterday",
     "kannada": "ಮೊನ್ನೆ",
     "transliteration": "monne"
   },
-  "6": {
+  "7": {
     "english": "Sunday",
     "kannada": "ಭಾನುವಾರ",
     "transliteration": "bhānuvāra"
   },
-  "7": {
+  "8": {
     "english": "Monday",
     "kannada": "ಸೋಮವಾರ",
     "transliteration": "sōmavāra"
   },
-  "8": {
+  "9": {
     "english": "Tuesday",
     "kannada": "ಮಂಗಳವಾರ",
     "transliteration": "maṅgaḷavāra"
   },
-  "9": {
+  "10": {
     "english": "Wednesday",
     "kannada": "ಬುಧವಾರ",
     "transliteration": "budhavāra"
   },
-  "10": {
+  "11": {
     "english": "Thursday",
     "kannada": "ಗುರುವಾರ",
     "transliteration": "guruvāra"
   },
-  "11": {
+  "12": {
     "english": "Friday",
     "kannada": "ಶುಕ್ರವಾರ",
     "transliteration": "śukravāra"
   },
-  "12": {
+  "13": {
     "english": "Saturday",
     "kannada": "ಶನಿವಾರ",
     "transliteration": "śanivāra"
