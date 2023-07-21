@@ -65,7 +65,7 @@ class SideBar extends StatelessWidget {
             const Divider(),
             const Center(
               child: Text(
-                "Version: 0.5.0",
+                "Version: 1.0.0",
                 style: TextStyle(
                   fontSize: 15.0,
                   color: kannadaBlue,
