@@ -51,10 +51,11 @@ const List<ResourceCard> grammarCards = [
 const List<ResourceCard> conversationCards = [
   ResourceCard(topic: "self_introductions", resourceType: "conversation"),
   ResourceCard(topic: "using_a_cab", resourceType: "conversation"),
-  ResourceCard(topic: "in_the_market", resourceType: "conversation"),
+  ResourceCard(topic: "the_market", resourceType: "conversation"),
   ResourceCard(topic: "health_and_medicine", resourceType: "conversation"),
   ResourceCard(topic: "in_a_restaurant", resourceType: "conversation"),
-  ResourceCard(topic: "speaking_with_traffic_cops", resourceType: "conversation"),
-  ResourceCard(topic: "in_government_offices", resourceType: "conversation"),
+  ResourceCard(topic: "traffic_cops", resourceType: "conversation"),
+  ResourceCard(topic: "government_offices", resourceType: "conversation"),
+  ResourceCard(topic: "sightseeing", resourceType: "conversation"),
   ResourceCard(topic: "colloquial_language", resourceType: "conversation"),
 ];

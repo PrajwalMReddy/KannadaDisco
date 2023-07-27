@@ -14,7 +14,7 @@
 | You Will - |  -ತಿಯ   |      -tīya      |
 | He Will -  |  -ತಾನೆ  |      -tāne      |
 | She Will - |  -ತಾಳೆ  |      -tāḷe      |
-| It Will -  |  -ಆತೆ   |      -ate       |
+| It Will -  | -ಉತ್ತೆ  |      -utte      |
 
 ## Plural / Honorific Pronouns
 
