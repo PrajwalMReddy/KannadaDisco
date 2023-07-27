@@ -44,7 +44,7 @@ class _QuizPageState extends State<QuizPage> {
                     ),
                     const Spacer(),
                     const Text(
-                      'Coming soon...',
+                      'Coming Soon...',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 15.0, fontWeight: FontWeight.w500),

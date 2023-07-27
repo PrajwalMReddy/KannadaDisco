@@ -28,7 +28,7 @@ class About extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Text(
-              "Karnataka is a state in Southern India, and is home to over 60,000,000 people. The capital is Bangalore, which is known as the Silicon Valley of India. The primary language of Karnataka is Kannada.\n\nKannada is a Dravidian language primarily spoken by more than 45 million native speakers in the Indian state of Karnataka and the surrounding regions. It has its own script, the Kannada script, and its literary tradition stretches back over a millennia. Kannada is also recognized as a classical language of India and its literature has earned 8 Jnanpith Awards, the second highest number for any language.",
+              "Karnataka is a state in Southern India, and is home to over 60,000,000 people. The capital is Bangalore, which is known as the Silicon Valley of India. The primary language of Karnataka is Kannada.\n\nKannada is a Dravidian language primarily spoken by more than 45 million native speakers in the Indian state of Karnataka and the surrounding regions. It has its own script, the Kannada script, and its literary tradition stretches back over a millennia. Kannada is also recognized as a classical language of India and its literature has earned 8 Jnanapitha Awards, the second highest number for any language.",
               style: TextStyle(
                 fontSize: 17.0,
               ),

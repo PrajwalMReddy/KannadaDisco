@@ -12,7 +12,7 @@ class LocalNotificationService {
       _prefs = await SharedPreferences.getInstance();
       var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
           '0', 'KannadaDisco',
-          channelDescription: 'Show notification every day morining',
+          channelDescription: 'Show notification every morning',
           importance: Importance.max,
           priority: Priority.max,
           ticker: 'ticker',
