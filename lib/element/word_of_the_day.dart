@@ -103,7 +103,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Word of the day',
+                'Word of the Day',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 23,
