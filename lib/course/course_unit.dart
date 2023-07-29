@@ -34,13 +34,13 @@ class CourseUnit extends StatelessWidget {
             bottomRight: Radius.circular(100),
           )),
           margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
-          // color: kannadaYellow,
           child: Padding(
             padding: const EdgeInsets.all(30.0),
             child: Center(
               child: Column(children: [
                 Text(
                   prettifyText(heading),
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
                       fontSize: 20.0, fontWeight: FontWeight.w700),
                 ),

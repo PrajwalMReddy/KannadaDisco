@@ -20,16 +20,21 @@
     "transliteration": "avaḷu"
   },
   "4": {
+    "english": "It",
+    "kannada": "ಅದು",
+    "transliteration": "adu"
+  },
+  "5": {
     "english": "We",
     "kannada": "ನಾವು",
     "transliteration": "nāvu"
   },
-  "5": {
+  "6": {
     "english": "You (Plural)",
     "kannada": "ನೀವು",
     "transliteration": "nīvu"
   },
-  "6": {
+  "7": {
     "english": "They",
     "kannada": "ಅವರು",
     "transliteration": "avaru"

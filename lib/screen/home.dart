@@ -110,14 +110,16 @@ class HomeBody extends StatelessWidget {
                   Color.fromARGB(255, 109, 161, 204),
                 ]),
           ),
-          child: const Padding(
-            padding: EdgeInsets.only(top: 10),
-            child: Column(
-              children: [
+          child: Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: Column(   
+              children: const [
                 SizedBox(
                   height: 20,
                 ),
-                WordOfTheDay(),
+                InkWell(
+                  child: WordOfTheDay(),
+                  ),
               ],
             ),
           ),
@@ -135,11 +137,11 @@ class HomeBody extends StatelessWidget {
                 bottomRight: Radius.circular(70.0),
               ),
             ),
-            child: const Padding(
-              padding: EdgeInsets.only(top: 20, bottom: 20),
+            child: Padding(
+              padding: const EdgeInsets.only(top: 20, bottom: 20),
               child: SingleChildScrollView(
                 child: Column(
-                  children: [
+                  children: const [
                     Resources(),
                   ],
                 ),
