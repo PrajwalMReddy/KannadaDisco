@@ -1,2 +1,47 @@
 {
+  "0": {
+    "english": "Can we have a table for one/two person/people?",
+    "kannada": "ಒಬ್ಬರಿಗೆ/ಇಬ್ಬರಿಗೆ ಟೇಬಲ್ ಬೇಕು",
+    "transliteration": "obbarige/ibbarige ṭēbal bēku"
+  },
+  "1": {
+    "english": "Can we have a table for ___ (>2) people?",
+    "kannada": "___ ಜನರಿಗೆ ಟೇಬಲ್ ಬೇಕು",
+    "transliteration": "___ janarige ṭēbal bēku"
+  },
+  "2": {
+    "english": "Can I see the menu?",
+    "kannada": "ಮೆನು ತಗೊಂಡು ಬನ್ನಿ",
+    "transliteration": "menu tagoṇḍu banni"
+  },
+  "3": {
+    "english": "Could I please have a glass of water?",
+    "kannada": "ಒಂದು ಗ್ಲಾಸ್ ನೀರು ಕೊಡಿ",
+    "transliteration": "ondu glās nīru koḍi"
+  },
+  "4": {
+    "english": "What dish is popular here?",
+    "kannada": "ಇಲ್ಲಿನ ಪಾಪ್ಯುಲರ್ ತಿಂಡಿ ಯಾವದು",
+    "transliteration": "illina pāpyular tiṇḍi yāvadu"
+  },
+  "5": {
+    "english": "Could I please get a ___?",
+    "kannada": "ನನಗೆ ___ ಬೇಕು",
+    "transliteration": "nanage ___ bēku"
+  },
+  "6": {
+    "english": "Please make it a little spicy.",
+    "kannada": "ಸ್ವಲ್ಪ ಖಾರ ಮಾಡಿ",
+    "transliteration": "svalpa khāra māḍi"
+  },
+  "7": {
+    "english": "Could I please have the bill?",
+    "kannada": "ಬಿಲ್ ಕೊಡಿ",
+    "transliteration": "bil koḍi"
+  },
+  "8": {
+    "english": "I will pay by ___.",
+    "kannada": "ನಾನು ___ನಲ್ಲಿ ಪೇ ಮಾಡ್ತೀನಿ",
+    "transliteration": "nānu ___nalli pē māḍtīni"
+  }
 }

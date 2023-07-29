@@ -1,0 +1,42 @@
+{
+  "0": {
+    "english": "What do you want?",
+    "kannada": "ನಿಮಗೆ ಏನು ಬೇಕು",
+    "transliteration": "nimage ēnu bēku"
+  },
+  "1": {
+    "english": "I want this document.",
+    "kannada": "ನನಗೆ ಈ ಡಾಕ್ಯುಮೆಂಟ್ ಬೇಕು",
+    "transliteration": "nanage ī dākyumeṇṭ bēku"
+  },
+  "2": {
+    "english": "Where can I pay this challan?",
+    "kannada": "ಈ ಚಲನ್ ಎಲ್ಲಿ ಕಟ್ಟಬೇಕು",
+    "transliteration": "ī calan elli kaṭṭabēka"
+  },
+  "3": {
+    "english": "How long will it take?",
+    "kannada": "ಎಷ್ಟು ಸಮಯ ತಗೊಳ್ತೀರ",
+    "transliteration": "yesṭu samaya tagoḷtīra"
+  },
+  "4": {
+    "english": "How will I be intimated?",
+    "kannada": "ನನಗೆ ಹೇಗೆ ತಿಳಿಸ್ತೀರ",
+    "transliteration": "nanage hēge tiḷistīra"
+  },
+  "5": {
+    "english": "Do I need to come back?",
+    "kannada": "ನಾನು ಮತ್ತೆ ಬರಬೇಕಾ",
+    "transliteration": "nānu matte barabēkā"
+  },
+  "6": {
+    "english": "Can you please process it quickly?",
+    "kannada": "ದಯವಿಟ್ಟು ಬೇಗ ಮಾಡಿ ಕೊಡಿ",
+    "transliteration": "dayaviṭṭu bēga māḍi koḍi"
+  },
+  "7": {
+    "english": "What is the processing fee?",
+    "kannada": "ಎಷ್ಟು ಆಗುತ್ತೆ",
+    "transliteration": "yesṭu āgutte"
+  }
+}

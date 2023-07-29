@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/resource/reference_entry.dart';
 import 'package:kannada_disco/util/util.dart';
@@ -14,6 +15,14 @@ class Reference extends StatelessWidget {
   Future<String> loadJson(String topic) async {
     final jsonData = await rootBundle.loadString("res/$type/$topic.json");
     return jsonData;
+  }
+
+  final FlutterTts flutterTts = FlutterTts();
+
+  speak(String text) async {
+    await flutterTts.setLanguage("kn-IN");
+    await flutterTts.setPitch(1);
+    await flutterTts.speak(text);
   }
 
   @override
@@ -41,13 +50,13 @@ class Reference extends StatelessWidget {
               } else {
                 String jsonData = snapshot.data ?? "";
                 final Map<String, dynamic> mapData = jsonDecode(jsonData);
-                List<Widget> wordsData = [];
+                List wordsData = [];
 
                 for (var entry in mapData.values) {
-                  wordsData.add(ReferenceEntry(
-                      english: entry["english"],
-                      kannada: entry["kannada"],
-                      transliteration: entry["transliteration"]));
+                  wordsData.add({
+                      "english": entry["english"],
+                      "kannada": entry["kannada"],
+                      "transliteration": entry["transliteration"]});
                 }
 
                 return (wordsData.isEmpty)
@@ -70,10 +79,20 @@ class Reference extends StatelessWidget {
                           ),
                         ),
                       )
-                    : SingleChildScrollView(
-                        child: Column(
-                          children: wordsData,
-                        ),
+                    : ListView.builder(
+                      itemCount: wordsData.length,
+                      itemBuilder: (context, index) {
+                        return GestureDetector(
+                          onTap: () {
+                            print('${wordsData[index]["english"]}--------${wordsData[index]["kannada"]}------------${wordsData[index]["transliteration"]}');
+                            speak(wordsData[index]["kannada"].toString().replaceAll("___", "ಡ್ಯಾಶ್"));
+                          },
+                          child: ReferenceEntry(
+                                              english: wordsData[index]["english"],
+                                              kannada: wordsData[index]["kannada"],
+                                              transliteration: wordsData[index]["transliteration"]),
+                        );
+                      },
                       );
               }
           }

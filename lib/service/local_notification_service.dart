@@ -13,10 +13,11 @@ class LocalNotificationService {
   Future<bool> scheduleDailyNotification() async {
     try {
       _prefs = await SharedPreferences.getInstance();
+      String todayInfo = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
     var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
       '0',
       'KannadaDisco',
-      channelDescription: 'Show notification every day morining',
+      channelDescription: 'Show notification every morning',
       importance: Importance.max,
       priority: Priority.max,
       ticker: 'ticker',
@@ -32,10 +33,12 @@ class LocalNotificationService {
    int hour = int.parse(splisttedList[0]);
    int minute = int.parse(splisttedList[1]);
    int second = int.parse(splisttedList[2]);
+
     await flutterLocalNotificationsPlugin.showDailyAtTime(
         0,
         'ನಮಸ್ಕಾರ | Namaskāra 🙏',
-        'There is a new word of the day available. Please visit KannadaDisco to learn its meaning.',
+        // 'There is a new word of the day available. Please visit KannadaDisco to learn its meaning.',
+        'Word of the day: $todayInfo',
         Time(hour, minute, second),
         platformChannelSpecifics);
     return true;

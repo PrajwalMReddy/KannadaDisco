@@ -7,6 +7,7 @@ import 'package:kannada_disco/const/resource_topic.dart';
 import 'package:kannada_disco/util/screen_size.dart';
 import 'package:kannada_disco/util/util.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
 class WordOfTheDay extends StatefulWidget {
   const WordOfTheDay({
@@ -21,6 +22,9 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
   SharedPreferences? _prefs;
   DateTime? _lastDate;
   String info = "";
+  String todayInfo = "";
+  String speakingWord = "";
+  var wordSplited;
 
   @override
   void initState() {
@@ -31,7 +35,10 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
   Future<void> _initPrefs() async {
     _prefs = await SharedPreferences.getInstance();
     String lastDateString = _prefs!.getString('lastDate') ?? '';
-    info = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
+    // info = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
+    todayInfo = _prefs!.getString('todayInfo') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
+    wordSplited = todayInfo.split(' - ');
+    speakingWord = wordSplited[0];
     setState(() {});
     if (lastDateString.isNotEmpty) {
       _lastDate = DateFormat('yyyy-MM-dd').parse(lastDateString);
@@ -51,6 +58,10 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     double nowTime = now.hour + (now.minute / 60);
     
     if ((_lastDate!.day != now.day) && (nowTime >= notificationTime)) {
+      todayInfo = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
+      wordSplited = todayInfo.split(' - ');
+    speakingWord = wordSplited[0];
+      _prefs!.setString('todayInfo', todayInfo);
       String jsonData = await randomWord();
       final Map<String, dynamic> mapData = jsonDecode(jsonData);
       List wordsData = [];
@@ -68,7 +79,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
       setState(() {
         // set your state here
       });
-      info = _prefs!.getString('info') ?? "";
+      // todayInfo = _prefs!.getString('todayInfo') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
       setState(() {});
       _prefs!.setString('lastDate', DateFormat('yyyy-MM-dd').format(now));
       _lastDate = now;
@@ -82,46 +93,59 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
     return jsonData;
   }
 
+  final FlutterTts flutterTts = FlutterTts();
+
+  speak(String text) async {
+    await flutterTts.setLanguage("kn-IN");
+    await flutterTts.setPitch(1);
+    await flutterTts.speak(text);
+  }
+
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: ScreenSize.height! * 0.13,
-      width: ScreenSize.width! * 0.95,
-      child: Card(
-        elevation: 5.0,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-              topRight: Radius.circular(40.0),
-              bottomLeft: Radius.circular(40.0)),
-        ),
-        color: const Color.fromARGB(255, 39, 101, 151),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-             const Text(
-                'Word of the day',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 23,
-                  fontWeight: FontWeight.bold,
+    return InkWell(
+      onTap: () {
+        speak(speakingWord);
+      },
+      child: SizedBox(
+        height: ScreenSize.height! * 0.13,
+        width: ScreenSize.width! * 0.95,
+        child: Card(
+          elevation: 5.0,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topRight: Radius.circular(40.0),
+                bottomLeft: Radius.circular(40.0)),
+          ),
+          color: const Color.fromARGB(255, 39, 101, 151),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+               const Text(
+                  'Word of the Day',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 23,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: ScreenSize.width! * 0.82,
-                child: Center(
-                  child: Text(
-                    info,
-                    style: TextStyle(
-                      fontSize: wordOfDaySize(info),
-                      color: Colors.white,
-                      // fontWeight: FontWeight.bold,
+                const SizedBox(height: 10),
+                SizedBox(
+                  width: ScreenSize.width! * 0.82,
+                  child: Center(
+                    child: Text(
+                      todayInfo,
+                      style: TextStyle(
+                        fontSize: wordOfDaySize(todayInfo),
+                        color: Colors.white,
+                        // fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

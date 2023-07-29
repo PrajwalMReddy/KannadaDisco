@@ -3,5 +3,110 @@
     "english": "Family",
     "kannada": "ಕುಟುಂಬ",
     "transliteration": "kuṭumba"
+  },
+  "1": {
+    "english": "Relatives",
+    "kannada": "ನೆಂಟರು",
+    "transliteration": "nentaru"
+  },
+  "2": {
+    "english": "Mother",
+    "kannada": "ಅಮ್ಮ/ತಾಯಿ",
+    "transliteration": "amma/tāyi"
+  },
+  "3": {
+    "english": "Father",
+    "kannada": "ಅಪ್ಪ/ತಂದೆ",
+    "transliteration": "appa/tande"
+  },
+  "4": {
+    "english": "Son",
+    "kannada": "ಮಗ",
+    "transliteration": "maga"
+  },
+  "5": {
+    "english": "Daughter",
+    "kannada": "ಮಗಳು",
+    "transliteration": "magalu"
+  },
+  "6": {
+    "english": "Elder Brother",
+    "kannada": "ಅಣ್ಣ",
+    "transliteration": "anna"
+  },
+  "7": {
+    "english": "Younger Brother",
+    "kannada": "ತಮ್ಮ",
+    "transliteration": "thamma"
+  },
+  "8": {
+    "english": "Elder Sister",
+    "kannada": "ಅಕ್ಕ",
+    "transliteration": "akka"
+  },
+  "9": {
+    "english": "Younger Sister",
+    "kannada": "ತಂಗಿ",
+    "transliteration": "tangi"
+  },
+  "10": {
+    "english": "Grandfather",
+    "kannada": "ಅಜ್ಜ/ತಾತ",
+    "transliteration": "ajja/tāta"
+  },
+  "11": {
+    "english": "Grandmother",
+    "kannada": "ಅಜ್ಜಿ",
+    "transliteration": "ajji"
+  },
+  "12": {
+    "english": "Husband",
+    "kannada": "ಗಂಡ",
+    "transliteration": "gaṇḍa"
+  },
+  "13": {
+    "english": "Wife",
+    "kannada": "ಹೆಂಡತಿ",
+    "transliteration": "henḍati"
+  },
+  "14": {
+    "english": "Father In Law",
+    "kannada": "ಮಾವ",
+    "transliteration": "māva"
+  },
+  "15": {
+    "english": "Mother In Law",
+    "kannada": "ಅತ್ತೆ",
+    "transliteration": "atte"
+  },
+  "16": {
+    "english": "Son In Law",
+    "kannada": "ಅಳಿಯ",
+    "transliteration": "aḷiya"
+  },
+  "17": {
+    "english": "Daughter In Law",
+    "kannada": "ಸೊಸೆ",
+    "transliteration": "sose"
+  },
+  "18": {
+    "english": "Children",
+    "kannada": "ಮಕ್ಕಳು",
+    "transliteration": "makkalu"
+  },
+  "19": {
+    "english": "Male Friend",
+    "kannada": "ಗೆಳೆಯ/ಸ್ನೇಹಿತ",
+    "transliteration": "geḷeya/snehita"
+  },
+  "20": {
+    "english": "Female Friend",
+    "kannada": "ಗೆಳತಿ/ಸ್ನೇಹಿತೆ",
+    "transliteration": "geḷati/snehite"
+  },
+  "21": {
+    "english": "Friendship",
+    "kannada": "ಗೆಳೆತನ",
+    "transliteration": "geḷetana"
   }
 }

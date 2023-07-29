@@ -1,0 +1,142 @@
+{
+  "0": {
+    "english": "Vegetable",
+    "kannada": "ತರಕಾರಿ",
+    "transliteration": "tarakāri"
+  },
+  "1": {
+    "english": "Beans",
+    "kannada": "ಹುರಳೀಕಾಯಿ",
+    "transliteration": "huralīkāyi"
+  },
+  "2": {
+    "english": "Eggplant",
+    "kannada": "ಬದನೇಕಾಯಿ",
+    "transliteration": "badanēkāyi"
+  },
+  "3": {
+    "english": "Cabbage",
+    "kannada": "ಎಲೆ ಕೋಸು",
+    "transliteration": "ele kōsu"
+  },
+  "4": {
+    "english": "Capsicum",
+    "kannada": "ದೊಣ್ಣೆ ಮೆಣಸಿನಕಾಯಿ",
+    "transliteration": "dōṇṇe mēṇasinakāyi"
+  },
+  "5": {
+    "english": "Carrot",
+    "kannada": "ಗಜ್ಜರಿ",
+    "transliteration": "gajjari"
+  },
+  "6": {
+    "english": "Cauliflower",
+    "kannada": "ಹೂ ಕೋಸು",
+    "transliteration": "hū kōsu"
+  },
+  "7": {
+    "english": "Coriander Leaves",
+    "kannada": "ಕೊತ್ತಂಬರಿ ಸೊಪ್ಪು",
+    "transliteration": "kōttaṁbari soppu"
+  },
+  "8": {
+    "english": "Cucumber",
+    "kannada": "ಸೌತೇಕಾಯಿ",
+    "transliteration": "sautēkāyi"
+  },
+  "9": {
+    "english": "Curry Leaves",
+    "kannada": "ಕರಿಬೇವು",
+    "transliteration": "karibēvu"
+  },
+  "10": {
+    "english": "Flat Beans",
+    "kannada": "ಅವರೆಕಾಯಿ",
+    "transliteration": "avarekāyi"
+  },
+  "11": {
+    "english": "Garlic",
+    "kannada": "ಬೆಳ್ಳುಳ್ಳಿ",
+    "transliteration": "beḷḷuḷḷi"
+  },
+  "12": {
+    "english": "Ginger",
+    "kannada": "ಶುಂಠಿ",
+    "transliteration": "śuṁṭhi"
+  },
+  "13": {
+    "english": "Green Chilli",
+    "kannada": "ಹಸಿರು ಮೆಣಸಿನಕಾಯಿ",
+    "transliteration": "hasiru mēṇasinakāyi"
+  },
+  "14": {
+    "english": "Greens",
+    "kannada": "ಸೊಪ್ಪು",
+    "transliteration": "soppu"
+  },
+  "15": {
+    "english": "Lady's Finger/Okra",
+    "kannada": "ಬೆಂಡೇಕಾಯಿ",
+    "transliteration": "beṇḍēkāyi"
+  },
+  "16": {
+    "english": "Onion",
+    "kannada": "ಈರುಳ್ಳಿ/ಉಳ್ಳಾಗೆಡ್ಡೆ",
+    "transliteration": "īruḷḷi/uḷḷāgedde"
+  },
+  "17": {
+    "english": "Peas",
+    "kannada": "ಬಟಾಣಿ",
+    "transliteration": "baṭāṇi"
+  },
+  "18": {
+    "english": "Potato",
+    "kannada": "ಆಲೂ ಗಡ್ಡೆ",
+    "transliteration": "ālū gaḍḍe"
+  },
+  "19": {
+    "english": "Radish",
+    "kannada": "ಮೂಲಂಗಿ",
+    "transliteration": "mūlaṅgi"
+  },
+  "20": {
+    "english": "Pumpkin",
+    "kannada": "ಕುಂಬಳಕಾಯಿ",
+    "transliteration": "kumbaḷakāyi"
+  },
+  "21": {
+    "english": "Sweet Potato",
+    "kannada": "ಗೆಣಸು",
+    "transliteration": "geṇasu"
+  },
+  "22": {
+    "english": "Tomato",
+    "kannada": "ಟೊಮೆಟೊ",
+    "transliteration": "ṭomeṭo"
+  },
+  "23": {
+    "english": "Coconut",
+    "kannada": "ತೆಂಗಿನಕಾಯಿ",
+    "transliteration": "teṅginakāyi"
+  },
+  "24": {
+    "english": "Beetroot",
+    "kannada": "ಕಂದು ಬೇರು/ಕೆಂಪು ಮೂಲಂಗಿ",
+    "transliteration": "kandu bēru/kempu mūlaṅgi"
+  },
+  "25": {
+    "english": "Mint Leaves",
+    "kannada": "ಪುದಿನ ಸೊಪ್ಪು",
+    "transliteration": "pudina soppu"
+  },
+  "26": {
+    "english": "Fenugreek Leaves",
+    "kannada": "ಮೆಂತ್ಯ ಸೊಪ್ಪು",
+    "transliteration": "menthya soppu"
+  },
+  "27": {
+    "english": "Spinach",
+    "kannada": "ಪಾಲಕ್ ಸೊಪ್ಪು",
+    "transliteration": "pālak soppu"
+  }
+}

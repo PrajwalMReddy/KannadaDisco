@@ -32,13 +32,13 @@ class LoadingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: const Center(
+        child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+            children: const [
               Image(
-                image: AssetImage("assets/logo.png"), 
+                image: AssetImage("assets/logo.png"),
               ),
             ],
           ),

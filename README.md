@@ -1,3 +1,3 @@
 # Kannada Disco
 
-### Current Version: 0.2.0
+### Current Version: 1.0.1

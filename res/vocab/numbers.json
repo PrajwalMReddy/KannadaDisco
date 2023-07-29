@@ -171,36 +171,36 @@
   },
   "34": {
     "english": "Thirty Four",
-    "kannada": "ಮೂವತ್ತು ನಾಲ್ಕು",
+    "kannada": "ಮೂವತ್ತ ನಾಲ್ಕು",
     "transliteration": "mūvatnālku"
   },
   "35": {
     "english": "Thirty Five",
-    "kannada": "ಮೂವತ್ತು ಐದು",
+    "kannada": "ಮೂವತ್ತೈದುು",
     "transliteration": "mūvattaidu"
   },
   "36": {
     "english": "Thirty Six",
-    "kannada": "ಮೂವತ್ತು ಆರು",
-    "transliteration": "mūvattāaru"
+    "kannada": "ಮೂವತ್ತಾರು",
+    "transliteration": "mūvattāru"
   },
   "37": {
     "english": "Thirty Seven",
-    "kannada": "ಮೂವತ್ತು ಏಳು",
+    "kannada": "ಮೂವತ್ತೇಳು",
     "transliteration": "mūvattēḷu"
   },
   "38": {
     "english": "Thirty Eight",
-    "kannada": "ಮೂವತ್ತು ಎಂಟು",
+    "kannada": "ಮೂವತ್ತೆಂಟು",
     "transliteration": "mūvattēṇṭu"
   },
   "39": {
     "english": "Thirty Nine",
-    "kannada": "ಮೂವತ್ತು ಒಂಬತ್ತು",
+    "kannada": "ಮೂವತ್ತೊಂಬತ್ತು",
     "transliteration": "mūvattombattu"
   },
   "40": {
-    "english": "Fourty",
+    "english": "Forty",
     "kannada": "ನಲವತ್ತು",
     "transliteration": "nalavattu"
   },
@@ -211,8 +211,8 @@
   },
   "42": {
     "english": "Sixty",
-    "kannada": "ಅರುವತ್ತು",
-    "transliteration": "aruvattu"
+    "kannada": "ಅರವತ್ತು",
+    "transliteration": "aravattu"
   },
   "43": {
     "english": "Seventy",
@@ -222,7 +222,7 @@
   "44": {
     "english": "Eighty",
     "kannada": "ಎಂಬತ್ತು",
-    "transliteration": "ēmbattu"
+    "transliteration": "embattu"
   },
   "45": {
     "english": "Ninety",

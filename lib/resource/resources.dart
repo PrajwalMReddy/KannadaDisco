@@ -8,8 +8,8 @@ class Resources extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
       child: Align(
         alignment: Alignment.topLeft,
         child: Column(

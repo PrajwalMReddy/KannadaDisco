@@ -33,11 +33,11 @@ class CourseBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       scrollDirection: Axis.vertical,
       child: Column(
         children: [
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(35.0, 35.0, 35.0, 30.0),
             child: Align(
               alignment: Alignment.center,

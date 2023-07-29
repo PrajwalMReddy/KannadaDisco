@@ -1,0 +1,97 @@
+{
+  "0": {
+    "english": "Fruit",
+    "kannada": "ಹಣ್ಣು",
+    "transliteration": "haṇṇu"
+  },
+  "1": {
+    "english": "Apple",
+    "kannada": "ಸೇಬು",
+    "transliteration": "sēbu"
+  },
+  "2": {
+    "english": "Pear",
+    "kannada": "ಮರಸೇಬು",
+    "transliteration": "marasēbu"
+  },
+  "3": {
+    "english": "Avocado",
+    "kannada": "ಬೆಣ್ಣೆ ಹಣ್ಣು",
+    "transliteration": "beṇṇe haṇṇu"
+  },
+  "4": {
+    "english": "Banana",
+    "kannada": "ಬಾಳೆ ಹಣ್ಣು",
+    "transliteration": "bāḷe haṇṇu"
+  },
+  "5": {
+    "english": "Chikku",
+    "kannada": "ಸಪೋಟ",
+    "transliteration": "sapōṭa"
+  },
+  "6": {
+    "english": "Custard Apple",
+    "kannada": "ಸೀತಾಫಲ",
+    "transliteration": "sītāphala"
+  },
+  "7": {
+    "english": "Grapes",
+    "kannada": "ದ್ರಾಕ್ಷಿ",
+    "transliteration": "drākṣi"
+  },
+  "8": {
+    "english": "Guava",
+    "kannada": "ಸೀಬೆಹಣ್ಣು/ಚೇಪೆಕಾಯಿ",
+    "transliteration": "sībehaṇṇu/cēpekāyi"
+  },
+  "9": {
+    "english": "Muskmelon",
+    "kannada": "ಖರ್ಬೂಜ",
+    "transliteration": "kharbūja"
+  },
+  "10": {
+    "english": "Mango",
+    "kannada": "ಮಾವಿನ ಹಣ್ಣು",
+    "transliteration": "māvina haṇṇu"
+  },
+  "11": {
+    "english": "Moosambi",
+    "kannada": "ಮೂಸಂಬಿ",
+    "transliteration": "mūsambi"
+  },
+  "12": {
+    "english": "Orange",
+    "kannada": "ಕಿತ್ತಳೆ",
+    "transliteration": "kittale"
+  },
+  "13": {
+    "english": "Pomegranate",
+    "kannada": "ದಾಳಿಂಬೆ",
+    "transliteration": "dāḷimbe"
+  },
+  "14": {
+    "english": "Papaya",
+    "kannada": "ಪರಂಗಿ",
+    "transliteration": "paraṅgi"
+  },
+  "15": {
+    "english": "Pineapple",
+    "kannada": "ಅನಾನಸ್",
+    "transliteration": "anānas"
+  },
+  "16": {
+    "english": "Watermelon",
+    "kannada": "ಕಲ್ಲಂಗಡಿ ಹಣ್ಣು",
+    "transliteration": "kallaṅgaḍi haṇṇu"
+  },
+  "17": {
+    "english": "Jackfruit",
+    "kannada": "ಹಲಸಿನ ಹಣ್ಣು",
+    "transliteration": "halasina haṇṇu"
+  },
+  "18": {
+    "english": "Lemon",
+    "kannada": "ನಿಂಬೆ ಹಣ್ಣು",
+    "transliteration": "nimbe haṇṇu"
+  }
+}
