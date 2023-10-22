@@ -1,0 +1,122 @@
+{
+  "0": {
+    "english": "Rose",
+    "kannada": "ಗುಲಾಬಿ",
+    "transliteration": "gulabi",
+    "link": "assets/Rose.jpg"
+  },
+  "1": {
+    "english": "Sunflower",
+    "kannada": "ಸೂರ್ಯಕಾಂತಿ",
+    "transliteration": "sooryakaanthi",
+    "link": "assets/Sunflower.jpg"
+  },
+  "2": {
+    "english": "Jasmine",
+    "kannada": "ಮಲ್ಲಿಗೆ",
+    "transliteration": "mallige",
+    "link": "assets/Jasmine.jpg"
+  },
+  "3": {
+    "english": "Lily",
+    "kannada": "ಲಿಲಿ",
+    "transliteration": "lili",
+    "link": "assets/Lily.jpg"
+  },
+  "4": {
+    "english": "Orchid",
+    "kannada": "ಆರ್ಕಿಡ್",
+    "transliteration": "ārkiḍ",
+    "link": "assets/Orchid.jpg"
+  },
+  "5": {
+    "english": "Marigold",
+    "kannada": "ಚೆಂಡು ಹೂವು",
+    "transliteration": "ceṇḍu hūvu",
+    "link": "assets/Marigold.jpg"
+  },
+  "6": {
+    "english": "Tulip",
+    "kannada": "ಟ್ಯೂಲಿಪ್",
+    "transliteration": "tulip",
+    "link": ""
+  },
+  "7": {
+    "english": "Daisy",
+    "kannada": "ಡೇಸಿ",
+    "transliteration": "daisi",
+    "link": ""
+  },
+  "8": {
+    "english": "Lavender",
+    "kannada": "ಲ್ಯಾವೆಂಡರ್",
+    "transliteration": "lyāveṇḍar",
+    "link": ""
+  },
+  "9": {
+    "english": "Lotus",
+    "kannada": "ಕಮಲ",
+    "transliteration": "kamala",
+    "link": "assets/Lotus.jpg"
+  },
+  "10": {
+    "english": "Hibiscus",
+    "kannada": "ದಾಸವಾಳ",
+    "transliteration": "dāsavāḷa",
+    "link": "assets/Hibiscus.jfif"
+  },
+  "11": {
+    "english": "Carnation",
+    "kannada": "ಕಾರ್ನೇಷನ್",
+    "transliteration": "Carnation",
+    "link": ""
+  },
+  "12": {
+    "english": "Daffodil",
+    "kannada": "ಡ್ಯಾಫೋಡಿಲ್",
+    "transliteration": "Daffodil",
+    "link": ""
+  },
+  "13": {
+    "english": "Poppy",
+    "kannada": "ಗಸಗಸೆ",
+    "transliteration": "gasagase",
+    "link": "assets/Poppy.jpg"
+  },
+  "14": {
+    "english": "Gerbera",
+    "kannada": "ಜೆರ್ಬೆರಾ",
+    "transliteration": "Gerbera",
+    "link": ""
+  },
+  "15": {
+    "english": "Cosmos",
+    "kannada": "ಕಾಸ್ಮೋಸ್",
+    "transliteration": "Cosmos",
+    "link": ""
+  },
+  "16": {
+    "english": "Chrysanthemum",
+    "kannada": "ಸೇವಂತಿಗೆ",
+    "transliteration": "sēvantige",
+    "link": "assets/Chrysanthemum.jpg"
+  },
+  "17": {
+    "english": "Bluebell",
+    "kannada": "ನೀಲಿಕಿನಿ",
+    "transliteration": "Neelikini",
+    "link": ""
+  },
+  "18": {
+    "english": "Peony",
+    "kannada": "ಪಿಯೋನಿ",
+    "transliteration": "Peony",
+    "link": ""
+  },
+  "19": {
+    "english": "Pansy",
+    "kannada": "ಪ್ಯಾನ್ಸಿ",
+    "transliteration": "Pansy",
+    "link": ""
+  }
+}

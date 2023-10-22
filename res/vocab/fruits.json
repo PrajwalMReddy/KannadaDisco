@@ -1,0 +1,116 @@
+{
+  "0": {
+    "english": "Fruit",
+    "kannada": "ಹಣ್ಣು",
+    "transliteration": "haṇṇu",
+    "link": ""
+  },
+  "1": {
+    "english": "Apple",
+    "kannada": "ಸೇಬು",
+    "transliteration": "sēbu",
+    "link": "assets/Apple.jpg"
+  },
+  "2": {
+    "english": "Pear",
+    "kannada": "ಮರಸೇಬು",
+    "transliteration": "marasēbu",
+    "link": "assets/Pear.jpg"
+  },
+  "3": {
+    "english": "Avocado",
+    "kannada": "ಬೆಣ್ಣೆ ಹಣ್ಣು",
+    "transliteration": "beṇṇe haṇṇu",
+    "link": "assets/Avocado.jpg"
+  },
+  "4": {
+    "english": "Banana",
+    "kannada": "ಬಾಳೆ ಹಣ್ಣು",
+    "transliteration": "bāḷe haṇṇu",
+    "link": "assets/Banana.jpg"
+  },
+  "5": {
+    "english": "Chikku",
+    "kannada": "ಸಪೋಟ",
+    "transliteration": "sapōṭa",
+    "link": "assets/Chikku.jpg"
+  },
+  "6": {
+    "english": "Custard Apple",
+    "kannada": "ಸೀತಾಫಲ",
+    "transliteration": "sītāphala",
+    "link": "assets/Custard-apple.jpeg"
+  },
+  "7": {
+    "english": "Grapes",
+    "kannada": "ದ್ರಾಕ್ಷಿ",
+    "transliteration": "drākṣi",
+    "link": "assets/Grapes.jpg"
+  },
+  "8": {
+    "english": "Guava",
+    "kannada": "ಸೀಬೆಹಣ್ಣು/ಚೇಪೆಕಾಯಿ",
+    "transliteration": "sībehaṇṇu/cēpekāyi",
+    "link": "assets/Guava.jpg"
+  },
+  "9": {
+    "english": "Muskmelon",
+    "kannada": "ಖರ್ಬೂಜ",
+    "transliteration": "kharbūja",
+    "link": "assets/Muskmelon.jpg"
+  },
+  "10": {
+    "english": "Mango",
+    "kannada": "ಮಾವಿನ ಹಣ್ಣು",
+    "transliteration": "māvina haṇṇu",
+    "link": "assets/Mango.jpg"
+  },
+  "11": {
+    "english": "Moosambi",
+    "kannada": "ಮೂಸಂಬಿ",
+    "transliteration": "mūsambi",
+    "link": "assets/Mosambi.jpg"
+  },
+  "12": {
+    "english": "Orange",
+    "kannada": "ಕಿತ್ತಳೆ",
+    "transliteration": "kittale",
+    "link": "assets/Orange-Fruit.jpg"
+  },
+  "13": {
+    "english": "Pomegranate",
+    "kannada": "ದಾಳಿಂಬೆ",
+    "transliteration": "dāḷimbe",
+    "link": "assets/Pomegranate.jpg"
+  },
+  "14": {
+    "english": "Papaya",
+    "kannada": "ಪರಂಗಿ",
+    "transliteration": "paraṅgi",
+    "link": "assets/Papaya.jpg"
+  },
+  "15": {
+    "english": "Pineapple",
+    "kannada": "ಅನಾನಸ್",
+    "transliteration": "anānas",
+    "link": "assets/Pineapple.jfif"
+  },
+  "16": {
+    "english": "Watermelon",
+    "kannada": "ಕಲ್ಲಂಗಡಿ ಹಣ್ಣು",
+    "transliteration": "kallaṅgaḍi haṇṇu",
+    "link": "assets/Watermelon.jpg"
+  },
+  "17": {
+    "english": "Jackfruit",
+    "kannada": "ಹಲಸಿನ ಹಣ್ಣು",
+    "transliteration": "halasina haṇṇu",
+    "link": "assets/Jackfruits.jpg"
+  },
+  "18": {
+    "english": "Lemon",
+    "kannada": "ನಿಂಬೆ ಹಣ್ಣು",
+    "transliteration": "nimbe haṇṇu",
+    "link": "assets/Lemon.jpg"
+  }
+}

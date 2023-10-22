@@ -1,0 +1,42 @@
+{
+  "0": {
+  "kannada": "ವಿದ್ಯಾರ್ಥಿ: ಶುಭೋದಯ ಗುರುಗಳೆ!",
+  "english": "Student: Good morning, teacher!",
+  "transliteration": "Vidyaarthi: Śubhōdaya gurugaḷe!"
+  },
+  "1": {
+  "kannada": "ಶಿಕ್ಷಕ: ಶುಭೋದಯ, ಆತ್ಮೀಯ ವಿದ್ಯಾರ್ಥಿಗಳೇ. ಇಂದು ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
+  "english": "Teacher: Good morning, dear students. How can I help you today?",
+  "transliteration": "Shikshaka: Śubhōdaya, ātmīya vidyārthigaḷē. Indu nānu nimage hēge sahāya māḍabahudu?"
+  },
+  "2": {
+  "kannada": "ವಿದ್ಯಾರ್ಥಿ: ನನಗೆ ನಮ್ಮ ಗಣಿತ ಹೋಮವರ್ಕ್ ಬಗ್ಗೆ ಸಂದೇಹವಿದೆ. ನನಗೆ ಕೊನೆಯ ಪ್ರಶ್ನೆ ಅರ್ಥವಾಗಲಿಲ್ಲ.",
+  "english": "Student: I have a question about our math homework. I didn't understand the last problem.",
+  "transliteration": "Vidyaarthi: Nange namma gaṇita hōmavark bagge sandeha ide. Nanage koneya praśne arthavāgalilla."
+  },
+  "3": {
+  "kannada": "ಶಿಕ್ಷಕ: ಖಂಡಿತ, ನಾನು ಸಹಾಯ ಮಾಡಲು ಸಂತೋಷಪಡುತ್ತೇನೆ. ನೀವು ಯಾವ ಸಮಸ್ಯೆಯನ್ನು ಎದುರಿಸುತ್ತಿದ್ದೀರಿ?",
+  "english": "Teacher: Of course, I'd be happy to help. Which problem are you having trouble with?",
+  "transliteration": "Shikshaka: Khaṇḍita, nānu sahāya māḍalu santōṣapaḍuttēne. Nīvu yāva samasyeyannu edurisuttiddīri?"
+  },
+  "4": {
+  "kannada": "ವಿದ್ಯಾರ್ಥಿ: ಅದು ಪುಟ 30 ರಲ್ಲಿನ ಪ್ರಶ್ನೆ 5 ಆಗಿದೆ.",
+  "english": "Student: It's problem number 5 on page 30.",
+  "transliteration": "Vidyaarthi: Adu puṭa 30 rallina praśne 5 āgide."
+  },
+  "5": {
+  "kannada": "ಶಿಕ್ಷಕ: ಸರಿ, ನಾವು ನೋಡೋಣ. ಆಹ್, ಸಂದೇಹ ಯಾಕೆ ಎಂದು ತಿಳಿಯಿತು. ನಾನು ಅದನ್ನು ನಿಮಗೆ ಹಂತ ಹಂತವಾಗಿ ವಿವರಿಸುತ್ತೇನೆ.",
+  "english": "Teacher: Alright, let's take a look. Ah, I see where the confusion is. Let me explain it to you step by step.",
+  "transliteration": "Shikshaka: Sari, nāvu nōḍōṇa. Āh, sandēha yāke endu tiḷiyitu. Nānu adannu nimage hanta hantavāgi vivarisuttēne."
+  },
+  "6": {
+  "kannada": "ವಿದ್ಯಾರ್ಥಿ: ಧನ್ಯವಾದಗಳು, ಗುರುಗಳೆ. ಅದು ಹೆಚ್ಚು ಸ್ಪಷ್ಟವಾಗುತ್ತದೆ.",
+  "english": "Student: Thank you, teacher. That makes it much clearer.",
+  "transliteration": "Vidyaarthi: Dhan'yavādagaḷu, gurugaḷe. Adu heccu spaṣṭavāguttade."
+  },
+  "7": {
+  "kannada": "ಶಿಕ್ಷಕ: ನೀವು ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳನ್ನು ಹೊಂದಿದ್ದರೆ ಕೇಳಲು ಹಿಂಜರಿಯಬೇಡಿ. ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನಾನು ಇಲ್ಲಿದ್ದೇನೆ.",
+  "english": "Teacher: Don't hesitate to ask if you have any more questions. I'm here to assist you.",
+  "transliteration": "Shikshaka: Nīvu yāvudē praśnegaḷannu hondiddare kēḷalu hin̄jariyabēḍi. Nimage sahāya māḍalu nānu illiddēne."
+  }
+  }

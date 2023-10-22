@@ -1,0 +1,170 @@
+{
+  "0": {
+    "english": "Vegetable",
+    "kannada": "ತರಕಾರಿ",
+    "transliteration": "tarakāri",
+    "link": "assets/Vegetables.jpg"
+  },
+  "1": {
+    "english": "Beans",
+    "kannada": "ಹುರಳೀಕಾಯಿ",
+    "transliteration": "huralīkāyi",
+    "link": "assets/Beans.jpg"
+  },
+  "2": {
+    "english": "Eggplant",
+    "kannada": "ಬದನೇಕಾಯಿ",
+    "transliteration": "badanēkāyi",
+    "link": "assets/Eggplant.jpg"
+  },
+  "3": {
+    "english": "Cabbage",
+    "kannada": "ಎಲೆ ಕೋಸು",
+    "transliteration": "ele kōsu",
+    "link": "assets/Cabbage.jpg"
+  },
+  "4": {
+    "english": "Capsicum",
+    "kannada": "ದೊಣ್ಣೆ ಮೆಣಸಿನಕಾಯಿ",
+    "transliteration": "dōṇṇe mēṇasinakāyi",
+    "link": "assets/Capsicum.jfif"
+  },
+  "5": {
+    "english": "Carrot",
+    "kannada": "ಕ್ಯಾರೆಟ್/ಗಜರಿ",
+    "transliteration": "kyāreṭ/gajari",
+    "link": "assets/Carrot.jpg"
+  },
+  "6": {
+    "english": "Cauliflower",
+    "kannada": "ಹೂಕೋಸು",
+    "transliteration": "hūkōsu",
+    "link": "assets/Cauliflower.jpg"
+  },
+  "7": {
+    "english": "Coriander Leaves",
+    "kannada": "ಕೊತ್ತಂಬರಿ ಸೊಪ್ಪು",
+    "transliteration": "kōttaṁbari soppu",
+    "link": "assets/Coriender Leaves.jpg"
+  },
+  "8": {
+    "english": "Cucumber",
+    "kannada": "ಸೌತೇಕಾಯಿ",
+    "transliteration": "sautēkāyi",
+    "link": "assets/Cucumber.jfif"
+  },
+  "9": {
+    "english": "Curry Leaves",
+    "kannada": "ಕರಿಬೇವು",
+    "transliteration": "karibēvu",
+    "link": "assets/Curry leaves.jfif"
+  },
+  "10": {
+    "english": "Flat Beans",
+    "kannada": "ಅವರೆಕಾಯಿ",
+    "transliteration": "avarekāyi",
+    "link": "assets/Flat Beans.jpg"
+  },
+  "11": {
+    "english": "Garlic",
+    "kannada": "ಬೆಳ್ಳುಳ್ಳಿ",
+    "transliteration": "beḷḷuḷḷi",
+    "link": "assets/Garlic.jpg"
+  },
+  "12": {
+    "english": "Ginger",
+    "kannada": "ಶುಂಠಿ",
+    "transliteration": "śuṇṭhi",
+    "link": "assets/Ginger.jpg"
+  },
+  "13": {
+    "english": "Green Chilli",
+    "kannada": "ಹಸಿರು ಮೆಣಸಿನಕಾಯಿ",
+    "transliteration": "hasiru mēṇasinakāyi",
+    "link": "assets/Green chilli.jpg"
+  },
+  "14": {
+    "english": "Greens",
+    "kannada": "ಸೊಪ್ಪು",
+    "transliteration": "soppu",
+    "link": "assets/Greens.jpg"
+  },
+  "15": {
+    "english": "Lady's Finger/Okra",
+    "kannada": "ಬೆಂಡೇಕಾಯಿ",
+    "transliteration": "beṇḍēkāyi",
+    "link": ""
+  },
+  "16": {
+    "english": "Onion",
+    "kannada": "ಈರುಳ್ಳಿ/ಉಳ್ಳಾಗೆಡ್ಡೆ",
+    "transliteration": "īruḷḷi/uḷḷāgedde",
+    "link": "assets/Onion.jfif"
+  },
+  "17": {
+    "english": "Peas",
+    "kannada": "ಬಟಾಣಿ",
+    "transliteration": "baṭāṇi",
+    "link": "assets/Peas.jpg"
+  },
+  "18": {
+    "english": "Potato",
+    "kannada": "ಆಲೂ ಗಡ್ಡೆ",
+    "transliteration": "ālū gaḍḍe",
+    "link": "assets/Potato.jpg"
+  },
+  "19": {
+    "english": "Radish",
+    "kannada": "ಮೂಲಂಗಿ",
+    "transliteration": "mūlaṅgi",
+    "link": "assets/Radish.jpg"
+  },
+  "20": {
+    "english": "Pumpkin",
+    "kannada": "ಕುಂಬಳಕಾಯಿ",
+    "transliteration": "kumbaḷakāyi",
+    "link": "assets/Pumpkin.jpg"
+  },
+  "21": {
+    "english": "Sweet Potato",
+    "kannada": "ಗೆಣಸು",
+    "transliteration": "geṇasu",
+    "link": "assets/Sweet Potato.jpg"
+  },
+  "22": {
+    "english": "Tomato",
+    "kannada": "ಟೊಮೆಟೊ",
+    "transliteration": "ṭomeṭo",
+    "link": "assets/Tomato.jpg"
+  },
+  "23": {
+    "english": "Coconut",
+    "kannada": "ತೆಂಗಿನಕಾಯಿ",
+    "transliteration": "teṅginakāyi",
+    "link": "assets/Coconut.jfif"
+  },
+  "24": {
+    "english": "Beetroot",
+    "kannada": "ಕಂದು ಬೇರು/ಕೆಂಪು ಮೂಲಂಗಿ",
+    "transliteration": "kandu bēru/kempu mūlaṅgi",
+    "link": "assets/Beetroot.jpg"
+  },
+  "25": {
+    "english": "Mint Leaves",
+    "kannada": "ಪುದಿನ ಸೊಪ್ಪು",
+    "transliteration": "pudina soppu",
+    "link": "assets/Mint Leaves.jpg"
+  },
+  "26": {
+    "english": "Fenugreek Leaves",
+    "kannada": "ಮೆಂತ್ಯ ಸೊಪ್ಪು",
+    "transliteration": "menthya soppu",
+    "link": "assets/Fenugreek leaves.jpg"
+  },
+  "27": {
+    "english": "Spinach",
+    "kannada": "ಪಾಲಕ್ ಸೊಪ್ಪು",
+    "transliteration": "pālak soppu",
+    "link": "assets/Spinach.jfif"
+  }
+}

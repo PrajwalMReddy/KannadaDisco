@@ -1,0 +1,97 @@
+{
+    "0": {
+      "kannada": "ಸಮಯ",
+      "english": "Time",
+      "transliteration": "Samaya"
+    },
+    "1": {
+      "kannada": "ಘಡಿ",
+      "english": "Clock",
+      "transliteration": "Ghadi"
+    },
+    "2": {
+      "kannada": "ಗಂಟೆ",
+      "english": "Hour",
+      "transliteration": "Gante"
+    },
+    "3": {
+      "kannada": "ನಿಮಿಷ",
+      "english": "Minute",
+      "transliteration": "Nimisha"
+    },
+    "4": {
+      "kannada": "ಸೆಕೆಂಡು",
+      "english": "Second",
+      "transliteration": "Sekendu"
+    },
+    "5": {
+      "kannada": "ದಿನ",
+      "english": "Day",
+      "transliteration": "Dina"
+    },
+    "6": {
+      "kannada": "ವಾರ",
+      "english": "Week",
+      "transliteration": "Vara"
+    },
+    "7": {
+      "kannada": "ತಿಂಗಳು",
+      "english": "Month",
+      "transliteration": "Tingalu"
+    },
+    "8": {
+      "kannada": "ವರ್ಷ",
+      "english": "Year",
+      "transliteration": "Varsha"
+    },
+    "9": {
+      "kannada": "ಬೆಳಗ್ಗೆ",
+      "english": "Morning",
+      "transliteration": "Belagge"
+    },
+    "10": {
+      "kannada": "ಮಧ್ಯಾಹ್ನ",
+      "english": "Afternoon",
+      "transliteration": "Madhyahna"
+    },
+    "11": {
+      "kannada": "ಸಂಜೆ",
+      "english": "Evening",
+      "transliteration": "Sanje"
+    },
+    "12": {
+      "kannada": "ರಾತ್ರಿ",
+      "english": "Night",
+      "transliteration": "Ratri"
+    },
+    "13": {
+      "kannada": "ಮಧ್ಯರಾತ್ರಿ",
+      "english": "Midnight",
+      "transliteration": "Madhyaratri"
+    },
+    "14": {
+      "kannada": "ಇಂದು",
+      "english": "Today",
+      "transliteration": "Indu"
+    },
+    "15": {
+      "kannada": "ನಾಳೆ",
+      "english": "Tomorrow",
+      "transliteration": "Nale"
+    },
+    "16": {
+      "kannada": "ನಿನ್ನೆ",
+      "english": "Yesterday",
+      "transliteration": "Ninne"
+    },
+    "17": {
+      "kannada": "ಸಪ್ತಾಹದ ದಿನ",
+      "english": "Weekday",
+      "transliteration": "Saptaahada Dina"
+    },
+    "18": {
+      "kannada": "ಆಲಸ್ಯದ ದಿನ",
+      "english": "Weekend",
+      "transliteration": "Aalasyada Dina"
+    }
+  }

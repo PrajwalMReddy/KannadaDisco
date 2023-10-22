@@ -1,0 +1,33 @@
+
+{
+  "0": {
+  "kannada": "ಮಗ: ಶುಭ ಸಂಜೆ, ಅಪ್ಪ!",
+  "english": "Child: Good evening, Dad!",
+  "transliteration": "Maga: Shubha sanje, appa!"
+  },
+  "1": {
+  "kannada": "ತಂದೆ: ಶುಭ ಸಂಜೆ. ಶಾಲೆಯಲ್ಲಿ ನಿನ್ನ ದಿನ ಹೇಗಿತ್ತು?",
+  "english": "Father: Good evening, dear. How was your day at school?",
+  "transliteration": "Tande: Śubha san̄je. Śāleyalli ninna dina hēgittu?"
+  },
+  "2": {
+  "kannada": "ಮಗ: ಚೆನ್ನಾಗಿತ್ತು ಅಪ್ಪಾ. ನಾನು ಇಂದು ಬಹಳಷ್ಟು ಕಲಿತಿದ್ದೇನೆ.",
+  "english": "Child: It was good, Dad. I learned a lot today.",
+  "transliteration": "Maga: Cennāgittu appā. Nānu indu bahaḷaṣṭu kalitiddēne."
+  },
+  "3": {
+  "kannada": "ತಂದೆ: ಅದ್ಭುತ! ನೀನು ಇವತ್ತು ಇನ್ನೇನು ಮಾಡಿದೆ?",
+  "english": "Father: That's great to hear! What else did you do today?",
+  "transliteration": "Tande: Adbhuta! Nīnu ivattu innēnu māḍide?"
+  },
+  "4": {
+  "kannada": "ಮಗ: ಅಮ್ಮ ಇಂದು ನನ್ನ ಮೆಚ್ಚಿನ ಕುಕೀಗಳನ್ನು ತಯಾರಿಸಿದರು, ಮತ್ತು ಅವು ರುಚಿಕರವಾಗಿದ್ದವು.",
+  "english": "Child: Mom made my favorite cookies today, and they were delicious!",
+  "transliteration": "Maga: Haudu, am'ma indu nanna meccina kukīgaḷannu tayārisidaru, mattu avu rucikaravāgiddavu!"
+  },
+  "5": {
+  "kannada": "ತಾಯಿ: ಹಲೋ ಪ್ರಿಯ! ನೀನು ಇಷ್ಟಪಟ್ಟಿದ್ದಕ್ಕೆ ನನಗೆ ಸಂತೋಷವಾಯಿತು.",
+  "english": "Mother: Hi dear! I'm glad you liked",
+  "transliteration": "Tāyi: Halō priya! Nīnu iṣṭapaṭṭiddakke nanage santōṣavāyitu."
+  }
+  }

@@ -1,0 +1,182 @@
+{
+    "0": {
+      "kannada": "ಬೆಕ್ಕು - ಬೆಕ್ಕುಗಳು",
+      "english": "Cat - Cats",
+      "transliteration": "Bekku - Bekkugalu"
+    },
+    "1": {
+      "kannada": "ನಾಯಿ - ನಾಯಿಗಳು",
+      "english": "Dog - Dogs",
+      "transliteration": "Naayi - Naayigalu"
+    },
+    "2": {
+      "kannada": "ಪಕ್ಷಿ - ಪಕ್ಷಿಗಳು",
+      "english": "Bird - Birds",
+      "transliteration": "Pakshi - Pakshigalu"
+    },
+    "3": {
+      "kannada": "ಹೂ - ಹೂಗಳು",
+      "english": "Flower - Flowers",
+      "transliteration": "Hoo - Hoogalu"
+    },
+    "4": {
+      "kannada": "ಕಾರು - ಕಾರುಗಳು",
+      "english": "Car - Cars",
+      "transliteration": "Kaaru - Kaarugalu"
+    },
+    "5": {
+      "kannada": "ಪುಸ್ತಕ - ಪುಸ್ತಕಗಳು",
+      "english": "Book - Books",
+      "transliteration": "Pustaka - Pustakagalu"
+    },
+    "6": {
+      "kannada": "ಬಾಲು - ಬಾಲುಗಳು",
+      "english": "Ball - Balls",
+      "transliteration": "Baalu - Baalugalu"
+    },
+    "7": {
+      "kannada": "ಮರ - ಮರಗಳು",
+      "english": "Tree - Trees",
+      "transliteration": "Mara - Maragalu"
+    },
+    "8": {
+      "kannada": "ಮನೆ - ಮನೆಗಳು",
+      "english": "House - Houses",
+      "transliteration": "Mane - Manegalu"
+    },
+    "9": {
+      "kannada": "ಮಗು - ಮಕ್ಕಳು",
+      "english": "Child - Children",
+      "transliteration": "Magu - Makkalu"
+    },
+    "10": {
+      "kannada": "ಸೇಬು - ಸೇಬುಗಳು",
+      "english": "Apple - Apples",
+      "transliteration": "Sebu - Sebugalu"
+    },
+    "11": {
+      "kannada": "ಬಾಳೆಹಣ್ಣು - ಬಾಳೆಹಣ್ಣುಗಳು",
+      "english": "Banana - Bananas",
+      "transliteration": "Baalehannu - Baalehannugalu"
+    },
+    "12": {
+      "kannada": "ಕುರ್ಚಿ - ಕುರ್ಚಿಗಳು",
+      "english": "Chair - Chairs",
+      "transliteration": "Kurci - Kurcigalu"
+    },
+    "13": {
+      "kannada": "ಕಿಟಕಿ - ಕಿಟಕಿಗಳು",
+      "english": "Window - Windows",
+      "transliteration": "Kitaki - Kitakigalu"
+    },
+    "14": {
+      "kannada": "ಆಟಗಾರಿಕೆ - ಆಟಗಾರಿಕೆಗಳು",
+      "english": "Toy - Toys",
+      "transliteration": "Atagārike - Atagārikegalu"
+    },
+    "15": {
+      "kannada": "ಹುಡುಗಿ - ಹುಡುಗಿಯರು",
+      "english": "Girl - Girls",
+      "transliteration": "Hudugi - Hudugiyaru"
+    },
+    "16": {
+      "kannada": "ಹುಡುಗ - ಹುಡುಗರು",
+      "english": "Boy - Boys",
+      "transliteration": "Huduga - Hudugaru"
+    },
+    "17": {
+      "kannada": "ಸ್ನೇಹಿತ - ಸ್ನೇಹಿತರು",
+      "english": "Friend - Friends",
+      "transliteration": "Sneehita - Sneehitaru"
+    },
+    "18": {
+      "kannada": "ಶಿಕ್ಷಕ - ಶಿಕ್ಷಕರು",
+      "english": "Teacher - Teachers",
+      "transliteration": "Shikshaka - Shikshakaru"
+    },
+    "19": {
+      "kannada": "ಶಾಲೆ - ಶಾಲೆಗಳು",
+      "english": "School - Schools",
+      "transliteration": "Shaale - Shaalegalu"
+    },
+    "20": {
+      "kannada": "ಹೂಕೆಟ್ಟು - ಹೂಕೆಟ್ಟುಗಳು",
+      "english": "Flowerpot - Flowerpots",
+      "transliteration": "Hookeṭṭu - Hookeṭṭugaḷu"
+    },
+    "21": {
+      "kannada": "ಹನಿಗೆ - ಹನಿಗೆಗಳು",
+      "english": "Butterfly - Butterflies",
+      "transliteration": "Hanige - Hanigegaḷu"
+    },
+    "22": {
+      "kannada": "ಮುಸುಕು - ಮುಸುಕುಗಳು",
+      "english": "Mouse - Mice",
+      "transliteration": "Musuku - Musukugaḷu"
+    },
+    "23": {
+      "kannada": "ಹಲ್ಲು - ಹಲ್ಲುಗಳು",
+      "english": "Tooth - Teeth",
+      "transliteration": "Hallu - Hallugaḷu"
+    },
+    "24": {
+      "kannada": "ಕಾಲು - ಕಾಲುಗಳು",
+      "english": "Foot - Feet",
+      "transliteration": "Kaalu - Kaalugaḷu"
+    },
+    "25": {
+      "kannada": "ಮರಿ - ಮರಿಗಳು",
+      "english": "Goose - Geese",
+      "transliteration": "Mari - Marigaḷu"
+    },
+    "26": {
+      "kannada": "ಕುದುರೆ - ಕುದುರೆಗಳು",
+      "english": "Horse - Horses",
+      "transliteration": "Kudure - Kuduregaḷu"
+    },
+    "27": {
+      "kannada": "ಪೆಟ್ಟಿಗೆ - ಪೆಟ್ಟಿಗೆಗಳು",
+      "english": "Box - Boxes",
+      "transliteration": "Peṭṭige - Peṭṭigegaḷu"
+    },
+    "28": {
+      "kannada": "ಕೀ - ಕೀಗಳು",
+      "english": "Key - Keys",
+      "transliteration": "Ki - Kigalu"
+    },
+    "29": {
+      "kannada": "ಮೀನು - ಮೀನುಗಳು",
+      "english": "Fish - Fish",
+      "transliteration": "Meenu - Meenugaḷu"
+    },
+    "30": {
+      "kannada": "ಮನುಷ್ಯ - ಮನುಷ್ಯರು",
+      "english": "Man - Men",
+      "transliteration": "Manuṣya - Manuṣyaru"
+    },
+    "31": {
+      "kannada": "ಹೆಣ್ಣು - ಹೆಣ್ಣುಗಳು",
+      "english": "Woman - Women",
+      "transliteration": "Heṇṇu - Heṇṇugaḷu"
+    },
+    "32": {
+      "kannada": "ಕತ್ತರಿ - ಕತ್ತರಿಗಳು",
+      "english": "Knife - Knives",
+      "transliteration": "Kattari - Kattarigaḷu"
+    },
+    "33": {
+      "kannada": "ಎಲೆ - ಎಲೆಗಳು",
+      "english": "Leaf - Leaves",
+      "transliteration": "Ele - Elegalu"
+    },
+    "34": {
+      "kannada": "ಆಲೂಗಡ್ಡೆ - ಆಲೂಗಡ್ಡೆಗಳು",
+      "english": "Potato - Potatoes",
+      "transliteration": "Ālūgaḍḍe - Ālūgaḍḍegaḷu"
+    },
+    "35": {
+      "kannada": "ಸಿಹಿತೀಪು - ಸಿಹಿತೀಪುಗಳು",
+      "english": "Tomato - Tomatoes",
+      "transliteration": "Sihiṭīpu - Sihiṭīpugaḷu"
+    }
+  }

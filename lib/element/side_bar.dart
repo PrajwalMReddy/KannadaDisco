@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/service/local_notification_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SideBar extends StatelessWidget {
   const SideBar({Key? key}) : super(key: key);
@@ -63,10 +64,28 @@ class SideBar extends StatelessWidget {
             SideBarElement(page: "About", icon: Icons.info),
             SideBarElement(page: "Usage", icon: Icons.smartphone),
             SideBarElement(page: "Settings", icon: Icons.settings),
+            ListTile(
+      leading: Icon(
+        Icons.feedback,
+        color: kannadaBlue,
+      ),
+      title: Text(
+        "Feedback",
+        style: const TextStyle(
+          color: Colors.blue,
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      onTap: () {
+        Uri _url = Uri.parse('https://play.google.com/store/apps/details?id=com.prajwalmreddy.kannada_disco&hl=en-IN');
+              launchUrl(_url, mode: LaunchMode.externalApplication);
+      },
+    ),
             const Divider(),
             const Center(
               child: Text(
-                "Version: 0.5.0",
+                "Version: 1.1.0",
                 style: TextStyle(
                   fontSize: 15.0,
                   color: kannadaBlue,

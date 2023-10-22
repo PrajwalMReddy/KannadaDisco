@@ -1,0 +1,57 @@
+{
+    "0": {
+      "kannada": "ಉತ್ತಮ ಪುರುಷ",
+      "english": "First Person",
+      "transliteration": "Uttama Purusha"
+    },
+    "1": {
+      "kannada": "ನಾನು",
+      "english": "I",
+      "transliteration": "Naanu"
+    },
+    "2": {
+      "kannada": "ನಾವು",
+      "english": "We",
+      "transliteration": "Naavu"
+    },
+    "3": {
+      "kannada": "ಮಧ್ಯಮ ಪುರುಷ",
+      "english": "Second Person",
+      "transliteration": "Madhyama Purusha"
+    },
+    "4": {
+      "kannada": "ನೀವು",
+      "english": "You (singular/formal)",
+      "transliteration": "Neevu"
+    },
+    "5": {
+      "kannada": "ನೀವು",
+      "english": "You (plural/formal)",
+      "transliteration": "Neevu"
+    },
+    "6": {
+      "kannada": "ಪ್ರಥಮ ಪುರುಷ",
+      "english": "Third Person",
+      "transliteration": "Prathama Purusha"
+    },
+    "7": {
+      "kannada": "ಅವನು",
+      "english": "He",
+      "transliteration": "Avanu"
+    },
+    "8": {
+      "kannada": "ಅವಳು",
+      "english": "She",
+      "transliteration": "Avalu"
+    },
+    "9": {
+      "kannada": "ಅದು",
+      "english": "It",
+      "transliteration": "Adhu"
+    },
+    "10": {
+      "kannada": "ಅವರು",
+      "english": "They",
+      "transliteration": "Avaru"
+    }
+  }

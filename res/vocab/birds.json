@@ -1,0 +1,116 @@
+{
+  "0": {
+    "english": "Sparrow",
+    "kannada": "ಗುಬ್ಬಿ",
+    "transliteration": "gubbi",
+    "link": "assets/Sparrow.jfif"
+  },
+  "1": {
+    "english": "Eagle",
+    "kannada": "ಹದ್ದು",
+    "transliteration": "haddu",
+    "link": "assets/Eagle.jpg"
+  },
+  "2": {
+    "english": "Crow",
+    "kannada": "ಕಾಗೆ",
+    "transliteration": "kāge",
+    "link": "assets/Crow.jpg"
+  },
+  "3": {
+    "english": "Peacock",
+    "kannada": "ನವಿಲು",
+    "transliteration": "navilu",
+    "link": "assets/Peacock.jpeg"
+  },
+  "4": {
+    "english": "Parrot",
+    "kannada": "ಗಿಳಿ",
+    "transliteration": "giḷi",
+    "link": "assets/Parrot.jfif"
+  },
+  "5": {
+    "english": "Pigeon",
+    "kannada": "ಪಾರಿವಾಳ",
+    "transliteration": "pārivāḷa",
+    "link": "assets/Pigeon.jpg"
+  },
+  "6": {
+    "english": "Owl",
+    "kannada": "ಗೂಬೆ",
+    "transliteration": "gūbe",
+    "link": "assets/Owl.jpeg"
+  },
+  "7": {
+    "english": "Swan",
+    "kannada": "ಹಂಸ",
+    "transliteration": "hansa",
+    "link": "assets/Swan.jpg"
+  },
+  "8": {
+    "english": "Duck",
+    "kannada": "ಬಾತುಕೋಳಿ",
+    "transliteration": "bātukōḷi",
+    "link": "assets/Duck.jpg"
+  },
+  "9": {
+    "english": "Cuckoo",
+    "kannada": "ಕೋಗಿಲೆ",
+    "transliteration": "kōgile",
+    "link": "assets/Cuckoo.jpg"
+  },
+  "10": {
+    "english": "Sparrowhawk",
+    "kannada": "ಗುಬ್ಬಚ್ಚಿ",
+    "transliteration": "gubbacci",
+    "link": ""
+  },
+  "11": {
+    "english": "Heron",
+    "kannada": "ಬೆಳ್ಳಕ್ಕಿ",
+    "transliteration": "beḷḷakki",
+    "link": "assets/Heron.jfif"
+  },
+  "12": {
+    "english": "Crane",
+    "kannada": "ಕೊಕ್ಕರೆ",
+    "transliteration": "kokkare",
+    "link": "assets/Crane.jpg"
+  },
+  "13": {
+    "english": "Flamingo",
+    "kannada": "ರಾಜಹಂಸ",
+    "transliteration": "rājahansa",
+    "link": "assets/Flamingo.jfif"
+  },
+  "14": {
+    "english": "Kingfisher",
+    "kannada": "ಮಿಂಚುಳ್ಳಿ",
+    "transliteration": "min̄cuḷḷi",
+    "link": "assets/kingfisher.jpg"
+  },
+  "15": {
+    "english": "Woodpecker",
+    "kannada": "ಮರಕುಟಿಗ",
+    "transliteration": "marakuṭiga",
+    "link": "assets/woodpecker.jpg"
+  },
+  "16": {
+    "english": "Swallow",
+    "kannada": "ಸ್ವಾಲೋ",
+    "transliteration": "svālō",
+    "link": ""
+  },
+  "17": {
+    "english": "Robin",
+    "kannada": "ರಾಬಿನ್",
+    "transliteration": "rābin",
+    "link": "assets/Robin.jfif"
+  },
+  "18": {
+    "english": "Bulbul",
+    "kannada": "ಬುಲ್ಬುಲ್",
+    "transliteration": "bulbul",
+    "link": ""
+  }
+}

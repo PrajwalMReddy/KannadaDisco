@@ -1,0 +1,102 @@
+{
+    "0": {
+      "kannada": "ಪುರುಷ",
+      "english": "Male",
+      "transliteration": "Purusha"
+    },
+    "1": {
+      "kannada": "ಸ್ತ್ರೀ",
+      "english": "Female",
+      "transliteration": "Stree"
+    },
+    "2": {
+      "kannada": "ಪುರುಷ",
+      "english": "Man",
+      "transliteration": "Purusha"
+    },
+    "3": {
+      "kannada": "ಸ್ತ್ರೀ",
+      "english": "Woman",
+      "transliteration": "Stree"
+    },
+    "4": {
+      "kannada": "ಹುಡುಗ",
+      "english": "Boy",
+      "transliteration": "Huduga"
+    },
+    "5": {
+      "kannada": "ಹುಡುಗಿ",
+      "english": "Girl",
+      "transliteration": "Hudugi"
+    },
+    "6": {
+      "kannada": "ಮಗ",
+      "english": "Son",
+      "transliteration": "Maga"
+    },
+    "7": {
+      "kannada": "ಮಗಳು",
+      "english": "Daughter",
+      "transliteration": "Magalu"
+    },
+    "8": {
+      "kannada": "ಅಪ್ಪ",
+      "english": "Father",
+      "transliteration": "Appa"
+    },
+    "9": {
+      "kannada": "ಅಮ್ಮ",
+      "english": "Mother",
+      "transliteration": "Amma"
+    },
+    "10": {
+      "kannada": "ಗಂಡ",
+      "english": "Husband",
+      "transliteration": "Ganda"
+    },
+    "11": {
+      "kannada": "ಹೆಂಡತಿ",
+      "english": "Wife",
+      "transliteration": "Hendati"
+    },
+    "12": {
+      "kannada": "ಮಾವ",
+      "english": "Uncle (on father's side)",
+      "transliteration": "Maava"
+    },
+    "13": {
+      "kannada": "ಮಾವಳ",
+      "english": "Aunt (on father's side)",
+      "transliteration": "Maavala"
+    },
+    "14": {
+      "kannada": "ಮೊಮ್ಮಗ",
+      "english": "Nephew",
+      "transliteration": "Mommaga"
+    },
+    "15": {
+      "kannada": "ಮೊಮ್ಮಿಗಿ",
+      "english": "Niece",
+      "transliteration": "Mommigi"
+    },
+    "16": {
+      "kannada": "ರಾಜ",
+      "english": "King",
+      "transliteration": "Raaja"
+    },
+    "17": {
+      "kannada": "ರಾಣಿ",
+      "english": "Queen",
+      "transliteration": "Raani"
+    },
+    "18": {
+      "kannada": "ರಾಜಕುಮಾರ",
+      "english": "Prince",
+      "transliteration": "Raajakumaara"
+    },
+    "19": {
+      "kannada": "ರಾಜಕುಮಾರಿ",
+      "english": "Princess",
+      "transliteration": "Raajakumaari"
+    }
+  }

@@ -1,0 +1,37 @@
+{
+  "0": {
+  "kannada": "Friend 1: ಹಲೋ! ನೀವು ಹೇಗಿದ್ದೀರಿ?",
+  "english": "Friend 1: Hey! How are you doing?",
+  "transliteration": "Friend 1: Halo! Nīvu hegiddīri?"
+  },
+  "1": {
+  "kannada": "Friend 2: ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ, ಧನ್ಯವಾದಗಳು! ನೀವು ಹೇಗಿದ್ದೀರಿ?",
+  "english": "Friend 2: I'm good, thanks! How about you?",
+  "transliteration": "Friend 2: Nānu chennāgiddēne, dhanyavāḍagaḷu! Nīvu hegiddīri?"
+  },
+  "2": {
+  "kannada": "Friend 1: ನಾನು ಕೂಡ ಚೆನ್ನಾಗಿ ಇದ್ದೇನೆ. ನೀವು ಇತ್ತೀಚೆಗೆ ಯಾವುದಾದರೂ ಒಳ್ಳೆಯ ಚಲನಚಿತ್ರಗಳನ್ನು ನೋಡಿದ್ದೀರಾ?",
+  "english": "Friend 1: I'm doing well too. Have you watched any good movies lately?",
+  "transliteration": "Friend 1: Nānu kūḍa cennāgi iddēne. Nīvu ittīcege yāvudādarū oḷḷeya calanacitragaḷannu nōḍiddīrā?"
+  },
+  "3": {
+  "kannada": "Friend 2: ಹೌದು, ನಾನು ಇತ್ತೀಚಿನ ಸೂಪರ್‌ಹೀರೋ ಚಲನಚಿತ್ರವನ್ನು ನೋಡಿದ್ದೇನೆ. ಇದು ಅದ್ಭುತವಾಗಿತ್ತು! ನೀವು ನೋಡಿದ್ದೀರಾ?",
+  "english": "Friend 2: Yes, I saw the latest superhero movie. It was amazing! Have you watched?",
+  "transliteration": "Friend 2: Haudu, nānu ittīcina sūpar‌hīrō chalanachitravannu nōḍiddēne. Idu adbhutavāgittu! Nīvu nodiddeera?"
+  },
+  "4": {
+  "kannada": "Friend 1: ಇಲ್ಲ, ಅದನ್ನು ನೋಡುವ ಅವಕಾಶ ನನಗೆ ಇನ್ನೂ ಸಿಕ್ಕಿಲ್ಲ. ನಾನು ಬಿಸಿಯಾಗಿದ್ದೆ.",
+  "english": "Friend 1: No, I haven't had the chance to watch it yet. I've been busy.",
+  "transliteration": "Friend 1: Illa, adannu nōḍuva avakāśa nanage innū sikkilla. Nānu bisiyāgiddē."
+  },
+  "5": {
+  "kannada": "Friend 2: ಪರವಾಗಿಲ್ಲ, ನಾವು ಯಾವಾಗಲಾದರು ಒಟ್ಟಿಗೆ ಹೋಗಿ ನೋಡೋಣ.",
+  "english": "Friend 2: No worries, we should plan to watch it together sometime.",
+  "transliteration": "Friend 2: Paravāgilla, nāvu yāvāgalādaru oṭṭige hōgi nōḍōṇa."
+  },
+  "6": {
+  "kannada": "Friend 1: ಇದು ಒಳ್ಳೆಯ ಐಡಿಯಾ! ನಾವು ಹಾಗೆ ಮಾಡೋಣ.",
+  "english": "Friend 1: This is a good idea! Let us do so.",
+  "transliteration": "Friend 1: Idu oḷḷeya aiḍiyā! Nāvu hāge māḍōṇa."
+  }
+  }

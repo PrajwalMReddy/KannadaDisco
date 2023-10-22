@@ -1,0 +1,116 @@
+{
+  "0": {
+    "english": "Nose",
+    "kannada": "ಮೂಗು",
+    "transliteration": "mūgu",
+    "link": "assets/Nose.png"
+  },
+  "1": {
+    "english": "Head",
+    "kannada": "ತಲೆ",
+    "transliteration": "tale",
+    "link": "assets/head.jpg"
+  },
+  "2": {
+    "english": "Ear",
+    "kannada": "ಕಿವಿ",
+    "transliteration": "kivi",
+    "link": "assets/Ears.jpg"
+  },
+  "3": {
+    "english": "Eye",
+    "kannada": "ಕಣ್ಣು",
+    "transliteration": "kaṇṇu",
+    "link": "assets/Eyes.jpg"
+  },
+  "4": {
+    "english": "Hair",
+    "kannada": "ಕೂದಲು",
+    "transliteration": "kūdalu",
+    "link": "assets/Hair.jfif"
+  },
+  "5": {
+    "english": "Mouth",
+    "kannada": "ಬಾಯಿ",
+    "transliteration": "bāyi",
+    "link": "assets/Mouth.jpg"
+  },
+  "6": {
+    "english": "Tooth",
+    "kannada": "ಹಲ್ಲು",
+    "transliteration": "hallu",
+    "link": "assets/Tooth.jpg"
+  },
+  "7": {
+    "english": "Tongue",
+    "kannada": "ನಾಲಿಗೆ",
+    "transliteration": "nālige",
+    "link": "assets/Tongue.jpg"
+  },
+  "8": {
+    "english": "Fingernail",
+    "kannada": "ಉಗುರು",
+    "transliteration": "uguru",
+    "link": "assets/Finger Nail.jpg"
+  },
+  "9": {
+    "english": "Foot",
+    "kannada": "ಪಾದ",
+    "transliteration": "pāda",
+    "link": "assets/Foot.jpg"
+  },
+  "10": {
+    "english": "Leg",
+    "kannada": "ಕಾಲು",
+    "transliteration": "kālu",
+    "link": "assets/Leg.jpg"
+  },
+  "11": {
+    "english": "Knee",
+    "kannada": "ಮೊಣಕಾಲು/ಮಂಡಿ",
+    "transliteration": "moṇakālu/maṇḍi",
+    "link": "assets/Knee.gif"
+  },
+  "12": {
+    "english": "Hand",
+    "kannada": "ಕೈ",
+    "transliteration": "kai",
+    "link": "assets/Hands.jpg"
+  },
+  "13": {
+    "english": "Wing",
+    "kannada": "ರೆಕ್ಕೆ",
+    "transliteration": "rekke",
+    "link": ""
+  },
+  "14": {
+    "english": "Belly",
+    "kannada": "ಹೊಟ್ಟೆ",
+    "transliteration": "hoṭṭe",
+    "link": "assets/Belly.jpg"
+  },
+  "15": {
+    "english": "Neck",
+    "kannada": "ಕತ್ತು",
+    "transliteration": "kattu",
+    "link": "assets/Neck.jpg"
+  },
+  "16": {
+    "english": "Back",
+    "kannada": "ಬೆನ್ನು",
+    "transliteration": "bennu",
+    "link": ""
+  },
+  "17": {
+    "english": "Heart",
+    "kannada": "ಹೃದಯ/ಗುಂಡಿಗೆ",
+    "transliteration": "hṛdaya/guṇḍige",
+    "link": ""
+  },
+  "18": {
+    "english": "Liver",
+    "kannada": "ಈಲಿ",
+    "transliteration": "īli",
+    "link": ""
+  }
+}

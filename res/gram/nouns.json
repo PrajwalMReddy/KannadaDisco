@@ -1,0 +1,102 @@
+{
+    "0": {
+      "kannada": "ಮನೆ",
+      "english": "House",
+      "transliteration": "Mane"
+    },
+    "1": {
+      "kannada": "ಹುಡುಗು",
+      "english": "Boy",
+      "transliteration": "Hudugu"
+    },
+    "2": {
+      "kannada": "ಹುಡುಗಿ",
+      "english": "Girl",
+      "transliteration": "Hudugi"
+    },
+    "3": {
+      "kannada": "ಪುಸ್ತಕ",
+      "english": "Book",
+      "transliteration": "Pustaka"
+    },
+    "4": {
+      "kannada": "ಹಕ್ಕಿ",
+      "english": "Bird",
+      "transliteration": "Hakki"
+    },
+    "5": {
+      "kannada": "ಸೂರ್ಯ",
+      "english": "Sun",
+      "transliteration": "Soorya"
+    },
+    "6": {
+      "kannada": "ಚಂದ್ರ",
+      "english": "Moon",
+      "transliteration": "Chandra"
+    },
+    "7": {
+      "kannada": "ನದಿ",
+      "english": "River",
+      "transliteration": "Nadi"
+    },
+    "8": {
+      "kannada": "ಹೂ",
+      "english": "Flower",
+      "transliteration": "Hoo"
+    },
+    "9": {
+      "kannada": "ಸ್ನೇಹಿತ",
+      "english": "Friend",
+      "transliteration": "Sneehita"
+    },
+    "10": {
+      "kannada": "ತಂದೆ",
+      "english": "Father",
+      "transliteration": "Thande"
+    },
+    "11": {
+      "kannada": "ತಾಯಿ",
+      "english": "Mother",
+      "transliteration": "Taayi"
+    },
+    "12": {
+      "kannada": "ಪ್ರಾಧ್ಯಾಪಕ",
+      "english": "Teacher",
+      "transliteration": "Pradhyapaka"
+    },
+    "13": {
+      "kannada": "ಶಾಲೆ",
+      "english": "School",
+      "transliteration": "Shaale"
+    },
+    "14": {
+      "kannada": "ಮೇಲ್ಮುಖ",
+      "english": "Face",
+      "transliteration": "Melmukha"
+    },
+    "15": {
+      "kannada": "ಕೈ",
+      "english": "Hand",
+      "transliteration": "Kai"
+    },
+    "16": {
+      "kannada": "ಕಾಲು",
+      "english": "Leg",
+      "transliteration": "Kaalu"
+    },
+    "17": {
+      "kannada": "ಕಂಪ್ಯೂಟರ್",
+      "english": "Computer",
+      "transliteration": "Computer"
+    },
+    "18": {
+      "kannada": "ವಾಹನ",
+      "english": "Vehicle",
+      "transliteration": "Vaahana"
+    },
+    "19": {
+      "kannada": "ದೇಶ",
+      "english": "Country",
+      "transliteration": "Desha"
+    }
+  }

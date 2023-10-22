@@ -1,0 +1,132 @@
+{
+  "0": {
+    "english": "Hot - Cold",
+    "kannada": "ಬಿಸಿ - ಶೀತ",
+    "transliteration": "bisi - śīta"
+  },
+  "1": {
+    "english": "Big - Small",
+    "kannada": "ದೊಡ್ಡ - ಸಣ್ಣ",
+    "transliteration": "doḍḍa - saṇṇa"
+  },
+  "2": {
+    "english": "Fast - Slow",
+    "kannada": "ವೇಗವಾಗಿ - ನಿಧಾನವಾಗಿ",
+    "transliteration": "vēgavāgi - nidhānavāgi"
+  },
+  "3": {
+    "english": "Tall - Short",
+    "kannada": "ಎತ್ತರ - ಚಿಕ್ಕ",
+    "transliteration": "ettara - cikka"
+  },
+  "4": {
+    "english": "Happy - Sad",
+    "kannada": "ಸಂತೋಷ - ದುಃಖ",
+    "transliteration": "santōṣa - duḥkha"
+  },
+  "5": {
+    "english": "Good - Bad",
+    "kannada": "ಒಳ್ಳೆಯ - ಕೆಟ್ಟ",
+    "transliteration": "oḷḷeya - keṭṭa"
+  },
+  "6": {
+    "english": "Up - Down",
+    "kannada": "ಮೇಲೆ - ಕೆಳಗೆ",
+    "transliteration": "mēle - keḷage"
+  },
+  "7": {
+    "english": "Old - New",
+    "kannada": "ಹಳೆಯ - ಹೊಸ",
+    "transliteration": "haḷeya - hosa"
+  },
+  "8": {
+    "english": "Heavy - Light",
+    "kannada": "ಭಾರೀ - ಹಗುರ",
+    "transliteration": "Bhāri - Hagurā"
+  },
+  "9": {
+    "english": "Open - Close",
+    "kannada": "ತೆರೆ - ಮುಚ್ಚು",
+    "transliteration": "tere - muccu"
+  },
+  "10": {
+    "english": "Far - Near",
+    "kannada": "ದೂರ - ಹತ್ತಿರ",
+    "transliteration": "dūra - hattira"
+  },
+  "11": {
+    "english": "Day - Night",
+    "kannada": "ದಿನ - ರಾತ್ರಿ",
+    "transliteration": "dina - rātri"
+  },
+  "12": {
+    "english": "Thin - Thick",
+    "kannada": "ತೆಳು - ದಪ್ಪ",
+    "transliteration": "teḷuvā - dappa"
+  },
+  "13": {
+    "english": "Clean - Dirty",
+    "kannada": "ಸ್ವಚ್ಛ - ಕೊಳಕು",
+    "transliteration": "svaccha - koḷaku"
+  },
+  "14": {
+    "english": "Easy - Difficult",
+    "kannada": "ಸುಲಭ - ಕಷ್ಟ",
+    "transliteration": "sulabha - kaṣṭa"
+  },
+  "15": {
+    "english": "Inside - Outside",
+    "kannada": "ಒಳಗೆ - ಹೊರಗೆ",
+    "transliteration": "oḷage - horage"
+  },
+  "16": {
+    "english": "Full - Empty",
+    "kannada": "ಪೂರ್ಣ - ಖಾಲಿ",
+    "transliteration": "pūrṇa - khāli"
+  },
+  "17": {
+    "english": "Strong - Weak",
+    "kannada": "ಬಲವಾದ - ದುರ್ಬಲ",
+    "transliteration": "balavāda - durbara"
+  },
+  "18": {
+    "english": "Love - Hate",
+    "kannada": "ಪ್ರೀತಿ - ದ್ವೇಷ",
+    "transliteration": "prīti - dvēṣa"
+  },
+  "19": {
+    "english": "Right - Left",
+    "kannada": "ಬಲ - ಎಡ",
+    "transliteration": "bala - eḍa"
+  },
+  "20": {
+    "english": "Brave - Coward",
+    "kannada": "ಧೈರ್ಯಶಾಲಿ - ಹೇಡಿ",
+    "transliteration": "dhairyaśāli - hēḍi"
+  },
+  "21": {
+    "english": "Health - Sickness",
+    "kannada": "ಆರೋಗ್ಯ - ಅನಾರೋಗ್ಯ",
+    "transliteration": "ārōgya - anārōgya"
+  },
+  "22": {
+    "english": "Front - Back",
+    "kannada": "ಮುಂದೆ - ಹಿಂದೆ",
+    "transliteration": "muṇḍe - hinde"
+  },
+  "23": {
+    "english": "Begin - End",
+    "kannada": "ಪ್ರಾರಂಭ - ಅಂತ್ಯ",
+    "transliteration": "prārambha - antya"
+  },
+  "24": {
+    "english": "Correct - Wrong",
+    "kannada": "ಸರಿ - ತಪ್ಪು",
+    "transliteration": "sari - tappu"
+  },
+  "25": {
+    "english": "Give - Take",
+    "kannada": "ಕೊಡು - ತೆಗೆದುಕೊ",
+    "transliteration": "koḍu - tegeduko"
+  }
+}

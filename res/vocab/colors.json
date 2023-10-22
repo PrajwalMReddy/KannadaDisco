@@ -2,31 +2,73 @@
   "0": {
     "english": "Color",
     "kannada": "ಬಣ್ಣ/ವರ್ಣ",
-    "transliteration": "baṇṇa/varṇa"
+    "transliteration": "baṇṇa/varṇa",
+    "link": ""
   },
   "1": {
     "english": "Red",
     "kannada": "ಕೆಂಪು",
-    "transliteration": "kempu"
+    "transliteration": "kempu",
+    "link": "assets/Red_Color.jpg"
   },
   "2": {
     "english": "Green",
     "kannada": "ಹಸಿರು",
-    "transliteration": "hasiru"
+    "transliteration": "hasiru",
+    "link": "assets/Green.jpg"
   },
   "3": {
     "english": "Yellow",
     "kannada": "ಹಳದಿ",
-    "transliteration": "haḷadi"
+    "transliteration": "haḷadi",
+    "link": "assets/Yellow.jfif"
   },
   "4": {
     "english": "White",
     "kannada": "ಬಿಳಿ",
-    "transliteration": "biḷi"
+    "transliteration": "biḷi",
+    "link": "assets/White.jfif"
   },
   "5": {
     "english": "Black",
-    "kannada": "ಕರಿ",
-    "transliteration": "kari"
+    "kannada": "ಕಪ್ಪು/ಕರಿ",
+    "transliteration": "kappu/kari",
+    "link": "assets/Black.jfif"
+  },
+  "6": {
+    "english": "Blue",
+    "kannada": "ನೀಲಿ",
+    "transliteration": "nīli",
+    "link": "assets/Blue.jpg"
+  },
+  "7": {
+    "english": "Brown",
+    "kannada": "ಕಂದು",
+    "transliteration": "kandu",
+    "link": "assets/Brown.jpg"
+  },
+  "8": {
+    "english": "Grey",
+    "kannada": "ಬೂದು",
+    "transliteration": "būdu",
+    "link": "assets/Grey.jpg"
+  },
+  "9": {
+    "english": "Orange",
+    "kannada": "ಕಿತ್ತಳೆ ಬಣ್ಣ",
+    "transliteration": "kittaḷe baṇṇa",
+    "link": "assets/Orange.jpg"
+  },
+  "10": {
+    "english": "Pink",
+    "kannada": "ಗುಲಾಬಿ ಬಣ್ಣ",
+    "transliteration": "gulābi baṇṇa",
+    "link": "assets/Pink.jpg"
+  },
+  "11": {
+    "english": "Purple",
+    "kannada": "ನೇರಳೆ ಬಣ್ಣ",
+    "transliteration": "nēraḷe baṇṇa",
+    "link": "assets/Purple.jpg"
   }
 }

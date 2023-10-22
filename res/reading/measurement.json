@@ -1,0 +1,82 @@
+{
+    "0": {
+      "kannada": "ಉದ್ದ",
+      "english": "Length",
+      "transliteration": "Uddu"
+    },
+    "1": {
+      "kannada": "ಅಗಲ",
+      "english": "Width",
+      "transliteration": "Agala"
+    },
+    "2": {
+      "kannada": "ಎತ್ತರ",
+      "english": "Height",
+      "transliteration": "Ettara"
+    },
+    "3": {
+      "kannada": "ದೂರ",
+      "english": "Distance",
+      "transliteration": "Dura"
+    },
+    "4": {
+      "kannada": "ತೂಕ",
+      "english": "Weight",
+      "transliteration": "Tuka"
+    },
+    "5": {
+      "kannada": "ಪ್ರಮಾಣ",
+      "english": "Mass",
+      "transliteration": "Pramaana"
+    },
+    "6": {
+      "kannada": "ಆಯಾಮ",
+      "english": "Volume",
+      "transliteration": "Aayama"
+    },
+    "7": {
+      "kannada": "ಗಾತ್ರ",
+      "english": "Size",
+      "transliteration": "Gaatra"
+    },
+    "8": {
+      "kannada": "ಪ್ರದೇಶ",
+      "english": "Area",
+      "transliteration": "Pradesha"
+    },
+    "9": {
+      "kannada": "ತಾಪಮಾನ",
+      "english": "Temperature",
+      "transliteration": "Taapamaana"
+    },
+    "10": {
+      "kannada": "ವೇಗ",
+      "english": "Speed",
+      "transliteration": "Vega"
+    },
+    "11": {
+      "kannada": "ಸಮಯ",
+      "english": "Time",
+      "transliteration": "Samaya"
+    },
+    "12": {
+      "kannada": "ಘಡಿ",
+      "english": "Clock",
+      "transliteration": "Ghadi"
+    },
+    "13": {
+      "kannada": "ಸೆಕೆಂಡು",
+      "english": "Second",
+      "transliteration": "Sekendu"
+    },
+    "14": {
+      "kannada": "ನಿಮಿಷ",
+      "english": "Minute",
+      "transliteration": "Nimisha"
+    },
+    "15": {
+      "kannada": "ಗಂಟೆ",
+      "english": "Hour",
+      "transliteration": "Gante"
+    }
+  }

@@ -112,12 +112,14 @@ class HomeBody extends StatelessWidget {
           ),
           child: const Padding(
             padding: EdgeInsets.only(top: 10),
-            child: Column(
+            child: Column(   
               children: [
                 SizedBox(
                   height: 20,
                 ),
-                WordOfTheDay(),
+                InkWell(
+                  child: WordOfTheDay(),
+                  ),
               ],
             ),
           ),

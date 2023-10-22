@@ -41,8 +41,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
           label: "Courses",
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.quiz),
-          label: "Practice",
+          icon: Icon(Icons.child_care),
+          label: "Kids Section",
         ),
       ],
     );

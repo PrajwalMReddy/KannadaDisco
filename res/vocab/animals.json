@@ -2,36 +2,229 @@
   "0": {
     "english": "Animal",
     "kannada": "ಪ್ರಾಣಿ",
-    "transliteration": "prāṇi"
+    "transliteration": "prāṇi",
+    "link": ""
   },
   "1": {
-    "english": "Fish",
-    "kannada": "ಮೀನು",
-    "transliteration": "mīnu"
+    "english": "Domestic Animal",
+    "kannada": "ಸಾಕು ಪ್ರಾಣಿ",
+    "transliteration": "sāku prāṇi",
+    "link": ""
   },
   "2": {
-    "english": "Bird",
-    "kannada": "ಹಕ್ಕಿ",
-    "transliteration": "hakki"
+    "english": "Wild Animal",
+    "kannada": "ಕಾಡು ಪ್ರಾಣಿ",
+    "transliteration": "kāḍu prāṇi",
+    "link": ""
   },
   "3": {
-    "english": "Dog",
-    "kannada": "ನಾಯಿ",
-    "transliteration": "nāyi"
+    "english": "Fish",
+    "kannada": "ಮೀನು",
+    "transliteration": "mīnu",
+    "link": "assets/Fish.jpg"
   },
   "4": {
-    "english": "Louse",
-    "kannada": "ಹೇನು",
-    "transliteration": "hēnu"
+    "english": "Bird",
+    "kannada": "ಹಕ್ಕಿ/ಪಕ್ಷಿ",
+    "transliteration": "hakki/pakṣi",
+    "link": "assets/Birds.jfif"
   },
   "5": {
-    "english": "Snake",
-    "kannada": "ಹಾವು",
-    "transliteration": "hāvu"
+    "english": "Dog",
+    "kannada": "ನಾಯಿ",
+    "transliteration": "nāyi",
+    "link": "assets/Dog.jfif"
   },
   "6": {
+    "english": "Louse",
+    "kannada": "ಹೇನು",
+    "transliteration": "hēnu",
+    "link": ""
+  },
+  "7": {
+    "english": "Snake",
+    "kannada": "ಹಾವು",
+    "transliteration": "hāvu",
+    "link": "assets/Snake.jpg"
+  },
+  "8": {
     "english": "Worm",
     "kannada": "ಹುಳ",
-    "transliteration": "huḷa"
+    "transliteration": "huḷa",
+    "link": ""
+  },
+  "9": {
+    "english": "Elephant",
+    "kannada": "ಆನೆ",
+    "transliteration": "āne",
+    "link": "assets/Elephant.jpg"
+  },
+  "10": {
+    "english": "Rat",
+    "kannada": "ಇಲಿ",
+    "transliteration": "ili",
+    "link": "assets/Rat.jpg"
+  },
+  "11": {
+    "english": "Bull",
+    "kannada": "ಎತ್ತು",
+    "transliteration": "ettu",
+    "link": "assets/Bull.jpg"
+  },
+  "12": {
+    "english": "Female Buffalo",
+    "kannada": "ಎಮ್ಮೆ",
+    "transliteration": "emme",
+    "link": "assets/Female-buffalo.jpg"
+  },
+  "13": {
+    "english": "Camel",
+    "kannada": "ಒಂಟೆ",
+    "transliteration": "oṇṭe",
+    "link": "assets/Camel.jpg"
+  },
+  "14": {
+    "english": "Donkey",
+    "kannada": "ಕತ್ತೆ",
+    "transliteration": "katte",
+    "link": "assets/Donkey.jpg"
+  },
+  "15": {
+    "english": "Frog",
+    "kannada": "ಕಪ್ಪೆ",
+    "transliteration": "kappe",
+    "link": "assets/Frog.jpg"
+  },
+  "16": {
+    "english": "Bear",
+    "kannada": "ಕರಡಿ",
+    "transliteration": "karaḍi",
+    "link": "assets/Bear.jpg"
+  },
+  "17": {
+    "english": "Horse",
+    "kannada": "ಕುದುರೆ",
+    "transliteration": "kudure",
+    "link": "assets/Horse.jpg"
+  },
+  "18": {
+    "english": "Sheep",
+    "kannada": "ಕುರಿ",
+    "transliteration": "kuri",
+    "link": "assets/Sheep.jpg"
+  },
+  "19": {
+    "english": "Ox",
+    "kannada": "ಎತ್ತು",
+    "transliteration": "ettu",
+    "link": "assets/Ox.jpg"
+  },
+  "20": {
+    "english": "Male Buffalo",
+    "kannada": "ಕೋಣ",
+    "transliteration": "kōṇa",
+    "link": ""
+  },
+  "21": {
+    "english": "Monkey",
+    "kannada": "ಕೋತಿ/ಕಪಿ",
+    "transliteration": "kōti/kapi",
+    "link": "assets/Monkey.jpg"
+  },
+  "22": {
+    "english": "Rhinoceros",
+    "kannada": "ಗೇಂಡಾಮೃಗ",
+    "transliteration": "gēṇḍāmṛga",
+    "link": "assets/Rhinoceros.jpg"
+  },
+  "23": {
+    "english": "Leopard",
+    "kannada": "ಚಿರತೆ",
+    "transliteration": "chirate",
+    "link": "assets/Leapord.jpg"
+  },
+  "24": {
+    "english": "Deer",
+    "kannada": "ಜಿಂಕೆ",
+    "transliteration": "jinke",
+    "link": "assets/Deer.jpg"
+  },
+  "25": {
+    "english": "Wolf",
+    "kannada": "ತೋಳ",
+    "transliteration": "tōḷa",
+    "link": "assets/Wolf.jfif"
+  },
+  "26": {
+    "english": "Fox",
+    "kannada": "ನರಿ",
+    "transliteration": "nari",
+    "link": "assets/Fox.jpg"
+  },
+  "27": {
+    "english": "Hippopotamus",
+    "kannada": "ನೀರಾನೆ",
+    "transliteration": "nīrāne",
+    "link": "assets/Hippopotamus.jpg"
+  },
+  "28": {
+    "english": "Cat",
+    "kannada": "ಬೆಕ್ಕು",
+    "transliteration": "bekku",
+    "link": ""
+  },
+  "29": {
+    "english": "Goat",
+    "kannada": "ಮೇಕೆ",
+    "transliteration": "meke",
+    "link": "assets/Goat.jpg"
+  },
+  "30": {
+    "english": "Rabbit",
+    "kannada": "ಮೊಲ",
+    "transliteration": "mola",
+    "link": "assets/Rabbit.jfif"
+  },
+  "31": {
+    "english": "Lion",
+    "kannada": "ಸಿಂಹ",
+    "transliteration": "siṁha",
+    "link": "assets/Lion.jpg"
+  },
+  "32": {
+    "english": "Pig",
+    "kannada": "ಹಂದಿ",
+    "transliteration": "handi",
+    "link": "assets/Pig.jpg"
+  },
+  "33": {
+    "english": "Cow",
+    "kannada": "ಹಸು",
+    "transliteration": "hasu",
+    "link": "assets/Cow.jpg"
+  },
+  "34": {
+    "english": "Tiger",
+    "kannada": "ಹುಲಿ",
+    "transliteration": "huli",
+    "link": "assets/Tiger.jpg"
+  },
+  "35": {
+    "english": "Zebra",
+    "kannada": "ಹೇಸರಗತ್ತೆ",
+    "transliteration": "hēsaragatte",
+    "link": "assets/Zebra.jpg"
+  },
+  "36": {
+    "english": "Boar",
+    "kannada": "ಕಾಡು ಹಂದಿ",
+    "transliteration": "kāḍu handi",
+    "link": ""
+  },
+  "37": {
+    "english": "Crocodile",
+    "kannada": "ಮೊಸಳೆ",
+    "transliteration": "mosale",
+    "link": "assets/Crocodile.jpg"
   }
 }
