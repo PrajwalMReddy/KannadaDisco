@@ -13,6 +13,9 @@ Store text, the privacy policy link and screenshots are in
 
 1. Bump `version:` in `pubspec.yaml`. The part after `+` is the build number.
    Both stores need it to go up with every upload, even for a test build.
+   Git doesn't record past store uploads: before 1.4.0, Play's latest was
+   version 1.3 with version code 4 (Oct 2023). Check Play Console → App
+   bundle explorer if unsure.
 2. Set `appVersion` in `lib/element/side_bar.dart` to the same version name.
 3. Run `flutter analyze` and `flutter test`.
 4. Commit and push. GitHub Actions runs the tests and an iOS build to check
