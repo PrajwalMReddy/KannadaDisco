@@ -1,6 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/element/unit_card.dart';
 import 'package:kannada_disco/resource/reference_entry.dart';
 import 'package:kannada_disco/util/util.dart';
@@ -14,6 +15,16 @@ void main() {
   test('wordOfDaySize shrinks long words', () {
     expect(wordOfDaySize('short'), 20.0);
     expect(wordOfDaySize('x' * 40), lessThan(20.0));
+  });
+
+  test('Feedback never points iOS users at Google Play', () {
+    expect(feedbackUrl(TargetPlatform.android), contains('play.google.com'));
+    final ios = feedbackUrl(TargetPlatform.iOS);
+    if (appStoreId.isEmpty) {
+      expect(ios, isNull);
+    } else {
+      expect(ios, contains('apps.apple.com'));
+    }
   });
 
   testWidgets('UnitCard shows its title and subtitle and handles taps',

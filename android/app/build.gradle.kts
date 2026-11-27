@@ -59,6 +59,17 @@ android {
     }
 }
 
+// A Play Store bundle signed with the debug key would be rejected on upload,
+// so stop early with a clear message instead.
+gradle.taskGraph.whenReady {
+    if (!hasReleaseKey && allTasks.any { it.name == "bundleRelease" }) {
+        throw GradleException(
+            "No upload key: android/key.properties is missing or its storeFile " +
+                "does not exist. See RELEASING.md."
+        )
+    }
+}
+
 kotlin {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17

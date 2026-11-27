@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -9,6 +10,20 @@ const String appVersion = "1.2.0";
 
 const String _playStoreUrl =
     'https://play.google.com/store/apps/details?id=com.prajwalmreddy.kannada_disco&hl=en-IN';
+
+/// The numeric Apple ID from App Store Connect (App Information > Apple ID).
+/// Leave empty until the app exists there; the Feedback item is hidden on iOS
+/// until then, because App Review rejects links to other app stores.
+const String appStoreId = '';
+
+/// Where Feedback sends people to leave a review, or null if there is nowhere.
+String? feedbackUrl(TargetPlatform platform) => switch (platform) {
+      TargetPlatform.android => _playStoreUrl,
+      TargetPlatform.iOS => appStoreId.isEmpty
+          ? null
+          : 'https://apps.apple.com/app/id$appStoreId?action=write-review',
+      _ => null,
+    };
 
 class SideBar extends StatelessWidget {
   const SideBar({super.key});
@@ -36,12 +51,13 @@ class SideBar extends StatelessWidget {
               icon: Icons.settings,
               onTap: () => _pickNotificationTime(context),
             ),
-            _SideBarItem(
-              title: "Feedback",
-              icon: Icons.feedback,
-              onTap: () => launchUrl(Uri.parse(_playStoreUrl),
-                  mode: LaunchMode.externalApplication),
-            ),
+            if (feedbackUrl(defaultTargetPlatform) case final url?)
+              _SideBarItem(
+                title: "Feedback",
+                icon: Icons.feedback,
+                onTap: () => launchUrl(Uri.parse(url),
+                    mode: LaunchMode.externalApplication),
+              ),
             const Divider(),
             const Center(
               child: Text(

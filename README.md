@@ -23,7 +23,6 @@ flutter run
 
 ## Releasing
 
-- Bump `version:` in `pubspec.yaml` (the number after `+` must go up) and
-  `appVersion` in `lib/element/side_bar.dart`.
-- Release signing needs `android/key.properties` and the upload keystore it
-  points to. Neither is in git.
+See [RELEASING.md](RELEASING.md) for Google Play and the App Store, including
+the one-time setup for each. Store text and screenshots are in
+[docs/](docs/store-listing.md); the privacy policy is [PRIVACY.md](PRIVACY.md).

@@ -1,0 +1,33 @@
+# Signed iOS builds for the App Store, run on Codemagic's Macs.
+# One-time setup is in RELEASING.md ("iOS: first release").
+workflows:
+  ios-release:
+    name: iOS release to TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      # The name you give the App Store Connect API key in Codemagic.
+      app_store_connect: KannadaDisco
+    environment:
+      flutter: 3.50.1
+      xcode: latest
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.prajwalmreddy.kannadaDisco
+    scripts:
+      - name: Get packages
+        script: flutter pub get
+      - name: Run tests
+        script: flutter test
+      - name: Use signing profiles
+        script: xcode-project use-profiles
+      - name: Build IPA
+        # The build number comes from `version:` in pubspec.yaml (after the +).
+        # Apple needs it to go up with every upload.
+        script: flutter build ipa --release --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
