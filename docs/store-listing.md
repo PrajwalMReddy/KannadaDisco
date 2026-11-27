@@ -4,8 +4,7 @@ Copy these into Google Play Console and App Store Connect. Character limits
 are in brackets.
 
 Privacy policy URL (both stores):
-https://github.com/PrajwalMReddy/KannadaDisco/blob/master/PRIVACY.md
-(this link works once `PRIVACY.md` is merged into `master`)
+https://github.com/PrajwalMReddy/KannadaDisco/blob/main/PRIVACY.md
 
 Support URL (App Store):
 https://github.com/PrajwalMReddy/KannadaDisco/issues

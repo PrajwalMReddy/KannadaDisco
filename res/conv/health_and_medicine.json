@@ -11,8 +11,8 @@
   },
   "2": {
     "english": "Which doctor do I need to see for ___?",
-    "kannada": "ಯಾವ ವೈದ್ಯರನ್ನು ನೋಡಬೇಕು",
-    "transliteration": "yāva vaidyarannu nōḍabēku"
+    "kannada": "___ಗಾಗಿ ಯಾವ ವೈದ್ಯರನ್ನು ನೋಡಬೇಕು",
+    "transliteration": "___gāgi yāva vaidyarannu nōḍabēku"
   },
   "3": {
     "english": "Can you please explain ___?",
