@@ -1,8 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 
-import 'package:kannada_disco/const/color.dart';
-
-/// Bottom tabs: Home, Courses and Kids Section.
+/// Bottom tabs: Home, Courses and Kids.
 class BottomNavigation extends StatelessWidget {
   final int currentPage;
 
@@ -12,19 +10,26 @@ class BottomNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      currentIndex: currentPage,
-      selectedItemColor: kannadaBlue,
-      onTap: (index) {
+    return NavigationBar(
+      selectedIndex: currentPage,
+      onDestinationSelected: (index) {
         if (index != currentPage) {
           Navigator.pushReplacementNamed(context, _routes[index]);
         }
       },
-      items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.school), label: "Courses"),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.child_care), label: "Kids Section"),
+      destinations: const [
+        NavigationDestination(
+            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Icons.home),
+            label: "Home"),
+        NavigationDestination(
+            icon: Icon(Icons.school_outlined),
+            selectedIcon: Icon(Icons.school),
+            label: "Courses"),
+        NavigationDestination(
+            icon: Icon(Icons.child_care_outlined),
+            selectedIcon: Icon(Icons.child_care),
+            label: "Kids"),
       ],
     );
   }

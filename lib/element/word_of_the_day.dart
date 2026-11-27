@@ -33,7 +33,8 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
 
   Future<void> _load() async {
     final prefs = await SharedPreferences.getInstance();
-    _show(prefs.getString(PrefsKeys.todayWord) ?? NotificationService.defaultWord);
+    _show(prefs.getString(PrefsKeys.todayWord) ??
+        NotificationService.defaultWord);
     await _advanceIfDue(prefs);
   }
 
@@ -75,45 +76,51 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.sizeOf(context);
+    final word = splitWordOfDay(_todayWord);
+    final text = Theme.of(context).textTheme;
+    const white = Colors.white;
+    final muted = white.withValues(alpha: 0.8);
 
-    return InkWell(
-      onTap: () => Speech.speak(_todayWord.split(' - ').first),
-      child: SizedBox(
-        height: size.height * 0.13,
-        width: size.width * 0.95,
-        child: Card(
-          elevation: 5.0,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(40.0),
-              bottomLeft: Radius.circular(40.0),
-            ),
-          ),
-          color: const Color.fromARGB(255, 39, 101, 151),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+    return Material(
+      color: white.withValues(alpha: 0.12),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+        side: BorderSide(color: white.withValues(alpha: 0.2)),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: () => Speech.speak(word.kannada),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 16, 12, 20),
+          child: Row(
             children: [
-              const Text(
-                'Word of the Day',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 23,
-                  fontWeight: FontWeight.bold,
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'WORD OF THE DAY',
+                      style: text.labelMedium!
+                          .copyWith(color: muted, letterSpacing: 1.2),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      word.kannada,
+                      style: text.headlineMedium!
+                          .copyWith(color: white, fontWeight: FontWeight.w700),
+                    ),
+                    if (word.transliteration.isNotEmpty) ...[
+                      const SizedBox(height: 4),
+                      Text(word.transliteration,
+                          style: text.titleMedium!.copyWith(color: white)),
+                    ],
+                    if (word.english.isNotEmpty)
+                      Text(word.english,
+                          style: text.bodyLarge!.copyWith(color: muted)),
+                  ],
                 ),
               ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: size.width * 0.82,
-                child: Text(
-                  _todayWord,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: wordOfDaySize(_todayWord),
-                    color: Colors.white,
-                  ),
-                ),
-              ),
+              const Icon(Icons.volume_up_rounded, color: white, size: 32),
             ],
           ),
         ),

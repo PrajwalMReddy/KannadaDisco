@@ -59,10 +59,10 @@ class SideBar extends StatelessWidget {
                     mode: LaunchMode.externalApplication),
               ),
             const Divider(),
-            const Center(
+            Center(
               child: Text(
-                "Version: $appVersion",
-                style: TextStyle(fontSize: 15.0, color: kannadaBlue),
+                "Version $appVersion",
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
           ],
@@ -107,15 +107,7 @@ class _Header extends StatelessWidget {
           topRight: Radius.circular(60.0),
           bottomLeft: Radius.circular(60.0),
         ),
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.fromARGB(255, 11, 31, 48),
-            Color.fromARGB(255, 29, 66, 97),
-            Color.fromARGB(255, 109, 161, 204),
-          ],
-        ),
+        gradient: headerGradient,
       ),
       height: 200,
       width: double.infinity,
@@ -144,14 +136,13 @@ class _SideBarItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(icon, color: kannadaBlue),
+      leading: Icon(icon, color: Theme.of(context).colorScheme.primary),
       title: Text(
         title,
-        style: const TextStyle(
-          color: Colors.blue,
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold,
-        ),
+        style: Theme.of(context)
+            .textTheme
+            .titleMedium!
+            .copyWith(fontWeight: FontWeight.w600),
       ),
       onTap: onTap,
     );

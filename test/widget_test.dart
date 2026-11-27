@@ -12,9 +12,15 @@ void main() {
     expect(prettifyText('basic_phrases'), 'Basic Phrases');
   });
 
-  test('wordOfDaySize shrinks long words', () {
-    expect(wordOfDaySize('short'), 20.0);
-    expect(wordOfDaySize('x' * 40), lessThan(20.0));
+  test('splitWordOfDay separates the three parts', () {
+    final word = splitWordOfDay('ನಮಸ್ಕಾರ - namaskāra - hello');
+    expect(word.kannada, 'ನಮಸ್ಕಾರ');
+    expect(word.transliteration, 'namaskāra');
+    expect(word.english, 'hello');
+
+    final odd = splitWordOfDay('just one part');
+    expect(odd.kannada, 'just one part');
+    expect(odd.english, '');
   });
 
   test('Feedback never points iOS users at Google Play', () {

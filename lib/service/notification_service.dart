@@ -54,6 +54,28 @@ class NotificationService {
     }
   }
 
+  /// Whether reminders can work on this device at all (after [init]).
+  bool get isAvailable => _initialized;
+
+  /// Whether notifications are already allowed, without asking the user.
+  Future<bool> notificationsAllowed() async {
+    await init();
+    if (!_initialized) return false;
+
+    try {
+      if (Platform.isAndroid) {
+        final android = _plugin.resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin>();
+        return await android?.areNotificationsEnabled() ?? false;
+      }
+      final ios = _plugin.resolvePlatformSpecificImplementation<
+          IOSFlutterLocalNotificationsPlugin>();
+      return (await ios?.checkPermissions())?.isEnabled ?? false;
+    } catch (_) {
+      return false;
+    }
+  }
+
   /// Asks the user for notification permission. Returns true if granted.
   Future<bool> requestPermission() async {
     await init();
@@ -66,7 +88,8 @@ class NotificationService {
     }
     final ios = _plugin.resolvePlatformSpecificImplementation<
         IOSFlutterLocalNotificationsPlugin>();
-    return await ios?.requestPermissions(alert: true, badge: true, sound: true) ??
+    return await ios?.requestPermissions(
+            alert: true, badge: true, sound: true) ??
         false;
   }
 

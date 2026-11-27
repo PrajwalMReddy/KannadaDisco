@@ -1,7 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/screen/rhymes_list.dart';
 import 'package:kannada_disco/screen/youtube_screen.dart';
 
@@ -12,20 +11,20 @@ class RhymeDetailScreen extends StatelessWidget {
 
   const RhymeDetailScreen({super.key, required this.rhyme});
 
-  static const _boldText = TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700);
+  static const _boldText =
+      TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(rhyme.name),
-        centerTitle: true,
-        backgroundColor: kannadaBlue,
       ),
       body: ListView(
         padding: const EdgeInsets.all(8.0),
         children: [
-          Text(rhyme.description, textAlign: TextAlign.center, style: _boldText),
+          Text(rhyme.description,
+              textAlign: TextAlign.center, style: _boldText),
           const SizedBox(height: 16),
           InkWell(
             onTap: () => Navigator.push(
@@ -57,7 +56,8 @@ class RhymeDetailScreen extends StatelessWidget {
           Text(
             rhyme.kannada,
             textAlign: TextAlign.center,
-            style: _boldText.copyWith(color: Colors.blue),
+            style: _boldText.copyWith(
+                color: Theme.of(context).colorScheme.primary),
           ),
           const SizedBox(height: 28),
           Text(rhyme.transliteration,

@@ -7,18 +7,23 @@ import 'package:kannada_disco/util/util.dart';
 
 /// A lesson in the full Kannada course.
 class CourseUnit extends StatelessWidget {
+  final int number;
   final String heading;
   final String subheading;
 
-  const CourseUnit({super.key, required this.heading, required this.subheading});
+  const CourseUnit(
+      {super.key,
+      required this.number,
+      required this.heading,
+      required this.subheading});
 
   @override
   Widget build(BuildContext context) {
     return UnitCard(
       title: prettifyText(heading),
       subtitle: subheading,
-      subtitleStyle: UnitCard.englishSubtitle,
-      heightFactor: 0.2,
+      kannadaSubtitle: false,
+      leading: NumberBadge(number),
       onTap: () => Navigator.pushNamed(context, "/course/content",
           arguments: {"heading": heading}),
     );
@@ -45,6 +50,7 @@ class KidsUnit extends StatelessWidget {
     return UnitCard(
       title: heading,
       subtitle: kannadaHeading,
+      leading: EmojiBadge(kidsEmoji[topic] ?? '📘'),
       onTap: () {
         if (resourceType == "conversation") {
           Navigator.push(context,
@@ -53,7 +59,8 @@ class KidsUnit extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                  builder: (_) => RhymesList(type: resourceType, topic: topic)));
+                  builder: (_) =>
+                      RhymesList(type: resourceType, topic: topic)));
         } else {
           openKidsReference(context, resourceType, topic, heading);
         }
@@ -82,10 +89,29 @@ class SubCardUnit extends StatelessWidget {
     return UnitCard(
       title: heading,
       subtitle: kannadaHeading,
+      leading: EmojiBadge(kidsEmoji[topic] ?? '💬'),
       onTap: () => openKidsReference(context, resourceType, topic, heading),
     );
   }
 }
+
+/// The picture shown beside each Kids section topic.
+const Map<String, String> kidsEmoji = {
+  'rhymes': '🎵',
+  'friendsconv': '💬',
+  'fruits': '🍎',
+  'vegetables': '🥕',
+  'colors': '🎨',
+  'flowers': '🌸',
+  'animals': '🐘',
+  'birds': '🦜',
+  'body_parts': '🖐️',
+  'antonyms': '↔️',
+  'teachersconv': '🧑‍🏫',
+  'familyconv': '👨‍👩‍👧',
+  'neighborscov': '🏘️',
+  'copassconv': '🚌',
+};
 
 /// Opens a word list in Kids mode, which shows a custom heading and hides
 /// entries whose "link" is an empty string (words with no kids picture).

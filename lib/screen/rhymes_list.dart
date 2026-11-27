@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 
-import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/async_content.dart';
 import 'package:kannada_disco/element/unit_card.dart';
 import 'package:kannada_disco/screen/rhyme_detail_screen.dart';
@@ -30,8 +29,6 @@ class RhymesList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Rhymes'),
-        centerTitle: true,
-        backgroundColor: kannadaBlue,
       ),
       body: AsyncContent<List<Rhyme>>(
         future: _loadRhymes(),
@@ -39,14 +36,14 @@ class RhymesList extends StatelessWidget {
           if (rhymes.isEmpty) return const ComingSoon();
 
           return ListView.builder(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(16),
             itemCount: rhymes.length,
             itemBuilder: (context, index) {
               final rhyme = rhymes[index];
               return UnitCard(
                 title: rhyme.name,
                 subtitle: rhyme.kannadaName,
-                elevation: 10,
+                leading: const EmojiBadge('🎵'),
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(

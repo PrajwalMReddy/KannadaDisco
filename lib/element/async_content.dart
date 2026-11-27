@@ -39,21 +39,16 @@ class ComingSoon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Center(
-      child: SizedBox(
-        height: 150,
-        width: 300,
-        child: Card(
-          elevation: 10,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-          child: const Center(
-            child: Text(
-              'To be added...',
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700),
-            ),
-          ),
-        ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.hourglass_empty_rounded,
+              size: 48, color: theme.colorScheme.primary),
+          const SizedBox(height: 12),
+          Text('Coming soon', style: theme.textTheme.titleLarge),
+        ],
       ),
     );
   }

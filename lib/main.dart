@@ -1,13 +1,12 @@
 import 'package:material_ui/material_ui.dart';
 
-import 'package:kannada_disco/const/color.dart';
+import 'package:kannada_disco/const/theme.dart';
 import 'package:kannada_disco/course/course_content.dart';
 import 'package:kannada_disco/resource/reference.dart';
 import 'package:kannada_disco/screen/about.dart';
 import 'package:kannada_disco/screen/course.dart';
 import 'package:kannada_disco/screen/home.dart';
 import 'package:kannada_disco/screen/kids.dart';
-import 'package:kannada_disco/screen/loading.dart';
 import 'package:kannada_disco/screen/usage.dart';
 import 'package:kannada_disco/service/notification_service.dart';
 
@@ -24,18 +23,13 @@ class KannadaDiscoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'KannadaDisco',
-      theme: ThemeData(
-        // Keep the original Material 2 look; newer Flutter defaults to Material 3.
-        useMaterial3: false,
-        timePickerTheme: const TimePickerThemeData(
-          helpTextStyle: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.bold, color: kannadaBlue),
-        ),
-      ),
+      theme: buildTheme(Brightness.light),
+      darkTheme: buildTheme(Brightness.dark),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/loading',
+      // The native launch screen shows the logo while Flutter starts, so the
+      // app opens straight to Home.
+      initialRoute: '/home',
       routes: {
-        '/loading': (context) => const Loading(),
         '/home': (context) => const Home(),
         '/usage': (context) => const Usage(),
         '/about': (context) => const About(),

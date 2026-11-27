@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 
-import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/async_content.dart';
 import 'package:kannada_disco/resource/reference_entry.dart';
 import 'package:kannada_disco/util/speech.dart';
@@ -34,11 +33,7 @@ class Reference extends StatelessWidget {
     final bool kids = args["kids"] ?? false;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(heading ?? prettifyText(topic)),
-        centerTitle: true,
-        backgroundColor: kannadaBlue,
-      ),
+      appBar: AppBar(title: Text(heading ?? prettifyText(topic))),
       body: AsyncContent<List<Map<String, dynamic>>>(
         future: _loadEntries(topic),
         builder: (context, entries) {
@@ -48,17 +43,16 @@ class Reference extends StatelessWidget {
           if (entries.isEmpty) return const ComingSoon();
 
           return ListView.builder(
+            padding: const EdgeInsets.only(top: 12, bottom: 16),
             itemCount: entries.length,
             itemBuilder: (context, index) {
               final entry = entries[index];
-              return GestureDetector(
+              return ReferenceEntry(
+                english: entry["english"] ?? "",
+                kannada: entry["kannada"] ?? "",
+                transliteration: entry["transliteration"] ?? "",
+                imagePath: entry["link"],
                 onTap: () => Speech.speak(entry["kannada"] ?? ""),
-                child: ReferenceEntry(
-                  english: entry["english"] ?? "",
-                  kannada: entry["kannada"] ?? "",
-                  transliteration: entry["transliteration"] ?? "",
-                  imagePath: entry["link"],
-                ),
               );
             },
           );

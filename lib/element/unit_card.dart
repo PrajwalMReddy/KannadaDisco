@@ -1,63 +1,99 @@
 import 'package:material_ui/material_ui.dart';
 
-/// The rounded "pill" card used for course units and Kids section topics.
+import 'package:kannada_disco/const/theme.dart';
+
+/// A row card used for course lessons, Kids section topics and rhymes:
+/// an optional badge, a title, a subtitle and a chevron.
 class UnitCard extends StatelessWidget {
   final String title;
   final String subtitle;
-  final TextStyle subtitleStyle;
-  final double heightFactor;
-  final double elevation;
+
+  /// Shows [subtitle] in the Kannada style rather than as plain English.
+  final bool kannadaSubtitle;
+  final Widget? leading;
   final VoidCallback? onTap;
 
   const UnitCard({
     super.key,
     required this.title,
     required this.subtitle,
-    this.subtitleStyle = kannadaSubtitle,
-    this.heightFactor = 0.22,
-    this.elevation = 15,
+    this.kannadaSubtitle = true,
+    this.leading,
     this.onTap,
   });
 
-  static const kannadaSubtitle = TextStyle(
-      fontSize: 20.0, fontWeight: FontWeight.w700, color: Colors.blue);
-  static const englishSubtitle =
-      TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500);
-
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.sizeOf(context);
+    final theme = Theme.of(context);
+    final subtitleStyle = kannadaSubtitle
+        ? context.kannadaStyle.copyWith(fontSize: 18)
+        : theme.textTheme.bodyMedium!
+            .copyWith(color: theme.colorScheme.onSurfaceVariant);
 
-    return GestureDetector(
-      onTap: onTap,
-      child: SizedBox(
-        height: size.height * heightFactor,
-        width: size.width * 0.8,
-        child: Card(
-          elevation: elevation,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-          margin: const EdgeInsets.only(bottom: 20.0),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Card(
+        child: InkWell(
+          onTap: onTap,
           child: Padding(
-            padding: const EdgeInsets.all(30.0),
-            child: Column(children: [
-              Text(
-                title,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                    fontSize: 20.0, fontWeight: FontWeight.w700),
-              ),
-              const Spacer(),
-              Flexible(
-                child: Text(
-                  subtitle,
-                  textAlign: TextAlign.center,
-                  style: subtitleStyle,
+            padding: const EdgeInsets.fromLTRB(16, 14, 8, 14),
+            child: Row(
+              children: [
+                if (leading != null) ...[leading!, const SizedBox(width: 16)],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(title,
+                          style: theme.textTheme.titleMedium!
+                              .copyWith(fontWeight: FontWeight.w600)),
+                      const SizedBox(height: 2),
+                      Text(subtitle, style: subtitleStyle),
+                    ],
+                  ),
                 ),
-              ),
-            ]),
+                Icon(Icons.chevron_right,
+                    color: theme.colorScheme.onSurfaceVariant),
+              ],
+            ),
           ),
         ),
       ),
+    );
+  }
+}
+
+/// A round badge with a lesson number.
+class NumberBadge extends StatelessWidget {
+  final int number;
+
+  const NumberBadge(this.number, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return CircleAvatar(
+      radius: 20,
+      backgroundColor: scheme.primaryContainer,
+      foregroundColor: scheme.onPrimaryContainer,
+      child: Text('$number',
+          style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16)),
+    );
+  }
+}
+
+/// A round badge with an emoji, for the Kids section.
+class EmojiBadge extends StatelessWidget {
+  final String emoji;
+
+  const EmojiBadge(this.emoji, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return CircleAvatar(
+      radius: 26,
+      backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
+      child: Text(emoji, style: const TextStyle(fontSize: 26)),
     );
   }
 }

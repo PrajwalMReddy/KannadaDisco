@@ -4,11 +4,8 @@ import 'package:kannada_disco/resource/resource_grid.dart';
 
 const List<Widget> allCards = [
   ResourceGrid(type: "Reading & Pronunciation", cards: readingCards),
-  SizedBox(height: 20,),
   ResourceGrid(type: "Vocabulary", cards: vocabCards),
-  SizedBox(height: 20,),
   ResourceGrid(type: "Grammar", cards: grammarCards),
-  SizedBox(height: 20,),
   ResourceGrid(type: "Conversation Phrasebook", cards: conversationCards),
 ];
 
