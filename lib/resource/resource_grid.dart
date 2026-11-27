@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:kannada_disco/resource/resource_card.dart';
 
 class ResourceGrid extends StatelessWidget {
   const ResourceGrid({
-    Key? key,
+    super.key,
     required this.type,
     required this.cards,
-  }) : super(key: key);
+  });
 
   final String type;
   final List<ResourceCard> cards;

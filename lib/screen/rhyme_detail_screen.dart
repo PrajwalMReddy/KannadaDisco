@@ -1,111 +1,67 @@
-import 'package:flutter/material.dart';
-import 'package:kannada_disco/const/color.dart';
-import 'package:kannada_disco/screen/youtube_screen.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class RhymeDetailScreen extends StatefulWidget {
-  final String name;
-  final String kannadaName;
-  final String description;
-  final String english;
-  final String kannada;
-  final String transliteration;
-  final String link;
-  const RhymeDetailScreen(
-      {super.key,
-      required this.name,
-      required this.kannadaName,
-      required this.description,
-      required this.english,
-      required this.kannada,
-      required this.transliteration,
-      required this.link});
+import 'package:kannada_disco/const/color.dart';
+import 'package:kannada_disco/screen/rhymes_list.dart';
+import 'package:kannada_disco/screen/youtube_screen.dart';
 
-  @override
-  State<RhymeDetailScreen> createState() => _RhymeDetailScreenState();
-}
+/// One rhyme: description, a video thumbnail that opens the video, and the
+/// lyrics in Kannada and transliteration.
+class RhymeDetailScreen extends StatelessWidget {
+  final Rhyme rhyme;
 
-class _RhymeDetailScreenState extends State<RhymeDetailScreen> {
+  const RhymeDetailScreen({super.key, required this.rhyme});
+
+  static const _boldText = TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.name),
+        title: Text(rhyme.name),
         centerTitle: true,
         backgroundColor: kannadaBlue,
       ),
       body: ListView(
+        padding: const EdgeInsets.all(8.0),
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              widget.description,
-              textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700),
-            ),
-          ),
+          Text(rhyme.description, textAlign: TextAlign.center, style: _boldText),
+          const SizedBox(height: 16),
           InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => YoutubeScreen(videoId: widget.link),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                // width: 100,
-                // height: 100,
-                height: 300,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                ),
-                child: Column(
-                  children: [
-                    // YoutubePlayer(
-                    //   controller: _controller,
-                    //   showVideoProgressIndicator: true,
-                    //   progressIndicatorColor: Colors.red,
-                    // ),
-                    Expanded(
-                        child: Image.network(
-                      YoutubePlayer.getThumbnail(
-                        videoId: widget.link,
-                      ),
-                      fit: BoxFit.fill,
-                      errorBuilder: (context, url, error) => Icon(Icons.play_arrow, size: 50, color: Colors.grey,),
-                    )),
-                  ],
-                ),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (_) => YoutubeScreen(videoId: rhyme.videoId)),
+            ),
+            child: SizedBox(
+              height: 300,
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  Image.network(
+                    YoutubePlayerController.getThumbnail(
+                        videoId: rhyme.videoId),
+                    fit: BoxFit.cover,
+                    errorBuilder: (context, error, stackTrace) =>
+                        const ColoredBox(color: Colors.black12),
+                  ),
+                  const Center(
+                    child: Icon(Icons.play_circle_fill,
+                        size: 64, color: Colors.white),
+                  ),
+                ],
               ),
             ),
           ),
-          SizedBox(
-            height: 20,
+          const SizedBox(height: 28),
+          Text(
+            rhyme.kannada,
+            textAlign: TextAlign.center,
+            style: _boldText.copyWith(color: Colors.blue),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              widget.kannada,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.blue),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              widget.transliteration,
-              textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700),
-            ),
-          ),
+          const SizedBox(height: 28),
+          Text(rhyme.transliteration,
+              textAlign: TextAlign.center, style: _boldText),
         ],
       ),
     );

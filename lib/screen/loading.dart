@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:kannada_disco/const/color.dart';
+import 'package:material_ui/material_ui.dart';
 
+/// Splash screen shown for a few seconds at startup.
 class Loading extends StatefulWidget {
-  const Loading({Key? key}) : super(key: key);
+  const Loading({super.key});
 
   @override
   State<Loading> createState() => _LoadingState();
@@ -13,37 +13,14 @@ class _LoadingState extends State<Loading> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, '/home');
+      if (mounted) Navigator.pushReplacementNamed(context, '/home');
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return const LoadingScreen();
-  }
-}
-
-class LoadingScreen extends StatelessWidget {
-  const LoadingScreen({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Image(
-                image: AssetImage("assets/logo.png"), 
-              ),
-            ],
-          ),
-        ),
-      ),
+    return const Scaffold(
+      body: Center(child: Image(image: AssetImage("assets/logo.png"))),
     );
   }
 }

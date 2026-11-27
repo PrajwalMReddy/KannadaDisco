@@ -1,13 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:intl/intl.dart';
-import 'package:kannada_disco/const/color.dart';
-import 'package:kannada_disco/service/local_notification_service.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'package:kannada_disco/const/color.dart';
+import 'package:kannada_disco/service/notification_service.dart';
+
+/// Shown in the drawer. Keep in sync with `version` in pubspec.yaml.
+const String appVersion = "1.2.0";
+
+const String _playStoreUrl =
+    'https://play.google.com/store/apps/details?id=com.prajwalmreddy.kannada_disco&hl=en-IN';
+
 class SideBar extends StatelessWidget {
-  const SideBar({Key? key}) : super(key: key);
+  const SideBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,243 +19,125 @@ class SideBar extends StatelessWidget {
       child: SafeArea(
         child: ListView(
           children: [
-            Container(
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.zero,
-                  topRight: Radius.circular(60.0),
-                  bottomLeft: Radius.circular(60.0),
-                ),
-                gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Color.fromARGB(255, 11, 31, 48),
-                      Color.fromARGB(255, 29, 66, 97),
-                      Color.fromARGB(255, 109, 161, 204),
-                    ]),
-              ),
-              height: 200,
-              width: double.infinity,
-              child: const Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "KannadaDisco",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "ಕನ್ನಡ ಡಿಸ್ಕೋ",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+            const _Header(),
+            const SizedBox(height: 20),
+            _SideBarItem(
+              title: "About",
+              icon: Icons.info,
+              onTap: () => Navigator.pushNamed(context, '/about'),
             ),
-            const SizedBox(
-              height: 20,
+            _SideBarItem(
+              title: "Usage",
+              icon: Icons.smartphone,
+              onTap: () => Navigator.pushNamed(context, '/usage'),
             ),
-            SideBarElement(page: "About", icon: Icons.info),
-            SideBarElement(page: "Usage", icon: Icons.smartphone),
-            SideBarElement(page: "Settings", icon: Icons.settings),
-            ListTile(
-      leading: Icon(
-        Icons.feedback,
-        color: kannadaBlue,
-      ),
-      title: Text(
-        "Feedback",
-        style: const TextStyle(
-          color: Colors.blue,
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-      onTap: () {
-        Uri _url = Uri.parse('https://play.google.com/store/apps/details?id=com.prajwalmreddy.kannada_disco&hl=en-IN');
-              launchUrl(_url, mode: LaunchMode.externalApplication);
-      },
-    ),
+            _SideBarItem(
+              title: "Settings",
+              icon: Icons.settings,
+              onTap: () => _pickNotificationTime(context),
+            ),
+            _SideBarItem(
+              title: "Feedback",
+              icon: Icons.feedback,
+              onTap: () => launchUrl(Uri.parse(_playStoreUrl),
+                  mode: LaunchMode.externalApplication),
+            ),
             const Divider(),
             const Center(
               child: Text(
-                "Version: 1.1.0",
-                style: TextStyle(
-                  fontSize: 15.0,
-                  color: kannadaBlue,
-                ),
+                "Version: $appVersion",
+                style: TextStyle(fontSize: 15.0, color: kannadaBlue),
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Future<void> _pickNotificationTime(BuildContext context) async {
+    final parts = (await NotificationService.savedTime()).split(':');
+    if (!context.mounted) return;
+
+    final picked = await showTimePicker(
+      context: context,
+      helpText: 'Set notification time',
+      initialTime:
+          TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1])),
+    );
+    if (picked == null) return;
+
+    await NotificationService.saveTime(picked.hour, picked.minute);
+    final scheduled =
+        await NotificationService.instance.scheduleDailyNotification();
+    if (!context.mounted) return;
+
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      content: Text(scheduled
+          ? "Notification time set to ${picked.format(context)}"
+          : "Couldn't schedule the notification. Check that notifications are allowed."),
+    ));
+  }
+}
+
+class _Header extends StatelessWidget {
+  const _Header();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: const BoxDecoration(
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(60.0),
+          bottomLeft: Radius.circular(60.0),
+        ),
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color.fromARGB(255, 11, 31, 48),
+            Color.fromARGB(255, 29, 66, 97),
+            Color.fromARGB(255, 109, 161, 204),
+          ],
+        ),
+      ),
+      height: 200,
+      width: double.infinity,
+      child: const Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("KannadaDisco",
+              style: TextStyle(color: Colors.white, fontSize: 20.0)),
+          SizedBox(height: 10.0),
+          Text("ಕನ್ನಡ ಡಿಸ್ಕೋ",
+              style: TextStyle(color: Colors.white, fontSize: 20.0)),
+        ],
       ),
     );
   }
 }
 
-class SideBarElement extends StatelessWidget {
-  String page;
-  IconData icon;
-  SharedPreferences? _prefs;
-  TimeOfDay? pickedTime;
-  LocalNotificationService localNotificationService =
-      LocalNotificationService();
-  SideBarElement({
-    Key? key,
-    required this.page,
-    required this.icon,
-  }) : super(key: key);
+class _SideBarItem extends StatelessWidget {
+  final String title;
+  final IconData icon;
+  final VoidCallback onTap;
 
-  BuildContext? ctx;
+  const _SideBarItem(
+      {required this.title, required this.icon, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    ctx = context;
     return ListTile(
-      leading: Icon(
-        icon,
-        color: kannadaBlue,
-      ),
+      leading: Icon(icon, color: kannadaBlue),
       title: Text(
-        page,
+        title,
         style: const TextStyle(
           color: Colors.blue,
           fontSize: 20.0,
           fontWeight: FontWeight.bold,
         ),
       ),
-      onTap: () => _onClickSidebarElement(),
-    );
-  }
-
-  void _onClickSidebarElement() async {
-    if (page == "Settings") {
-      _displayTextInputDialog(ctx!);
-    } else {
-      Navigator.pushNamed(ctx!, '/${page.toLowerCase()}');
-    }
-  }
-
-  TextEditingController hourController = TextEditingController();
-  TextEditingController minuteController = TextEditingController();
-
-  Future<void> _displayTextInputDialog(BuildContext context) async {
-    _prefs = await SharedPreferences.getInstance();
-    var time = _prefs!.getString('notificationTime') ?? "07:00:00";
-    var splittedTime = time.split(':');
-    hourController.text = splittedTime[0];
-    minuteController.text = splittedTime[1];
-    return showDialog(
-      context: ctx!,
-      builder: (context) {
-        return AlertDialog(
-          title: const Column(
-            children: [
-              Text('Set Notification Time'),
-              SizedBox(
-                height: 5,
-              ),
-              Text(
-                '( 24h format )',
-                style: TextStyle(
-                    color: Color.fromARGB(255, 42, 41, 41), fontSize: 12),
-              )
-            ],
-          ),
-          content: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Flexible(
-                child: SizedBox(
-                  width: 55,
-                  // height: 30,
-                  child: TextField(
-                    keyboardType: TextInputType.number,
-                    decoration: const InputDecoration(
-                      hintText: 'hh',
-                      border: OutlineInputBorder(),
-                      labelText: 'hh',
-                    ),
-                    controller: hourController,
-                    // decoration: InputDecoration(hintText: "e.g. 07:00:00"),
-                  ),
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 10, right: 10),
-                child: Text(':'),
-              ),
-              Flexible(
-                child: SizedBox(
-                  width: 55,
-                  child: TextField(
-                    keyboardType: TextInputType.number,
-                    decoration: const InputDecoration(
-                      hintText: 'mm',
-                      border: OutlineInputBorder(),
-                      labelText: 'mm',
-                    ),
-                    controller: minuteController,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          actions: <Widget>[
-            MaterialButton(
-              color: kannadaBlue,
-              textColor: Colors.white,
-              child: const Text('CANCEL'),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-            const SizedBox(
-              width: 70,
-            ),
-            MaterialButton(
-              color: kannadaBlue,
-              textColor: Colors.white,
-              child: const Text('OK'),
-              onPressed: () {
-                try {
-                  String time =
-                      "${hourController.text}:${minuteController.text}:00";
-                  print(time);
-                  _prefs!.setString('notificationTime', time);
-                  localNotificationService
-                      .scheduleDailyNotification()
-                      .then((value) {
-                    if (value) {
-                      Fluttertoast.showToast(
-                        msg:
-                            "Notification time has been set to ${hourController.text}:${minuteController.text} successfully!",
-                        toastLength: Toast.LENGTH_LONG,
-                        backgroundColor: Colors.black,
-                        textColor: Colors.white,
-                        fontSize: 16.0,
-                      );
-                    }
-                  });
-                  Navigator.pop(context);
-                } catch (e) {
-                  print("Invalid Time Format");
-                }
-              },
-            ),
-          ],
-        );
-      },
+      onTap: onTap,
     );
   }
 }

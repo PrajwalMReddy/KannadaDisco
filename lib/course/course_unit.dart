@@ -1,192 +1,96 @@
-import 'package:flutter/material.dart';
-import 'package:kannada_disco/screen/rhymes_subcard_screen.dart';
-import 'package:kannada_disco/screen/subcard_screen.dart';
+import 'package:material_ui/material_ui.dart';
+
+import 'package:kannada_disco/element/unit_card.dart';
+import 'package:kannada_disco/screen/conversation_topics.dart';
+import 'package:kannada_disco/screen/rhymes_list.dart';
 import 'package:kannada_disco/util/util.dart';
 
+/// A lesson in the full Kannada course.
 class CourseUnit extends StatelessWidget {
   final String heading;
   final String subheading;
 
-  const CourseUnit({
-    Key? key,
-    required this.heading,
-    required this.subheading,
-  }) : super(key: key);
+  const CourseUnit({super.key, required this.heading, required this.subheading});
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
-    return GestureDetector(
-      onTap: () => {
-        Navigator.pushNamed(context, "/course/content", arguments: {
-          "heading": heading,
-        })
-      },
-      child: SizedBox(
-        height: size.height * 0.2,
-        width: size.width * 0.8,
-        child: Card(
-          elevation: 15,
-          shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(100),
-            topRight: Radius.circular(100),
-            topLeft: Radius.circular(100),
-            bottomRight: Radius.circular(100),
-          )),
-          margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
-          child: Padding(
-            padding: const EdgeInsets.all(30.0),
-            child: Center(
-              child: Column(children: [
-                Text(
-                  prettifyText(heading),
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                      fontSize: 20.0, fontWeight: FontWeight.w700),
-                ),
-                const Spacer(),
-                Text(
-                  subheading,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                      fontSize: 15.0, fontWeight: FontWeight.w500),
-                ),
-              ]),
-            ),
-          ),
-        ),
-      ),
+    return UnitCard(
+      title: prettifyText(heading),
+      subtitle: subheading,
+      subtitleStyle: UnitCard.englishSubtitle,
+      heightFactor: 0.2,
+      onTap: () => Navigator.pushNamed(context, "/course/content",
+          arguments: {"heading": heading}),
     );
   }
 }
 
+/// A topic in the Kids section.
 class KidsUnit extends StatelessWidget {
   final String heading;
   final String kannadaHeading;
   final String topic;
   final String resourceType;
-  const KidsUnit({super.key, required this.heading, required this.kannadaHeading, required this.topic, required this.resourceType});
 
-  
+  const KidsUnit({
+    super.key,
+    required this.heading,
+    required this.kannadaHeading,
+    required this.topic,
+    required this.resourceType,
+  });
+
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
-    return GestureDetector(
+    return UnitCard(
+      title: heading,
+      subtitle: kannadaHeading,
       onTap: () {
         if (resourceType == "conversation") {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => SubcardScreen(),));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (_) => const ConversationTopics()));
         } else if (topic == "rhymes") {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => RhymesSubCardScreen(type: resourceType, topic: topic),));
-
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (_) => RhymesList(type: resourceType, topic: topic)));
+        } else {
+          openKidsReference(context, resourceType, topic, heading);
         }
-        else {
-          Navigator.pushNamed(context, "/res/$resourceType", arguments: {
-        "topic": topic,
-        "heading": heading
-      });
-        }
-         
       },
-      child: SizedBox(
-        height: size.height * 0.22,
-        width: size.width * 0.8,
-        child: Card(
-          elevation: 15,
-          shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(100),
-            topRight: Radius.circular(100),
-            topLeft: Radius.circular(100),
-            bottomRight: Radius.circular(100),
-          )),
-          margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
-          child: Padding(
-            padding: const EdgeInsets.all(30.0),
-            child: Center(
-              child: Column(children: [
-                Text(
-                  heading,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                      fontSize: 20.0, fontWeight: FontWeight.w700),
-                ),
-                const Spacer(),
-                Expanded(
-                  child: Text(
-                    kannadaHeading,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                        fontSize: 20.0, fontWeight: FontWeight.w700, color: Colors.blue),
-                  ),
-                ),
-              ]),
-            ),
-          ),
-        ),
-      ),
     );
   }
 }
 
+/// One conversation in the Kids section's conversation list.
 class SubCardUnit extends StatelessWidget {
   final String heading;
   final String kannadaHeading;
   final String topic;
   final String resourceType;
-  const SubCardUnit({super.key, required this.heading, required this.kannadaHeading, required this.topic, required this.resourceType});
 
-  
+  const SubCardUnit({
+    super.key,
+    required this.heading,
+    required this.kannadaHeading,
+    required this.topic,
+    required this.resourceType,
+  });
+
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
-    return GestureDetector(
-      onTap: () {
-         Navigator.pushNamed(context, "/res/$resourceType", arguments: {
-        "topic": topic,
-        "heading": heading
-      });
-      },
-      child: SizedBox(
-        height: size.height * 0.22,
-        width: size.width * 0.8,
-        child: Card(
-          elevation: 15,
-          shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(100),
-            topRight: Radius.circular(100),
-            topLeft: Radius.circular(100),
-            bottomRight: Radius.circular(100),
-          )),
-          margin: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 20.0),
-          child: Padding(
-            padding: const EdgeInsets.all(30.0),
-            child: Center(
-              child: Column(children: [
-                Text(
-                  heading,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                      fontSize: 20.0, fontWeight: FontWeight.w700),
-                ),
-                const Spacer(),
-                Expanded(
-                  child: Text(
-                    kannadaHeading,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                        fontSize: 20.0, fontWeight: FontWeight.w700, color: Colors.blue),
-                  ),
-                ),
-              ]),
-            ),
-          ),
-        ),
-      ),
+    return UnitCard(
+      title: heading,
+      subtitle: kannadaHeading,
+      onTap: () => openKidsReference(context, resourceType, topic, heading),
     );
   }
+}
+
+/// Opens a word list in Kids mode, which shows a custom heading and hides
+/// entries whose "link" is an empty string (words with no kids picture).
+void openKidsReference(
+    BuildContext context, String resourceType, String topic, String heading) {
+  Navigator.pushNamed(context, "/res/$resourceType",
+      arguments: {"topic": topic, "heading": heading, "kids": true});
 }

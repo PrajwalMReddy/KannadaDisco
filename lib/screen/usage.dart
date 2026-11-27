@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:kannada_disco/const/color.dart';
 
 class Usage extends StatelessWidget {
-  const Usage({Key? key}) : super(key: key);
+  const Usage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:kannada_disco/util/util.dart';
 
 class ResourceCard extends StatelessWidget {
@@ -6,8 +6,7 @@ class ResourceCard extends StatelessWidget {
   final String resourceType;
 
   const ResourceCard(
-      {Key? key, required this.topic, required this.resourceType})
-      : super(key: key);
+      {super.key, required this.topic, required this.resourceType});
 
   @override
   Widget build(BuildContext context) {

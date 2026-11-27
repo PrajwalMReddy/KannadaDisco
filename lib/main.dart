@@ -1,67 +1,58 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:material_ui/material_ui.dart';
+
 import 'package:kannada_disco/const/color.dart';
-import 'package:kannada_disco/screen/home.dart';
-import 'package:kannada_disco/screen/course.dart';
-import 'package:kannada_disco/screen/loading.dart';
-import 'package:kannada_disco/screen/about.dart';
-import 'package:kannada_disco/resource/reference.dart';
-import 'package:kannada_disco/screen/settings.dart';
-import 'package:kannada_disco/screen/usage.dart';
 import 'package:kannada_disco/course/course_content.dart';
-import 'package:kannada_disco/screen/quiz.dart';
+import 'package:kannada_disco/resource/reference.dart';
+import 'package:kannada_disco/screen/about.dart';
+import 'package:kannada_disco/screen/course.dart';
+import 'package:kannada_disco/screen/home.dart';
+import 'package:kannada_disco/screen/kids.dart';
+import 'package:kannada_disco/screen/loading.dart';
+import 'package:kannada_disco/screen/usage.dart';
+import 'package:kannada_disco/service/notification_service.dart';
 
-const _timePickerTheme = TimePickerThemeData(
-  helpTextStyle:
-      TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: kannadaBlue),
-);
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await NotificationService.instance.init();
+  runApp(const KannadaDiscoApp());
+}
 
+class KannadaDiscoApp extends StatelessWidget {
+  const KannadaDiscoApp({super.key});
 
-void main() async {
-   WidgetsFlutterBinding.ensureInitialized();
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'KannadaDisco',
+      theme: ThemeData(
+        // Keep the original Material 2 look; newer Flutter defaults to Material 3.
+        useMaterial3: false,
+        timePickerTheme: const TimePickerThemeData(
+          helpTextStyle: TextStyle(
+              fontSize: 20, fontWeight: FontWeight.bold, color: kannadaBlue),
+        ),
+      ),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/loading',
+      routes: {
+        '/loading': (context) => const Loading(),
+        '/home': (context) => const Home(),
+        '/usage': (context) => const Usage(),
+        '/about': (context) => const About(),
 
-  // Initialize the local notification plugin
-  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-      FlutterLocalNotificationsPlugin();
-  var initializationSettingsAndroid =
-      const AndroidInitializationSettings('logo'); 
-  var initializationSettingsIOS = const DarwinInitializationSettings(
-    requestAlertPermission: true,
-    requestBadgePermission: true,
-    requestSoundPermission: true,
-  );
-  var initializationSettings = InitializationSettings(
-      android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
-  await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+        // Resources
+        '/res/reading': (context) => const Reference(type: "reading"),
+        '/res/vocabulary': (context) => const Reference(type: "vocab"),
+        '/res/grammar': (context) => const Reference(type: "gram"),
+        '/res/conversation': (context) => const Reference(type: "conv"),
 
-  runApp(
-  MaterialApp(
-    theme: ThemeData(
-      timePickerTheme: _timePickerTheme,
-    ),
-    debugShowCheckedModeBanner: false,
-    initialRoute: '/loading',
-    routes: {
-      '/loading': (context) => const Loading(),
-      '/home': (context) => const Home(),
+        // Courses
+        '/course': (context) => const CoursePage(),
+        '/course/content': (context) => const CourseContent(),
 
-      '/usage': (context) => const Usage(),
-      '/about': (context) => const About(),
-      '/settings': (context) => const Settings(), 
-
-      // Resources
-      '/res/reading': (context) => Reference(type: "reading"),
-      '/res/vocabulary': (context) => Reference(type: "vocab"),
-      '/res/grammar': (context) => Reference(type: "gram"),
-      '/res/conversation': (context) => Reference(type: "conv"),
-
-      // Courses
-      '/course': (context) => const CoursePage(),
-      '/course/content': (context) => CourseContent(),
-
-      // Quizzes
-      '/quiz': (context) => const QuizPage(),
-    },
-  ),
-);
+        // Kids section
+        '/kids': (context) => const KidsPage(),
+      },
+    );
+  }
 }

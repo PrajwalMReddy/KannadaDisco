@@ -1,151 +1,120 @@
 import 'dart:convert';
-import 'dart:ffi';
-import 'package:flutter/material.dart';
+
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
-import 'package:kannada_disco/const/resource_topic.dart';
-import 'package:kannada_disco/util/screen_size.dart';
-import 'package:kannada_disco/util/util.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_tts/flutter_tts.dart';
 
+import 'package:kannada_disco/const/resource_topic.dart';
+import 'package:kannada_disco/service/notification_service.dart';
+import 'package:kannada_disco/util/prefs_keys.dart';
+import 'package:kannada_disco/util/speech.dart';
+import 'package:kannada_disco/util/util.dart';
+
+/// Shows the word of the day. A new word appears once a day, after the
+/// user's reminder time, so it matches the notification they received.
 class WordOfTheDay extends StatefulWidget {
-  const WordOfTheDay({
-    Key? key,
-  }) : super(key: key);
+  const WordOfTheDay({super.key});
 
   @override
   State<WordOfTheDay> createState() => _WordOfTheDayState();
 }
 
 class _WordOfTheDayState extends State<WordOfTheDay> {
-  SharedPreferences? _prefs;
-  DateTime? _lastDate;
-  String info = "";
-  String todayInfo = "";
-  String speakingWord = "";
-  var wordSplited;
+  static final _dateFormat = DateFormat('yyyy-MM-dd');
+
+  String _todayWord = NotificationService.defaultWord;
 
   @override
   void initState() {
     super.initState();
-    _initPrefs();
+    _load();
   }
 
-  Future<void> _initPrefs() async {
-    _prefs = await SharedPreferences.getInstance();
-    String lastDateString = _prefs!.getString('lastDate') ?? '';
-    // info = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
-    todayInfo = _prefs!.getString('todayInfo') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
-    wordSplited = todayInfo.split(' - ');
-    speakingWord = wordSplited[0];
-    setState(() {});
-    if (lastDateString.isNotEmpty) {
-      _lastDate = DateFormat('yyyy-MM-dd').parse(lastDateString);
-    } else {
-      _lastDate = DateTime.now().subtract(const Duration(days: 1));
-    }
-    _setDateState();
+  Future<void> _load() async {
+    final prefs = await SharedPreferences.getInstance();
+    _show(prefs.getString(PrefsKeys.todayWord) ?? NotificationService.defaultWord);
+    await _advanceIfDue(prefs);
   }
 
-  Future<void> _setDateState() async {
-    var time = _prefs!.getString('notificationTime') ?? "07:00:00";
-    var splittedList = time.split(':');
-    double hour = double.parse(splittedList[0]);
-    double minute = double.parse(splittedList[1]);
-    double notificationTime = hour + (minute / 60);
-    DateTime now = DateTime.now();
-    double nowTime = now.hour + (now.minute / 60);
-    
-    if ((_lastDate!.day != now.day) && (nowTime >= notificationTime)) {
-      todayInfo = _prefs!.getString('info') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
-      wordSplited = todayInfo.split(' - ');
-    speakingWord = wordSplited[0];
-      _prefs!.setString('todayInfo', todayInfo);
-      String jsonData = await randomWord();
-      final Map<String, dynamic> mapData = jsonDecode(jsonData);
-      List wordsData = [];
-
-      for (var entry in mapData.values) {
-        wordsData.add(entry);
-      }
-
-      final word = (wordsData..shuffle()).first;
-      String english = word["english"];
-      String kannada = word["kannada"];
-      String transliteration = word["transliteration"];
-      final newWord = "$kannada - $transliteration - $english";
-      _prefs!.setString('info', newWord);
-      setState(() {
-        // set your state here
-      });
-      // todayInfo = _prefs!.getString('todayInfo') ?? "ನಮಸ್ಕಾರ - namaskāra - hello";
-      setState(() {});
-      _prefs!.setString('lastDate', DateFormat('yyyy-MM-dd').format(now));
-      _lastDate = now;
-    }
+  void _show(String word) {
+    if (!mounted) return;
+    setState(() => _todayWord = word);
   }
 
-  Future<String> randomWord() async {  
-    final word = (vocabCards.toList()..shuffle()).first;
-    final jsonData =
-        await rootBundle.loadString("res/vocab/${word.topic}.json");
-    return jsonData;
+  Future<void> _advanceIfDue(SharedPreferences prefs) async {
+    final now = DateTime.now();
+    final today = _dateFormat.format(now);
+    if (prefs.getString(PrefsKeys.lastDate) == today) return;
+
+    final parts = (await NotificationService.savedTime()).split(':');
+    final reminder = DateTime(
+        now.year, now.month, now.day, int.parse(parts[0]), int.parse(parts[1]));
+    if (now.isBefore(reminder)) return;
+
+    // Yesterday's "next" word (the one in the notification) becomes today's.
+    final todayWord =
+        prefs.getString(PrefsKeys.nextWord) ?? NotificationService.defaultWord;
+    await prefs.setString(PrefsKeys.todayWord, todayWord);
+    await prefs.setString(PrefsKeys.nextWord, await _randomWord());
+    await prefs.setString(PrefsKeys.lastDate, today);
+    _show(todayWord);
+
+    // The reminder text is fixed when scheduled, so refresh it.
+    await NotificationService.instance.scheduleDailyNotification();
   }
 
-  final FlutterTts flutterTts = FlutterTts();
-
-  speak(String text) async {
-    await flutterTts.setLanguage("kn-IN");
-    await flutterTts.setPitch(1);
-    await flutterTts.speak(text);
+  Future<String> _randomWord() async {
+    final topic = (vocabCards.toList()..shuffle()).first.topic;
+    final json = await rootBundle.loadString("res/vocab/$topic.json");
+    final words = (jsonDecode(json) as Map<String, dynamic>).values.toList()
+      ..shuffle();
+    final word = words.first;
+    return "${word["kannada"]} - ${word["transliteration"]} - ${word["english"]}";
   }
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.sizeOf(context);
+
     return InkWell(
-      onTap: () {
-        speak(speakingWord);
-      },
+      onTap: () => Speech.speak(_todayWord.split(' - ').first),
       child: SizedBox(
-        height: ScreenSize.height! * 0.13,
-        width: ScreenSize.width! * 0.95,
+        height: size.height * 0.13,
+        width: size.width * 0.95,
         child: Card(
           elevation: 5.0,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
-                topRight: Radius.circular(40.0),
-                bottomLeft: Radius.circular(40.0)),
+              topRight: Radius.circular(40.0),
+              bottomLeft: Radius.circular(40.0),
+            ),
           ),
           color: const Color.fromARGB(255, 39, 101, 151),
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-               const Text(
-                  'Word of the Day',
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Word of the Day',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: size.width * 0.82,
+                child: Text(
+                  _todayWord,
+                  textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: wordOfDaySize(_todayWord),
                     color: Colors.white,
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 10),
-                SizedBox(
-                  width: ScreenSize.width! * 0.82,
-                  child: Center(
-                    child: Text(
-                      todayInfo,
-                      style: TextStyle(
-                        fontSize: wordOfDaySize(todayInfo),
-                        color: Colors.white,
-                        // fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
