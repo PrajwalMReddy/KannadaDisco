@@ -2,9 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:kannada_disco/const/color.dart';
-import 'package:kannada_disco/service/notification_service.dart';
-
 /// Shown in the drawer. Keep in sync with `version` in pubspec.yaml.
 const String appVersion = "1.2.0";
 
@@ -30,69 +27,57 @@ class SideBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final reviewUrl = feedbackUrl(defaultTargetPlatform);
+
+    // Close the drawer first, so going back returns to the screen.
+    void open(String route) {
+      Navigator.pop(context);
+      Navigator.pushNamed(context, route);
+    }
+
     return Drawer(
-      child: SafeArea(
-        child: ListView(
-          children: [
-            const _Header(),
-            const SizedBox(height: 20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const _Header(),
+          const SizedBox(height: 12),
+          _SideBarItem(
+            title: "About",
+            icon: Icons.info_outline,
+            onTap: () => open('/about'),
+          ),
+          _SideBarItem(
+            title: "How to use",
+            icon: Icons.help_outline,
+            onTap: () => open('/usage'),
+          ),
+          _SideBarItem(
+            title: "Settings",
+            icon: Icons.settings_outlined,
+            onTap: () => open('/settings'),
+          ),
+          if (reviewUrl != null)
             _SideBarItem(
-              title: "About",
-              icon: Icons.info,
-              onTap: () => Navigator.pushNamed(context, '/about'),
+              title: "Rate the app",
+              icon: Icons.star_outline,
+              onTap: () => launchUrl(Uri.parse(reviewUrl),
+                  mode: LaunchMode.externalApplication),
             ),
-            _SideBarItem(
-              title: "Usage",
-              icon: Icons.smartphone,
-              onTap: () => Navigator.pushNamed(context, '/usage'),
-            ),
-            _SideBarItem(
-              title: "Settings",
-              icon: Icons.settings,
-              onTap: () => _pickNotificationTime(context),
-            ),
-            if (feedbackUrl(defaultTargetPlatform) case final url?)
-              _SideBarItem(
-                title: "Feedback",
-                icon: Icons.feedback,
-                onTap: () => launchUrl(Uri.parse(url),
-                    mode: LaunchMode.externalApplication),
-              ),
-            const Divider(),
-            Center(
+          const Spacer(),
+          SafeArea(
+            top: false,
+            child: Padding(
+              padding: const EdgeInsets.all(16),
               child: Text(
                 "Version $appVersion",
+                textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
-  }
-
-  Future<void> _pickNotificationTime(BuildContext context) async {
-    final parts = (await NotificationService.savedTime()).split(':');
-    if (!context.mounted) return;
-
-    final picked = await showTimePicker(
-      context: context,
-      helpText: 'Set notification time',
-      initialTime:
-          TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1])),
-    );
-    if (picked == null) return;
-
-    await NotificationService.saveTime(picked.hour, picked.minute);
-    final scheduled =
-        await NotificationService.instance.scheduleDailyNotification();
-    if (!context.mounted) return;
-
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: Text(scheduled
-          ? "Notification time set to ${picked.format(context)}"
-          : "Couldn't schedule the notification. Check that notifications are allowed."),
-    ));
   }
 }
 
@@ -101,24 +86,31 @@ class _Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final onBar = theme.appBarTheme.foregroundColor!;
+
     return Container(
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.only(
-          topRight: Radius.circular(60.0),
-          bottomLeft: Radius.circular(60.0),
-        ),
-        gradient: headerGradient,
-      ),
-      height: 200,
-      width: double.infinity,
-      child: const Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      color: theme.appBarTheme.backgroundColor,
+      padding: EdgeInsets.fromLTRB(
+          24, MediaQuery.paddingOf(context).top + 24, 24, 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          CircleAvatar(
+            radius: 32,
+            backgroundColor: Colors.white,
+            child: Padding(
+              padding: const EdgeInsets.all(6),
+              child: Image.asset("assets/logo.png"),
+            ),
+          ),
+          const SizedBox(height: 16),
           Text("KannadaDisco",
-              style: TextStyle(color: Colors.white, fontSize: 20.0)),
-          SizedBox(height: 10.0),
+              style: theme.textTheme.titleLarge!
+                  .copyWith(color: onBar, fontWeight: FontWeight.w700)),
           Text("ಕನ್ನಡ ಡಿಸ್ಕೋ",
-              style: TextStyle(color: Colors.white, fontSize: 20.0)),
+              style: theme.textTheme.titleMedium!
+                  .copyWith(color: onBar.withValues(alpha: 0.8))),
         ],
       ),
     );
@@ -135,16 +127,18 @@ class _SideBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Icon(icon, color: Theme.of(context).colorScheme.primary),
-      title: Text(
-        title,
-        style: Theme.of(context)
-            .textTheme
-            .titleMedium!
-            .copyWith(fontWeight: FontWeight.w600),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+      child: ListTile(
+        shape: const StadiumBorder(),
+        leading: Icon(icon, color: Theme.of(context).colorScheme.primary),
+        title: Text(title,
+            style: Theme.of(context)
+                .textTheme
+                .titleMedium!
+                .copyWith(fontWeight: FontWeight.w500)),
+        onTap: onTap,
       ),
-      onTap: onTap,
     );
   }
 }

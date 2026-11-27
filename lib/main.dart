@@ -7,6 +7,7 @@ import 'package:kannada_disco/screen/about.dart';
 import 'package:kannada_disco/screen/course.dart';
 import 'package:kannada_disco/screen/home.dart';
 import 'package:kannada_disco/screen/kids.dart';
+import 'package:kannada_disco/screen/settings.dart';
 import 'package:kannada_disco/screen/usage.dart';
 import 'package:kannada_disco/service/notification_service.dart';
 
@@ -33,6 +34,7 @@ class KannadaDiscoApp extends StatelessWidget {
         '/home': (context) => const Home(),
         '/usage': (context) => const Usage(),
         '/about': (context) => const About(),
+        '/settings': (context) => const Settings(),
 
         // Resources
         '/res/reading': (context) => const Reference(type: "reading"),

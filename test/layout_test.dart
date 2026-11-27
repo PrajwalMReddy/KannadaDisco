@@ -97,7 +97,7 @@ void lessonTests() {
         (tester) async {
       await openLesson(tester, 'basic_phrases', brightness: brightness);
       expect(tester.takeException(), isNull);
-      expect(find.text('Transliteration'), findsWidgets);
+      expect(find.text('ನಮಸ್ಕಾರ'), findsOneWidget);
       expect(find.text('namaskāra'), findsOneWidget);
     });
   }

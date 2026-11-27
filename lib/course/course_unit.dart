@@ -50,7 +50,6 @@ class KidsUnit extends StatelessWidget {
     return UnitCard(
       title: heading,
       subtitle: kannadaHeading,
-      leading: EmojiBadge(kidsEmoji[topic] ?? '📘'),
       onTap: () {
         if (resourceType == "conversation") {
           Navigator.push(context,

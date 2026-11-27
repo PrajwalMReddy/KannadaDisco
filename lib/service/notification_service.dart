@@ -108,10 +108,31 @@ class NotificationService {
     await prefs.setString(PrefsKeys.notificationTime, value);
   }
 
-  /// (Re)schedules the daily reminder at the saved time.
+  /// Whether the user has the daily reminder on: true or false once they
+  /// have chosen, null before that.
+  static Future<bool?> remindersEnabled() async =>
+      (await SharedPreferences.getInstance())
+          .getBool(PrefsKeys.remindersEnabled);
+
+  static Future<void> setRemindersEnabled(bool enabled) async =>
+      (await SharedPreferences.getInstance())
+          .setBool(PrefsKeys.remindersEnabled, enabled);
+
+  /// Turns the daily reminder off.
+  Future<void> cancelDailyNotification() async {
+    await init();
+    if (!_initialized) return;
+    try {
+      await _plugin.cancel(id: _dailyNotificationId);
+    } catch (_) {}
+  }
+
+  /// (Re)schedules the daily reminder at the saved time. Does nothing if the
+  /// user turned reminders off in Settings.
   Future<bool> scheduleDailyNotification() async {
     await init();
     if (!_initialized) return false;
+    if (await remindersEnabled() == false) return false;
 
     try {
       final prefs = await SharedPreferences.getInstance();

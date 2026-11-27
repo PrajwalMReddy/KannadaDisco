@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:kannada_disco/element/side_bar.dart';
 import 'package:kannada_disco/element/unit_card.dart';
 import 'package:kannada_disco/resource/reference_entry.dart';
+import 'package:kannada_disco/screen/settings.dart';
 import 'package:kannada_disco/util/util.dart';
 
 void main() {
@@ -68,5 +69,35 @@ void main() {
     expect(find.byType(Image), findsNothing);
     await pump('assets/logo.png');
     expect(find.byType(Image), findsOneWidget);
+  });
+
+  testWidgets('Reminder time sheet returns a preset time', (tester) async {
+    TimeOfDay? picked;
+    await tester.pumpWidget(MaterialApp(
+      home: Scaffold(
+        body: Builder(
+          builder: (context) => TextButton(
+            onPressed: () async => picked = await showModalBottomSheet(
+              context: context,
+              isScrollControlled: true,
+              builder: (_) => const ReminderTimeSheet(
+                  initial: TimeOfDay(hour: 7, minute: 3)),
+            ),
+            child: const Text('open'),
+          ),
+        ),
+      ),
+    ));
+    await tester.tap(find.text('open'));
+    await tester.pumpAndSettle();
+
+    // 7:03 shows as 7:00, since minutes go in steps of 5.
+    expect(find.text('Remind me at 7:00 AM'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(ChoiceChip, '6:00 PM'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Remind me at 6:00 PM'));
+    await tester.pumpAndSettle();
+    expect(picked, const TimeOfDay(hour: 18, minute: 0));
   });
 }

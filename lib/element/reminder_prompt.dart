@@ -25,6 +25,8 @@ class _ReminderPromptState extends State<ReminderPrompt> {
 
   Future<void> _check() async {
     final service = NotificationService.instance;
+    // Turned off in Settings: respect that and don't offer it here.
+    if (await NotificationService.remindersEnabled() == false) return;
     if (await service.notificationsAllowed()) {
       await service.scheduleDailyNotification();
     } else if (service.isAvailable && mounted) {
@@ -35,6 +37,7 @@ class _ReminderPromptState extends State<ReminderPrompt> {
   Future<void> _turnOn() async {
     final service = NotificationService.instance;
     final granted = await service.requestPermission();
+    if (granted) await NotificationService.setRemindersEnabled(true);
     final scheduled = granted && await service.scheduleDailyNotification();
     if (!mounted) return;
 

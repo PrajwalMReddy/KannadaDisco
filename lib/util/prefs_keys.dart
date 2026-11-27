@@ -12,6 +12,9 @@ class PrefsKeys {
   /// The word that will be shown next, also used in the reminder text.
   static const nextWord = 'info';
 
+  /// Whether the daily reminder is on. Missing means the user hasn't chosen.
+  static const remindersEnabled = 'remindersEnabled';
+
   /// Date (yyyy-MM-dd) the word of the day last changed.
   static const lastDate = 'lastDate';
 }

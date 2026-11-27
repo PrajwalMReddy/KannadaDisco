@@ -1,6 +1,5 @@
 import 'package:material_ui/material_ui.dart';
 
-import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/element/bottom_navigation.dart';
 import 'package:kannada_disco/element/reminder_prompt.dart';
 import 'package:kannada_disco/element/side_bar.dart';
@@ -41,7 +40,8 @@ class HomeBody extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            decoration: const BoxDecoration(gradient: headerGradient),
+            // Same colour as the app bar, so the two read as one header.
+            color: Theme.of(context).appBarTheme.backgroundColor,
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 16 + _sheetOverlap),
             child: const Column(
               children: [WordOfTheDay(), ReminderPrompt()],
