@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Release builds remove resources the code doesn't reference directly.
+     The notification icon is only looked up by name ('logo') at runtime,
+     so keep it. Without this, notifications fail in release builds. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/logo" />

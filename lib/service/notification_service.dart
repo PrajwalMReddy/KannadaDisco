@@ -1,6 +1,6 @@
 import 'dart:io' show Platform;
 
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show debugPrint, kIsWeb;
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -43,14 +43,21 @@ class NotificationService {
         requestSoundPermission: false,
       ),
     );
-    await _plugin.initialize(settings: settings);
-    _initialized = true;
+    try {
+      await _plugin.initialize(settings: settings);
+      _initialized = true;
+    } catch (e) {
+      // Never stop the app from starting over a notification problem; the
+      // reminder just stays off. In release builds this happened once when
+      // the 'logo' drawable was stripped (see android/.../res/raw/keep.xml).
+      debugPrint('Notifications unavailable: $e');
+    }
   }
 
   /// Asks the user for notification permission. Returns true if granted.
   Future<bool> requestPermission() async {
     await init();
-    if (!_supported) return false;
+    if (!_initialized) return false;
 
     if (Platform.isAndroid) {
       final android = _plugin.resolvePlatformSpecificImplementation<
@@ -81,7 +88,7 @@ class NotificationService {
   /// (Re)schedules the daily reminder at the saved time.
   Future<bool> scheduleDailyNotification() async {
     await init();
-    if (!_supported) return false;
+    if (!_initialized) return false;
 
     try {
       final prefs = await SharedPreferences.getInstance();
