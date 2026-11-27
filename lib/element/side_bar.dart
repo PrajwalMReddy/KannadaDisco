@@ -3,7 +3,7 @@ import 'package:material_ui/material_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 /// Shown in the drawer. Keep in sync with `version` in pubspec.yaml.
-const String appVersion = "1.2.0";
+const String appVersion = "1.1.0";
 
 const String _playStoreUrl =
     'https://play.google.com/store/apps/details?id=com.prajwalmreddy.kannada_disco&hl=en-IN';
