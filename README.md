@@ -4,7 +4,7 @@ An app for learning spoken Kannada: a resource library (reading, vocabulary,
 grammar, phrasebook), a structured course, a daily word of the day, and a Kids
 section with pictures, rhymes and conversations.
 
-Current version: 1.1.0 (build 10)
+Current version: 1.2.0 (build 10)
 
 ## Running it
 
