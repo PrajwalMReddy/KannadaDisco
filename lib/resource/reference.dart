@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 
 import 'package:kannada_disco/element/async_content.dart';
 import 'package:kannada_disco/resource/reference_entry.dart';
-import 'package:kannada_disco/util/speech.dart';
 import 'package:kannada_disco/util/util.dart';
 
 /// A list of words or phrases loaded from `res/<type>/<topic>.json`.
@@ -51,8 +50,8 @@ class Reference extends StatelessWidget {
                 english: entry["english"] ?? "",
                 kannada: entry["kannada"] ?? "",
                 transliteration: entry["transliteration"] ?? "",
-                imagePath: entry["link"],
-                onTap: () => Speech.speak(entry["kannada"] ?? ""),
+                // Pictures are for the Kids section only.
+                imagePath: kids ? entry["link"] : null,
               );
             },
           );

@@ -88,6 +88,9 @@ class _Header extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final onBar = theme.appBarTheme.foregroundColor!;
+    // The English and Kannada names carry equal weight.
+    final nameStyle = theme.textTheme.titleLarge!
+        .copyWith(color: onBar, fontWeight: FontWeight.w700);
 
     return Container(
       color: theme.appBarTheme.backgroundColor,
@@ -105,12 +108,9 @@ class _Header extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          Text("KannadaDisco",
-              style: theme.textTheme.titleLarge!
-                  .copyWith(color: onBar, fontWeight: FontWeight.w700)),
-          Text("ಕನ್ನಡ ಡಿಸ್ಕೋ",
-              style: theme.textTheme.titleMedium!
-                  .copyWith(color: onBar.withValues(alpha: 0.8))),
+          Text("KannadaDisco", style: nameStyle),
+          const SizedBox(height: 2),
+          Text("ಕನ್ನಡ ಡಿಸ್ಕೋ", style: nameStyle),
         ],
       ),
     );

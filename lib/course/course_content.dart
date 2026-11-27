@@ -9,6 +9,7 @@ import 'package:kannada_disco/const/color.dart';
 import 'package:kannada_disco/const/theme.dart';
 import 'package:kannada_disco/course/lesson_parser.dart';
 import 'package:kannada_disco/element/async_content.dart';
+import 'package:kannada_disco/element/word_tile.dart';
 import 'package:kannada_disco/util/speech.dart';
 import 'package:kannada_disco/util/util.dart';
 
@@ -39,26 +40,31 @@ class LessonView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // The app bar already shows the title.
-    final blocks =
-        parseLesson(markdown).where((b) => b is! LessonTitle).toList();
+    // The app bar already shows the title. Consecutive paragraphs share one
+    // card, so explanations sit in cards just like the tables.
+    final items = <Object>[];
+    for (final block in parseLesson(markdown)) {
+      if (block is LessonTitle) continue;
+      if (block is LessonParagraph) {
+        if (items.isNotEmpty && items.last is List<String>) {
+          (items.last as List<String>).add(block.text);
+        } else {
+          items.add(<String>[block.text]);
+        }
+      } else {
+        items.add(block);
+      }
+    }
 
     return ListView.builder(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-      itemCount: blocks.length,
-      itemBuilder: (context, index) => switch (blocks[index]) {
-        LessonTitle() => const SizedBox.shrink(),
+      itemCount: items.length,
+      itemBuilder: (context, index) => switch (items[index]) {
+        final List<String> paragraphs => _TextCard(paragraphs),
         LessonHeading(:final text) => Padding(
             padding: const EdgeInsets.only(top: 24, bottom: 12),
             child:
                 Text(text, style: context.sectionStyle.copyWith(fontSize: 20)),
-          ),
-        LessonParagraph(:final text) => Padding(
-            padding: const EdgeInsets.only(top: 12),
-            child: MarkdownBody(
-              data: text,
-              styleSheet: lessonStyle(Theme.of(context).brightness),
-            ),
           ),
         WordTable(:final words) => _WordTable(words),
         LetterTable(:final letters) => _LetterGrid(letters),
@@ -69,7 +75,62 @@ class LessonView extends StatelessWidget {
               styleSheet: lessonStyle(Theme.of(context).brightness),
             ),
           ),
+        _ => const SizedBox.shrink(),
       },
+    );
+  }
+}
+
+/// Explanation text in a card, styled like the tables: Kannada in the
+/// primary colour and its pronunciation in muted italics.
+class _TextCard extends StatelessWidget {
+  final List<String> paragraphs;
+
+  const _TextCard(this.paragraphs);
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+    final base = theme.textTheme.bodyLarge!.copyWith(height: 1.5);
+
+    TextStyle styleFor(RunKind kind) => switch (kind) {
+          RunKind.plain => base,
+          RunKind.bold => base.copyWith(fontWeight: FontWeight.w700),
+          RunKind.kannada =>
+            base.copyWith(color: scheme.primary, fontWeight: FontWeight.w600),
+          RunKind.pronunciation => base.copyWith(
+              color: scheme.onSurfaceVariant, fontStyle: FontStyle.italic),
+        };
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 4, bottom: 8),
+      child: Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              for (final (i, paragraph) in paragraphs.indexed) ...[
+                if (i > 0) const SizedBox(height: 12),
+                Text.rich(
+                  // Kannada letters are taller than English ones; a fixed line
+                  // height keeps the spacing even when lines mix both.
+                  strutStyle: StrutStyle(
+                    fontSize: base.fontSize,
+                    height: 1.7,
+                    forceStrutHeight: true,
+                  ),
+                  TextSpan(children: [
+                    for (final run in splitRuns(paragraph))
+                      TextSpan(text: run.text, style: styleFor(run.kind)),
+                  ]),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
@@ -82,9 +143,6 @@ class _WordTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final muted = theme.colorScheme.onSurfaceVariant;
-
     return Padding(
       padding: const EdgeInsets.only(top: 4, bottom: 8),
       child: Card(
@@ -92,32 +150,11 @@ class _WordTable extends StatelessWidget {
           children: [
             for (final (i, word) in words.indexed) ...[
               if (i > 0) const Divider(height: 1, indent: 16, endIndent: 16),
-              InkWell(
-                onTap: () => Speech.speak(word.kannada),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(word.english,
-                                style: theme.textTheme.bodyMedium!
-                                    .copyWith(color: muted)),
-                            const SizedBox(height: 2),
-                            Text(word.kannada, style: context.kannadaStyle),
-                            Text(word.transliteration,
-                                style: theme.textTheme.bodyLarge),
-                          ],
-                        ),
-                      ),
-                      Icon(Icons.volume_up_rounded,
-                          color: theme.colorScheme.primary),
-                      const SizedBox(width: 8),
-                    ],
-                  ),
-                ),
+              WordTile(
+                english: word.english,
+                kannada: word.kannada,
+                transliteration: word.transliteration,
+                card: false,
               ),
             ],
           ],
@@ -153,25 +190,32 @@ class _LetterGrid extends StatelessWidget {
         itemCount: letters.length,
         itemBuilder: (context, index) {
           final letter = letters[index];
-          return Card(
-            child: InkWell(
-              onTap: () => Speech.speak(letter.kannada),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(letter.kannada,
-                      style: theme.textTheme.headlineMedium!.copyWith(
-                          color: theme.colorScheme.primary,
-                          fontWeight: FontWeight.w600)),
-                  Text(letter.latin,
-                      style: theme.textTheme.titleSmall!
-                          .copyWith(fontWeight: FontWeight.w600)),
-                  Text(letter.pronunciation,
-                      style: theme.textTheme.bodySmall!
-                          .copyWith(color: theme.colorScheme.onSurfaceVariant)),
-                ],
-              ),
-            ),
+          return ValueListenableBuilder<String?>(
+            valueListenable: Speech.speaking,
+            builder: (context, speaking, _) {
+              final playing = speaking == letter.kannada;
+              return Card(
+                color: playing ? theme.colorScheme.primaryContainer : null,
+                child: InkWell(
+                  onTap: () => Speech.speakWithHelp(context, letter.kannada),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(letter.kannada,
+                          style: theme.textTheme.headlineMedium!.copyWith(
+                              color: theme.colorScheme.primary,
+                              fontWeight: FontWeight.w600)),
+                      Text(letter.latin,
+                          style: theme.textTheme.titleSmall!
+                              .copyWith(fontWeight: FontWeight.w600)),
+                      Text(letter.pronunciation,
+                          style: theme.textTheme.bodySmall!.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant)),
+                    ],
+                  ),
+                ),
+              );
+            },
           );
         },
       ),

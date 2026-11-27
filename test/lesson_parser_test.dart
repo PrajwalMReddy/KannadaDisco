@@ -62,4 +62,30 @@ void main() {
           reason: '${file.path}: some table rows were dropped');
     }
   });
+
+  test('explanation text marks Kannada and its pronunciation', () {
+    final runs = splitRuns(
+        'For example, ಅವರು (avaru) means ‘those people’ and **this** is ಆ.');
+    expect(runs, [
+      (text: 'For example, ', kind: RunKind.plain),
+      (text: 'ಅವರು', kind: RunKind.kannada),
+      (text: ' (avaru)', kind: RunKind.pronunciation),
+      (text: ' means ‘those people’ and ', kind: RunKind.plain),
+      (text: 'this', kind: RunKind.bold),
+      (text: ' is ', kind: RunKind.plain),
+      (text: 'ಆ', kind: RunKind.kannada),
+      (text: '.', kind: RunKind.plain),
+    ]);
+  });
+
+  test('multi-word Kannada stays together', () {
+    final runs = splitRuns('ನನ್ನ ಪುಸ್ತಕ (nanna pustaka) means my book');
+    expect(runs.first, (text: 'ನನ್ನ ಪುಸ್ತಕ', kind: RunKind.kannada));
+    expect(runs[1], (text: ' (nanna pustaka)', kind: RunKind.pronunciation));
+  });
+
+  test('brackets after English are left alone', () {
+    expect(splitRuns('How are you? (Informal)'),
+        [(text: 'How are you? (Informal)', kind: RunKind.plain)]);
+  });
 }

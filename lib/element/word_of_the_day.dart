@@ -89,7 +89,7 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
       ),
       clipBehavior: Clip.antiAlias,
       child: InkWell(
-        onTap: () => Speech.speak(word.kannada),
+        onTap: () => Speech.speakWithHelp(context, word.kannada),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20, 16, 12, 20),
           child: Row(
@@ -120,7 +120,16 @@ class _WordOfTheDayState extends State<WordOfTheDay> {
                   ],
                 ),
               ),
-              const Icon(Icons.volume_up_rounded, color: white, size: 32),
+              ValueListenableBuilder<String?>(
+                valueListenable: Speech.speaking,
+                builder: (context, speaking, _) => Icon(
+                  speaking == word.kannada
+                      ? Icons.graphic_eq_rounded
+                      : Icons.volume_up_rounded,
+                  color: white,
+                  size: 32,
+                ),
+              ),
             ],
           ),
         ),

@@ -127,3 +127,42 @@ LessonBlock _parseTable(List<String> rows) {
   }
   return OtherTable(rows.join('\n'));
 }
+
+/// How a piece of explanation text is shown.
+enum RunKind { plain, bold, kannada, pronunciation }
+
+typedef TextRun = ({String text, RunKind kind});
+
+// **bold**, or Kannada words (several in a row count as one) optionally
+// followed by their pronunciation in brackets, e.g. "ಅವರು (avaru)".
+final _runPattern = RegExp(
+  r'\*\*(.+?)\*\*'
+  r'|([ಀ-೿][ಀ-೿‌‍]*'
+  r'(?:\s+[ಀ-೿][ಀ-೿‌‍]*)*)'
+  r'(\s*\([^()]*\))?',
+);
+
+/// Splits explanation text so Kannada and its pronunciation can be styled
+/// like the word tables.
+List<TextRun> splitRuns(String text) {
+  final runs = <TextRun>[];
+  var at = 0;
+  for (final m in _runPattern.allMatches(text)) {
+    if (m.start > at) {
+      runs.add((text: text.substring(at, m.start), kind: RunKind.plain));
+    }
+    if (m.group(1) != null) {
+      runs.add((text: m.group(1)!, kind: RunKind.bold));
+    } else {
+      runs.add((text: m.group(2)!, kind: RunKind.kannada));
+      if (m.group(3) != null) {
+        runs.add((text: m.group(3)!, kind: RunKind.pronunciation));
+      }
+    }
+    at = m.end;
+  }
+  if (at < text.length) {
+    runs.add((text: text.substring(at), kind: RunKind.plain));
+  }
+  return runs;
+}
